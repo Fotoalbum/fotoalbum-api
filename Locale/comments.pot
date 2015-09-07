@@ -1,0 +1,512 @@
+# LANGUAGE translation of CakePHP Application
+# Copyright YEAR NAME <EMAIL@ADDRESS>
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PROJECT VERSION\n"
+"POT-Creation-Date: 2013-09-12 15:21+0200\n"
+"PO-Revision-Date: YYYY-mm-DD HH:MM+ZZZZ\n"
+"Last-Translator: NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <EMAIL@ADDRESS>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=INTEGER; plural=EXPRESSION;\n"
+
+#: Plugin/Comments/Controller/CommentsController.php:141;158
+msgid "Wrong comment id"
+msgstr ""
+
+#: Plugin/Comments/Controller/CommentsController.php:143
+msgid "Antispam system informed about spam message."
+msgstr ""
+
+#: Plugin/Comments/Controller/CommentsController.php:145;162
+msgid "Error appear during save."
+msgstr ""
+
+#: Plugin/Comments/Controller/CommentsController.php:160
+msgid "Antispam system informed about ham message."
+msgstr ""
+
+#: Plugin/Comments/Controller/CommentsController.php:176;208
+msgid "Invalid Comment."
+msgstr ""
+
+#: Plugin/Comments/Controller/CommentsController.php:190
+msgid "Invalid id for Comment"
+msgstr ""
+
+#: Plugin/Comments/Controller/CommentsController.php:192
+msgid "Comment deleted"
+msgstr ""
+
+#: Plugin/Comments/Controller/CommentsController.php:194
+msgid "Impossible to delete the Comment. Please try again."
+msgstr ""
+
+#: Plugin/Comments/Controller/Component/CommentsComponent.php:478
+msgid "The Comment has been saved."
+msgstr ""
+
+#: Plugin/Comments/Controller/Component/CommentsComponent.php:489
+msgid "The Comment could not be saved. Please, try again."
+msgstr ""
+
+#: Plugin/Comments/Controller/Component/CommentsComponent.php:535
+msgid "Nonrestricted operation"
+msgstr ""
+
+#: Plugin/Comments/Controller/Component/CommentsComponent.php:538
+msgid "The Comment status has been updated."
+msgstr ""
+
+#: Plugin/Comments/Controller/Component/CommentsComponent.php:540
+msgid "Error appear during comment status update. Try later."
+msgstr ""
+
+#: Plugin/Comments/Controller/Component/CommentsComponent.php:553
+msgid "The Comment has been deleted."
+msgstr ""
+
+#: Plugin/Comments/Controller/Component/CommentsComponent.php:555
+msgid "Error appear during comment deleting. Try later."
+msgstr ""
+
+#: Plugin/Comments/Model/Comment.php:113;154
+msgid "Some errors appear during execution."
+msgstr ""
+
+#: Plugin/Comments/Model/Comment.php:117
+msgid "Comments removed."
+msgstr ""
+
+#: Plugin/Comments/Model/Comment.php:159
+msgid "Operation was performed. "
+msgstr ""
+
+#: Plugin/Comments/Model/Behavior/CommentableBehavior.php:160
+msgid "Unallowed comment id"
+msgstr ""
+
+#: Plugin/Comments/View/Comments/add.ctp:15
+#: Plugin/Comments/View/Comments/admin_add.ctp:15
+msgid "Add Comment"
+msgstr ""
+
+#: Plugin/Comments/View/Comments/add.ctp:29;30
+#: Plugin/Comments/View/Comments/admin_add.ctp:29;30
+#: Plugin/Comments/View/Comments/admin_edit.ctp:31;32
+#: Plugin/Comments/View/Comments/admin_view.ctp:66;68
+#: Plugin/Comments/View/Comments/edit.ctp:31;32
+#: Plugin/Comments/View/Comments/index.ctp:86
+#: Plugin/Comments/View/Comments/view.ctp:66;68
+msgid "List Comments"
+msgstr ""
+
+#: Plugin/Comments/View/Comments/add.ctp:31
+#: Plugin/Comments/View/Comments/admin_add.ctp:31
+#: Plugin/Comments/View/Comments/admin_edit.ctp:33
+#: Plugin/Comments/View/Comments/admin_view.ctp:69
+#: Plugin/Comments/View/Comments/edit.ctp:33
+#: Plugin/Comments/View/Comments/index.ctp:87
+#: Plugin/Comments/View/Comments/view.ctp:69
+msgid "New Parent Comment"
+msgstr ""
+
+#: Plugin/Comments/View/Comments/add.ctp:32
+#: Plugin/Comments/View/Comments/admin_add.ctp:32
+#: Plugin/Comments/View/Comments/admin_edit.ctp:34
+#: Plugin/Comments/View/Comments/admin_view.ctp:70
+#: Plugin/Comments/View/Comments/edit.ctp:34
+#: Plugin/Comments/View/Comments/index.ctp:88
+#: Plugin/Comments/View/Comments/view.ctp:70
+msgid "List Users"
+msgstr ""
+
+#: Plugin/Comments/View/Comments/add.ctp:33
+#: Plugin/Comments/View/Comments/admin_add.ctp:33
+#: Plugin/Comments/View/Comments/admin_edit.ctp:35
+#: Plugin/Comments/View/Comments/admin_view.ctp:71
+#: Plugin/Comments/View/Comments/edit.ctp:35
+#: Plugin/Comments/View/Comments/index.ctp:89
+#: Plugin/Comments/View/Comments/view.ctp:71
+msgid "New User"
+msgstr ""
+
+#: Plugin/Comments/View/Comments/admin_edit.ctp:15
+#: Plugin/Comments/View/Comments/admin_view.ctp:64
+#: Plugin/Comments/View/Comments/edit.ctp:15
+#: Plugin/Comments/View/Comments/view.ctp:64
+msgid "Edit Comment"
+msgstr ""
+
+#: Plugin/Comments/View/Comments/admin_edit.ctp:30
+#: Plugin/Comments/View/Comments/admin_index.ctp:31;99
+#: Plugin/Comments/View/Comments/admin_view.ctp:111
+#: Plugin/Comments/View/Comments/edit.ctp:30
+#: Plugin/Comments/View/Comments/index.ctp:72
+#: Plugin/Comments/View/Comments/view.ctp:111
+msgid "Delete"
+msgstr ""
+
+#: Plugin/Comments/View/Comments/admin_edit.ctp:30
+#: Plugin/Comments/View/Comments/admin_index.ctp:99
+#: Plugin/Comments/View/Comments/admin_view.ctp:65;111
+#: Plugin/Comments/View/Comments/edit.ctp:30
+#: Plugin/Comments/View/Comments/index.ctp:72
+#: Plugin/Comments/View/Comments/view.ctp:65;111
+msgid "Are you sure you want to delete # %s?"
+msgstr ""
+
+#: Plugin/Comments/View/Comments/admin_index.ctp:12
+#: Plugin/Comments/View/Comments/index.ctp:13
+#: Plugin/Comments/View/Elements/comments/flat/main.ctp:25
+#: Plugin/Comments/View/Elements/comments/threaded/main.ctp:19
+#: Plugin/Comments/View/Elements/comments/tree/main.ctp:14
+#: View/Elements/comments/flat/main.ctp:25
+#: View/Elements/comments/threaded/main.ctp:19
+#: View/Elements/comments/tree/main.ctp:14
+msgid "Comments"
+msgstr ""
+
+#: Plugin/Comments/View/Comments/admin_index.ctp:21
+msgid "Filter spam comments"
+msgstr ""
+
+#: Plugin/Comments/View/Comments/admin_index.ctp:22
+msgid "Filter good comments"
+msgstr ""
+
+#: Plugin/Comments/View/Comments/admin_index.ctp:29;95
+msgid "Mark as ham"
+msgstr ""
+
+#: Plugin/Comments/View/Comments/admin_index.ctp:30;94
+msgid "Mark as spam"
+msgstr ""
+
+#: Plugin/Comments/View/Comments/admin_index.ctp:32;93
+msgid "Approve"
+msgstr ""
+
+#: Plugin/Comments/View/Comments/admin_index.ctp:33
+msgid "Dispprove"
+msgstr ""
+
+#: Plugin/Comments/View/Comments/admin_index.ctp:46
+msgid "Select..."
+msgstr ""
+
+#: Plugin/Comments/View/Comments/admin_index.ctp:47
+#: Plugin/Comments/View/Comments/admin_view.ctp:88
+#: Plugin/Comments/View/Comments/index.ctp:31
+#: Plugin/Comments/View/Comments/view.ctp:88
+msgid "Actions"
+msgstr ""
+
+#: Plugin/Comments/View/Comments/admin_index.ctp:81
+msgid "Yes"
+msgstr ""
+
+#: Plugin/Comments/View/Comments/admin_index.ctp:81
+msgid "No"
+msgstr ""
+
+#: Plugin/Comments/View/Comments/admin_index.ctp:96
+msgid "Disapprove"
+msgstr ""
+
+#: Plugin/Comments/View/Comments/admin_index.ctp:97
+#: Plugin/Comments/View/Comments/admin_view.ctp:109
+#: Plugin/Comments/View/Comments/index.ctp:70
+#: Plugin/Comments/View/Comments/view.ctp:109
+#: Plugin/Comments/View/Elements/comments/flat/item.ctp:14
+#: Plugin/Comments/View/Elements/comments/threaded/item.ctp:14
+#: Plugin/Comments/View/Elements/comments/tree/item.ctp:14
+#: View/Elements/comments/flat/item.ctp:14
+#: View/Elements/comments/threaded/item.ctp:14
+#: View/Elements/comments/tree/item.ctp:14
+msgid "View"
+msgstr ""
+
+#: Plugin/Comments/View/Comments/admin_index.ctp:98
+#: Plugin/Comments/View/Comments/admin_view.ctp:110
+#: Plugin/Comments/View/Comments/index.ctp:71
+#: Plugin/Comments/View/Comments/view.ctp:110
+msgid "Edit"
+msgstr ""
+
+#: Plugin/Comments/View/Comments/admin_view.ctp:13
+#: Plugin/Comments/View/Comments/view.ctp:13
+msgid "Comment"
+msgstr ""
+
+#: Plugin/Comments/View/Comments/admin_view.ctp:15;79
+#: Plugin/Comments/View/Comments/view.ctp:15;79
+msgid "Id"
+msgstr ""
+
+#: Plugin/Comments/View/Comments/admin_view.ctp:20
+#: Plugin/Comments/View/Comments/view.ctp:20
+msgid "Parent Comment"
+msgstr ""
+
+#: Plugin/Comments/View/Comments/admin_view.ctp:25
+#: Plugin/Comments/View/Comments/view.ctp:25
+msgid "Commented On"
+msgstr ""
+
+#: Plugin/Comments/View/Comments/admin_view.ctp:30
+#: Plugin/Comments/View/Comments/view.ctp:30
+msgid "User"
+msgstr ""
+
+#: Plugin/Comments/View/Comments/admin_view.ctp:35;83
+#: Plugin/Comments/View/Comments/view.ctp:35;83
+msgid "Model"
+msgstr ""
+
+#: Plugin/Comments/View/Comments/admin_view.ctp:40;84
+#: Plugin/Comments/View/Comments/view.ctp:40;84
+#: Plugin/Comments/View/Elements/comments/finder.ctp:19;24
+#: View/Elements/comments/finder.ctp:19;24
+msgid "Approved"
+msgstr ""
+
+#: Plugin/Comments/View/Comments/admin_view.ctp:45;85
+#: Plugin/Comments/View/Comments/view.ctp:45;85
+msgid "Body"
+msgstr ""
+
+#: Plugin/Comments/View/Comments/admin_view.ctp:50;86
+#: Plugin/Comments/View/Comments/view.ctp:50;86
+msgid "Created"
+msgstr ""
+
+#: Plugin/Comments/View/Comments/admin_view.ctp:55;87
+#: Plugin/Comments/View/Comments/view.ctp:55;87
+msgid "Modified"
+msgstr ""
+
+#: Plugin/Comments/View/Comments/admin_view.ctp:65
+#: Plugin/Comments/View/Comments/view.ctp:65
+msgid "Delete Comment"
+msgstr ""
+
+#: Plugin/Comments/View/Comments/admin_view.ctp:67
+#: Plugin/Comments/View/Comments/index.ctp:85
+#: Plugin/Comments/View/Comments/view.ctp:67
+msgid "New Comment"
+msgstr ""
+
+#: Plugin/Comments/View/Comments/admin_view.ctp:75
+#: Plugin/Comments/View/Comments/view.ctp:75
+msgid "Related Comments"
+msgstr ""
+
+#: Plugin/Comments/View/Comments/admin_view.ctp:80
+#: Plugin/Comments/View/Comments/view.ctp:80
+msgid "Comment Id"
+msgstr ""
+
+#: Plugin/Comments/View/Comments/admin_view.ctp:81
+#: Plugin/Comments/View/Comments/view.ctp:81
+msgid "Foreign Key"
+msgstr ""
+
+#: Plugin/Comments/View/Comments/admin_view.ctp:82
+#: Plugin/Comments/View/Comments/view.ctp:82
+msgid "User Id"
+msgstr ""
+
+#: Plugin/Comments/View/Comments/admin_view.ctp:120
+#: Plugin/Comments/View/Comments/view.ctp:120
+msgid "New Child Comment"
+msgstr ""
+
+#: Plugin/Comments/View/Comments/index.ctp:17
+msgid "Page %page% of %pages%, showing %current% records out of %count% total, starting on record %start%, ending on %end%"
+msgstr ""
+
+#: Plugin/Comments/View/Comments/index.ctp:79
+msgid "previous"
+msgstr ""
+
+#: Plugin/Comments/View/Comments/index.ctp:81
+msgid "next"
+msgstr ""
+
+#: Plugin/Comments/View/Elements/comments/finder.ctp:12
+#: View/Elements/comments/finder.ctp:12
+msgid "Filter comments"
+msgstr ""
+
+#: Plugin/Comments/View/Elements/comments/finder.ctp:21;31
+#: View/Elements/comments/finder.ctp:21;31
+msgid "...select..."
+msgstr ""
+
+#: Plugin/Comments/View/Elements/comments/finder.ctp:23
+#: View/Elements/comments/finder.ctp:23
+msgid "Not Approved"
+msgstr ""
+
+#: Plugin/Comments/View/Elements/comments/finder.ctp:29
+#: View/Elements/comments/finder.ctp:29
+msgid "spam state"
+msgstr ""
+
+#: Plugin/Comments/View/Elements/comments/finder.ctp:33
+#: View/Elements/comments/finder.ctp:33
+msgid "Clean"
+msgstr ""
+
+#: Plugin/Comments/View/Elements/comments/finder.ctp:34
+#: View/Elements/comments/finder.ctp:34
+msgid "Ham"
+msgstr ""
+
+#: Plugin/Comments/View/Elements/comments/finder.ctp:35
+#: View/Elements/comments/finder.ctp:35
+msgid "Manual Spam"
+msgstr ""
+
+#: Plugin/Comments/View/Elements/comments/finder.ctp:36
+#: View/Elements/comments/finder.ctp:36
+msgid "Spam"
+msgstr ""
+
+#: Plugin/Comments/View/Elements/comments/finder.ctp:40
+#: View/Elements/comments/finder.ctp:40
+msgid "Search"
+msgstr ""
+
+#: Plugin/Comments/View/Elements/comments/flat/form.ctp:28
+#: Plugin/Comments/View/Elements/comments/threaded/form.ctp:50
+#: Plugin/Comments/View/Elements/comments/tree/form.ctp:28
+#: View/Elements/comments/flat/form.ctp:28
+#: View/Elements/comments/threaded/form.ctp:50
+#: View/Elements/comments/tree/form.ctp:28
+msgid "This field cannot be left blank"
+msgstr ""
+
+#: Plugin/Comments/View/Elements/comments/flat/form.ctp:29
+#: Plugin/Comments/View/Elements/comments/threaded/form.ctp:51
+#: Plugin/Comments/View/Elements/comments/tree/form.ctp:29
+#: View/Elements/comments/flat/form.ctp:29
+#: View/Elements/comments/threaded/form.ctp:51
+#: View/Elements/comments/tree/form.ctp:29
+msgid "You can use only headings from %s to %s"
+msgstr ""
+
+#: Plugin/Comments/View/Elements/comments/flat/form.ctp:36;38
+#: Plugin/Comments/View/Elements/comments/tree/form.ctp:36;38
+#: View/Elements/comments/flat/form.ctp:36;38
+#: View/Elements/comments/tree/form.ctp:36;38
+msgid "Submit"
+msgstr ""
+
+#: Plugin/Comments/View/Elements/comments/flat/item.ctp:18
+#: Plugin/Comments/View/Elements/comments/threaded/item.ctp:18
+#: Plugin/Comments/View/Elements/comments/tree/item.ctp:18
+#: View/Elements/comments/flat/item.ctp:18
+#: View/Elements/comments/threaded/item.ctp:18
+#: View/Elements/comments/tree/item.ctp:18
+msgid "Reply"
+msgstr ""
+
+#: Plugin/Comments/View/Elements/comments/flat/item.ctp:19
+#: Plugin/Comments/View/Elements/comments/threaded/item.ctp:19
+#: Plugin/Comments/View/Elements/comments/tree/item.ctp:19
+#: View/Elements/comments/flat/item.ctp:19
+#: View/Elements/comments/threaded/item.ctp:19
+#: View/Elements/comments/tree/item.ctp:19
+msgid "Quote"
+msgstr ""
+
+#: Plugin/Comments/View/Elements/comments/flat/item.ctp:22
+#: Plugin/Comments/View/Elements/comments/threaded/item.ctp:22
+#: Plugin/Comments/View/Elements/comments/tree/item.ctp:22
+#: View/Elements/comments/flat/item.ctp:22
+#: View/Elements/comments/threaded/item.ctp:22
+#: View/Elements/comments/tree/item.ctp:22
+msgid "Publish"
+msgstr ""
+
+#: Plugin/Comments/View/Elements/comments/flat/item.ctp:24
+#: Plugin/Comments/View/Elements/comments/threaded/item.ctp:24
+#: Plugin/Comments/View/Elements/comments/tree/item.ctp:24
+#: View/Elements/comments/flat/item.ctp:24
+#: View/Elements/comments/threaded/item.ctp:24
+#: View/Elements/comments/tree/item.ctp:24
+msgid "Unpublish"
+msgstr ""
+
+#: Plugin/Comments/View/Elements/comments/flat/item.ctp:37
+#: Plugin/Comments/View/Elements/comments/tree/item.ctp:36
+#: View/Elements/comments/flat/item.ctp:37
+#: View/Elements/comments/tree/item.ctp:36
+msgid "posted"
+msgstr ""
+
+#: Plugin/Comments/View/Elements/comments/flat/main.ctp:16
+#: Plugin/Comments/View/Elements/comments/tree/main.ctp:18
+#: View/Elements/comments/flat/main.ctp:16
+#: View/Elements/comments/tree/main.ctp:18
+msgid "Add New Comment"
+msgstr ""
+
+#: Plugin/Comments/View/Elements/comments/flat/main.ctp:21
+#: Plugin/Comments/View/Elements/comments/tree/main.ctp:23
+#: View/Elements/comments/flat/main.ctp:21
+#: View/Elements/comments/tree/main.ctp:23
+msgid "Add comment"
+msgstr ""
+
+#: Plugin/Comments/View/Elements/comments/flat/main.ctp:27
+#: Plugin/Comments/View/Elements/comments/threaded/main.ctp:55
+#: Plugin/Comments/View/Elements/comments/tree/main.ctp:28
+#: View/Elements/comments/flat/main.ctp:27
+#: View/Elements/comments/threaded/main.ctp:55
+#: View/Elements/comments/tree/main.ctp:28
+msgid "If you want to post comments, you need to login first."
+msgstr ""
+
+#: Plugin/Comments/View/Elements/comments/flat/main.ctp:27
+#: Plugin/Comments/View/Elements/comments/threaded/main.ctp:55
+#: View/Elements/comments/flat/main.ctp:27
+#: View/Elements/comments/threaded/main.ctp:55
+msgid "login"
+msgstr ""
+
+#: Plugin/Comments/View/Elements/comments/flat/paginator.ctp:25
+#: Plugin/Comments/View/Elements/comments/tree/paginator.ctp:25
+#: View/Elements/comments/flat/paginator.ctp:25
+#: View/Elements/comments/tree/paginator.ctp:25
+msgid "Most Recent"
+msgstr ""
+
+#: Plugin/Comments/View/Elements/comments/flat/paginator.ctp:27
+#: Plugin/Comments/View/Elements/comments/tree/paginator.ctp:27
+#: View/Elements/comments/flat/paginator.ctp:27
+#: View/Elements/comments/tree/paginator.ctp:27
+msgid "Oldest"
+msgstr ""
+
+#: Plugin/Comments/View/Elements/comments/threaded/form.ctp:65;67
+#: View/Elements/comments/threaded/form.ctp:65;67
+msgid "Send"
+msgstr ""
+
+#: Plugin/Comments/View/Elements/comments/threaded/item.ctp:43
+#: View/Elements/comments/threaded/item.ctp:43
+msgid "commented"
+msgstr ""
+
+#: Plugin/Comments/View/Elements/comments/threaded/main.ctp:39
+#: View/Elements/comments/threaded/main.ctp:39
+msgid "Post/Reply"
+msgstr ""
+

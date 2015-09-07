@@ -1,0 +1,19 @@
+{
+    "name": "shama/ftp",
+    "type": "cakephp-plugin",
+    "version": "0.2.0",
+    "description": "FTP/SFTP Plugin for CakePHP",
+    "keywords": ["cakephp","ftp"],
+    "homepage": "http://github.com/shama/cakeftp",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Kyle Robinson Young",
+            "email": "kyle@dontkry.com",
+            "homepage": "http://dontkry.com"
+        }
+    ],
+    "require": {
+        "composer/installers": "*"
+    }
+}

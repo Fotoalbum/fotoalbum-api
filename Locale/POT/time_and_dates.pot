@@ -1,0 +1,117 @@
+#: Cake/Utility/CakeTime.php:395
+msgid "Today, %s"
+msgstr ""
+
+#: Cake/Utility/CakeTime.php:398
+msgid "Yesterday, %s"
+msgstr ""
+
+#: Cake/Utility/CakeTime.php:401
+msgid "Tomorrow, %s"
+msgstr ""
+
+#: Cake/Utility/CakeTime.php:406
+msgid "Sunday"
+msgstr ""
+
+#: Cake/Utility/CakeTime.php:407
+msgid "Monday"
+msgstr ""
+
+#: Cake/Utility/CakeTime.php:408
+msgid "Tuesday"
+msgstr ""
+
+#: Cake/Utility/CakeTime.php:409
+msgid "Wednesday"
+msgstr ""
+
+#: Cake/Utility/CakeTime.php:410
+msgid "Thursday"
+msgstr ""
+
+#: Cake/Utility/CakeTime.php:411
+msgid "Friday"
+msgstr ""
+
+#: Cake/Utility/CakeTime.php:412
+msgid "Saturday"
+msgstr ""
+
+#: Cake/Utility/CakeTime.php:418
+msgid "On %s %s"
+msgstr ""
+
+#: Cake/Utility/CakeTime.php:811
+msgid "just now"
+msgstr ""
+
+#: Cake/Utility/CakeTime.php:815
+msgid "on %s"
+msgstr ""
+
+#: Cake/Utility/CakeTime.php:859
+msgid "%s ago"
+msgstr ""
+
+#: Cake/Utility/CakeTime.php:878;900
+msgid "days"
+msgstr ""
+
+#: Cake/Utility/CakeTime.php:155
+msgid "abday"
+msgstr ""
+
+#: Cake/Utility/CakeTime.php:161
+msgid "day"
+msgstr ""
+
+#: Cake/Utility/CakeTime.php:189
+msgid "abmon"
+msgstr ""
+
+#: Cake/Utility/CakeTime.php:195
+msgid "mon"
+msgstr ""
+
+#: Cake/Utility/CakeTime.php:837
+msgid "%d year"
+msgid_plural "%d years"
+msgstr[0] ""
+msgstr[1] ""
+
+#: Cake/Utility/CakeTime.php:840
+msgid "%d month"
+msgid_plural "%d months"
+msgstr[0] ""
+msgstr[1] ""
+
+#: Cake/Utility/CakeTime.php:843
+msgid "%d week"
+msgid_plural "%d weeks"
+msgstr[0] ""
+msgstr[1] ""
+
+#: Cake/Utility/CakeTime.php:846
+msgid "%d day"
+msgid_plural "%d days"
+msgstr[0] ""
+msgstr[1] ""
+
+#: Cake/Utility/CakeTime.php:849
+msgid "%d hour"
+msgid_plural "%d hours"
+msgstr[0] ""
+msgstr[1] ""
+
+#: Cake/Utility/CakeTime.php:852
+msgid "%d minute"
+msgid_plural "%d minutes"
+msgstr[0] ""
+msgstr[1] ""
+
+#: Cake/Utility/CakeTime.php:855
+msgid "%d second"
+msgid_plural "%d seconds"
+msgstr[0] ""
+msgstr[1] ""

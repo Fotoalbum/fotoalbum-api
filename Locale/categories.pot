@@ -1,0 +1,223 @@
+# LANGUAGE translation of CakePHP Application
+# Copyright YEAR NAME <EMAIL@ADDRESS>
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PROJECT VERSION\n"
+"POT-Creation-Date: 2013-07-25 14:17+0200\n"
+"PO-Revision-Date: YYYY-mm-DD HH:MM+ZZZZ\n"
+"Last-Translator: NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <EMAIL@ADDRESS>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=INTEGER; plural=EXPRESSION;\n"
+
+#: Plugin/Categories/Controller/CategoriesController.php:129
+#: Plugin/Categories/Controller/I18nCategoriesController.php:122
+msgid "The category has been saved"
+msgstr ""
+
+#: Plugin/Categories/Controller/CategoriesController.php:155
+#: Plugin/Categories/Controller/I18nCategoriesController.php:153
+msgid "Category saved"
+msgstr ""
+
+#: Plugin/Categories/Controller/CategoriesController.php:180
+#: Plugin/Categories/Controller/I18nCategoriesController.php:178
+msgid "Category deleted"
+msgstr ""
+
+#: Plugin/Categories/Model/Categorized.php:53
+msgid "Foreign key can not be empty"
+msgstr ""
+
+#: Plugin/Categories/Model/Categorized.php:55
+msgid "Category id can not be empty"
+msgstr ""
+
+#: Plugin/Categories/Model/Categorized.php:57
+msgid "Model field can not be empty"
+msgstr ""
+
+#: Plugin/Categories/Model/Category.php:85
+#: Plugin/Categories/Model/I18nCategory.php:101
+msgid "Please enter a category name"
+msgstr ""
+
+#: Plugin/Categories/Model/Category.php:104
+#: Plugin/Categories/Model/I18nCategory.php:121
+msgid "Could not save the category, please check your inputs."
+msgstr ""
+
+#: Plugin/Categories/Model/Category.php:129;163;186
+#: Plugin/Categories/Model/I18nCategory.php:146;232;256
+msgid "Invalid Category"
+msgstr ""
+
+#: Plugin/Categories/Model/Category.php:204
+#: Plugin/Categories/Model/I18nCategory.php:274
+msgid "You need to confirm to delete this Category"
+msgstr ""
+
+#: Plugin/Categories/View/Categories/admin_add.ctp:14
+msgid "Add Category"
+msgstr ""
+
+#: Plugin/Categories/View/Categories/admin_add.ctp:21
+#: Plugin/Categories/View/Categories/admin_edit.ctp:22
+#: Plugin/Categories/View/I18nCategories/admin_add.ctp:21
+#: Plugin/Categories/View/I18nCategories/admin_edit.ctp:30
+msgid "Submit"
+msgstr ""
+
+#: Plugin/Categories/View/Categories/admin_edit.ctp:14
+#: Plugin/Categories/View/Categories/admin_view.ctp:43
+#: Plugin/Categories/View/I18nCategories/admin_edit.ctp:14
+#: Plugin/Categories/View/I18nCategories/admin_view.ctp:43
+msgid "Edit Category"
+msgstr ""
+
+#: Plugin/Categories/View/Categories/admin_index.ctp:12
+#: Plugin/Categories/View/Categories/admin_tree.ctp:12
+#: Plugin/Categories/View/Categories/index.ctp:12
+#: Plugin/Categories/View/I18nCategories/admin_index.ctp:12
+#: Plugin/Categories/View/I18nCategories/admin_tree.ctp:12
+#: Plugin/Categories/View/I18nCategories/index.ctp:12
+msgid "Categories"
+msgstr ""
+
+#: Plugin/Categories/View/Categories/admin_index.ctp:16
+#: Plugin/Categories/View/Categories/index.ctp:16
+#: Plugin/Categories/View/I18nCategories/admin_index.ctp:16
+#: Plugin/Categories/View/I18nCategories/index.ctp:16
+msgid "Page %page% of %pages%, showing %current% records out of %count% total, starting on record %start%, ending on %end%"
+msgstr ""
+
+#: Plugin/Categories/View/Categories/admin_index.ctp:26
+#: Plugin/Categories/View/Categories/index.ctp:26
+#: Plugin/Categories/View/I18nCategories/admin_index.ctp:26
+#: Plugin/Categories/View/I18nCategories/index.ctp:26
+msgid "Actions"
+msgstr ""
+
+#: Plugin/Categories/View/Categories/admin_index.ctp:53
+#: Plugin/Categories/View/Categories/admin_tree.ctp:50
+#: Plugin/Categories/View/Categories/index.ctp:53
+#: Plugin/Categories/View/I18nCategories/admin_index.ctp:53
+#: Plugin/Categories/View/I18nCategories/admin_tree.ctp:50
+#: Plugin/Categories/View/I18nCategories/index.ctp:53
+msgid "View"
+msgstr ""
+
+#: Plugin/Categories/View/Categories/admin_index.ctp:54
+#: Plugin/Categories/View/Categories/admin_tree.ctp:52
+#: Plugin/Categories/View/Categories/index.ctp:54
+#: Plugin/Categories/View/I18nCategories/admin_index.ctp:54
+#: Plugin/Categories/View/I18nCategories/admin_tree.ctp:52
+#: Plugin/Categories/View/I18nCategories/index.ctp:54
+msgid "Edit"
+msgstr ""
+
+#: Plugin/Categories/View/Categories/admin_index.ctp:55
+#: Plugin/Categories/View/Categories/admin_tree.ctp:53
+#: Plugin/Categories/View/Categories/index.ctp:55
+#: Plugin/Categories/View/I18nCategories/admin_index.ctp:55
+#: Plugin/Categories/View/I18nCategories/admin_tree.ctp:53
+#: Plugin/Categories/View/I18nCategories/index.ctp:55
+msgid "Delete"
+msgstr ""
+
+#: Plugin/Categories/View/Categories/admin_index.ctp:55
+#: Plugin/Categories/View/Categories/admin_view.ctp:44
+#: Plugin/Categories/View/Categories/index.ctp:55
+#: Plugin/Categories/View/I18nCategories/admin_index.ctp:55
+#: Plugin/Categories/View/I18nCategories/admin_view.ctp:44
+#: Plugin/Categories/View/I18nCategories/index.ctp:55
+msgid "Are you sure you want to delete # %s?"
+msgstr ""
+
+#: Plugin/Categories/View/Categories/admin_tree.ctp:35
+#: Plugin/Categories/View/I18nCategories/admin_tree.ctp:35
+msgid "No categories were added yet. :add-a-new-one now!"
+msgstr ""
+
+#: Plugin/Categories/View/Categories/admin_tree.ctp:36
+#: Plugin/Categories/View/I18nCategories/admin_tree.ctp:36
+msgid "Add a new one"
+msgstr ""
+
+#: Plugin/Categories/View/Categories/admin_tree.ctp:43
+#: Plugin/Categories/View/I18nCategories/admin_tree.ctp:43
+msgid "Add category"
+msgstr ""
+
+#: Plugin/Categories/View/Categories/admin_tree.ctp:51
+#: Plugin/Categories/View/I18nCategories/admin_tree.ctp:51
+msgid "Add a child"
+msgstr ""
+
+#: Plugin/Categories/View/Categories/admin_view.ctp:12
+#: Plugin/Categories/View/Categories/view.ctp:12
+#: Plugin/Categories/View/I18nCategories/admin_view.ctp:12
+#: Plugin/Categories/View/I18nCategories/view.ctp:12
+msgid "Category"
+msgstr ""
+
+#: Plugin/Categories/View/Categories/admin_view.ctp:14
+#: Plugin/Categories/View/Categories/view.ctp:14
+#: Plugin/Categories/View/I18nCategories/admin_view.ctp:14
+#: Plugin/Categories/View/I18nCategories/view.ctp:14
+msgid "Parent Category"
+msgstr ""
+
+#: Plugin/Categories/View/Categories/admin_view.ctp:19
+#: Plugin/Categories/View/Categories/view.ctp:19
+#: Plugin/Categories/View/I18nCategories/admin_view.ctp:19
+#: Plugin/Categories/View/I18nCategories/view.ctp:19
+msgid "User"
+msgstr ""
+
+#: Plugin/Categories/View/Categories/admin_view.ctp:24
+#: Plugin/Categories/View/Categories/view.ctp:24
+#: Plugin/Categories/View/I18nCategories/admin_view.ctp:24
+#: Plugin/Categories/View/I18nCategories/view.ctp:24
+msgid "Name"
+msgstr ""
+
+#: Plugin/Categories/View/Categories/admin_view.ctp:29
+#: Plugin/Categories/View/Categories/view.ctp:29
+#: Plugin/Categories/View/I18nCategories/admin_view.ctp:29
+#: Plugin/Categories/View/I18nCategories/view.ctp:29
+msgid "Description"
+msgstr ""
+
+#: Plugin/Categories/View/Categories/admin_view.ctp:34
+#: Plugin/Categories/View/Categories/view.ctp:34
+#: Plugin/Categories/View/I18nCategories/admin_view.ctp:34
+#: Plugin/Categories/View/I18nCategories/view.ctp:34
+msgid "Created"
+msgstr ""
+
+#: Plugin/Categories/View/Categories/admin_view.ctp:44
+#: Plugin/Categories/View/I18nCategories/admin_view.ctp:44
+msgid "Delete Category"
+msgstr ""
+
+#: Plugin/Categories/View/Categories/admin_view.ctp:45
+#: Plugin/Categories/View/Categories/view.ctp:43
+#: Plugin/Categories/View/I18nCategories/admin_view.ctp:45
+#: Plugin/Categories/View/I18nCategories/view.ctp:43
+msgid "List Categories"
+msgstr ""
+
+#: Plugin/Categories/View/Categories/admin_view.ctp:46
+#: Plugin/Categories/View/I18nCategories/admin_view.ctp:46
+msgid "New Category"
+msgstr ""
+
+#: Plugin/Categories/View/I18nCategories/admin_add.ctp:14
+msgid "Add i18n Category"
+msgstr ""
+

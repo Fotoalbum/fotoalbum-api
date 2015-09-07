@@ -1,0 +1,25 @@
+#header{margin-top:20px;}
+#page-container{margin-bottom:20px;}
+#url-rewriting-warning {display: none;}
+.checkbox input { clear: both; height: 100%; width: 0 !important; }
+
+.form-horizontal .control-label, .form-horizontal .radio, .form-horizontal .checkbox, .form-horizontal .radio-inline, .form-horizontal .checkbox-inline {
+    padding-top: 1% !important;
+}
+
+.control-group {
+	margin-bottom:2%;
+}
+
+.dl-horizontal dt {
+    border-bottom: 1px solid #DDDDDD;
+    line-height: 1.42857;
+    padding: 8px;
+}
+.dl-horizontal dd {
+    border-bottom: 1px solid #DDDDDD;	
+    line-height: 2.42857;
+}
+.dropdown-menu {
+  min-width: 260px !important;
+}

@@ -1,0 +1,60 @@
+# LANGUAGE translation of CakePHP Application
+# Copyright YEAR NAME <EMAIL@ADDRESS>
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PROJECT VERSION\n"
+"POT-Creation-Date: 2013-09-12 15:21+0200\n"
+"PO-Revision-Date: YYYY-mm-DD HH:MM+ZZZZ\n"
+"Last-Translator: NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <EMAIL@ADDRESS>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=INTEGER; plural=EXPRESSION;\n"
+
+#: Plugin/Ratings/Controller/Component/RatingsComponent.php:141
+msgid "Your rate was successfull."
+msgstr ""
+
+#: Plugin/Ratings/Controller/Component/RatingsComponent.php:146
+msgid "You need to be logged in to vote!"
+msgstr ""
+
+#: Plugin/Ratings/Controller/Component/RatingsComponent.php:151
+msgid "You have already rated."
+msgstr ""
+
+#: Plugin/Ratings/Controller/Component/RatingsComponent.php:156
+msgid "Invalid rate."
+msgstr ""
+
+#: Plugin/Ratings/Model/Behavior/RatableBehavior.php:234;292;351
+msgid "Invalid rating mode %s."
+msgstr ""
+
+#: Plugin/Ratings/Model/Behavior/RatableBehavior.php:475
+msgid "Invalid Rating"
+msgstr ""
+
+#: Plugin/Ratings/Model/Behavior/RatableBehavior.php:481
+msgid "Invalid Record"
+msgstr ""
+
+#: Plugin/Ratings/Model/Behavior/RatableBehavior.php:487
+msgid "You can not vote on your own records"
+msgstr ""
+
+#: Plugin/Ratings/Model/Behavior/RatableBehavior.php:495
+msgid "You have already rated this record"
+msgstr ""
+
+#: Plugin/Ratings/View/Helper/RatingHelper.php:69;161
+msgid "You must set the id of the item you want to rate."
+msgstr ""
+
+#: Plugin/Ratings/View/Helper/RatingHelper.php:179;182
+msgid "Rate!"
+msgstr ""
+

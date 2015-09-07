@@ -1,0 +1,2784 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: \n"
+"POT-Creation-Date: 2013-07-10 13:22+0200\n"
+"PO-Revision-Date: \n"
+"Last-Translator: \n"
+"Language-Team: LANGUAGE <EMAIL@ADDRESS>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=iso-8859-1\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Poedit 1.5.5\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+
+#: Controller/AppController.php:155;165
+msgid "You are not welcome here"
+msgstr ""
+
+#: Controller/InvitationsController.php:285
+msgid "I have created the photo album %s with Fotoalbum.nl. Take a look: %s "
+msgstr ""
+
+#: Controller/InvitationsController.php:459
+#: Controller/OrderLinesController.php:329 View/OrderLines/view.ctp:645
+msgid "private"
+msgstr ""
+
+#: Controller/InvitationsController.php:459
+#: Controller/OrderLinesController.php:329 View/OrderLines/view.ctp:652
+msgid "hidden"
+msgstr ""
+
+#: Controller/InvitationsController.php:459
+#: Controller/OrderLinesController.php:329 View/OrderLines/view.ctp:658
+msgid "public"
+msgstr ""
+
+#: Controller/InvitationsController.php:498
+msgid "Sorry, you don't have rights to send invitations!"
+msgstr ""
+
+#: Controller/InvitationsController.php:560
+msgid "Invitations sent to"
+msgstr ""
+
+#: Controller/InvitationsController.php:562
+msgid "and"
+msgstr ""
+
+#: Controller/InvitationsController.php:607
+msgid "The invitations have been sent!"
+msgstr ""
+
+#: Controller/InvitationsController.php:610
+msgid "failed!"
+msgstr ""
+
+#: Controller/InvitationsController.php:646
+msgid "You do no have the right to cancel this invitation"
+msgstr ""
+
+#: Controller/InvitationsController.php:653
+msgid "Removed."
+msgstr ""
+
+#: Controller/InvitationsController.php:667
+#: Controller/OrderLinesController.php:612
+#: Plugin/Users/Controller/UsersController.php:732
+msgid "An Ajax error occured, please try again or refresh"
+msgstr ""
+
+#: Controller/InvitationsController.php:814
+msgid "You are invited to view a photo album"
+msgstr ""
+
+#: Controller/InvitationsController.php:875
+msgid "Not allowed"
+msgstr ""
+
+#: Controller/OrderLinesController.php:72;131
+msgid "Invalid order line"
+msgstr ""
+
+#: Controller/OrderLinesController.php:86
+msgid "Photo album deleted"
+msgstr ""
+
+#: Controller/OrderLinesController.php:91
+msgid "Invalid token. Please contact customer support"
+msgstr ""
+
+#: Controller/OrderLinesController.php:175
+msgid "Sorry, the person changed the privacy setting for this album!"
+msgstr ""
+
+#: Controller/OrderLinesController.php:181
+msgid "Sorry, you need to login to view this album!"
+msgstr ""
+
+#: Controller/OrderLinesController.php:591
+msgid "Saved."
+msgstr ""
+
+#: Controller/OrderLinesController.php:607
+msgid "Not allowed!"
+msgstr ""
+
+#: Controller/OrderLinesController.php:783
+msgid "Dit album is nog niet beschikbaar in de nieuwe viewer"
+msgstr ""
+
+#: Controller/OrdersController.php:39;74;102
+msgid "Invalid order"
+msgstr ""
+
+#: Controller/OrdersController.php:54;78
+msgid "The order has been saved"
+msgstr ""
+
+#: Controller/OrdersController.php:57;81
+msgid "The order could not be saved. Please, try again."
+msgstr ""
+
+#: Controller/OrdersController.php:106
+msgid "Order deleted"
+msgstr ""
+
+#: Controller/OrdersController.php:109
+msgid "Order was not deleted"
+msgstr ""
+
+#: Controller/PagesController.php:168
+msgid "access denied"
+msgstr ""
+
+#: Plugin/Contactform/Model/Contactform.php:82
+msgid "please insert your name"
+msgstr ""
+
+#: Plugin/Contactform/Model/Contactform.php:89
+msgid "please insert your email address"
+msgstr ""
+
+#: Plugin/Contactform/Model/Contactform.php:96
+msgid "please enter your message"
+msgstr ""
+
+#: Plugin/Contactform/Model/Contactform.php:102
+msgid "please solve the calculation"
+msgstr ""
+
+#: Plugin/Contactform/Model/Contactform.php:107
+msgid "your solution was not correct"
+msgstr ""
+
+#: Plugin/Contactform/View/Contactform/show.ctp:11
+msgid "contactform_intro"
+msgstr ""
+
+#: Plugin/Search/Controller/Component/PrgComponent.php:363
+msgid "Please correct the errors below."
+msgstr ""
+
+#: Plugin/Survey/Controller/SurveysController.php:40
+msgid "Actie"
+msgstr ""
+
+#: Plugin/Survey/Controller/SurveysController.php:40
+msgid "Wedstrijd"
+msgstr ""
+
+#: Plugin/Survey/Controller/SurveysController.php:40
+msgid "Link"
+msgstr ""
+
+#: Plugin/Survey/View/Elements/surveys/top_survey.ctp:1
+#: Plugin/Comments/View/Elements/comments/flat/form.ctp:28
+#: Plugin/Comments/View/Elements/comments/threaded/form.ctp:50
+#: Plugin/Comments/View/Elements/comments/tree/form.ctp:28
+#: View/Elements/comments/flat/form.ctp:28
+#: View/Elements/comments/threaded/form.ctp:50
+#: View/Elements/comments/tree/form.ctp:28
+msgid "This field cannot be left blank"
+msgstr ""
+
+#: Plugin/Survey/View/Elements/surveys/top_survey.ctp:23
+#: View/Invitations/index.ctp:73;174 View/Users/dashboard.ctp:317;398
+msgid "Thumbnail"
+msgstr ""
+
+#: Plugin/Survey/View/Elements/surveys/top_survey.ctp:43
+#: View/OrderLines/view.ctp:81
+msgid "Title saved!"
+msgstr ""
+
+#: Plugin/Survey/View/Elements/surveys/top_survey.ctp:44
+#: View/OrderLines/view.ctp:82
+msgid "Enter title"
+msgstr ""
+
+#: Plugin/Survey/View/Elements/surveys/top_survey.ctp:47;82
+#: View/Elements/edit_username.ctp:35 View/Elements/library_rows.ctp:99
+#: View/OrderLines/view.ctp:85;203;526;714 View/Users/edit.ctp:207
+#: Plugin/Users/View/Users/json/edit_username.ctp:16
+msgid "Save"
+msgstr ""
+
+#: Plugin/Survey/View/Elements/surveys/top_survey.ctp:78
+#: View/Elements/library_rows.ctp:95 View/OrderLines/view.ctp:199
+msgid "Description saved!"
+msgstr ""
+
+#: Plugin/Survey/View/Elements/surveys/top_survey.ctp:79
+#: View/Elements/library_rows.ctp:96
+msgid "Enter desciption"
+msgstr ""
+
+#: Plugin/Upload/Model/Behavior/FileGrabberBehavior.php:47
+msgid "File was not downloaded."
+msgstr ""
+
+#: Plugin/Users/Controller/UserDetailsController.php:59;147
+msgid "Invalid Detail."
+msgstr ""
+
+#: Plugin/Users/Controller/UserDetailsController.php:81
+msgid "Saved"
+msgstr ""
+
+#: Plugin/Users/Controller/UserDetailsController.php:101
+msgid "%s details saved"
+msgstr ""
+
+#: Plugin/Users/Controller/UserDetailsController.php:120;208
+msgid "Invalid id for Detail"
+msgstr ""
+
+#: Plugin/Users/Controller/UserDetailsController.php:124;212
+msgid "User Detail deleted"
+msgstr ""
+
+#: Plugin/Users/Controller/UserDetailsController.php:162;186
+msgid "The Detail has been saved"
+msgstr ""
+
+#: Plugin/Users/Controller/UserDetailsController.php:165;189
+msgid "The Detail could not be saved. Please, try again."
+msgstr ""
+
+#: Plugin/Users/Controller/UserDetailsController.php:181
+msgid "Invalid Detail"
+msgstr ""
+
+#: Plugin/Users/Controller/UsersController.php:715
+msgid "Username saved."
+msgstr ""
+
+#: Plugin/Users/Controller/UsersController.php:757
+msgid "Profile saved."
+msgstr ""
+
+#: Plugin/Users/Controller/UsersController.php:769
+msgid "Could not save your profile."
+msgstr ""
+
+#: Plugin/Users/Controller/UsersController.php:838
+msgid "Invalid User."
+msgstr ""
+
+#: Plugin/Users/Controller/UsersController.php:855
+msgid "The User has been saved"
+msgstr ""
+
+#: Plugin/Users/Controller/UsersController.php:872
+msgid "User saved"
+msgstr ""
+
+#: Plugin/Users/Controller/UsersController.php:896
+msgid "User deleted"
+msgstr ""
+
+#: Plugin/Users/Controller/UsersController.php:898
+#: Plugin/Users/Model/User.php:972
+msgid "Invalid User"
+msgstr ""
+
+#: Plugin/Users/Controller/UsersController.php:920
+msgid "You are already registered and logged in!"
+msgstr ""
+
+#: Plugin/Users/Controller/UsersController.php:928
+msgid ""
+"Your account has been created. You should receive an e-mail shortly to "
+"authenticate your account. Once validated you will be able to login."
+msgstr ""
+
+#: Plugin/Users/Controller/UsersController.php:933
+msgid "Your account could not be created. Please, try again."
+msgstr ""
+
+#: Plugin/Users/Controller/UsersController.php:979
+msgid "Invalid e-mail / password combination.  Please try again"
+msgstr ""
+
+#: Plugin/Users/Controller/UsersController.php:1052
+msgid "You have successfully logged out"
+msgstr ""
+
+#: Plugin/Users/Controller/UsersController.php:1071
+msgid "Your e-mail has been validated!"
+msgstr ""
+
+#: Plugin/Users/Controller/UsersController.php:1094
+msgid "The url you accessed is not longer valid"
+msgstr ""
+
+#: Plugin/Users/Controller/UsersController.php:1103
+msgid "Your password was sent to your registered email account"
+msgstr ""
+
+#: Plugin/Users/Controller/UsersController.php:1107
+msgid ""
+"There was an error verifying your account. Please check the email you were "
+"sent, and retry the verification link."
+msgstr ""
+
+#: Plugin/Users/Controller/UsersController.php:1121;1133;1271
+msgid "Password Reset"
+msgstr ""
+
+#: Plugin/Users/Controller/UsersController.php:1150
+msgid "Password changed."
+msgstr ""
+
+#: Plugin/Users/Controller/UsersController.php:1235
+msgid "Account verification"
+msgstr ""
+
+#: Plugin/Users/Controller/UsersController.php:1297
+msgid "%s has been sent an email with instruction to reset their password."
+msgstr ""
+
+#: Plugin/Users/Controller/UsersController.php:1301
+msgid "You should receive an email with further instructions shortly"
+msgstr ""
+
+#: Plugin/Users/Controller/UsersController.php:1305
+msgid "No user was found with that email."
+msgstr ""
+
+#: Plugin/Users/Controller/UsersController.php:1336
+msgid "Invalid password reset token, try again."
+msgstr ""
+
+#: Plugin/Users/Controller/UsersController.php:1342
+msgid "Password changed, you can now login with your new password."
+msgstr ""
+
+#: Plugin/Users/Model/User.php:188
+msgid "Please enter a username."
+msgstr ""
+
+#: Plugin/Users/Model/User.php:192
+msgid "The username must be alphanumeric."
+msgstr ""
+
+#: Plugin/Users/Model/User.php:196
+msgid "This username is already in use."
+msgstr ""
+
+#: Plugin/Users/Model/User.php:200
+msgid "The username must have at least 3 characters."
+msgstr ""
+
+#: Plugin/Users/Model/User.php:207
+msgid "Please enter a valid email address."
+msgstr ""
+
+#: Plugin/Users/Model/User.php:211
+msgid "This email is already in use."
+msgstr ""
+
+#: Plugin/Users/Model/User.php:217
+msgid "The password must have at least 6 characters."
+msgstr ""
+
+#: Plugin/Users/Model/User.php:221
+msgid "Please enter a password."
+msgstr ""
+
+#: Plugin/Users/Model/User.php:226
+msgid "The passwords are not equal, please try again."
+msgstr ""
+
+#: Plugin/Users/Model/User.php:230
+msgid "You must agree to the terms of use."
+msgstr ""
+
+#: Plugin/Users/Model/User.php:291;581
+msgid "The passwords are not equal."
+msgstr ""
+
+#: Plugin/Users/Model/User.php:293
+msgid "Invalid password."
+msgstr ""
+
+#: Plugin/Users/Model/User.php:322;325;328
+msgid "Invalid date"
+msgstr ""
+
+#: Plugin/Users/Model/User.php:435
+msgid ""
+"Invalid token, please check the email you were sent, and retry the "
+"verification link."
+msgstr ""
+
+#: Plugin/Users/Model/User.php:440
+msgid "The token has expired."
+msgstr ""
+
+#: Plugin/Users/Model/User.php:539
+msgid "This Email Address exists but was never validated."
+msgstr ""
+
+#: Plugin/Users/Model/User.php:541
+msgid "This Email Address does not exist in the system."
+msgstr ""
+
+#: Plugin/Users/Model/User.php:626
+msgid "$this->data['"
+msgstr ""
+
+#: Plugin/Users/Model/User.php:672
+msgid "The user does not exist."
+msgstr ""
+
+#: Plugin/Users/Model/User.php:732
+msgid "Please enter your email address."
+msgstr ""
+
+#: Plugin/Users/Model/User.php:742
+msgid "The email address does not exist in the system"
+msgstr ""
+
+#: Plugin/Users/Model/User.php:747
+msgid "Your account is already authenticaed."
+msgstr ""
+
+#: Plugin/Users/Model/User.php:752
+msgid "Your account is disabled."
+msgstr ""
+
+#: Plugin/Users/View/Elements/Users/admin_sidebar.ctp:3
+#: Plugin/Users/View/Elements/Users/sidebar.ctp:9 View/Elements/menu.ctp:147
+#: View/Elements/menu_extended.ctp:323
+msgid "Logout"
+msgstr ""
+
+#: Plugin/Users/View/Elements/Users/admin_sidebar.ctp:4
+#: Plugin/Users/View/Elements/Users/sidebar.ctp:10
+msgid "My Account"
+msgstr ""
+
+#: Plugin/Users/View/Elements/Users/admin_sidebar.ctp:6
+msgid "Add Users"
+msgstr ""
+
+#: Plugin/Users/View/Elements/Users/admin_sidebar.ctp:7
+#: Plugin/Users/View/Elements/Users/sidebar.ctp:15
+#: Plugin/Users/View/UserDetails/add.ctp:27
+#: Plugin/Users/View/UserDetails/admin_add.ctp:28
+#: Plugin/Users/View/UserDetails/admin_edit.ctp:30
+#: Plugin/Users/View/UserDetails/admin_index.ctp:73
+#: Plugin/Users/View/UserDetails/admin_view.ctp:58
+#: Plugin/Users/View/UserDetails/view.ctp:59
+#: Plugin/Comments/View/Comments/add.ctp:32
+#: Plugin/Comments/View/Comments/admin_add.ctp:32
+#: Plugin/Comments/View/Comments/admin_edit.ctp:34
+#: Plugin/Comments/View/Comments/admin_view.ctp:70
+#: Plugin/Comments/View/Comments/edit.ctp:34
+#: Plugin/Comments/View/Comments/index.ctp:88
+#: Plugin/Comments/View/Comments/view.ctp:70
+msgid "List Users"
+msgstr ""
+
+#: Plugin/Users/View/Elements/Users/admin_sidebar.ctp:9
+msgid "Frontend"
+msgstr ""
+
+#: Plugin/Users/View/Elements/Users/sidebar.ctp:4
+#: Plugin/Users/View/Users/_login.ctp:13 View/Elements/menu.ctp:18;179
+#: View/Elements/menu_extended.ctp:18;355
+#: View/Elements/library/library_notloggedin.ctp:55
+#: View/Pages/access_denied.ctp:42 View/Users/add.ctp:74
+#: View/Users/login.ctp:43
+msgid "Login"
+msgstr ""
+
+#: Plugin/Users/View/Elements/Users/sidebar.ctp:6
+msgid "Register an account"
+msgstr ""
+
+#: Plugin/Users/View/Elements/Users/sidebar.ctp:11 View/Elements/menu.ctp:138
+#: View/Elements/menu_extended.ctp:314
+msgid "Change password"
+msgstr ""
+
+#: Plugin/Users/View/Emails/html/new_password.ctp:4
+#: Plugin/Users/View/Emails/text/new_password.ctp:12
+msgid "Your password has been reset"
+msgstr ""
+
+#: Plugin/Users/View/Emails/html/new_password.ctp:5
+#: Plugin/Users/View/Emails/text/new_password.ctp:13
+msgid "Please login using this password and change your password"
+msgstr ""
+
+#: Plugin/Users/View/Emails/html/new_password.ctp:9
+#: Plugin/Users/View/Emails/text/new_password.ctp:15
+msgid "Your new password is: %s"
+msgstr ""
+
+#: Plugin/Users/View/Emails/text/account_verification.ctp:12
+msgid "Hello %s,"
+msgstr ""
+
+#: Plugin/Users/View/Emails/text/account_verification.ctp:14
+msgid "to validate your account, you must visit the URL below within 24 hours"
+msgstr ""
+
+#: Plugin/Users/View/Emails/text/password_reset_request.ctp:12
+msgid ""
+"A request to reset your password was sent. To change your password click the "
+"link below."
+msgstr ""
+
+#: Plugin/Users/View/UserDetails/add.ctp:15
+#: Plugin/Users/View/UserDetails/admin_add.ctp:15
+msgid "Add User Detail"
+msgstr ""
+
+#: Plugin/Users/View/UserDetails/add.ctp:22
+#: Plugin/Users/View/UserDetails/admin_add.ctp:23
+#: Plugin/Users/View/UserDetails/index.ctp:27
+#: Plugin/Users/View/Users/_add.ctp:32
+#: Plugin/Users/View/Users/_change_password.ctp:26
+#: Plugin/Users/View/Users/_edit.ctp:33 Plugin/Users/View/Users/_login.ctp:29
+#: Plugin/Users/View/Users/_request_password_change.ctp:22
+#: Plugin/Users/View/Users/_reset_password.ctp:14
+#: View/Users/reset_password.ctp:42
+#: Plugin/Comments/View/Elements/comments/flat/form.ctp:36;38
+#: Plugin/Comments/View/Elements/comments/tree/form.ctp:36;38
+#: View/Elements/comments/flat/form.ctp:36;38
+#: View/Elements/comments/tree/form.ctp:36;38 View/OrderLines/add.ctp:26
+#: View/OrderLines/edit.ctp:27 Plugin/Tags/View/Tags/admin_add.ctp:20
+#: Plugin/Tags/View/Tags/admin_edit.ctp:23
+msgid "Submit"
+msgstr ""
+
+#: Plugin/Users/View/UserDetails/add.ctp:26
+#: Plugin/Users/View/UserDetails/admin_add.ctp:27
+#: Plugin/Users/View/UserDetails/admin_edit.ctp:29
+#: Plugin/Users/View/UserDetails/admin_view.ctp:56
+#: Plugin/Users/View/UserDetails/view.ctp:57
+msgid "List Details"
+msgstr ""
+
+#: Plugin/Users/View/UserDetails/add.ctp:28
+#: Plugin/Users/View/UserDetails/admin_add.ctp:29
+#: Plugin/Users/View/UserDetails/admin_edit.ctp:31
+#: Plugin/Users/View/UserDetails/admin_index.ctp:74
+#: Plugin/Users/View/UserDetails/admin_view.ctp:59
+#: Plugin/Users/View/UserDetails/view.ctp:60
+#: Plugin/Comments/View/Comments/add.ctp:33
+#: Plugin/Comments/View/Comments/admin_add.ctp:33
+#: Plugin/Comments/View/Comments/admin_edit.ctp:35
+#: Plugin/Comments/View/Comments/admin_view.ctp:71
+#: Plugin/Comments/View/Comments/edit.ctp:35
+#: Plugin/Comments/View/Comments/index.ctp:89
+#: Plugin/Comments/View/Comments/view.ctp:71
+msgid "New User"
+msgstr ""
+
+#: Plugin/Users/View/UserDetails/admin_edit.ctp:15
+#: Plugin/Users/View/UserDetails/edit.ctp:15
+msgid "Edit User Detail"
+msgstr ""
+
+#: Plugin/Users/View/UserDetails/admin_edit.ctp:28
+#: Plugin/Users/View/UserDetails/admin_index.ctp:63
+#: Plugin/Users/View/Users/admin_index.ctp:61
+#: Plugin/Users/View/Users/search.ctp:52
+#: Plugin/Comments/View/Comments/admin_edit.ctp:30
+#: Plugin/Comments/View/Comments/admin_index.ctp:31;99
+#: Plugin/Comments/View/Comments/admin_view.ctp:111
+#: Plugin/Comments/View/Comments/edit.ctp:30
+#: Plugin/Comments/View/Comments/index.ctp:72
+#: Plugin/Comments/View/Comments/view.ctp:111
+#: Plugin/Survey/View/SurveyResponses/view.ctp:115
+#: Plugin/Survey/View/Surveys/index.ctp:41 View/OrderLines/edit.ctp:33
+#: View/OrderLines/index.ctp:56 Plugin/Tags/View/Tags/admin_edit.ctp:27
+#: Plugin/Tags/View/Tags/admin_index.ctp:64
+msgid "Delete"
+msgstr ""
+
+#: Plugin/Users/View/UserDetails/admin_edit.ctp:28
+#: Plugin/Users/View/UserDetails/admin_index.ctp:63
+#: Plugin/Users/View/UserDetails/admin_view.ctp:55
+#: Plugin/Users/View/UserDetails/view.ctp:56
+#: Plugin/Users/View/Users/admin_index.ctp:61
+#: Plugin/Users/View/Users/search.ctp:55
+#: Plugin/Comments/View/Comments/admin_edit.ctp:30
+#: Plugin/Comments/View/Comments/admin_index.ctp:99
+#: Plugin/Comments/View/Comments/admin_view.ctp:65;111
+#: Plugin/Comments/View/Comments/edit.ctp:30
+#: Plugin/Comments/View/Comments/index.ctp:72
+#: Plugin/Comments/View/Comments/view.ctp:65;111 View/OrderLines/edit.ctp:33
+#: View/OrderLines/index.ctp:56 Plugin/Tags/View/Tags/admin_edit.ctp:27
+#: Plugin/Tags/View/Tags/admin_index.ctp:64
+#: Plugin/Tags/View/Tags/admin_view.ctp:55
+msgid "Are you sure you want to delete # %s?"
+msgstr ""
+
+#: Plugin/Users/View/UserDetails/admin_index.ctp:13
+msgid "User Details"
+msgstr ""
+
+#: Plugin/Users/View/UserDetails/admin_index.ctp:16
+#: Plugin/Users/View/Users/index.ctp:17 Plugin/Users/View/Users/search.ctp:27
+#: Plugin/Comments/View/Comments/index.ctp:17
+#: Plugin/Tags/View/Tags/admin_index.ctp:17 Plugin/Tags/View/Tags/index.ctp:17
+msgid ""
+"Page %page% of %pages%, showing %current% records out of %count% total, "
+"starting on record %start%, ending on %end%"
+msgstr ""
+
+#: Plugin/Users/View/UserDetails/admin_index.ctp:28
+#: Plugin/Users/View/Users/admin_index.ctp:32
+#: Plugin/Users/View/Users/index.ctp:25 Plugin/Users/View/Users/search.ctp:35
+#: View/Elements/menu_extended.ctp:177;210
+#: Plugin/Comments/View/Comments/admin_index.ctp:47
+#: Plugin/Comments/View/Comments/admin_view.ctp:88
+#: Plugin/Comments/View/Comments/index.ctp:31
+#: Plugin/Comments/View/Comments/view.ctp:88
+#: Plugin/Survey/View/Surveys/index.ctp:14 View/OrderLines/add.ctp:29
+#: View/OrderLines/edit.ctp:30 View/OrderLines/index.ctp:25;76
+#: Plugin/Tags/View/Tags/admin_index.ctp:29 Plugin/Tags/View/Tags/index.ctp:29
+msgid "Actions"
+msgstr ""
+
+#: Plugin/Users/View/UserDetails/admin_index.ctp:61
+#: Plugin/Users/View/Users/admin_index.ctp:59
+#: Plugin/Users/View/Users/index.ctp:39 Plugin/Users/View/Users/search.ctp:49
+#: Plugin/Comments/View/Comments/admin_index.ctp:97
+#: Plugin/Comments/View/Comments/admin_view.ctp:109
+#: Plugin/Comments/View/Comments/index.ctp:70
+#: Plugin/Comments/View/Comments/view.ctp:109
+#: Plugin/Comments/View/Elements/comments/flat/item.ctp:14
+#: Plugin/Comments/View/Elements/comments/threaded/item.ctp:14
+#: Plugin/Comments/View/Elements/comments/tree/item.ctp:14
+#: View/Elements/comments/flat/item.ctp:14
+#: View/Elements/comments/threaded/item.ctp:14
+#: View/Elements/comments/tree/item.ctp:14
+#: Plugin/Survey/View/Surveys/index.ctp:39 View/OrderLines/index.ctp:54
+#: Plugin/Tags/View/Tags/admin_index.ctp:62 Plugin/Tags/View/Tags/index.ctp:62
+msgid "View"
+msgstr ""
+
+#: Plugin/Users/View/UserDetails/admin_index.ctp:62
+#: Plugin/Users/View/Users/admin_index.ctp:60
+#: Plugin/Users/View/Users/search.ctp:50
+#: Plugin/Comments/View/Comments/admin_index.ctp:98
+#: Plugin/Comments/View/Comments/admin_view.ctp:110
+#: Plugin/Comments/View/Comments/index.ctp:71
+#: Plugin/Comments/View/Comments/view.ctp:110
+#: Plugin/Survey/View/Surveys/index.ctp:40 View/OrderLines/index.ctp:55
+#: Plugin/Tags/View/Tags/admin_index.ctp:63
+msgid "Edit"
+msgstr ""
+
+#: Plugin/Users/View/UserDetails/admin_index.ctp:72
+msgid "New User Detail"
+msgstr ""
+
+#: Plugin/Users/View/UserDetails/admin_view.ctp:13
+#: Plugin/Users/View/UserDetails/view.ctp:13
+msgid "User Detail"
+msgstr ""
+
+#: Plugin/Users/View/UserDetails/admin_view.ctp:15
+#: Plugin/Users/View/UserDetails/view.ctp:15
+#: Plugin/Comments/View/Comments/admin_view.ctp:15;79
+#: Plugin/Comments/View/Comments/view.ctp:15;79
+#: Plugin/Tags/View/Tags/admin_view.ctp:15 Plugin/Tags/View/Tags/view.ctp:15
+msgid "Id"
+msgstr ""
+
+#: Plugin/Users/View/UserDetails/admin_view.ctp:20
+#: Plugin/Users/View/UserDetails/view.ctp:20
+#: Plugin/Users/View/Users/admin_view.ctp:13
+#: Plugin/Comments/View/Comments/admin_view.ctp:30
+#: Plugin/Comments/View/Comments/view.ctp:30
+msgid "User"
+msgstr ""
+
+#: Plugin/Users/View/UserDetails/admin_view.ctp:25
+#: Plugin/Users/View/UserDetails/view.ctp:25
+msgid "Position"
+msgstr ""
+
+#: Plugin/Users/View/UserDetails/admin_view.ctp:30
+#: Plugin/Users/View/UserDetails/view.ctp:30
+msgid "Field"
+msgstr ""
+
+#: Plugin/Users/View/UserDetails/admin_view.ctp:35
+#: Plugin/Users/View/UserDetails/view.ctp:35
+msgid "Value"
+msgstr ""
+
+#: Plugin/Users/View/UserDetails/admin_view.ctp:40
+#: Plugin/Users/View/UserDetails/view.ctp:40
+#: Plugin/Users/View/Users/admin_view.ctp:20
+#: Plugin/Comments/View/Comments/admin_view.ctp:50;86
+#: Plugin/Comments/View/Comments/view.ctp:50;86
+#: Plugin/Survey/View/Surveys/index.ctp:12
+#: Plugin/Tags/View/Tags/admin_view.ctp:40 Plugin/Tags/View/Tags/view.ctp:40
+msgid "Created"
+msgstr ""
+
+#: Plugin/Users/View/UserDetails/admin_view.ctp:45
+#: Plugin/Users/View/UserDetails/view.ctp:45
+#: Plugin/Users/View/Users/admin_view.ctp:25
+#: Plugin/Comments/View/Comments/admin_view.ctp:55;87
+#: Plugin/Comments/View/Comments/view.ctp:55;87
+#: Plugin/Tags/View/Tags/admin_view.ctp:45 Plugin/Tags/View/Tags/view.ctp:45
+msgid "Modified"
+msgstr ""
+
+#: Plugin/Users/View/UserDetails/admin_view.ctp:54
+#: Plugin/Users/View/UserDetails/view.ctp:55
+msgid "Edit Detail"
+msgstr ""
+
+#: Plugin/Users/View/UserDetails/admin_view.ctp:55
+#: Plugin/Users/View/UserDetails/view.ctp:56
+msgid "Delete Detail"
+msgstr ""
+
+#: Plugin/Users/View/UserDetails/admin_view.ctp:57
+#: Plugin/Users/View/UserDetails/view.ctp:58
+msgid "New Detail"
+msgstr ""
+
+#: Plugin/Users/View/Users/_add.ctp:13
+#: Plugin/Users/View/Users/admin_add.ctp:15
+msgid "Add User"
+msgstr ""
+
+#: Plugin/Users/View/Users/_add.ctp:18
+#: Plugin/Users/View/Users/admin_add.ctp:18
+#: Plugin/Users/View/Users/admin_edit.ctp:19
+#: Plugin/Users/View/Users/admin_index.ctp:18
+#: Plugin/Users/View/Users/admin_view.ctp:15
+#: Plugin/Users/View/Users/search.ctp:18 View/Elements/edit_username.ctp:25
+#: View/Elements/library/library_notloggedin.ctp:51
+#: View/Pages/access_denied.ctp:38 View/Users/add.ctp:35
+#: View/Users/edit.ctp:57 View/Users/login.ctp:39
+#: Plugin/Users/View/Users/json/edit_username.ctp:13
+msgid "Username"
+msgstr ""
+
+#: Plugin/Users/View/Users/_add.ctp:20
+#: Plugin/Users/View/Users/admin_add.ctp:20
+msgid "E-mail (used as login)"
+msgstr ""
+
+#: Plugin/Users/View/Users/_add.ctp:21
+#: Plugin/Users/View/Users/admin_add.ctp:21 View/Users/add.ctp:42
+msgid "Must be a valid email address"
+msgstr ""
+
+#: Plugin/Users/View/Users/_add.ctp:22
+#: Plugin/Users/View/Users/admin_add.ctp:22 View/Users/add.ctp:43
+msgid "An account with that email already exists"
+msgstr ""
+
+#: Plugin/Users/View/Users/_add.ctp:24 Plugin/Users/View/Users/_login.ctp:22
+#: Plugin/Users/View/Users/admin_add.ctp:24 View/Elements/menu.ctp:176
+#: View/Elements/menu_extended.ctp:352
+#: View/Elements/library/library_notloggedin.ctp:52
+#: View/Pages/access_denied.ctp:39 View/Users/add.ctp:45
+#: View/Users/login.ctp:40 View/Users/reset_password.ctp:38
+msgid "Password"
+msgstr ""
+
+#: Plugin/Users/View/Users/_add.ctp:27
+#: Plugin/Users/View/Users/admin_add.ctp:27
+msgid "Password (confirm)"
+msgstr ""
+
+#: Plugin/Users/View/Users/_add.ctp:29 View/Users/add.ctp:53
+msgid "Terms of Service"
+msgstr ""
+
+#: Plugin/Users/View/Users/_add.ctp:31
+msgid "I have read and agreed to "
+msgstr ""
+
+#: Plugin/Users/View/Users/_change_password.ctp:13
+#: Plugin/Users/View/Users/_edit.ctp:30
+msgid "Change your password"
+msgstr ""
+
+#: Plugin/Users/View/Users/_change_password.ctp:14
+msgid ""
+"Please enter your old password because of security reasons and then your new "
+"password twice."
+msgstr ""
+
+#: Plugin/Users/View/Users/_change_password.ctp:18
+#: View/Users/change_password.ctp:36
+msgid "Old Password"
+msgstr ""
+
+#: Plugin/Users/View/Users/_change_password.ctp:21
+#: Plugin/Users/View/Users/_reset_password.ctp:9
+#: View/Users/change_password.ctp:42
+msgid "New Password"
+msgstr ""
+
+#: Plugin/Users/View/Users/_change_password.ctp:24
+#: Plugin/Users/View/Users/_reset_password.ctp:12 View/Users/add.ctp:49
+#: View/Users/change_password.ctp:47 View/Users/reset_password.ctp:39
+msgid "Confirm"
+msgstr ""
+
+#: Plugin/Users/View/Users/_dashboard.ctp:13
+msgid "Welcome"
+msgstr ""
+
+#: Plugin/Users/View/Users/_dashboard.ctp:14
+msgid "Recent broadcasts"
+msgstr ""
+
+#: Plugin/Users/View/Users/_edit.ctp:15
+#: Plugin/Users/View/Users/admin_edit.ctp:15
+msgid "Edit User"
+msgstr ""
+
+#: Plugin/Users/View/Users/_edit.ctp:22
+msgid "Edit Address"
+msgstr ""
+
+#: Plugin/Users/View/Users/_login.ctp:20
+#: Plugin/Users/View/Users/admin_edit.ctp:21
+#: Plugin/Users/View/Users/admin_index.ctp:19
+#: Plugin/Users/View/Users/search.ctp:20 View/Users/add.ctp:40
+#: View/Users/request_password_change.ctp:39
+msgid "Email"
+msgstr ""
+
+#: Plugin/Users/View/Users/_login.ctp:24
+msgid "Remember Me"
+msgstr ""
+
+#: Plugin/Users/View/Users/_login.ctp:25
+msgid "I forgot my password"
+msgstr ""
+
+#: Plugin/Users/View/Users/_request_password_change.ctp:13
+msgid "Forgot your password?"
+msgstr ""
+
+#: Plugin/Users/View/Users/_request_password_change.ctp:14
+#: View/Users/request_password_change.ctp:24
+msgid ""
+"Please enter the email you used for registration and you'll get an email "
+"with further instructions."
+msgstr ""
+
+#: Plugin/Users/View/Users/_request_password_change.ctp:21
+msgid "Your Email"
+msgstr ""
+
+#: Plugin/Users/View/Users/_reset_password.ctp:2
+msgid "Reset your password"
+msgstr ""
+
+#: Plugin/Users/View/Users/admin_add.ctp:31
+#: Plugin/Users/View/Users/admin_edit.ctp:24
+msgid "Role"
+msgstr ""
+
+#: Plugin/Users/View/Users/admin_add.ctp:35
+#: Plugin/Users/View/Users/admin_edit.ctp:27
+msgid "Is Admin"
+msgstr ""
+
+#: Plugin/Users/View/Users/admin_add.ctp:37
+#: Plugin/Users/View/Users/admin_edit.ctp:29
+msgid "Active"
+msgstr ""
+
+#: Plugin/Users/View/Users/admin_index.ctp:13
+#: Plugin/Users/View/Users/index.ctp:13 Plugin/Users/View/Users/search.ctp:13
+msgid "Users"
+msgstr ""
+
+#: Plugin/Users/View/Users/admin_index.ctp:15
+msgid "Filter"
+msgstr ""
+
+#: Plugin/Users/View/Users/admin_index.ctp:20
+#: Plugin/Users/View/Users/search.ctp:23 View/Elements/menu_extended.ctp:166
+#: View/Elements/sidebar.ctp:7 View/OrderLines/view.ctp:484
+#: Plugin/Comments/View/Elements/comments/finder.ctp:40
+#: View/Elements/comments/finder.ctp:40
+msgid "Search"
+msgstr ""
+
+#: Plugin/Users/View/Users/admin_index.ctp:50;53
+#: Plugin/Comments/View/Comments/admin_index.ctp:81
+msgid "Yes"
+msgstr ""
+
+#: Plugin/Users/View/Users/admin_index.ctp:50;53
+#: Plugin/Comments/View/Comments/admin_index.ctp:81
+msgid "No"
+msgstr ""
+
+#: Plugin/Users/View/Users/search.ctp:22 View/Users/dashboard.ctp:76
+#: View/Users/edit.ctp:47 View/Users/view.ctp:65
+#: Plugin/Survey/View/Surveys/add.ctp:30
+#: Plugin/Survey/View/Surveys/edit.ctp:30
+#: Plugin/Survey/View/Surveys/index.ctp:10
+#: Plugin/Tags/View/Tags/admin_view.ctp:25 Plugin/Tags/View/Tags/view.ctp:25
+msgid "Name"
+msgstr ""
+
+#: View/Elements/edit_username.ctp:5
+msgid "Choose your username"
+msgstr ""
+
+#: View/Elements/edit_username.ctp:9
+msgid ""
+"With this version, we introduce \"Usernames\". Please choose your username "
+"below:"
+msgstr ""
+
+#: View/Elements/edit_username.ctp:20
+msgid "Thank you for entering your username!"
+msgstr ""
+
+#: View/Elements/edit_username.ctp:30
+msgid "Not now!"
+msgstr ""
+
+#: View/Elements/edit_username.ctp:44
+msgid "Close"
+msgstr ""
+
+#: View/Elements/library_rows.ctp:73
+msgid "add description"
+msgstr ""
+
+#: View/Elements/menu.ctp:32 View/Elements/menu_extended.ctp:32
+msgid "Homepage"
+msgstr ""
+
+#: View/Elements/menu.ctp:43 View/Elements/menu_extended.ctp:48;56
+#: View/OrderLines/find.ctp:26
+msgid "Library"
+msgstr ""
+
+#: View/Elements/menu.ctp:111 View/Elements/menu_extended.ctp:287
+msgid "Account"
+msgstr ""
+
+#: View/Elements/menu.ctp:120 View/Elements/menu_extended.ctp:96;296
+#: View/Users/dashboard.ctp:282
+msgid "Invitations"
+msgstr ""
+
+#: View/Elements/menu.ctp:129 View/Elements/menu_extended.ctp:105;305
+#: View/Users/dashboard.ctp:142;153
+msgid "Orders"
+msgstr ""
+
+#: View/Elements/menu.ctp:175 View/Elements/menu_extended.ctp:351
+#: View/Elements/library/library_notloggedin.ctp:51
+#: View/Pages/access_denied.ctp:38
+msgid "Email or username"
+msgstr ""
+
+#: View/Elements/menu_extended.ctp:69
+msgid "My photobooks"
+msgstr ""
+
+#: View/Elements/menu_extended.ctp:78
+msgid "Photobook from friends"
+msgstr ""
+
+#: View/Elements/menu_extended.ctp:87
+msgid "Other products"
+msgstr ""
+
+#: View/Elements/menu_extended.ctp:123;156
+#: View/Themed/Once/Elements/menu/top_menu.ctp:21
+msgid "Competitions"
+msgstr ""
+
+#: View/Elements/menu_extended.ctp:220
+msgid "Contact"
+msgstr ""
+
+#: View/Elements/search_form.ctp:10
+msgid "search"
+msgstr ""
+
+#: View/Elements/sidebar.ctp:14
+msgid "TagCloud"
+msgstr ""
+
+#: View/Elements/viewer_html5.ctp:93;94;95;97;98;99;100;103
+msgid "Click this to go to the first page (cover)"
+msgstr ""
+
+#: View/Elements/viewer_html5.ctp:93
+msgid "First page"
+msgstr ""
+
+#: View/Elements/viewer_html5.ctp:94
+msgid "Back"
+msgstr ""
+
+#: View/Elements/viewer_html5.ctp:95
+msgid "Next"
+msgstr ""
+
+#: View/Elements/viewer_html5.ctp:97
+msgid "Last page"
+msgstr ""
+
+#: View/Elements/viewer_html5.ctp:98
+msgid "Zoom in"
+msgstr ""
+
+#: View/Elements/viewer_html5.ctp:99
+msgid "Zoom out"
+msgstr ""
+
+#: View/Elements/viewer_html5.ctp:100
+msgid "Slideshow"
+msgstr ""
+
+#: View/Elements/viewer_html5.ctp:103
+msgid "Sound on/off"
+msgstr ""
+
+#: View/Elements/viewer_html5.ctp:105
+msgid "Show or hide the thumbnails of the pages in this book"
+msgstr ""
+
+#: View/Elements/viewer_html5.ctp:105
+msgid "Show thumbnails"
+msgstr ""
+
+#: View/Elements/library/library_notloggedin.ctp:34
+#: View/Pages/access_denied.ctp:16 View/Users/login.ctp:22
+#: View/Users/reset_password.ctp:22
+msgid "Sign In to"
+msgstr ""
+
+#: View/Elements/library/library_notloggedin.ctp:66
+#: View/Pages/access_denied.ctp:53 View/Users/login.ctp:54
+msgid "Forgot password?"
+msgstr ""
+
+#: View/Elements/library/library_notloggedin.ctp:68
+#: View/Pages/access_denied.ctp:55 View/Users/login.ctp:56
+msgid "Get a new one here!"
+msgstr ""
+
+#: View/Elements/library/library_notloggedin.ctp:76
+#: View/Pages/access_denied.ctp:63 View/Users/login.ctp:64
+#: View/Users/request_password_change.ctp:53 View/Users/reset_password.ctp:53
+msgid "Don't have account?"
+msgstr ""
+
+#: View/Elements/library/library_notloggedin.ctp:78
+#: View/Pages/access_denied.ctp:65 View/Users/add.ctp:59
+#: View/Users/login.ctp:66 View/Users/request_password_change.ctp:55
+#: View/Users/reset_password.ctp:55
+msgid "Register"
+msgstr ""
+
+#: View/Elements/library/library_notloggedin.ctp:92
+#: View/Elements/library/library_withoutbooks.ctp:35
+msgid "What is the"
+msgstr ""
+
+#: View/Elements/library/library_notloggedin.ctp:94
+#: View/Elements/library/library_withoutbooks.ctp:37
+msgid ""
+"Everyone should be able to save there photoalbums, share them and view them "
+"all over the world. Starting from today, thats possible."
+msgstr ""
+
+#: View/Elements/library/library_notloggedin.ctp:104
+#: View/Elements/library/library_withbooks.ctp:61
+#: View/Elements/library/library_withoutbooks.ctp:47
+msgid "Create a photo album at Fotoalbum"
+msgstr ""
+
+#: View/Elements/library/library_notloggedin.ctp:105
+#: View/Elements/library/library_withbooks.ctp:62
+#: View/Elements/library/library_withoutbooks.ctp:48
+msgid ""
+"Choose one of the beautiful formats, select paper type and cover and make a "
+"personal photo album with your memories"
+msgstr ""
+
+#: View/Elements/library/library_notloggedin.ctp:120
+#: View/Elements/library/library_withoutbooks.ctp:63
+msgid "View your photo album online"
+msgstr ""
+
+#: View/Elements/library/library_notloggedin.ctp:121
+#: View/Elements/library/library_withoutbooks.ctp:64
+msgid ""
+"After you order the album, you will receive an email with access to the "
+"Album Viewer. Here you can view your album online from anywhere!"
+msgstr ""
+
+#: View/Elements/library/library_notloggedin.ctp:136
+#: View/Elements/library/library_withoutbooks.ctp:79
+msgid "Share your photo album with others"
+msgstr ""
+
+#: View/Elements/library/library_notloggedin.ctp:137
+#: View/Elements/library/library_withoutbooks.ctp:80
+msgid ""
+"Now you can share the album with friends via email, facebook or other social "
+"media, on a website or anywhere you want!"
+msgstr ""
+
+#: View/Elements/library/library_withbooks.ctp:26
+msgid "Bibliotheek"
+msgstr ""
+
+#: View/Elements/library/library_withbooks.ctp:37
+#: View/Elements/library/library_withoutbooks.ctp:23
+msgid "Photoalbums"
+msgstr ""
+
+#: View/Elements/library/library_withbooks.ctp:49
+#: View/Elements/library/library_withoutbooks.ctp:27
+#: View/OrderLines/find.ctp:48 View/Pages/home.ctp:59;81
+msgid "No photoalbums available"
+msgstr ""
+
+#: View/Elements/library/library_withbooks.ctp:60
+msgid "You do not have any photo albums yet"
+msgstr ""
+
+#: View/Elements/library/library_withbooks.ctp:64
+msgid "Create a photo album now"
+msgstr ""
+
+#: View/Elements/library/library_withbooks.ctp:93
+msgid "Products from friends"
+msgstr ""
+
+#: View/Errors/error400.ctp:22 View/Errors/error500.ctp:22
+msgid "Error"
+msgstr ""
+
+#: View/Errors/error400.ctp:24
+msgid "The requested address %s was not found on this server."
+msgstr ""
+
+#: View/Errors/error500.ctp:23
+msgid "An Internal Error Has Occurred."
+msgstr ""
+
+#: View/Invitations/index.ctp:14
+msgid "Sent invitations"
+msgstr ""
+
+#: View/Invitations/index.ctp:23
+msgid "You have no sent invitations"
+msgstr ""
+
+#: View/Invitations/index.ctp:33;135 View/Users/dashboard.ctp:298;378
+#: Plugin/Survey/View/Surveys/add.ctp:32
+#: Plugin/Survey/View/Surveys/edit.ctp:32
+msgid "Title"
+msgstr ""
+
+#: View/Invitations/index.ctp:34 View/Users/dashboard.ctp:299
+msgid "Receiver"
+msgstr ""
+
+#: View/Invitations/index.ctp:35;137 View/Users/dashboard.ctp:300
+msgid "Send on"
+msgstr ""
+
+#: View/Invitations/index.ctp:36;100;138;196 View/Users/dashboard.ctp:301
+msgid "Cancel"
+msgstr ""
+
+#: View/Invitations/index.ctp:88
+msgid "Shared by email"
+msgstr ""
+
+#: View/Invitations/index.ctp:92;188 View/Users/dashboard.ctp:334;413
+msgid "Shared on"
+msgstr ""
+
+#: View/Invitations/index.ctp:118
+msgid "Received invitations"
+msgstr ""
+
+#: View/Invitations/index.ctp:125
+msgid "You have no received invitations."
+msgstr ""
+
+#: View/Invitations/index.ctp:136
+msgid "Send by"
+msgstr ""
+
+#: View/Layouts/default.ctp:89;96;105;179
+#: Plugin/Contactform/View/Contactform/show.ctp:89
+msgid "Fotoalbum.nl"
+msgstr ""
+
+#: View/Layouts/default.ctp:136
+msgid "Klantenservice Fotoalbum.nl"
+msgstr ""
+
+#: View/OrderLines/delete.ctp:10
+msgid "Are you sure you want to permanently delete this photo album"
+msgstr ""
+
+#: View/OrderLines/delete.ctp:14
+msgid "Yes, I want to delete this photo album"
+msgstr ""
+
+#: View/OrderLines/delete.ctp:18
+msgid "Note: You can not undo this action!"
+msgstr ""
+
+#: View/OrderLines/find.ctp:35
+msgid "Search results"
+msgstr ""
+
+#: View/OrderLines/find.ctp:39
+msgid "Public library"
+msgstr ""
+
+#: View/OrderLines/view.ctp:58;497;676 View/Users/dashboard.ctp:83
+msgid "edit"
+msgstr ""
+
+#: View/OrderLines/view.ctp:65
+msgid "Edit the title"
+msgstr ""
+
+#: View/OrderLines/view.ctp:113
+msgid "Competition"
+msgstr ""
+
+#: View/OrderLines/view.ctp:115
+#: Plugin/Comments/View/Comments/admin_index.ctp:12
+#: Plugin/Comments/View/Comments/index.ctp:13
+#: Plugin/Comments/View/Elements/comments/flat/main.ctp:25
+#: Plugin/Comments/View/Elements/comments/threaded/main.ctp:19
+#: Plugin/Comments/View/Elements/comments/tree/main.ctp:14
+#: View/Elements/comments/flat/main.ctp:25
+#: View/Elements/comments/threaded/main.ctp:19
+#: View/Elements/comments/tree/main.ctp:14
+msgid "Comments"
+msgstr ""
+
+#: View/OrderLines/view.ctp:128
+msgid "Remove this album from the albumviewer"
+msgstr ""
+
+#: View/OrderLines/view.ctp:176
+msgid "edit description"
+msgstr ""
+
+#: View/OrderLines/view.ctp:183
+msgid "Edit the description"
+msgstr ""
+
+#: View/OrderLines/view.ctp:200
+msgid "Enter description"
+msgstr ""
+
+#: View/OrderLines/view.ctp:230
+msgid "Sharing your photoalbum"
+msgstr ""
+
+#: View/OrderLines/view.ctp:235
+msgid "By mail"
+msgstr ""
+
+#: View/OrderLines/view.ctp:236
+msgid "Social media"
+msgstr ""
+
+#: View/OrderLines/view.ctp:237
+msgid "On a website"
+msgstr ""
+
+#: View/OrderLines/view.ctp:241
+msgid ""
+"Invite friends to view your photo album by sending them an e-mail. Only "
+"people you invite by email can view your photo album."
+msgstr ""
+
+#: View/OrderLines/view.ctp:245;315;392
+msgid ""
+"At the moment your album is private. Change the settings to make sharing "
+"possible."
+msgstr ""
+
+#: View/OrderLines/view.ctp:259;288;329;406;568;699
+msgid "Privacy settings saved!"
+msgstr ""
+
+#: View/OrderLines/view.ctp:263;333;410
+msgid "Allow sharing"
+msgstr ""
+
+#: View/OrderLines/view.ctp:276
+msgid "Use this form to send the invitation"
+msgstr ""
+
+#: View/OrderLines/view.ctp:288
+msgid "The messages are send!"
+msgstr ""
+
+#: View/OrderLines/view.ctp:291
+msgid "Emailaddresses"
+msgstr ""
+
+#: View/OrderLines/view.ctp:291
+msgid "Enter mailaddresses (Comma seperated!)"
+msgstr ""
+
+#: View/OrderLines/view.ctp:292
+msgid "Your message"
+msgstr ""
+
+#: View/OrderLines/view.ctp:292
+msgid "Enter a message"
+msgstr ""
+
+#: View/OrderLines/view.ctp:296
+#: Plugin/Comments/View/Elements/comments/threaded/form.ctp:65;67
+#: View/Elements/comments/threaded/form.ctp:65;67
+msgid "Send"
+msgstr ""
+
+#: View/OrderLines/view.ctp:310
+msgid ""
+"Share your photo album on Social media or by sending a link. People with "
+"this link can view your photo album."
+msgstr ""
+
+#: View/OrderLines/view.ctp:349
+msgid "Use this link to share your photoalbum on social media"
+msgstr ""
+
+#: View/OrderLines/view.ctp:354;428
+msgid "Selecteer"
+msgstr ""
+
+#: View/OrderLines/view.ctp:359
+msgid "or share direct by social media"
+msgstr ""
+
+#: View/OrderLines/view.ctp:361;585
+msgid "Tweet this"
+msgstr ""
+
+#: View/OrderLines/view.ctp:362;586
+msgid "Share on Facebook"
+msgstr ""
+
+#: View/OrderLines/view.ctp:363;587
+msgid "Place on linkedIn"
+msgstr ""
+
+#: View/OrderLines/view.ctp:364;588
+msgid "Pin on Pinterest"
+msgstr ""
+
+#: View/OrderLines/view.ctp:365;589
+msgid "Share on Google+"
+msgstr ""
+
+#: View/OrderLines/view.ctp:387
+msgid ""
+"Share your photo album on a website or blog. Use the link or code below to "
+"integrate the viewer into your own website(s)."
+msgstr ""
+
+#: View/OrderLines/view.ctp:423
+msgid "Use the link below to integrate your photoalbum on a website or blog"
+msgstr ""
+
+#: View/OrderLines/view.ctp:431
+msgid "Use the HTML below, to embed the viewer into your website:"
+msgstr ""
+
+#: View/OrderLines/view.ctp:433
+msgid "Select"
+msgstr ""
+
+#: View/OrderLines/view.ctp:491 Plugin/Tags/View/Tags/admin_add.ctp:24
+#: Plugin/Tags/View/Tags/admin_edit.ctp:28
+#: Plugin/Tags/View/Tags/admin_index.ctp:13
+#: Plugin/Tags/View/Tags/admin_view.ctp:56 Plugin/Tags/View/Tags/index.ctp:13
+#: Plugin/Tags/View/Tags/view.ctp:54
+msgid "Tags"
+msgstr ""
+
+#: View/OrderLines/view.ctp:504
+msgid "Edit the tags"
+msgstr ""
+
+#: View/OrderLines/view.ctp:522
+msgid "Tags saved!"
+msgstr ""
+
+#: View/OrderLines/view.ctp:523
+msgid "Enter tags"
+msgstr ""
+
+#: View/OrderLines/view.ctp:553
+msgid "Share"
+msgstr ""
+
+#: View/OrderLines/view.ctp:571
+msgid "This album is private.<br/>Click here to allow sharing"
+msgstr ""
+
+#: View/OrderLines/view.ctp:600
+msgid "Rating"
+msgstr ""
+
+#: View/OrderLines/view.ctp:648
+msgid "Only visible for you."
+msgstr ""
+
+#: View/OrderLines/view.ctp:655
+msgid "Only visible for people you invite or when shared"
+msgstr ""
+
+#: View/OrderLines/view.ctp:661
+msgid "Visible for everyone and enabled for competitions"
+msgstr ""
+
+#: View/OrderLines/view.ctp:668;669
+msgid "Privacy settings"
+msgstr ""
+
+#: View/OrderLines/view.ctp:683
+msgid "Edit the privacy settings"
+msgstr ""
+
+#: View/OrderLines/view.ctp:706
+msgid "Enter privacy"
+msgstr ""
+
+#: View/OrderLines/view.ctp:727
+msgid "The privacy setting is set to "
+msgstr ""
+
+#: View/Pages/access_denied.ctp:77
+msgid "Access denied"
+msgstr ""
+
+#: View/Pages/access_denied.ctp:83
+msgid ""
+"if you believe this is incorrect, please contact us thru the contactform"
+msgstr ""
+
+#: View/Pages/home.ctp:43
+msgid "Most recent albums"
+msgstr ""
+
+#: View/Pages/home.ctp:47
+msgid "show all"
+msgstr ""
+
+#: View/Pages/home.ctp:75
+msgid "Albumviewer selection"
+msgstr ""
+
+#: View/Pages/home.ctp:102
+msgid "Competition entries"
+msgstr ""
+
+#: View/Users/add.ctp:21
+msgid "Register with"
+msgstr ""
+
+#: View/Users/add.ctp:37
+msgid "Enter your name here"
+msgstr ""
+
+#: View/Users/add.ctp:41
+msgid "Email (used as login)"
+msgstr ""
+
+#: View/Users/add.ctp:50 View/Users/change_password.ctp:48
+msgid "Please, again type your password here!"
+msgstr ""
+
+#: View/Users/add.ctp:56
+msgid "I have read and agreed to the %s"
+msgstr ""
+
+#: View/Users/add.ctp:72
+msgid "Already have account with us?"
+msgstr ""
+
+#: View/Users/change_password.ctp:21
+msgid "Change your password for"
+msgstr ""
+
+#: View/Users/change_password.ctp:37
+msgid "Please, type your current password here!"
+msgstr ""
+
+#: View/Users/change_password.ctp:43
+msgid "Please, type your new password here!"
+msgstr ""
+
+#: View/Users/change_password.ctp:53
+msgid "Change"
+msgstr ""
+
+#: View/Users/dashboard.ctp:76 View/Users/edit.ctp:124
+#: Plugin/Contactform/View/Contactform/show.ctp:84
+msgid "Address"
+msgstr ""
+
+#: View/Users/dashboard.ctp:155
+msgid "Here you will find you previous orders"
+msgstr ""
+
+#: View/Users/dashboard.ctp:161
+msgid "Ordernumber"
+msgstr ""
+
+#: View/Users/dashboard.ctp:162
+msgid "Quantity"
+msgstr ""
+
+#: View/Users/dashboard.ctp:163
+msgid "Product"
+msgstr ""
+
+#: View/Users/dashboard.ctp:164
+msgid "Orderdate"
+msgstr ""
+
+#: View/Users/dashboard.ctp:165
+msgid "Price"
+msgstr ""
+
+#: View/Users/dashboard.ctp:166
+msgid "Shipping"
+msgstr ""
+
+#: View/Users/dashboard.ctp:167
+msgid "Discount"
+msgstr ""
+
+#: View/Users/dashboard.ctp:168
+msgid "Total"
+msgstr ""
+
+#: View/Users/dashboard.ctp:235
+msgid "You don't have any orders yet!"
+msgstr ""
+
+#: View/Users/dashboard.ctp:252
+msgid "Your public books"
+msgstr ""
+
+#: View/Users/dashboard.ctp:266
+msgid "You don not have any public albums yet!"
+msgstr ""
+
+#: View/Users/dashboard.ctp:287
+msgid "sent_invitations"
+msgstr ""
+
+#: View/Users/dashboard.ctp:294
+msgid "Here you will find you previous invitations"
+msgstr ""
+
+#: View/Users/dashboard.ctp:297;377
+msgid "Thumb"
+msgstr ""
+
+#: View/Users/dashboard.ctp:330
+msgid "Shared by"
+msgstr ""
+
+#: View/Users/dashboard.ctp:339;418
+msgid "at"
+msgstr ""
+
+#: View/Users/dashboard.ctp:342
+msgid "Annuleer"
+msgstr ""
+
+#: View/Users/dashboard.ctp:355;431
+msgid "You don't have any invitations yet!"
+msgstr ""
+
+#: View/Users/dashboard.ctp:365
+msgid "received_invitations"
+msgstr ""
+
+#: View/Users/dashboard.ctp:373
+msgid "Here you will find your received invitations"
+msgstr ""
+
+#: View/Users/dashboard.ctp:379
+msgid "Sender"
+msgstr ""
+
+#: View/Users/dashboard.ctp:380
+msgid "Sent on"
+msgstr ""
+
+#: View/Users/edit.ctp:36
+msgid "Edit your profile"
+msgstr ""
+
+#: View/Users/edit.ctp:59
+msgid "First name"
+msgstr ""
+
+#: View/Users/edit.ctp:60
+msgid "Last name"
+msgstr ""
+
+#: View/Users/edit.ctp:61
+msgid "Language"
+msgstr ""
+
+#: View/Users/edit.ctp:62
+msgid "Biography"
+msgstr ""
+
+#: View/Users/edit.ctp:74
+msgid "Birthday"
+msgstr ""
+
+#: View/Users/edit.ctp:133
+msgid "Street"
+msgstr ""
+
+#: View/Users/edit.ctp:134
+msgid "Zipcode"
+msgstr ""
+
+#: View/Users/edit.ctp:135
+msgid "City"
+msgstr ""
+
+#: View/Users/edit.ctp:136
+msgid "Country"
+msgstr ""
+
+#: View/Users/edit.ctp:158
+msgid "Social"
+msgstr ""
+
+#: View/Users/edit.ctp:167
+msgid "Facebook"
+msgstr ""
+
+#: View/Users/edit.ctp:168
+msgid "Twitter"
+msgstr ""
+
+#: View/Users/edit.ctp:169
+msgid "LinkedIn"
+msgstr ""
+
+#: View/Users/edit.ctp:170
+msgid "Google+"
+msgstr ""
+
+#: View/Users/edit.ctp:171
+msgid "Pinterest+"
+msgstr ""
+
+#: View/Users/login.ctp:39
+msgid "Email or Username"
+msgstr ""
+
+#: View/Users/request_password_change.ctp:15 View/Users/reset_password.ctp:15
+msgid "Goto your dashboard"
+msgstr ""
+
+#: View/Users/request_password_change.ctp:22
+msgid "Forgot your"
+msgstr ""
+
+#: View/Users/request_password_change.ctp:22
+msgid "password"
+msgstr ""
+
+#: View/Users/request_password_change.ctp:42
+msgid "Send a new password"
+msgstr ""
+
+#: View/Users/reset_password.ctp:38
+msgid "New password"
+msgstr ""
+
+#: View/Users/reset_password.ctp:39
+msgid "Confrm password"
+msgstr ""
+
+#: View/Users/view.ctp:115
+msgid "Public books"
+msgstr ""
+
+#: View/Users/view.ctp:129
+msgid "You don't have any public albums yet!"
+msgstr ""
+
+#: Plugin/Comments/Controller/CommentsController.php:141;158
+msgid "Wrong comment id"
+msgstr ""
+
+#: Plugin/Comments/Controller/CommentsController.php:143
+msgid "Antispam system informed about spam message."
+msgstr ""
+
+#: Plugin/Comments/Controller/CommentsController.php:145;162
+msgid "Error appear during save."
+msgstr ""
+
+#: Plugin/Comments/Controller/CommentsController.php:160
+msgid "Antispam system informed about ham message."
+msgstr ""
+
+#: Plugin/Comments/Controller/CommentsController.php:176;208
+msgid "Invalid Comment."
+msgstr ""
+
+#: Plugin/Comments/Controller/CommentsController.php:190
+msgid "Invalid id for Comment"
+msgstr ""
+
+#: Plugin/Comments/Controller/CommentsController.php:192
+msgid "Comment deleted"
+msgstr ""
+
+#: Plugin/Comments/Controller/CommentsController.php:194
+msgid "Impossible to delete the Comment. Please try again."
+msgstr ""
+
+#: Plugin/Comments/Controller/Component/CommentsComponent.php:478
+msgid "The Comment has been saved."
+msgstr ""
+
+#: Plugin/Comments/Controller/Component/CommentsComponent.php:489
+msgid "The Comment could not be saved. Please, try again."
+msgstr ""
+
+#: Plugin/Comments/Controller/Component/CommentsComponent.php:535
+msgid "Nonrestricted operation"
+msgstr ""
+
+#: Plugin/Comments/Controller/Component/CommentsComponent.php:538
+msgid "The Comment status has been updated."
+msgstr ""
+
+#: Plugin/Comments/Controller/Component/CommentsComponent.php:540
+msgid "Error appear during comment status update. Try later."
+msgstr ""
+
+#: Plugin/Comments/Controller/Component/CommentsComponent.php:553
+msgid "The Comment has been deleted."
+msgstr ""
+
+#: Plugin/Comments/Controller/Component/CommentsComponent.php:555
+msgid "Error appear during comment deleting. Try later."
+msgstr ""
+
+#: Plugin/Comments/Model/Comment.php:113;154
+msgid "Some errors appear during execution."
+msgstr ""
+
+#: Plugin/Comments/Model/Comment.php:117
+msgid "Comments removed."
+msgstr ""
+
+#: Plugin/Comments/Model/Comment.php:159
+msgid "Operation was performed. "
+msgstr ""
+
+#: Plugin/Comments/Model/Behavior/CommentableBehavior.php:160
+msgid "Unallowed comment id"
+msgstr ""
+
+#: Plugin/Comments/View/Comments/add.ctp:15
+#: Plugin/Comments/View/Comments/admin_add.ctp:15
+msgid "Add Comment"
+msgstr ""
+
+#: Plugin/Comments/View/Comments/add.ctp:29;30
+#: Plugin/Comments/View/Comments/admin_add.ctp:29;30
+#: Plugin/Comments/View/Comments/admin_edit.ctp:31;32
+#: Plugin/Comments/View/Comments/admin_view.ctp:66;68
+#: Plugin/Comments/View/Comments/edit.ctp:31;32
+#: Plugin/Comments/View/Comments/index.ctp:86
+#: Plugin/Comments/View/Comments/view.ctp:66;68
+msgid "List Comments"
+msgstr ""
+
+#: Plugin/Comments/View/Comments/add.ctp:31
+#: Plugin/Comments/View/Comments/admin_add.ctp:31
+#: Plugin/Comments/View/Comments/admin_edit.ctp:33
+#: Plugin/Comments/View/Comments/admin_view.ctp:69
+#: Plugin/Comments/View/Comments/edit.ctp:33
+#: Plugin/Comments/View/Comments/index.ctp:87
+#: Plugin/Comments/View/Comments/view.ctp:69
+msgid "New Parent Comment"
+msgstr ""
+
+#: Plugin/Comments/View/Comments/admin_edit.ctp:15
+#: Plugin/Comments/View/Comments/admin_view.ctp:64
+#: Plugin/Comments/View/Comments/edit.ctp:15
+#: Plugin/Comments/View/Comments/view.ctp:64
+msgid "Edit Comment"
+msgstr ""
+
+#: Plugin/Comments/View/Comments/admin_index.ctp:21
+msgid "Filter spam comments"
+msgstr ""
+
+#: Plugin/Comments/View/Comments/admin_index.ctp:22
+msgid "Filter good comments"
+msgstr ""
+
+#: Plugin/Comments/View/Comments/admin_index.ctp:29;95
+msgid "Mark as ham"
+msgstr ""
+
+#: Plugin/Comments/View/Comments/admin_index.ctp:30;94
+msgid "Mark as spam"
+msgstr ""
+
+#: Plugin/Comments/View/Comments/admin_index.ctp:32;93
+msgid "Approve"
+msgstr ""
+
+#: Plugin/Comments/View/Comments/admin_index.ctp:33
+msgid "Dispprove"
+msgstr ""
+
+#: Plugin/Comments/View/Comments/admin_index.ctp:46
+msgid "Select..."
+msgstr ""
+
+#: Plugin/Comments/View/Comments/admin_index.ctp:96
+msgid "Disapprove"
+msgstr ""
+
+#: Plugin/Comments/View/Comments/admin_view.ctp:13
+#: Plugin/Comments/View/Comments/view.ctp:13
+msgid "Comment"
+msgstr ""
+
+#: Plugin/Comments/View/Comments/admin_view.ctp:20
+#: Plugin/Comments/View/Comments/view.ctp:20
+msgid "Parent Comment"
+msgstr ""
+
+#: Plugin/Comments/View/Comments/admin_view.ctp:25
+#: Plugin/Comments/View/Comments/view.ctp:25
+msgid "Commented On"
+msgstr ""
+
+#: Plugin/Comments/View/Comments/admin_view.ctp:35;83
+#: Plugin/Comments/View/Comments/view.ctp:35;83
+msgid "Model"
+msgstr ""
+
+#: Plugin/Comments/View/Comments/admin_view.ctp:40;84
+#: Plugin/Comments/View/Comments/view.ctp:40;84
+#: Plugin/Comments/View/Elements/comments/finder.ctp:19;24
+#: View/Elements/comments/finder.ctp:19;24
+msgid "Approved"
+msgstr ""
+
+#: Plugin/Comments/View/Comments/admin_view.ctp:45;85
+#: Plugin/Comments/View/Comments/view.ctp:45;85
+msgid "Body"
+msgstr ""
+
+#: Plugin/Comments/View/Comments/admin_view.ctp:65
+#: Plugin/Comments/View/Comments/view.ctp:65
+msgid "Delete Comment"
+msgstr ""
+
+#: Plugin/Comments/View/Comments/admin_view.ctp:67
+#: Plugin/Comments/View/Comments/index.ctp:85
+#: Plugin/Comments/View/Comments/view.ctp:67
+msgid "New Comment"
+msgstr ""
+
+#: Plugin/Comments/View/Comments/admin_view.ctp:75
+#: Plugin/Comments/View/Comments/view.ctp:75
+msgid "Related Comments"
+msgstr ""
+
+#: Plugin/Comments/View/Comments/admin_view.ctp:80
+#: Plugin/Comments/View/Comments/view.ctp:80
+msgid "Comment Id"
+msgstr ""
+
+#: Plugin/Comments/View/Comments/admin_view.ctp:81
+#: Plugin/Comments/View/Comments/view.ctp:81
+msgid "Foreign Key"
+msgstr ""
+
+#: Plugin/Comments/View/Comments/admin_view.ctp:82
+#: Plugin/Comments/View/Comments/view.ctp:82
+msgid "User Id"
+msgstr ""
+
+#: Plugin/Comments/View/Comments/admin_view.ctp:120
+#: Plugin/Comments/View/Comments/view.ctp:120
+msgid "New Child Comment"
+msgstr ""
+
+#: Plugin/Comments/View/Comments/index.ctp:79
+#: Plugin/Survey/View/Surveys/index.ctp:53
+#: Plugin/Users/View/Elements/pagination.ctp:14 View/Elements/pagination.ctp:4
+#: View/OrderLines/index.ctp:69 View/Themed/Once/Elements/pagination.ctp:4
+#: Plugin/Tags/View/Tags/admin_index.ctp:71 Plugin/Tags/View/Tags/index.ctp:69
+msgid "previous"
+msgstr ""
+
+#: Plugin/Comments/View/Comments/index.ctp:81
+#: Plugin/Survey/View/Surveys/index.ctp:55
+#: Plugin/Users/View/Elements/pagination.ctp:16 View/Elements/pagination.ctp:6
+#: View/OrderLines/index.ctp:71 View/Themed/Once/Elements/pagination.ctp:6
+#: Plugin/Tags/View/Tags/admin_index.ctp:73 Plugin/Tags/View/Tags/index.ctp:71
+msgid "next"
+msgstr ""
+
+#: Plugin/Comments/View/Elements/comments/finder.ctp:12
+#: View/Elements/comments/finder.ctp:12
+msgid "Filter comments"
+msgstr ""
+
+#: Plugin/Comments/View/Elements/comments/finder.ctp:21;31
+#: View/Elements/comments/finder.ctp:21;31
+msgid "...select..."
+msgstr ""
+
+#: Plugin/Comments/View/Elements/comments/finder.ctp:23
+#: View/Elements/comments/finder.ctp:23
+msgid "Not Approved"
+msgstr ""
+
+#: Plugin/Comments/View/Elements/comments/finder.ctp:29
+#: View/Elements/comments/finder.ctp:29
+msgid "spam state"
+msgstr ""
+
+#: Plugin/Comments/View/Elements/comments/finder.ctp:33
+#: View/Elements/comments/finder.ctp:33
+msgid "Clean"
+msgstr ""
+
+#: Plugin/Comments/View/Elements/comments/finder.ctp:34
+#: View/Elements/comments/finder.ctp:34
+msgid "Ham"
+msgstr ""
+
+#: Plugin/Comments/View/Elements/comments/finder.ctp:35
+#: View/Elements/comments/finder.ctp:35
+msgid "Manual Spam"
+msgstr ""
+
+#: Plugin/Comments/View/Elements/comments/finder.ctp:36
+#: View/Elements/comments/finder.ctp:36
+msgid "Spam"
+msgstr ""
+
+#: Plugin/Comments/View/Elements/comments/flat/form.ctp:29
+#: Plugin/Comments/View/Elements/comments/threaded/form.ctp:51
+#: Plugin/Comments/View/Elements/comments/tree/form.ctp:29
+#: View/Elements/comments/flat/form.ctp:29
+#: View/Elements/comments/threaded/form.ctp:51
+#: View/Elements/comments/tree/form.ctp:29
+msgid "You can use only headings from %s to %s"
+msgstr ""
+
+#: Plugin/Comments/View/Elements/comments/flat/item.ctp:18
+#: Plugin/Comments/View/Elements/comments/threaded/item.ctp:18
+#: Plugin/Comments/View/Elements/comments/tree/item.ctp:18
+#: View/Elements/comments/flat/item.ctp:18
+#: View/Elements/comments/threaded/item.ctp:18
+#: View/Elements/comments/tree/item.ctp:18
+msgid "Reply"
+msgstr ""
+
+#: Plugin/Comments/View/Elements/comments/flat/item.ctp:19
+#: Plugin/Comments/View/Elements/comments/threaded/item.ctp:19
+#: Plugin/Comments/View/Elements/comments/tree/item.ctp:19
+#: View/Elements/comments/flat/item.ctp:19
+#: View/Elements/comments/threaded/item.ctp:19
+#: View/Elements/comments/tree/item.ctp:19
+msgid "Quote"
+msgstr ""
+
+#: Plugin/Comments/View/Elements/comments/flat/item.ctp:22
+#: Plugin/Comments/View/Elements/comments/threaded/item.ctp:22
+#: Plugin/Comments/View/Elements/comments/tree/item.ctp:22
+#: View/Elements/comments/flat/item.ctp:22
+#: View/Elements/comments/threaded/item.ctp:22
+#: View/Elements/comments/tree/item.ctp:22
+msgid "Publish"
+msgstr ""
+
+#: Plugin/Comments/View/Elements/comments/flat/item.ctp:24
+#: Plugin/Comments/View/Elements/comments/threaded/item.ctp:24
+#: Plugin/Comments/View/Elements/comments/tree/item.ctp:24
+#: View/Elements/comments/flat/item.ctp:24
+#: View/Elements/comments/threaded/item.ctp:24
+#: View/Elements/comments/tree/item.ctp:24
+msgid "Unpublish"
+msgstr ""
+
+#: Plugin/Comments/View/Elements/comments/flat/item.ctp:37
+#: Plugin/Comments/View/Elements/comments/tree/item.ctp:36
+#: View/Elements/comments/flat/item.ctp:37
+#: View/Elements/comments/tree/item.ctp:36
+msgid "posted"
+msgstr ""
+
+#: Plugin/Comments/View/Elements/comments/flat/main.ctp:16
+#: Plugin/Comments/View/Elements/comments/tree/main.ctp:18
+#: View/Elements/comments/flat/main.ctp:16
+#: View/Elements/comments/tree/main.ctp:18
+msgid "Add New Comment"
+msgstr ""
+
+#: Plugin/Comments/View/Elements/comments/flat/main.ctp:21
+#: Plugin/Comments/View/Elements/comments/tree/main.ctp:23
+#: View/Elements/comments/flat/main.ctp:21
+#: View/Elements/comments/tree/main.ctp:23
+msgid "Add comment"
+msgstr ""
+
+#: Plugin/Comments/View/Elements/comments/flat/main.ctp:27
+#: Plugin/Comments/View/Elements/comments/threaded/main.ctp:55
+#: Plugin/Comments/View/Elements/comments/tree/main.ctp:28
+#: View/Elements/comments/flat/main.ctp:27
+#: View/Elements/comments/threaded/main.ctp:55
+#: View/Elements/comments/tree/main.ctp:28
+msgid "If you want to post comments, you need to login first."
+msgstr ""
+
+#: Plugin/Comments/View/Elements/comments/flat/main.ctp:27
+#: Plugin/Comments/View/Elements/comments/threaded/main.ctp:55
+#: View/Elements/comments/flat/main.ctp:27
+#: View/Elements/comments/threaded/main.ctp:55
+msgid "login"
+msgstr ""
+
+#: Plugin/Comments/View/Elements/comments/flat/paginator.ctp:25
+#: Plugin/Comments/View/Elements/comments/tree/paginator.ctp:25
+#: View/Elements/comments/flat/paginator.ctp:25
+#: View/Elements/comments/tree/paginator.ctp:25
+msgid "Most Recent"
+msgstr ""
+
+#: Plugin/Comments/View/Elements/comments/flat/paginator.ctp:27
+#: Plugin/Comments/View/Elements/comments/tree/paginator.ctp:27
+#: View/Elements/comments/flat/paginator.ctp:27
+#: View/Elements/comments/tree/paginator.ctp:27
+msgid "Oldest"
+msgstr ""
+
+#: Plugin/Comments/View/Elements/comments/threaded/item.ctp:43
+#: View/Elements/comments/threaded/item.ctp:43
+msgid "commented"
+msgstr ""
+
+#: Plugin/Comments/View/Elements/comments/threaded/main.ctp:39
+#: View/Elements/comments/threaded/main.ctp:39
+msgid "Post/Reply"
+msgstr ""
+
+#: Plugin/Comments/View/Comments/admin_index.ctp:63
+msgid "Hide"
+msgstr ""
+
+#: Plugin/Comments/View/Elements/comments/threaded/form.ctp:59
+#: View/Elements/comments/threaded/form.ctp:59
+msgid "Post comment"
+msgstr ""
+
+#: Plugin/Comments/View/Elements/comments/tree/main.ctp:28
+#: View/Elements/comments/tree/main.ctp:28
+msgid "comments"
+msgstr ""
+
+#: Plugin/Survey/Controller/SurveyResponsesController.php:65
+msgid "Hey Dude! You had already submitted this survey."
+msgstr ""
+
+#: Plugin/Survey/Controller/SurveyResponsesController.php:71
+#: Plugin/Survey/Controller/SurveysController.php:180;249
+msgid ""
+"Oops...something went wrong when trying to save your survey responses. Take "
+"a look at the errors below and try again."
+msgstr ""
+
+#: Plugin/Survey/Controller/SurveyResponsesController.php:120
+msgid "New Survey Response"
+msgstr ""
+
+#: Plugin/Survey/Controller/SurveyResponsesController.php:152
+msgid "Please enter the correct answer to the math question."
+msgstr ""
+
+#: Plugin/Survey/Controller/SurveyResponsesController.php:198
+#: Plugin/Survey/View/SurveyResponses/index.ctp:70;80
+#: Plugin/Survey/View/SurveyResponses/view.ctp:40;59
+msgid "Undefined %s"
+msgstr ""
+
+#: Plugin/Survey/Controller/SurveyResponsesController.php:236
+msgid "Response deleted"
+msgstr ""
+
+#: Plugin/Survey/Controller/SurveyResponsesController.php:239
+#: Plugin/Survey/Controller/SurveysController.php:285
+msgid "Oops...something went wrong when trying to delete responses."
+msgstr ""
+
+#: Plugin/Survey/Controller/SurveyResponsesController.php:280
+msgid "(No Response)"
+msgstr ""
+
+#: Plugin/Survey/Controller/SurveyResponsesController.php:290;298
+#: Plugin/Survey/Vendor/formbuilder.php:362;488;509;526;566;600;634;721;770;808
+#: Plugin/Survey/View/SurveyResponses/index.ctp:107
+msgid "Undefined"
+msgstr ""
+
+#: Plugin/Survey/Controller/SurveysController.php:90
+#: Plugin/Survey/View/Surveys/add.ctp:30
+#: Plugin/Survey/View/Surveys/edit.ctp:30
+msgid "Untitled"
+msgstr ""
+
+#: Plugin/Survey/Controller/SurveysController.php:281
+msgid "Survey deleted"
+msgstr ""
+
+#: Plugin/Survey/Model/SurveyResponse.php:55
+msgid "Response"
+msgstr ""
+
+#: Plugin/Survey/Vendor/formbuilder.php:398;665
+msgid "Undefined Checkbox"
+msgstr ""
+
+#: Plugin/Survey/Vendor/formbuilder.php:734
+msgid "Undefined Radio"
+msgstr ""
+
+#: Plugin/Survey/Vendor/formbuilder.php:800
+msgid "Please select one option"
+msgstr ""
+
+#: Plugin/Survey/View/Emails/html/notify_new_respose.ctp:13
+#: Plugin/Survey/View/SurveyResponses/index.ctp:14
+#: Plugin/Survey/View/SurveyResponses/view.ctp:15
+msgid "Response for \"%s\""
+msgstr ""
+
+#: Plugin/Survey/View/Emails/html/notify_new_respose.ctp:52
+#: Plugin/Survey/View/SurveyResponses/view.ctp:55
+msgid "(No Response was provided)"
+msgstr ""
+
+#: Plugin/Survey/View/SurveyResponses/index.ctp:3
+#: Plugin/Survey/View/SurveyResponses/view.ctp:3
+#: Plugin/Survey/View/Surveys/edit.ctp:3 View/Elements/menu/top_menu.ctp:23
+msgid "Manage Survey"
+msgstr ""
+
+#: Plugin/Survey/View/SurveyResponses/index.ctp:96
+msgid "Browse"
+msgstr ""
+
+#: Plugin/Survey/View/SurveyResponses/index.ctp:133
+msgid "No data found"
+msgstr ""
+
+#: Plugin/Survey/View/SurveyResponses/view.ctp:110
+msgid "ResponseList"
+msgstr ""
+
+#: Plugin/Survey/View/SurveyResponses/view.ctp:115
+msgid "Are you sure you want to delete ?"
+msgstr ""
+
+#: Plugin/Survey/View/SurveyResponses/view.ctp:126
+msgid "No contain found."
+msgstr ""
+
+#: Plugin/Survey/View/SurveyResponses/json/preview.ctp:26
+#: Plugin/Survey/View/SurveyResponses/json/thankyou.ctp:26
+#: Plugin/Survey/View/Surveys/thankyou.ctp:6
+#: Plugin/Survey/View/Surveys/json/thankyou.ctp:26
+msgid "Thanks for filling in our survey. Your opinion is important to us."
+msgstr ""
+
+#: Plugin/Survey/View/Surveys/add.ctp:3
+#: View/Themed/Once/Elements/menu/top_menu.ctp:23
+msgid "Manage Competitions"
+msgstr ""
+
+#: Plugin/Survey/View/Surveys/add.ctp:6
+#: View/Themed/Once/Elements/menu/top_menu.ctp:24
+msgid "New Competition"
+msgstr ""
+
+#: Plugin/Survey/View/Surveys/add.ctp:31
+#: Plugin/Survey/View/Surveys/edit.ctp:31
+msgid "Type"
+msgstr ""
+
+#: Plugin/Survey/View/Surveys/add.ctp:32
+#: Plugin/Survey/View/Surveys/edit.ctp:32
+msgid "Title above the intro text"
+msgstr ""
+
+#: Plugin/Survey/View/Surveys/add.ctp:33
+#: Plugin/Survey/View/Surveys/edit.ctp:33
+msgid "Intro"
+msgstr ""
+
+#: Plugin/Survey/View/Surveys/add.ctp:33
+#: Plugin/Survey/View/Surveys/edit.ctp:33
+msgid "Enter a introduction text here!"
+msgstr ""
+
+#: Plugin/Survey/View/Surveys/add.ctp:34
+#: Plugin/Survey/View/Surveys/edit.ctp:34
+msgid "T.O.S."
+msgstr ""
+
+#: Plugin/Survey/View/Surveys/add.ctp:34
+#: Plugin/Survey/View/Surveys/edit.ctp:34
+msgid "Enter the terms of service here!"
+msgstr ""
+
+#: Plugin/Survey/View/Surveys/add.ctp:35
+#: Plugin/Survey/View/Surveys/edit.ctp:35
+msgid "Header"
+msgstr ""
+
+#: Plugin/Survey/View/Surveys/add.ctp:53
+#: Plugin/Survey/View/Surveys/edit.ctp:53
+msgid "Button"
+msgstr ""
+
+#: Plugin/Survey/View/Surveys/add.ctp:73
+#: Plugin/Survey/View/Surveys/edit.ctp:73
+msgid "When completed"
+msgstr ""
+
+#: Plugin/Survey/View/Surveys/add.ctp:77
+#: Plugin/Survey/View/Surveys/edit.ctp:77
+msgid ""
+"When a contact completes the compitition they will be taken to the web page "
+"you type here. Alternatively you can show them a thank you message by "
+"selecting the option above instead."
+msgstr ""
+
+#: Plugin/Survey/View/Surveys/add.ctp:81
+#: Plugin/Survey/View/Surveys/edit.ctp:81
+msgid "Thanks for joining our competition"
+msgstr ""
+
+#: Plugin/Survey/View/Surveys/add.ctp:86
+#: Plugin/Survey/View/Surveys/edit.ctp:86
+msgid ""
+"When a contact completes the competition they will be taken to the web page "
+"you type here. Alternatively you can show them a thank you message by "
+"selecting the option above instead."
+msgstr ""
+
+#: Plugin/Survey/View/Surveys/add.ctp:90
+#: Plugin/Survey/View/Surveys/edit.ctp:90
+msgid "Be sure to include http://"
+msgstr ""
+
+#: Plugin/Survey/View/Surveys/add.ctp:96
+#: Plugin/Survey/View/Surveys/edit.ctp:96
+msgid "Email responses to me"
+msgstr ""
+
+#: Plugin/Survey/View/Surveys/add.ctp:101
+#: Plugin/Survey/View/Surveys/edit.ctp:101
+msgid "Show as public (make_public)."
+msgstr ""
+
+#: Plugin/Survey/View/Surveys/add.ctp:101
+#: Plugin/Survey/View/Surveys/edit.ctp:101
+msgid "Set the result albums as public and show them?"
+msgstr ""
+
+#: Plugin/Survey/View/Surveys/add.ctp:102
+#: Plugin/Survey/View/Surveys/edit.ctp:102
+msgid "Error Message"
+msgstr ""
+
+#: Plugin/Survey/View/Surveys/add.ctp:102
+#: Plugin/Survey/View/Surveys/edit.ctp:102
+msgid ""
+"If something goes wrong when trying to save a response your contacts will be "
+"shown this error message."
+msgstr ""
+
+#: Plugin/Survey/View/Surveys/add.ctp:103
+#: Plugin/Survey/View/Surveys/edit.ctp:103
+msgid "Submit Form Text"
+msgstr ""
+
+#: Plugin/Survey/View/Surveys/add.ctp:103
+#: Plugin/Survey/View/Surveys/edit.ctp:103
+msgid "This text will be shown on the button at the submit button."
+msgstr ""
+
+#: Plugin/Survey/View/Surveys/add.ctp:104
+#: Plugin/Survey/View/Surveys/edit.ctp:104
+msgid "Submit Form Class"
+msgstr ""
+
+#: Plugin/Survey/View/Surveys/add.ctp:104
+#: Plugin/Survey/View/Surveys/edit.ctp:104
+msgid "This is the class of the button at the bottom."
+msgstr ""
+
+#: Plugin/Survey/View/Surveys/add.ctp:105
+#: Plugin/Survey/View/Surveys/edit.ctp:105
+msgid "Break per questions"
+msgstr ""
+
+#: Plugin/Survey/View/Surveys/add.ctp:105
+#: Plugin/Survey/View/Surveys/edit.ctp:105
+msgid ""
+"This option is to break your form after number of questions you specified. "
+"For example, you entered 10 then your form will break and move to the next "
+"page after every 10 questions."
+msgstr ""
+
+#: Plugin/Survey/View/Surveys/index.ctp:11
+msgid "Responses"
+msgstr ""
+
+#: Plugin/Survey/View/Surveys/index.ctp:13
+msgid "Published"
+msgstr ""
+
+#: Plugin/Survey/View/Surveys/index.ctp:41
+msgid "Are you sure you want to delete #%s?"
+msgstr ""
+
+#: Plugin/Survey/View/Surveys/index.ctp:50 View/Elements/pagination.ctp:15
+#: View/OrderLines/index.ctp:64 View/Themed/Once/Elements/pagination.ctp:15
+msgid ""
+"Page {:page} of {:pages}, showing {:current} records out of {:count} total, "
+"starting on record {:start}, ending on {:end}"
+msgstr ""
+
+#: Plugin/Users/Controller/Component/RememberMeComponent.php:193
+msgid "users"
+msgstr ""
+
+#: View/Elements/menu/top_menu.ctp:21
+msgid "Survey"
+msgstr ""
+
+#: View/Elements/menu/top_menu.ctp:24
+msgid "New Survey"
+msgstr ""
+
+#: View/OrderLines/add.ctp:4
+msgid "Add Order Line"
+msgstr ""
+
+#: View/OrderLines/add.ctp:32 View/OrderLines/edit.ctp:34
+msgid "List Order Lines"
+msgstr ""
+
+#: View/OrderLines/add.ctp:33 View/OrderLines/edit.ctp:35
+#: View/OrderLines/index.ctp:79
+msgid "List Orders"
+msgstr ""
+
+#: View/OrderLines/add.ctp:34 View/OrderLines/edit.ctp:36
+#: View/OrderLines/index.ctp:80
+msgid "New Order"
+msgstr ""
+
+#: View/OrderLines/add.ctp:35 View/OrderLines/edit.ctp:37
+#: View/OrderLines/index.ctp:81
+msgid "List Products"
+msgstr ""
+
+#: View/OrderLines/add.ctp:36 View/OrderLines/edit.ctp:38
+#: View/OrderLines/index.ctp:82
+msgid "New Product"
+msgstr ""
+
+#: View/OrderLines/add.ctp:37 View/OrderLines/edit.ctp:39
+#: View/OrderLines/index.ctp:83
+msgid "List Order Line Items"
+msgstr ""
+
+#: View/OrderLines/add.ctp:38 View/OrderLines/edit.ctp:40
+#: View/OrderLines/index.ctp:84
+msgid "New Order Line Item"
+msgstr ""
+
+#: View/OrderLines/add.ctp:39 View/OrderLines/edit.ctp:41
+#: View/OrderLines/index.ctp:85
+msgid "List Tags"
+msgstr ""
+
+#: View/OrderLines/add.ctp:40 View/OrderLines/edit.ctp:42
+#: View/OrderLines/index.ctp:86
+msgid "New Tag"
+msgstr ""
+
+#: View/OrderLines/edit.ctp:4
+msgid "Edit Order Line"
+msgstr ""
+
+#: View/OrderLines/index.ctp:2
+msgid "Order Lines"
+msgstr ""
+
+#: View/OrderLines/index.ctp:78
+msgid "New Order Line"
+msgstr ""
+
+#: View/OrderLines/xml/hotspot.ctp:20
+msgid "Bestel dit fotoalbum"
+msgstr ""
+
+#: View/Users/edit.ctp:57
+msgid "You can not change you username."
+msgstr ""
+
+#: Plugin/Contactform/Controller/ContactformController.php:51
+msgid "contact form request"
+msgstr ""
+
+#: Plugin/Contactform/Controller/ContactformController.php:54
+msgid "contact form was submitted successfully"
+msgstr ""
+
+#: Plugin/Contactform/Controller/ContactformController.php:61
+msgid "contact form"
+msgstr ""
+
+#: Plugin/Contactform/View/Contactform/show.ctp:25
+msgid "Contact Form"
+msgstr ""
+
+#: Plugin/Contactform/View/Contactform/show.ctp:38
+#: Plugin/Contactform/View/Emails/html/contactform.ctp:4
+#: Plugin/Contactform/View/Emails/text/contactform.ctp:10
+msgid "name"
+msgstr ""
+
+#: Plugin/Contactform/View/Contactform/show.ctp:39
+#: Plugin/Contactform/View/Emails/html/contactform.ctp:9
+#: Plugin/Contactform/View/Emails/text/contactform.ctp:11
+msgid "email"
+msgstr ""
+
+#: Plugin/Contactform/View/Contactform/show.ctp:40
+#: Plugin/Contactform/View/Emails/html/contactform.ctp:14
+#: Plugin/Contactform/View/Emails/text/contactform.ctp:13
+msgid "message"
+msgstr ""
+
+#: Plugin/Contactform/View/Contactform/show.ctp:42
+msgid "spam protection"
+msgstr ""
+
+#: Plugin/Contactform/View/Contactform/show.ctp:48
+msgid "submit"
+msgstr ""
+
+#: Plugin/Contactform/View/Contactform/show.ctp:64
+msgid "Get in touch:"
+msgstr ""
+
+#: Plugin/Contactform/View/Contactform/show.ctp:91
+msgid "Keizersgracht 560-4"
+msgstr ""
+
+#: Plugin/Contactform/View/Contactform/show.ctp:92
+msgid "1017 EM"
+msgstr ""
+
+#: Plugin/Contactform/View/Contactform/show.ctp:92
+msgid "Amsterdam"
+msgstr ""
+
+#: Plugin/Contactform/View/Contactform/show.ctp:94
+msgid "P_afkorting_phone"
+msgstr ""
+
+#: Plugin/Contactform/View/Contactform/show.ctp:94
+msgid "020 - 320 49 84"
+msgstr ""
+
+#: Plugin/Contactform/View/Contactform/show.ctp:99
+msgid "Full Name"
+msgstr ""
+
+#: Plugin/Contactform/View/Contactform/show.ctp:101
+msgid "marketing@fotoalbum.nl"
+msgstr ""
+
+#: Plugin/Contactform/View/Emails/html/contactform.ctp:24
+#: Plugin/Contactform/View/Emails/text/contactform.ctp:16
+msgid "sent from"
+msgstr ""
+
+#: Plugin/Ratings/Controller/Component/RatingsComponent.php:141
+msgid "Your rate was successfull."
+msgstr ""
+
+#: Plugin/Ratings/Controller/Component/RatingsComponent.php:144
+msgid "You have already rated."
+msgstr ""
+
+#: Plugin/Ratings/Controller/Component/RatingsComponent.php:148
+msgid "Invalid rate."
+msgstr ""
+
+#: Plugin/Ratings/Model/Behavior/RatableBehavior.php:234;292;351
+msgid "Invalid rating mode %s."
+msgstr ""
+
+#: Plugin/Ratings/Model/Behavior/RatableBehavior.php:475
+msgid "Invalid Rating"
+msgstr ""
+
+#: Plugin/Ratings/Model/Behavior/RatableBehavior.php:481
+msgid "Invalid Record"
+msgstr ""
+
+#: Plugin/Ratings/Model/Behavior/RatableBehavior.php:487
+msgid "You can not vote on your own records"
+msgstr ""
+
+#: Plugin/Ratings/Model/Behavior/RatableBehavior.php:495
+msgid "You have already rated this record"
+msgstr ""
+
+#: Plugin/Ratings/View/Helper/RatingHelper.php:69;161
+msgid "You must set the id of the item you want to rate."
+msgstr ""
+
+#: Plugin/Ratings/View/Helper/RatingHelper.php:179;182
+msgid "Rate!"
+msgstr ""
+
+#: Plugin/Tags/Controller/TagsController.php:100
+msgid "The Tags has been saved."
+msgstr ""
+
+#: Plugin/Tags/Controller/TagsController.php:116
+msgid "Tag saved."
+msgstr ""
+
+#: Plugin/Tags/Controller/TagsController.php:139
+msgid "Tag deleted."
+msgstr ""
+
+#: Plugin/Tags/Controller/TagsController.php:141
+#: Plugin/Tags/Model/Tag.php:59;99
+msgid "Invalid Tag."
+msgstr ""
+
+#: Plugin/Tags/Model/Tagged.php:163
+msgid ""
+"Find tagged will not work with a recursive level of -1, you need at least 0."
+msgstr ""
+
+#: Plugin/Tags/View/Tags/admin_add.ctp:15
+msgid "Add %s"
+msgstr ""
+
+#: Plugin/Tags/View/Tags/admin_add.ctp:15
+#: Plugin/Tags/View/Tags/admin_edit.ctp:15
+#: Plugin/Tags/View/Tags/admin_index.ctp:77
+#: Plugin/Tags/View/Tags/admin_view.ctp:13;54;55;57
+#: Plugin/Tags/View/Tags/view.ctp:13
+msgid "Tag"
+msgstr ""
+
+#: Plugin/Tags/View/Tags/admin_add.ctp:24
+#: Plugin/Tags/View/Tags/admin_edit.ctp:28
+#: Plugin/Tags/View/Tags/admin_view.ctp:56 Plugin/Tags/View/Tags/view.ctp:54
+msgid "List %s"
+msgstr ""
+
+#: Plugin/Tags/View/Tags/admin_edit.ctp:15
+#: Plugin/Tags/View/Tags/admin_view.ctp:54
+msgid "Edit %s"
+msgstr ""
+
+#: Plugin/Tags/View/Tags/admin_index.ctp:77
+#: Plugin/Tags/View/Tags/admin_view.ctp:57
+msgid "New %s"
+msgstr ""
+
+#: Plugin/Tags/View/Tags/admin_view.ctp:20 Plugin/Tags/View/Tags/view.ctp:20
+msgid "Identifier"
+msgstr ""
+
+#: Plugin/Tags/View/Tags/admin_view.ctp:30 Plugin/Tags/View/Tags/view.ctp:30
+msgid "Keyname"
+msgstr ""
+
+#: Plugin/Tags/View/Tags/admin_view.ctp:35 Plugin/Tags/View/Tags/view.ctp:35
+msgid "Weight"
+msgstr ""
+
+#: Plugin/Tags/View/Tags/admin_view.ctp:55
+msgid "Delete %s"
+msgstr ""
+
+#: Cake/Utility/CakeTime.php:395
+msgid "Today, %s"
+msgstr ""
+
+#: Cake/Utility/CakeTime.php:398
+msgid "Yesterday, %s"
+msgstr ""
+
+#: Cake/Utility/CakeTime.php:401
+msgid "Tomorrow, %s"
+msgstr ""
+
+#: Cake/Utility/CakeTime.php:406
+msgid "Sunday"
+msgstr ""
+
+#: Cake/Utility/CakeTime.php:407
+msgid "Monday"
+msgstr ""
+
+#: Cake/Utility/CakeTime.php:408
+msgid "Tuesday"
+msgstr ""
+
+#: Cake/Utility/CakeTime.php:409
+msgid "Wednesday"
+msgstr ""
+
+#: Cake/Utility/CakeTime.php:410
+msgid "Thursday"
+msgstr ""
+
+#: Cake/Utility/CakeTime.php:411
+msgid "Friday"
+msgstr ""
+
+#: Cake/Utility/CakeTime.php:412
+msgid "Saturday"
+msgstr ""
+
+#: Cake/Utility/CakeTime.php:418
+msgid "On %s %s"
+msgstr ""
+
+#: Cake/Utility/CakeTime.php:811
+msgid "just now"
+msgstr ""
+
+#: Cake/Utility/CakeTime.php:815
+msgid "on %s"
+msgstr ""
+
+#: Cake/Utility/CakeTime.php:859
+msgid "%s ago"
+msgstr ""
+
+#: Cake/Utility/CakeTime.php:878;900
+msgid "days"
+msgstr ""
+
+#: Cake/Utility/CakeTime.php:155
+msgid "abday"
+msgstr ""
+
+#: Cake/Utility/CakeTime.php:161
+msgid "day"
+msgstr ""
+
+#: Cake/Utility/CakeTime.php:189
+msgid "abmon"
+msgstr ""
+
+#: Cake/Utility/CakeTime.php:195
+msgid "mon"
+msgstr ""
+
+#: Cake/Utility/CakeTime.php:837
+msgid "%d year"
+msgid_plural "%d years"
+msgstr[0] ""
+msgstr[1] ""
+
+#: Cake/Utility/CakeTime.php:840
+msgid "%d month"
+msgid_plural "%d months"
+msgstr[0] ""
+msgstr[1] ""
+
+#: Cake/Utility/CakeTime.php:843
+msgid "%d week"
+msgid_plural "%d weeks"
+msgstr[0] ""
+msgstr[1] ""
+
+#: Cake/Utility/CakeTime.php:846
+msgid "%d day"
+msgid_plural "%d days"
+msgstr[0] ""
+msgstr[1] ""
+
+#: Cake/Utility/CakeTime.php:849
+msgid "%d hour"
+msgid_plural "%d hours"
+msgstr[0] ""
+msgstr[1] ""
+
+#: Cake/Utility/CakeTime.php:852
+msgid "%d minute"
+msgid_plural "%d minutes"
+msgstr[0] ""
+msgstr[1] ""
+
+#: Cake/Utility/CakeTime.php:855
+msgid "%d second"
+msgid_plural "%d seconds"
+msgstr[0] ""
+msgstr[1] ""

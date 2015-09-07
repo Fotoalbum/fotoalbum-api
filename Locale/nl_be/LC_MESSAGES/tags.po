@@ -1,0 +1,4689 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: \n"
+"POT-Creation-Date: \n"
+"PO-Revision-Date: \n"
+"Last-Translator: \n"
+"Language-Team: LANGUAGE <EMAIL@ADDRESS>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=iso-8859-1\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Poedit 1.5.5\n"
+"Plural-Forms: nplurals=2;plural=(n != 1);\n"
+
+#: Controller/AppController.php:167;177
+msgid "You are not welcome here"
+msgstr "U heeft geen toegang tot deze pagina"
+
+#: Controller/InvitationsController.php:458
+#: Controller/OrderLinesController.php:427 View/OrderLines/view.ctp:732
+msgid "private"
+msgstr "priv&eacute;"
+
+#: Controller/InvitationsController.php:458
+#: Controller/OrderLinesController.php:427 View/OrderLines/view.ctp:739
+msgid "hidden"
+msgstr "verborgen"
+
+#: Controller/InvitationsController.php:458
+#: Controller/OrderLinesController.php:427 View/OrderLines/view.ctp:745
+msgid "public"
+msgstr "openbaar"
+
+#: Controller/InvitationsController.php:496
+msgid "Sorry, you don't have rights to send invitations!"
+msgstr "Sorry, u heeft geen recht om uitnodigingen te versturen!"
+
+#: Controller/InvitationsController.php:558
+msgid "Invitations sent to"
+msgstr "Uitnodigingen verstuurd naar"
+
+#: Controller/InvitationsController.php:560
+msgid "and"
+msgstr "en"
+
+#: Controller/InvitationsController.php:605
+msgid "The invitations have been sent!"
+msgstr "De uitnodigingen zijn verzonden!"
+
+#: Controller/InvitationsController.php:608
+msgid "failed!"
+msgstr "Mislukt!"
+
+#: Controller/InvitationsController.php:644
+msgid "You do no have the right to cancel this invitation"
+msgstr "Sorry, u heeft geen recht om uitnodigingen te versturen!"
+
+#: Controller/InvitationsController.php:651
+msgid "Removed."
+msgstr "%s verwijderd"
+
+#: Controller/InvitationsController.php:665
+#: Controller/OrderLinesController.php:795
+#: Plugin/Users/Controller/UsersController.php:740
+msgid "An Ajax error occured, please try again or refresh"
+msgstr ""
+"Een Ajax foutmelding heeft zich voorgedaan, vernieuw de pagina of probeer "
+"het nog eens."
+
+#: Controller/InvitationsController.php:822
+msgid "You are invited to view a photo album"
+msgstr "U bent uitgenodigd om een fotoalbum te bekijken"
+
+#: Controller/InvitationsController.php:883
+msgid "Not allowed"
+msgstr "Niet toegestaan!"
+
+#: Controller/OrderLinesController.php:76;218;815
+msgid "Invalid order line"
+msgstr "Ongeldige bestellingsregel"
+
+#: Controller/OrderLinesController.php:90
+msgid "Photo album deleted"
+msgstr "Fotoalbum verwijderd"
+
+#: Controller/OrderLinesController.php:95
+msgid "Invalid token. Please contact customer support"
+msgstr "Ongeldige controle. Neem contact op met de klantenservice"
+
+#: Controller/OrderLinesController.php:262
+msgid "Sorry, the person changed the privacy setting for this album!"
+msgstr ""
+"Sorry, deze gebruiker heeft de privacyinstellingen voor dit fotoalbum "
+"gewijzigd!"
+
+#: Controller/OrderLinesController.php:268
+msgid "Sorry, you need to login to view this album!"
+msgstr "Log in met uw inloggegevens om dit fotoalbum te bekijken."
+
+#: Controller/OrderLinesController.php:760;773
+msgid "Saved."
+msgstr "Opgeslagen."
+
+#: Controller/OrderLinesController.php:790
+msgid "Not allowed!"
+msgstr "Niet toegestaan!"
+
+#: Controller/OrderLinesController.php:1302
+msgid "Dit album is nog niet beschikbaar in de nieuwe viewer"
+msgstr "Dit fotoalbum is nog niet beschikbaar in de nieuwe viewer"
+
+#: Controller/OrdersController.php:597;632;660
+msgid "Invalid order"
+msgstr "Ongeldige bestelling"
+
+#: Controller/OrdersController.php:612;636
+msgid "The order has been saved"
+msgstr "De bestelling is opgeslagen"
+
+#: Controller/OrdersController.php:615;639
+msgid "The order could not be saved. Please, try again."
+msgstr "De bestelling kan niet worden opgeslagen. Probeert u het nog eens."
+
+#: Controller/OrdersController.php:664
+msgid "Order deleted"
+msgstr "Bestelling verwijderd"
+
+#: Controller/OrdersController.php:667
+msgid "Order was not deleted"
+msgstr "Bestelling is niet verwijderd"
+
+#: Controller/PagesController.php:191
+msgid "access denied"
+msgstr "Toegang geweigerd"
+
+#: Plugin/Contactform/Model/Contactform.php:82
+msgid "please insert your name"
+msgstr "Vul hier uw naam in"
+
+#: Plugin/Contactform/Model/Contactform.php:89
+msgid "please insert your email address"
+msgstr "Vul hier uw e-mailadres in"
+
+#: Plugin/Contactform/Model/Contactform.php:96
+msgid "please enter your message"
+msgstr "Typ hier uw bericht"
+
+#: Plugin/Contactform/Model/Contactform.php:102
+msgid "please solve the calculation"
+msgstr "Los de berekening op"
+
+#: Plugin/Contactform/Model/Contactform.php:107
+msgid "your solution was not correct"
+msgstr "Uw oplossing was correct."
+
+#: Plugin/Contactform/View/Contactform/show.ctp:11
+#: View/fra/Contactform/show.ctp:11
+msgid "contactform_intro"
+msgstr ""
+"Heeft u vragen over de Albumviewer? Vul onderstaand formulier in. Heeft u "
+"vragen over onze producten of uw bestelling? Ga dan naar de <a href=\"http://"
+"www.fotoalbum.be/klantenservice.html\">Klantenservice van Fotoalbum.be</a>."
+
+#: Plugin/Search/Controller/Component/PrgComponent.php:363
+msgid "Please correct the errors below."
+msgstr "Wijzig de onderstaande fouten."
+
+#: Plugin/Survey/Controller/SurveysController.php:40
+msgid "Actie"
+msgstr "Actie"
+
+#: Plugin/Survey/Controller/SurveysController.php:40
+msgid "Wedstrijd"
+msgstr "Wedstrijd"
+
+#: Plugin/Survey/Controller/SurveysController.php:40
+msgid "Link"
+msgstr "Link"
+
+#: Plugin/Survey/View/Elements/surveys/top_survey.ctp:1
+#: Plugin/Comments/View/Elements/comments/flat/form.ctp:28
+#: Plugin/Comments/View/Elements/comments/threaded/form.ctp:50
+#: Plugin/Comments/View/Elements/comments/tree/form.ctp:28
+#: View/Elements/comments/flat/form.ctp:28
+#: View/Elements/comments/threaded/form.ctp:50
+#: View/Elements/comments/tree/form.ctp:28
+msgid "This field cannot be left blank"
+msgstr "Veld verplicht in te vullen"
+
+#: Plugin/Survey/View/Elements/surveys/top_survey.ctp:17
+msgid "Ik doe mee aan de"
+msgstr "Ik doe mee aan de"
+
+#: Plugin/Survey/View/Elements/surveys/top_survey.ctp:23
+#: View/Invitations/index.ctp:73;174 View/Users/dashboard.ctp:325;406
+#: View/fra/Users/dashboard.ctp:325;406
+msgid "Thumbnail"
+msgstr "Covers weergeven"
+
+#: Plugin/Survey/View/Elements/surveys/top_survey.ctp:28
+#: View/Invitations/index.ctp:33;135 View/Users/dashboard.ctp:306;386
+#: View/fra/Users/dashboard.ctp:306;386 Plugin/Survey/View/Surveys/add.ctp:32
+#: Plugin/Survey/View/Surveys/edit.ctp:32
+msgid "Title"
+msgstr "Titel"
+
+#: Plugin/Survey/View/Elements/surveys/top_survey.ctp:45
+#: View/OrderLines/view.ctp:114
+msgid "Title saved!"
+msgstr "Titel opgeslagen!"
+
+#: Plugin/Survey/View/Elements/surveys/top_survey.ctp:46
+#: View/OrderLines/view.ctp:115
+msgid "Enter title"
+msgstr "Titel toevoegen"
+
+#: Plugin/Survey/View/Elements/surveys/top_survey.ctp:49;88;127
+#: View/Elements/edit_username.ctp:35 View/Elements/library_rows.ctp:102
+#: View/OrderLines/view.ctp:118;227;563;647;801 View/Users/edit.ctp:179
+#: View/fra/Users/edit.ctp:207
+#: Plugin/Users/View/Users/json/edit_username.ctp:16
+msgid "Save"
+msgstr "Opslaan"
+
+#: Plugin/Survey/View/Elements/surveys/top_survey.ctp:68
+msgid "Omschrijving"
+msgstr "Omschrijving"
+
+#: Plugin/Survey/View/Elements/surveys/top_survey.ctp:84;122
+#: View/Elements/library_rows.ctp:98 View/OrderLines/view.ctp:223
+msgid "Description saved!"
+msgstr "Beschrijving opgeslagen!"
+
+#: Plugin/Survey/View/Elements/surveys/top_survey.ctp:85
+#: View/Elements/library_rows.ctp:99
+msgid "Enter desciption"
+msgstr "Beschrijving toevoegen"
+
+#: Plugin/Survey/View/Elements/surveys/top_survey.ctp:106
+msgid "Categorie&euml;n"
+msgstr "Categorie&euml;n"
+
+#: Plugin/Survey/View/Elements/surveys/top_survey.ctp:123
+#: View/OrderLines/view.ctp:560
+msgid "Enter categories"
+msgstr "Categorie toevoegen"
+
+#: Plugin/Survey/View/Elements/surveys/top_survey.ctp:163
+#: Plugin/Users/View/Users/_add.ctp:29 View/Users/add.ctp:53
+#: View/fra/Users/add.ctp:53
+msgid "Terms of Service"
+msgstr "Algemene voowaarden"
+
+#: Plugin/Upload/Model/Behavior/FileGrabberBehavior.php:47
+msgid "File was not downloaded."
+msgstr "Bestelling is niet gedownload."
+
+#: Plugin/Users/Controller/UserDetailsController.php:59;147
+msgid "Invalid Detail."
+msgstr "Ongeldig"
+
+#: Plugin/Users/Controller/UserDetailsController.php:81
+msgid "Saved"
+msgstr "Opgeslagen"
+
+#: Plugin/Users/Controller/UserDetailsController.php:101
+msgid "%s details saved"
+msgstr "%s details opgeslagen"
+
+#: Plugin/Users/Controller/UserDetailsController.php:120;208
+msgid "Invalid id for Detail"
+msgstr "Ongeldig id voor Detail"
+
+#: Plugin/Users/Controller/UserDetailsController.php:124;212
+msgid "User Detail deleted"
+msgstr "Gebruikers Detail verwijderd"
+
+#: Plugin/Users/Controller/UserDetailsController.php:162;186
+msgid "The Detail has been saved"
+msgstr "De Detail is opgeslagen"
+
+#: Plugin/Users/Controller/UserDetailsController.php:165;189
+msgid "The Detail could not be saved. Please, try again."
+msgstr "De Detail kan niet worden opgeslagen. Probeert u het nog eens."
+
+#: Plugin/Users/Controller/UserDetailsController.php:181
+msgid "Invalid Detail"
+msgstr "Ongeldige detail"
+
+#: Plugin/Users/Controller/UsersController.php:723
+msgid "Username saved."
+msgstr "Gebruikersnaam opgeslagen"
+
+#: Plugin/Users/Controller/UsersController.php:765
+msgid "Profile saved."
+msgstr "Profiel opgeslagen"
+
+#: Plugin/Users/Controller/UsersController.php:777
+msgid "Could not save your profile."
+msgstr "Uw profiel kan niet worden opgeslagen."
+
+#: Plugin/Users/Controller/UsersController.php:846
+msgid "Invalid User."
+msgstr "Ongeldige Gebruiker."
+
+#: Plugin/Users/Controller/UsersController.php:863
+msgid "The User has been saved"
+msgstr "De gebruiker is opgeslagen"
+
+#: Plugin/Users/Controller/UsersController.php:880
+msgid "User saved"
+msgstr "Gebruiker opgeslagen"
+
+#: Plugin/Users/Controller/UsersController.php:904
+msgid "User deleted"
+msgstr "Gebruiker verwijderd"
+
+#: Plugin/Users/Controller/UsersController.php:906
+#: Plugin/Users/Model/User.php:972
+msgid "Invalid User"
+msgstr "Ongeldige gebruiker"
+
+#: Plugin/Users/Controller/UsersController.php:928
+msgid "You are already registered and logged in!"
+msgstr "U bent al geregistreerd en ingelogd!"
+
+#: Plugin/Users/Controller/UsersController.php:936
+msgid ""
+"Your account has been created. You should receive an e-mail shortly to "
+"authenticate your account. Once validated you will be able to login."
+msgstr ""
+"Uw profiel is aangemaakt. U ontvangt nu een e-mail waarmee uw profiel kan "
+"worden geactiveerd. Na de activatie kunt u inloggen."
+
+#: Plugin/Users/Controller/UsersController.php:941
+msgid "Your account could not be created. Please, try again."
+msgstr ""
+"Uw profiel kan niet worden aangemaakt. Probeert u het alstublieft nog eens. "
+
+#: Plugin/Users/Controller/UsersController.php:988
+msgid "Invalid e-mail / password combination.  Please try again"
+msgstr "Ongeldige e-mailadres of wachtwoord. Probeert u het nog eens."
+
+#: Plugin/Users/Controller/UsersController.php:1061
+msgid "You have successfully logged out"
+msgstr "U bent nu uitgelogd"
+
+#: Plugin/Users/Controller/UsersController.php:1080
+msgid "Your e-mail has been validated!"
+msgstr "'Uw registratie is succesvol afgerond. U kunt nu inloggen!"
+
+#: Plugin/Users/Controller/UsersController.php:1103
+msgid "The url you accessed is not longer valid"
+msgstr "De link die u probeert te openen is niet langer beschikbaar"
+
+#: Plugin/Users/Controller/UsersController.php:1112
+msgid "Your password was sent to your registered email account"
+msgstr "Uw wachtwoord is verzonden naar het geregistreerde e-mailadres"
+
+#: Plugin/Users/Controller/UsersController.php:1116
+msgid ""
+"There was an error verifying your account. Please check the email you were "
+"sent, and retry the verification link."
+msgstr ""
+"Er heeft zich een fout voorgedaan tijdens het verifiëren van uw profiel. "
+"Probeer nogmaals de verificatielink te gebruiken die u is toegestuurd via e-"
+"mail."
+
+#: Plugin/Users/Controller/UsersController.php:1130;1153;1303
+msgid "Password Reset"
+msgstr "Wachtwoord opnieuw instellen"
+
+#: Plugin/Users/Controller/UsersController.php:1170
+msgid "Password changed."
+msgstr "Wachtwoord gewijzigd"
+
+#: Plugin/Users/Controller/UsersController.php:1255
+msgid "Account verification"
+msgstr "Profiel verificatie"
+
+#: Plugin/Users/Controller/UsersController.php:1339
+msgid "%s has been sent an email with instruction to reset their password."
+msgstr ""
+"%s heeft een e-mail toegestuurd gekregen met instructies om het wachtwoord "
+"te wijzigen."
+
+#: Plugin/Users/Controller/UsersController.php:1343
+msgid "You should receive an email with further instructions shortly"
+msgstr "U ontvangt op korte termijn een e-mail met instructies"
+
+#: Plugin/Users/Controller/UsersController.php:1347
+msgid "No user was found with that email."
+msgstr "Er is geen gebruiker gevonden met dit e-mailadres"
+
+#: Plugin/Users/Controller/UsersController.php:1378
+msgid "Invalid password reset token, try again."
+msgstr "Het wijzigen van het wachtwoord is ongeldig, probeert u het nog eens."
+
+#: Plugin/Users/Controller/UsersController.php:1384
+msgid "Password changed, you can now login with your new password."
+msgstr "Wachtwoord gewijzigd. U kunt nu inloggen met uw nieuwe wachtwoord."
+
+#: Plugin/Users/Model/User.php:188
+msgid "Please enter a username."
+msgstr "Typ hier uw gewenste gebruikersnaam."
+
+#: Plugin/Users/Model/User.php:192
+msgid "The username must be alphanumeric."
+msgstr "Deze gebruikersnaam moet bestaan uit letters of cijfers."
+
+#: Plugin/Users/Model/User.php:196
+msgid "This username is already in use."
+msgstr "Deze gebruikersnaam is al in gebruik."
+
+#: Plugin/Users/Model/User.php:200
+msgid "The username must have at least 3 characters."
+msgstr "Uw gebruikersnaam moet minimaal 3 tekens bevatten."
+
+#: Plugin/Users/Model/User.php:207
+msgid "Please enter a valid email address."
+msgstr "Typ hier uw e-mailadres."
+
+#: Plugin/Users/Model/User.php:211
+msgid "This email is already in use."
+msgstr "Dit e-mailadres is reeds in gebruik."
+
+#: Plugin/Users/Model/User.php:217
+msgid "The password must have at least 6 characters."
+msgstr "Het wachtwoord moet minimaal 6 tekens bevatten."
+
+#: Plugin/Users/Model/User.php:221
+msgid "Please enter a password."
+msgstr "Vul hier uw wachtwoord in."
+
+#: Plugin/Users/Model/User.php:226
+msgid "The passwords are not equal, please try again."
+msgstr "De wachtwoorden komen niet overeen, probeert u het nog eens."
+
+#: Plugin/Users/Model/User.php:230
+msgid "You must agree to the terms of use."
+msgstr "U dient akkoord te gaan met de algemene voorwaarden."
+
+#: Plugin/Users/Model/User.php:291;581
+msgid "The passwords are not equal."
+msgstr "De opgegeven wachtwoorden komen niet overeen. "
+
+#: Plugin/Users/Model/User.php:293
+msgid "Invalid password."
+msgstr "Ongeldig wachtwoord."
+
+#: Plugin/Users/Model/User.php:322;325;328
+msgid "Invalid date"
+msgstr "Ongeldige datum"
+
+#: Plugin/Users/Model/User.php:435
+msgid ""
+"Invalid token, please check the email you were sent, and retry the "
+"verification link."
+msgstr ""
+"Ongeldig teken. Gebruik de verificatielink die u is toegestuurd in een e-"
+"mail."
+
+#: Plugin/Users/Model/User.php:440
+msgid "The token has expired."
+msgstr "Het teken is verstreken."
+
+#: Plugin/Users/Model/User.php:539
+msgid "This Email Address exists but was never validated."
+msgstr "Dit e-mailadres bestaat, maar is nooit gevalideerd. "
+
+#: Plugin/Users/Model/User.php:541
+msgid "This Email Address does not exist in the system."
+msgstr "E-mailadres bestaat niet in het systeem."
+
+#: Plugin/Users/Model/User.php:626
+msgid "$this->data['"
+msgstr "$this->data['"
+
+#: Plugin/Users/Model/User.php:672
+msgid "The user does not exist."
+msgstr "De gebruiker bestaat niet."
+
+#: Plugin/Users/Model/User.php:732
+msgid "Please enter your email address."
+msgstr "Vul hier uw e-mailadres in."
+
+#: Plugin/Users/Model/User.php:742
+msgid "The email address does not exist in the system"
+msgstr "Het opgegeven e-mailadres bestaat niet in het systeem."
+
+#: Plugin/Users/Model/User.php:747
+msgid "Your account is already authenticaed."
+msgstr "Uw profiel is reeds geactiveerd."
+
+#: Plugin/Users/Model/User.php:752
+msgid "Your account is disabled."
+msgstr "Uw profiel is niet beschikbaar."
+
+#: Plugin/Users/View/Elements/Users/admin_sidebar.ctp:3
+#: Plugin/Users/View/Elements/Users/sidebar.ctp:9 View/Elements/menu.ctp:147
+#: View/Elements/menu_extended.ctp:323
+msgid "Logout"
+msgstr "Uitloggen"
+
+#: Plugin/Users/View/Elements/Users/admin_sidebar.ctp:4
+#: Plugin/Users/View/Elements/Users/sidebar.ctp:10
+msgid "My Account"
+msgstr "Mijn Profiel"
+
+#: Plugin/Users/View/Elements/Users/admin_sidebar.ctp:6
+msgid "Add Users"
+msgstr "Gebruikers toevoegen"
+
+#: Plugin/Users/View/Elements/Users/admin_sidebar.ctp:7
+#: Plugin/Users/View/Elements/Users/sidebar.ctp:15
+#: Plugin/Users/View/UserDetails/add.ctp:27
+#: Plugin/Users/View/UserDetails/admin_add.ctp:28
+#: Plugin/Users/View/UserDetails/admin_edit.ctp:30
+#: Plugin/Users/View/UserDetails/admin_index.ctp:73
+#: Plugin/Users/View/UserDetails/admin_view.ctp:58
+#: Plugin/Users/View/UserDetails/view.ctp:59
+#: Plugin/Comments/View/Comments/add.ctp:32
+#: Plugin/Comments/View/Comments/admin_add.ctp:32
+#: Plugin/Comments/View/Comments/admin_edit.ctp:34
+#: Plugin/Comments/View/Comments/admin_view.ctp:70
+#: Plugin/Comments/View/Comments/edit.ctp:34
+#: Plugin/Comments/View/Comments/index.ctp:88
+#: Plugin/Comments/View/Comments/view.ctp:70
+msgid "List Users"
+msgstr "Lijst Gebruikers"
+
+#: Plugin/Users/View/Elements/Users/admin_sidebar.ctp:9
+msgid "Frontend"
+msgstr "Frontend"
+
+#: Plugin/Users/View/Elements/Users/sidebar.ctp:4
+#: Plugin/Users/View/Users/_login.ctp:13 View/Elements/menu.ctp:18;179
+#: View/Elements/menu_extended.ctp:18;355
+#: View/Elements/library/library_notloggedin.ctp:57
+#: View/Pages/access_denied.ctp:42 View/Users/add.ctp:74
+#: View/Users/login.ctp:43 View/fra/Users/add.ctp:74
+#: View/fra/Users/login.ctp:43
+msgid "Login"
+msgstr "Inloggen"
+
+#: Plugin/Users/View/Elements/Users/sidebar.ctp:6
+msgid "Register an account"
+msgstr "Een profiel registreren"
+
+#: Plugin/Users/View/Elements/Users/sidebar.ctp:11 View/Elements/menu.ctp:138
+#: View/Elements/menu_extended.ctp:314
+msgid "Change password"
+msgstr "Wachtwoord wijzigen "
+
+#: Plugin/Users/View/UserDetails/add.ctp:15
+#: Plugin/Users/View/UserDetails/admin_add.ctp:15
+msgid "Add User Detail"
+msgstr "User Details toevoegen"
+
+#: Plugin/Users/View/UserDetails/add.ctp:22
+#: Plugin/Users/View/UserDetails/admin_add.ctp:23
+#: Plugin/Users/View/UserDetails/index.ctp:27
+#: Plugin/Users/View/Users/_add.ctp:32
+#: Plugin/Users/View/Users/_change_password.ctp:26
+#: Plugin/Users/View/Users/_edit.ctp:33 Plugin/Users/View/Users/_login.ctp:29
+#: Plugin/Users/View/Users/_request_password_change.ctp:22
+#: Plugin/Users/View/Users/_reset_password.ctp:14
+#: View/Users/reset_password.ctp:42 View/fra/Users/reset_password.ctp:42
+#: View/OrderLines/add.ctp:26 View/OrderLines/edit.ctp:27
+#: View/Tours/add.ctp:12 View/Tours/edit.ctp:13
+#: Plugin/Comments/View/Elements/comments/flat/form.ctp:36;38
+#: Plugin/Comments/View/Elements/comments/tree/form.ctp:36;38
+#: View/Elements/comments/flat/form.ctp:36;38
+#: View/Elements/comments/tree/form.ctp:36;38
+#: Plugin/Tags/View/Tags/admin_add.ctp:20
+#: Plugin/Tags/View/Tags/admin_edit.ctp:23
+msgid "Submit"
+msgstr "Toepassen"
+
+#: Plugin/Users/View/UserDetails/add.ctp:26
+#: Plugin/Users/View/UserDetails/admin_add.ctp:27
+#: Plugin/Users/View/UserDetails/admin_edit.ctp:29
+#: Plugin/Users/View/UserDetails/admin_view.ctp:56
+#: Plugin/Users/View/UserDetails/view.ctp:57
+msgid "List Details"
+msgstr "Lijst Details"
+
+#: Plugin/Users/View/UserDetails/add.ctp:28
+#: Plugin/Users/View/UserDetails/admin_add.ctp:29
+#: Plugin/Users/View/UserDetails/admin_edit.ctp:31
+#: Plugin/Users/View/UserDetails/admin_index.ctp:74
+#: Plugin/Users/View/UserDetails/admin_view.ctp:59
+#: Plugin/Users/View/UserDetails/view.ctp:60
+#: Plugin/Comments/View/Comments/add.ctp:33
+#: Plugin/Comments/View/Comments/admin_add.ctp:33
+#: Plugin/Comments/View/Comments/admin_edit.ctp:35
+#: Plugin/Comments/View/Comments/admin_view.ctp:71
+#: Plugin/Comments/View/Comments/edit.ctp:35
+#: Plugin/Comments/View/Comments/index.ctp:89
+#: Plugin/Comments/View/Comments/view.ctp:71
+msgid "New User"
+msgstr "Nieuwe gebruiker"
+
+#: Plugin/Users/View/UserDetails/admin_edit.ctp:15
+#: Plugin/Users/View/UserDetails/edit.ctp:15
+msgid "Edit User Detail"
+msgstr "Bewerk Gebruiker Detail"
+
+#: Plugin/Users/View/UserDetails/admin_edit.ctp:28
+#: Plugin/Users/View/UserDetails/admin_index.ctp:63
+#: Plugin/Users/View/Users/admin_index.ctp:61
+#: Plugin/Users/View/Users/search.ctp:52
+#: Plugin/Survey/View/SurveyResponses/view.ctp:115
+#: Plugin/Survey/View/Surveys/index.ctp:41 View/OrderLines/edit.ctp:33
+#: View/OrderLines/index.ctp:56 View/Tours/edit.ctp:19 View/Tours/index.ctp:24
+#: Plugin/Comments/View/Comments/admin_edit.ctp:30
+#: Plugin/Comments/View/Comments/admin_index.ctp:31;99
+#: Plugin/Comments/View/Comments/admin_view.ctp:111
+#: Plugin/Comments/View/Comments/edit.ctp:30
+#: Plugin/Comments/View/Comments/index.ctp:72
+#: Plugin/Comments/View/Comments/view.ctp:111
+#: Plugin/Tags/View/Tags/admin_edit.ctp:27
+#: Plugin/Tags/View/Tags/admin_index.ctp:64
+msgid "Delete"
+msgstr "Verwijderen"
+
+#: Plugin/Users/View/UserDetails/admin_edit.ctp:28
+#: Plugin/Users/View/UserDetails/admin_index.ctp:63
+#: Plugin/Users/View/UserDetails/admin_view.ctp:55
+#: Plugin/Users/View/UserDetails/view.ctp:56
+#: Plugin/Users/View/Users/admin_index.ctp:61
+#: Plugin/Users/View/Users/search.ctp:55 View/OrderLines/edit.ctp:33
+#: View/OrderLines/index.ctp:56 View/Tours/edit.ctp:19 View/Tours/index.ctp:24
+#: View/Tours/view.ctp:45 Plugin/Comments/View/Comments/admin_edit.ctp:30
+#: Plugin/Comments/View/Comments/admin_index.ctp:99
+#: Plugin/Comments/View/Comments/admin_view.ctp:65;111
+#: Plugin/Comments/View/Comments/edit.ctp:30
+#: Plugin/Comments/View/Comments/index.ctp:72
+#: Plugin/Comments/View/Comments/view.ctp:65;111
+#: Plugin/Tags/View/Tags/admin_edit.ctp:27
+#: Plugin/Tags/View/Tags/admin_index.ctp:64
+#: Plugin/Tags/View/Tags/admin_view.ctp:55
+msgid "Are you sure you want to delete # %s?"
+msgstr "Bent u er zeker van dat u # %s? wilt verwijderen?"
+
+#: Plugin/Users/View/UserDetails/admin_index.ctp:13
+msgid "User Details"
+msgstr "Gebruiker Details"
+
+#: Plugin/Users/View/UserDetails/admin_index.ctp:16
+#: Plugin/Users/View/Users/index.ctp:17 Plugin/Users/View/Users/search.ctp:27
+#: Plugin/Comments/View/Comments/index.ctp:17
+#: Plugin/Tags/View/Tags/admin_index.ctp:17 Plugin/Tags/View/Tags/index.ctp:17
+msgid ""
+"Page %page% of %pages%, showing %current% records out of %count% total, "
+"starting on record %start%, ending on %end%"
+msgstr ""
+"Pagina %page% van %pages%. Toont %current% resultaten van %count%. Van %start"
+"% tot %end%"
+
+#: Plugin/Users/View/UserDetails/admin_index.ctp:28
+#: Plugin/Users/View/Users/admin_index.ctp:32
+#: Plugin/Users/View/Users/index.ctp:25 Plugin/Users/View/Users/search.ctp:35
+#: View/Elements/menu_extended.ctp:177;210
+#: Plugin/Survey/View/Surveys/index.ctp:14 View/OrderLines/add.ctp:29
+#: View/OrderLines/edit.ctp:30 View/OrderLines/index.ctp:25;76
+#: View/Tours/add.ctp:15 View/Tours/edit.ctp:16 View/Tours/index.ctp:11;44
+#: View/Tours/view.ctp:42 Plugin/Comments/View/Comments/admin_index.ctp:47
+#: Plugin/Comments/View/Comments/admin_view.ctp:88
+#: Plugin/Comments/View/Comments/index.ctp:31
+#: Plugin/Comments/View/Comments/view.ctp:88
+#: Plugin/Tags/View/Tags/admin_index.ctp:29 Plugin/Tags/View/Tags/index.ctp:29
+msgid "Actions"
+msgstr "Acties"
+
+#: Plugin/Users/View/UserDetails/admin_index.ctp:61
+#: Plugin/Users/View/Users/admin_index.ctp:59
+#: Plugin/Users/View/Users/index.ctp:39 Plugin/Users/View/Users/search.ctp:49
+#: Plugin/Survey/View/Surveys/index.ctp:39 View/OrderLines/index.ctp:54
+#: View/Tours/index.ctp:22 Plugin/Comments/View/Comments/admin_index.ctp:97
+#: Plugin/Comments/View/Comments/admin_view.ctp:109
+#: Plugin/Comments/View/Comments/index.ctp:70
+#: Plugin/Comments/View/Comments/view.ctp:109
+#: Plugin/Comments/View/Elements/comments/flat/item.ctp:14
+#: Plugin/Comments/View/Elements/comments/threaded/item.ctp:14
+#: Plugin/Comments/View/Elements/comments/tree/item.ctp:14
+#: View/Elements/comments/flat/item.ctp:14
+#: View/Elements/comments/threaded/item.ctp:14
+#: View/Elements/comments/tree/item.ctp:14
+#: Plugin/Tags/View/Tags/admin_index.ctp:62 Plugin/Tags/View/Tags/index.ctp:62
+msgid "View"
+msgstr "Tonen"
+
+#: Plugin/Users/View/UserDetails/admin_index.ctp:62
+#: Plugin/Users/View/Users/admin_index.ctp:60
+#: Plugin/Users/View/Users/search.ctp:50
+#: Plugin/Survey/View/Surveys/index.ctp:40 View/OrderLines/index.ctp:55
+#: View/Tours/index.ctp:23 Plugin/Comments/View/Comments/admin_index.ctp:98
+#: Plugin/Comments/View/Comments/admin_view.ctp:110
+#: Plugin/Comments/View/Comments/index.ctp:71
+#: Plugin/Comments/View/Comments/view.ctp:110
+#: Plugin/Tags/View/Tags/admin_index.ctp:63
+msgid "Edit"
+msgstr "Bewerken"
+
+#: Plugin/Users/View/UserDetails/admin_index.ctp:72
+msgid "New User Detail"
+msgstr "Nieuwe gebruikers details"
+
+#: Plugin/Users/View/UserDetails/admin_view.ctp:13
+#: Plugin/Users/View/UserDetails/view.ctp:13
+msgid "User Detail"
+msgstr "Gebruiker detail"
+
+#: Plugin/Users/View/UserDetails/admin_view.ctp:15
+#: Plugin/Users/View/UserDetails/view.ctp:15 View/Tours/view.ctp:4
+#: Plugin/Comments/View/Comments/admin_view.ctp:15;79
+#: Plugin/Comments/View/Comments/view.ctp:15;79
+#: Plugin/Tags/View/Tags/admin_view.ctp:15 Plugin/Tags/View/Tags/view.ctp:15
+msgid "Id"
+msgstr "Id"
+
+#: Plugin/Users/View/UserDetails/admin_view.ctp:20
+#: Plugin/Users/View/UserDetails/view.ctp:20
+#: Plugin/Users/View/Users/admin_view.ctp:13
+#: Plugin/Comments/View/Comments/admin_view.ctp:30
+#: Plugin/Comments/View/Comments/view.ctp:30
+msgid "User"
+msgstr "Gebruiker"
+
+#: Plugin/Users/View/UserDetails/admin_view.ctp:25
+#: Plugin/Users/View/UserDetails/view.ctp:25 View/Tours/view.ctp:24
+msgid "Position"
+msgstr "Positie"
+
+#: Plugin/Users/View/UserDetails/admin_view.ctp:30
+#: Plugin/Users/View/UserDetails/view.ctp:30
+msgid "Field"
+msgstr "Veld"
+
+#: Plugin/Users/View/UserDetails/admin_view.ctp:35
+#: Plugin/Users/View/UserDetails/view.ctp:35
+msgid "Value"
+msgstr "Waarde"
+
+#: Plugin/Users/View/UserDetails/admin_view.ctp:40
+#: Plugin/Users/View/UserDetails/view.ctp:40
+#: Plugin/Users/View/Users/admin_view.ctp:20
+#: Plugin/Survey/View/Surveys/index.ctp:12 View/Tours/view.ctp:29
+#: Plugin/Comments/View/Comments/admin_view.ctp:50;86
+#: Plugin/Comments/View/Comments/view.ctp:50;86
+#: Plugin/Tags/View/Tags/admin_view.ctp:40 Plugin/Tags/View/Tags/view.ctp:40
+msgid "Created"
+msgstr "Aangemaakt"
+
+#: Plugin/Users/View/UserDetails/admin_view.ctp:45
+#: Plugin/Users/View/UserDetails/view.ctp:45
+#: Plugin/Users/View/Users/admin_view.ctp:25 View/Tours/view.ctp:34
+#: Plugin/Comments/View/Comments/admin_view.ctp:55;87
+#: Plugin/Comments/View/Comments/view.ctp:55;87
+#: Plugin/Tags/View/Tags/admin_view.ctp:45 Plugin/Tags/View/Tags/view.ctp:45
+msgid "Modified"
+msgstr "Bewerkt"
+
+#: Plugin/Users/View/UserDetails/admin_view.ctp:54
+#: Plugin/Users/View/UserDetails/view.ctp:55
+msgid "Edit Detail"
+msgstr "Detail bewerken"
+
+#: Plugin/Users/View/UserDetails/admin_view.ctp:55
+#: Plugin/Users/View/UserDetails/view.ctp:56
+msgid "Delete Detail"
+msgstr "Detail Verwijderen"
+
+#: Plugin/Users/View/UserDetails/admin_view.ctp:57
+#: Plugin/Users/View/UserDetails/view.ctp:58
+msgid "New Detail"
+msgstr "Nieuw Detail"
+
+#: Plugin/Users/View/Users/_add.ctp:13
+#: Plugin/Users/View/Users/admin_add.ctp:15
+msgid "Add User"
+msgstr "Gebruiker toevoegen"
+
+#: Plugin/Users/View/Users/_add.ctp:18
+#: Plugin/Users/View/Users/admin_add.ctp:18
+#: Plugin/Users/View/Users/admin_edit.ctp:19
+#: Plugin/Users/View/Users/admin_index.ctp:18
+#: Plugin/Users/View/Users/admin_view.ctp:15
+#: Plugin/Users/View/Users/search.ctp:18 View/Elements/edit_username.ctp:25
+#: View/Elements/library/library_notloggedin.ctp:53
+#: View/Pages/access_denied.ctp:38 View/Users/add.ctp:35
+#: View/Users/edit.ctp:57 View/Users/login.ctp:39 View/fra/Users/add.ctp:35
+#: View/fra/Users/edit.ctp:57 View/fra/Users/login.ctp:39
+#: Plugin/Users/View/Users/json/edit_username.ctp:13
+msgid "Username"
+msgstr "Gebruikersnaam"
+
+#: Plugin/Users/View/Users/_add.ctp:20
+#: Plugin/Users/View/Users/admin_add.ctp:20
+msgid "E-mail (used as login)"
+msgstr "E-mail (gebruikt bij het inloggen)"
+
+#: Plugin/Users/View/Users/_add.ctp:21
+#: Plugin/Users/View/Users/admin_add.ctp:21 View/Users/add.ctp:42
+#: View/fra/Users/add.ctp:42
+msgid "Must be a valid email address"
+msgstr "Moet een geldig e-mailadres zijn"
+
+#: Plugin/Users/View/Users/_add.ctp:22
+#: Plugin/Users/View/Users/admin_add.ctp:22 View/Users/add.ctp:43
+#: View/fra/Users/add.ctp:43
+msgid "An account with that email already exists"
+msgstr "Een profiel met het opgegeven e-mailadres bestaat al"
+
+#: Plugin/Users/View/Users/_add.ctp:24 Plugin/Users/View/Users/_login.ctp:22
+#: Plugin/Users/View/Users/admin_add.ctp:24 View/Elements/menu.ctp:176
+#: View/Elements/menu_extended.ctp:352
+#: View/Elements/library/library_notloggedin.ctp:54
+#: View/Pages/access_denied.ctp:39 View/Users/add.ctp:45
+#: View/Users/login.ctp:40 View/Users/reset_password.ctp:38
+#: View/fra/Users/add.ctp:45 View/fra/Users/login.ctp:40
+#: View/fra/Users/reset_password.ctp:38
+msgid "Password"
+msgstr "Wachtwoord"
+
+#: Plugin/Users/View/Users/_add.ctp:27
+#: Plugin/Users/View/Users/admin_add.ctp:27
+msgid "Password (confirm)"
+msgstr "Wachtwoord (bevestigen)"
+
+#: Plugin/Users/View/Users/_add.ctp:31
+msgid "I have read and agreed to "
+msgstr "Ikga akkoord met % van de Albumviewer"
+
+#: Plugin/Users/View/Users/_change_password.ctp:13
+#: Plugin/Users/View/Users/_edit.ctp:30
+msgid "Change your password"
+msgstr "Wachtwoord wijzigen"
+
+#: Plugin/Users/View/Users/_change_password.ctp:14
+msgid ""
+"Please enter your old password because of security reasons and then your new "
+"password twice."
+msgstr ""
+"Vul eerst uw oude wachtwoord in en vervolgens twee keer uw nieuwe wachtwoord."
+
+#: Plugin/Users/View/Users/_change_password.ctp:18
+#: View/Users/change_password.ctp:36 View/fra/Users/change_password.ctp:36
+msgid "Old Password"
+msgstr "Oud wachtwoord "
+
+#: Plugin/Users/View/Users/_change_password.ctp:21
+#: Plugin/Users/View/Users/_reset_password.ctp:9
+#: View/Users/change_password.ctp:42 View/fra/Users/change_password.ctp:42
+msgid "New Password"
+msgstr "Nieuw wachtwoord"
+
+#: Plugin/Users/View/Users/_change_password.ctp:24
+#: Plugin/Users/View/Users/_reset_password.ctp:12 View/Users/add.ctp:49
+#: View/Users/change_password.ctp:47 View/Users/reset_password.ctp:39
+#: View/fra/Users/add.ctp:49 View/fra/Users/change_password.ctp:47
+#: View/fra/Users/reset_password.ctp:39
+msgid "Confirm"
+msgstr "Bevestigen"
+
+#: Plugin/Users/View/Users/_dashboard.ctp:13
+msgid "Welcome"
+msgstr "Welkom"
+
+#: Plugin/Users/View/Users/_dashboard.ctp:14
+msgid "Recent broadcasts"
+msgstr "Recente uitzendingen"
+
+#: Plugin/Users/View/Users/_edit.ctp:15
+#: Plugin/Users/View/Users/admin_edit.ctp:15
+msgid "Edit User"
+msgstr "Gebruiker bewerken"
+
+#: Plugin/Users/View/Users/_edit.ctp:22
+msgid "Edit Address"
+msgstr "Adres wijzigen"
+
+#: Plugin/Users/View/Users/_login.ctp:20
+#: Plugin/Users/View/Users/admin_edit.ctp:21
+#: Plugin/Users/View/Users/admin_index.ctp:19
+#: Plugin/Users/View/Users/search.ctp:20 View/Users/add.ctp:40
+#: View/Users/request_password_change.ctp:39 View/fra/Users/add.ctp:40
+#: View/fra/Users/request_password_change.ctp:39
+msgid "Email"
+msgstr "E-mail"
+
+#: Plugin/Users/View/Users/_login.ctp:24
+msgid "Remember Me"
+msgstr "Onthoud mij"
+
+#: Plugin/Users/View/Users/_login.ctp:25
+msgid "I forgot my password"
+msgstr "Ik ben mijn wachtwoord vergeten"
+
+#: Plugin/Users/View/Users/_request_password_change.ctp:13
+msgid "Forgot your password?"
+msgstr "Uw wachtwoord vergeten?"
+
+#: Plugin/Users/View/Users/_request_password_change.ctp:14
+#: View/Users/request_password_change.ctp:24
+#: View/fra/Users/request_password_change.ctp:24
+msgid ""
+"Please enter the email you used for registration and you'll get an email "
+"with further instructions."
+msgstr ""
+"Vul uw e-mailadres in en u ontvangt binnen enkele ogenblikken een e-mail met "
+"intructies om uw wachtwoord te wijzigen."
+
+#: Plugin/Users/View/Users/_request_password_change.ctp:21
+msgid "Your Email"
+msgstr "Uw e-mail"
+
+#: Plugin/Users/View/Users/_reset_password.ctp:2
+msgid "Reset your password"
+msgstr "Uw wachtwoord opnieuw instellen"
+
+#: Plugin/Users/View/Users/admin_add.ctp:31
+#: Plugin/Users/View/Users/admin_edit.ctp:24
+msgid "Role"
+msgstr "Rol"
+
+#: Plugin/Users/View/Users/admin_add.ctp:35
+#: Plugin/Users/View/Users/admin_edit.ctp:27
+msgid "Is Admin"
+msgstr "Is beheerder"
+
+#: Plugin/Users/View/Users/admin_add.ctp:37
+#: Plugin/Users/View/Users/admin_edit.ctp:29
+msgid "Active"
+msgstr "Actief"
+
+#: Plugin/Users/View/Users/admin_index.ctp:13
+#: Plugin/Users/View/Users/index.ctp:13 Plugin/Users/View/Users/search.ctp:13
+msgid "Users"
+msgstr "Gebruikers"
+
+#: Plugin/Users/View/Users/admin_index.ctp:15
+msgid "Filter"
+msgstr "Filters"
+
+#: Plugin/Users/View/Users/admin_index.ctp:20
+#: Plugin/Users/View/Users/search.ctp:23 View/Elements/menu_extended.ctp:166
+#: View/Elements/sidebar.ctp:7 View/OrderLines/view.ctp:510
+#: View/fra/Elements/sidebar.ctp:7
+#: Plugin/Comments/View/Elements/comments/finder.ctp:40
+#: View/Elements/comments/finder.ctp:40
+msgid "Search"
+msgstr "Zoeken"
+
+#: Plugin/Users/View/Users/admin_index.ctp:50;53
+#: Plugin/Comments/View/Comments/admin_index.ctp:81
+msgid "Yes"
+msgstr "Ja"
+
+#: Plugin/Users/View/Users/admin_index.ctp:50;53
+#: Plugin/Comments/View/Comments/admin_index.ctp:81
+msgid "No"
+msgstr "nee"
+
+#: Plugin/Users/View/Users/search.ctp:22 View/Users/dashboard.ctp:84
+#: View/Users/edit.ctp:47 View/Users/view.ctp:65
+#: View/fra/Users/dashboard.ctp:84 View/fra/Users/edit.ctp:47
+#: View/fra/Users/view.ctp:65 Plugin/Survey/View/Surveys/add.ctp:30
+#: Plugin/Survey/View/Surveys/edit.ctp:30
+#: Plugin/Survey/View/Surveys/index.ctp:10
+#: Plugin/Tags/View/Tags/admin_view.ctp:25 Plugin/Tags/View/Tags/view.ctp:25
+msgid "Name"
+msgstr "Naam"
+
+#: View/Elements/edit_username.ctp:5
+msgid "Choose your username"
+msgstr "Kies uw gebruikersnaam"
+
+#: View/Elements/edit_username.ctp:9
+msgid ""
+"With this version, we introduce \"Usernames\". Please choose your username "
+"below:"
+msgstr "Kies uw gebruikersnaam. Let op: deze kunt u niet meer wijzigen!"
+
+#: View/Elements/edit_username.ctp:20
+msgid "Thank you for entering your username!"
+msgstr "Bedankt! U heeft uw gebruikersnaam ingevoerd!"
+
+#: View/Elements/edit_username.ctp:30
+msgid "Not now!"
+msgstr "Niet nu!"
+
+#: View/Elements/edit_username.ctp:44
+msgid "Close"
+msgstr "Sluiten"
+
+#: View/Elements/library_rows.ctp:76
+msgid "add description"
+msgstr "Beschrijving toevoegen"
+
+#: View/Elements/menu.ctp:32 View/Elements/menu_extended.ctp:32
+msgid "Homepage"
+msgstr "Homepage"
+
+#: View/Elements/menu.ctp:43
+msgid "My Library"
+msgstr "Mijn Bibliotheek "
+
+#: View/Elements/menu.ctp:111 View/Elements/menu_extended.ctp:287
+msgid "Account"
+msgstr "Profiel"
+
+#: View/Elements/menu.ctp:120 View/Elements/menu_extended.ctp:96;296
+#: View/Users/dashboard.ctp:290 View/fra/Users/dashboard.ctp:290
+msgid "Invitations"
+msgstr "Uitnodigingen "
+
+#: View/Elements/menu.ctp:129 View/Elements/menu_extended.ctp:105;305
+#: View/Users/dashboard.ctp:150;161 View/fra/Users/dashboard.ctp:150;161
+msgid "Orders"
+msgstr "Bestellingen"
+
+#: View/Elements/menu.ctp:175 View/Elements/menu_extended.ctp:351
+#: View/Elements/library/library_notloggedin.ctp:53
+#: View/Pages/access_denied.ctp:38
+msgid "Email or username"
+msgstr "E-mailadres of gebruikersnaam"
+
+#: View/Elements/menu_extended.ctp:48;56
+msgid "Library"
+msgstr "Bibliotheek "
+
+#: View/Elements/menu_extended.ctp:69
+msgid "My photobooks"
+msgstr "Mijn fotoalbums"
+
+#: View/Elements/menu_extended.ctp:78
+msgid "Photobook from friends"
+msgstr "Fotoalbums van vrienden"
+
+#: View/Elements/menu_extended.ctp:87
+msgid "Other products"
+msgstr "Andere producten"
+
+#: View/Elements/menu_extended.ctp:123;156
+#: View/Themed/Once/Elements/menu/top_menu.ctp:21
+msgid "Competitions"
+msgstr "Wedstrijden"
+
+#: View/Elements/menu_extended.ctp:220
+msgid "Contact"
+msgstr "Contact"
+
+#: View/Elements/search_form.ctp:10
+msgid "search"
+msgstr "Zoeken"
+
+#: View/Elements/sidebar.ctp:14 View/fra/Elements/sidebar.ctp:14
+msgid "TagCloud"
+msgstr "TagCloud"
+
+#: View/Elements/sidebar.ctp:30 View/fra/Elements/sidebar.ctp:30
+msgid "Zelf een fotoalbum maken"
+msgstr "Zelf een fotoalbum maken"
+
+#: View/Elements/viewer_html5.ctp:93;94;95;97;98;99;100;103
+#: View/Elements/viewers/viewer_html5.ctp:93;94;95;97;98;99;100;103
+#: View/Elements/viewers/viewer_pageflip5.ctp:165;166;167;169;170;171;172;174
+msgid "Click this to go to the first page (cover)"
+msgstr "Klik hier om naar de eerste pagina te gaan (omslag)"
+
+#: View/Elements/viewer_html5.ctp:93 View/Elements/viewers/viewer_html5.ctp:93
+#: View/Elements/viewers/viewer_pageflip5.ctp:165
+msgid "First page"
+msgstr "Omslagpagina"
+
+#: View/Elements/viewer_html5.ctp:94 View/Elements/viewers/viewer_html5.ctp:94
+#: View/Elements/viewers/viewer_pageflip5.ctp:166
+msgid "Back"
+msgstr "Vorige"
+
+#: View/Elements/viewer_html5.ctp:95 View/Elements/viewers/viewer_html5.ctp:95
+#: View/Elements/viewers/viewer_pageflip5.ctp:167
+msgid "Next"
+msgstr "Volgende"
+
+#: View/Elements/viewer_html5.ctp:97 View/Elements/viewers/viewer_html5.ctp:97
+#: View/Elements/viewers/viewer_pageflip5.ctp:169
+msgid "Last page"
+msgstr "Laatste pagina"
+
+#: View/Elements/viewer_html5.ctp:98 View/Elements/viewers/viewer_html5.ctp:98
+#: View/Elements/viewers/viewer_pageflip5.ctp:170
+msgid "Zoom in"
+msgstr "Inzoomen"
+
+#: View/Elements/viewer_html5.ctp:99 View/Elements/viewers/viewer_html5.ctp:99
+#: View/Elements/viewers/viewer_pageflip5.ctp:171
+msgid "Zoom out"
+msgstr "Uitzoomen"
+
+#: View/Elements/viewer_html5.ctp:100
+#: View/Elements/viewers/viewer_html5.ctp:100
+#: View/Elements/viewers/viewer_pageflip5.ctp:172
+msgid "Slideshow"
+msgstr "Diavoorstelling"
+
+#: View/Elements/viewer_html5.ctp:103
+#: View/Elements/viewers/viewer_html5.ctp:103
+#: View/Elements/viewers/viewer_pageflip5.ctp:174
+msgid "Sound on/off"
+msgstr "Geluid aan/uit"
+
+#: View/Elements/viewer_html5.ctp:105
+#: View/Elements/viewers/viewer_html5.ctp:105
+#: View/Elements/viewers/viewer_pageflip5.ctp:175
+msgid "Show or hide the thumbnails of the pages in this book"
+msgstr "Covers van de pagina's in dit boek tonen of verbergen "
+
+#: View/Elements/viewer_html5.ctp:105
+#: View/Elements/viewers/viewer_html5.ctp:105
+#: View/Elements/viewers/viewer_pageflip5.ctp:175
+msgid "Show thumbnails"
+msgstr "Covers weergeven"
+
+#: View/Elements/library/library_notloggedin.ctp:34
+#: View/Pages/access_denied.ctp:16 View/Users/login.ctp:22
+#: View/fra/Users/login.ctp:22
+msgid "Sign In to"
+msgstr "Inloggen"
+
+#: View/Elements/library/library_notloggedin.ctp:68
+#: View/Pages/access_denied.ctp:53 View/Users/login.ctp:54
+#: View/fra/Users/login.ctp:54
+msgid "Forgot password?"
+msgstr "Wachtwoord vergeten?"
+
+#: View/Elements/library/library_notloggedin.ctp:70
+#: View/Pages/access_denied.ctp:55 View/Users/login.ctp:56
+#: View/fra/Users/login.ctp:56
+msgid "Get a new one here!"
+msgstr "Nu opvragen"
+
+#: View/Elements/library/library_notloggedin.ctp:78
+#: View/Pages/access_denied.ctp:63 View/Users/login.ctp:64
+#: View/Users/request_password_change.ctp:53 View/Users/reset_password.ctp:53
+#: View/fra/Users/login.ctp:64 View/fra/Users/request_password_change.ctp:53
+#: View/fra/Users/reset_password.ctp:53
+msgid "Don't have account?"
+msgstr "Heeft u geen account?"
+
+#: View/Elements/library/library_notloggedin.ctp:80
+#: View/Pages/access_denied.ctp:65 View/Users/add.ctp:59
+#: View/Users/login.ctp:66 View/Users/request_password_change.ctp:55
+#: View/Users/reset_password.ctp:55 View/fra/Users/add.ctp:59
+#: View/fra/Users/login.ctp:66 View/fra/Users/request_password_change.ctp:55
+#: View/fra/Users/reset_password.ctp:55
+msgid "Register"
+msgstr "Registreren"
+
+#: View/Elements/library/library_notloggedin.ctp:94
+#: View/Elements/library/library_withoutbooks.ctp:35
+msgid "What is the"
+msgstr "Wat is de"
+
+#: View/Elements/library/library_notloggedin.ctp:96
+#: View/Elements/library/library_withoutbooks.ctp:37
+msgid ""
+"Everyone should be able to save there photoalbums, share them and view them "
+"all over the world. Starting from today, thats possible."
+msgstr ""
+"Het zou voor iedereen mogelijk moeten zijn om de fotoalbums op te slaan, ze "
+"te delen en ze overal te kunnen bekijken. Dat is vanaf vandaag mogelijk."
+
+#: View/Elements/library/library_notloggedin.ctp:106
+#: View/Elements/library/library_withbooks.ctp:61
+#: View/Elements/library/library_withoutbooks.ctp:47
+msgid "Create a photo album at Fotoalbum"
+msgstr "Maak een fotoalbum bij Fotoalbum.be"
+
+#: View/Elements/library/library_notloggedin.ctp:107
+#: View/Elements/library/library_withbooks.ctp:62
+#: View/Elements/library/library_withoutbooks.ctp:48
+msgid ""
+"Choose one of the beautiful formats, select paper type and cover and make a "
+"personal photo album with your memories"
+msgstr ""
+"Kies uit de prachtige formaten, kies het papiersoort en omslag en maak met "
+"al uw herinneringen uw persoonlijke fotoalbum."
+
+#: View/Elements/library/library_notloggedin.ctp:122
+#: View/Elements/library/library_withoutbooks.ctp:63
+msgid "View your photo album online"
+msgstr "Bekijk uw fotoalbum online"
+
+#: View/Elements/library/library_notloggedin.ctp:123
+#: View/Elements/library/library_withoutbooks.ctp:64
+msgid ""
+"After you order the album, you will receive an email with access to the "
+"Album Viewer. Here you can view your album online from anywhere!"
+msgstr ""
+"Na uw bestelling, ontvangt u een e-mail met daarin een link naar de "
+"Albumviewer. Hier kunt u overal online uw album bekijken!"
+
+#: View/Elements/library/library_notloggedin.ctp:138
+#: View/Elements/library/library_withoutbooks.ctp:79
+msgid "Share your photo album with others"
+msgstr "Deel uw fotoalbum met anderen"
+
+#: View/Elements/library/library_notloggedin.ctp:139
+#: View/Elements/library/library_withoutbooks.ctp:80
+msgid ""
+"Now you can share the album with friends via email, facebook or other social "
+"media, on a website or anywhere you want!"
+msgstr ""
+"Het is nu mogelijk om uw fotoalbum met vrienden te delen via e-mail, "
+"Facebook en andere Social media. U kunt zelfs uw fotoalbum delen op een "
+"website!"
+
+#: View/Elements/library/library_withbooks.ctp:26
+msgid "Bibliotheek"
+msgstr "Bibliotheek"
+
+#: View/Elements/library/library_withbooks.ctp:37
+#: View/Elements/library/library_withoutbooks.ctp:23
+msgid "Photoalbums"
+msgstr "Mijn fotoalbums"
+
+#: View/Elements/library/library_withbooks.ctp:49
+#: View/Elements/library/library_withoutbooks.ctp:27
+#: View/OrderLines/find.ctp:71 View/Pages/home.ctp:59;81
+#: View/fra/Pages/home.ctp:59;81
+msgid "No photoalbums available"
+msgstr "Geen fotoalbums beschikbaar"
+
+#: View/Elements/library/library_withbooks.ctp:60
+msgid "You do not have any photo albums yet"
+msgstr "U heeft nog geen fotoalbums!"
+
+#: View/Elements/library/library_withbooks.ctp:64
+msgid "Create a photo album now"
+msgstr "Maak een fotoalbum bij Fotoalbum.be"
+
+#: View/Elements/library/library_withbooks.ctp:93
+msgid "Products from friends"
+msgstr "Fotoalbums van vrienden"
+
+#: View/Emails/html/new_password.ctp:4 View/Emails/text/new_password.ctp:12
+#: View/fra/Emails/html/new_password.ctp:4
+msgid "Your password has been reset"
+msgstr "Uw wachtwoord is gewijzigd"
+
+#: View/Emails/html/new_password.ctp:5 View/Emails/text/new_password.ctp:13
+#: View/fra/Emails/html/new_password.ctp:5
+msgid "Please login using this password and change your password"
+msgstr ""
+"Gebruik dit wachtwoord om in te loggen en om uw wachtwoord te kunnen "
+"veranderen"
+
+#: View/Emails/html/new_password.ctp:9 View/Emails/text/new_password.ctp:15
+#: View/fra/Emails/html/new_password.ctp:9
+msgid "Your new password is: %s"
+msgstr "Uw nieuwe wachtwoord is: %s"
+
+#: View/Emails/text/account_verification.ctp:12
+msgid "Hello %s,"
+msgstr "Beste %s,"
+
+#: View/Emails/text/account_verification.ctp:14
+msgid "to validate your account, you must visit the URL below within 24 hours"
+msgstr "Klik binnen 24 uur op de onderstaande link om uw profiel te activeren."
+
+#: View/Emails/text/password_reset_request.ctp:12
+msgid ""
+"A request to reset your password was sent. To change your password click the "
+"link below."
+msgstr ""
+"U heeft een verzoek gedaan om uw wachtwoord te wijzigen. Om uw wachtwoord te "
+"wijzigen, klikt u op de onderstaande link."
+
+#: View/Errors/error400.ctp:22 View/Errors/error500.ctp:22
+msgid "Error"
+msgstr "Fout"
+
+#: View/Errors/error400.ctp:24
+msgid "The requested address %s was not found on this server."
+msgstr "Het opgevraagde adres is niet gevonden op deze server"
+
+#: View/Errors/error500.ctp:23
+msgid "An Internal Error Has Occurred."
+msgstr "Er is een interne fout opgetreden"
+
+#: View/Invitations/index.ctp:14
+msgid "Sent invitations"
+msgstr "Verstuurde uitnodigingen"
+
+#: View/Invitations/index.ctp:23
+msgid "You have no sent invitations"
+msgstr "U heeft nog geen uitnodigingen verstuurd"
+
+#: View/Invitations/index.ctp:34 View/Users/dashboard.ctp:307
+#: View/fra/Users/dashboard.ctp:307
+msgid "Receiver"
+msgstr "Ontvanger"
+
+#: View/Invitations/index.ctp:35;137 View/Users/dashboard.ctp:308
+#: View/fra/Users/dashboard.ctp:308
+msgid "Send on"
+msgstr "Gestuurd op"
+
+#: View/Invitations/index.ctp:36;100;138;196 View/Users/dashboard.ctp:309
+#: View/Users/edit.ctp:175 View/fra/Users/dashboard.ctp:309
+#: View/fra/Users/edit.ctp:203
+msgid "Cancel"
+msgstr "Annuleren "
+
+#: View/Invitations/index.ctp:88
+msgid "Shared by email"
+msgstr "Gedeeld door middel van e-mail"
+
+#: View/Invitations/index.ctp:92;188 View/Users/dashboard.ctp:342;421
+#: View/fra/Users/dashboard.ctp:342;421
+msgid "Shared on"
+msgstr "Gedeeld op"
+
+#: View/Invitations/index.ctp:118
+msgid "Received invitations"
+msgstr "Ontvangen uitnodigingen"
+
+#: View/Invitations/index.ctp:125
+msgid "You have no received invitations."
+msgstr "U heeft nog geen uitnodigingen ontvangen."
+
+#: View/Invitations/index.ctp:136
+msgid "Send by"
+msgstr "Gestuurd door"
+
+#: View/Invitations/view.ctp:10
+msgid "Unfortunality, this photo album in not visible anymore"
+msgstr "Helaas, dit fotoalbum is niet meer zichtbaar"
+
+#: View/Invitations/view.ctp:17
+msgid ""
+"Please contact the owner of this site. That person can change this on "
+"Fotoalbum.nl"
+msgstr ""
+"Neem contact op met de eigenaar van deze site. Deze kan het bij Fotoalbum.be "
+"aanpassen."
+
+#: View/Invitations/view.ctp:23
+msgid ""
+"Please contact the owner of this photo album. That person can provide you "
+"with a new link to this photo album"
+msgstr ""
+"Neem contact op met de eigenaar van dit fotoalbum. Deze kan je een nieuwe "
+"link naar dit fotoalbum sturen."
+
+#: View/Layouts/default.ctp:115;124;135;160;214
+#: View/Layouts/facebook.ctp:104;111;120;143
+#: View/fra/Layouts/default.ctp:108;115;124;147;202
+#: View/fra/Layouts/facebook.ctp:103;110;119;142
+#: View/nl_be/Layouts/default.ctp:108;115;124;147;202
+#: Plugin/Contactform/View/Contactform/show.ctp:89
+msgid "Fotoalbum.nl"
+msgstr "Fotoalbum.be"
+
+#: View/Layouts/default.ctp:165 View/Layouts/facebook.ctp:148
+#: View/fra/Layouts/default.ctp:152 View/fra/Layouts/facebook.ctp:147
+#: View/nl_be/Layouts/default.ctp:152
+msgid "Telefoon"
+msgstr "Telefoon"
+
+#: View/Layouts/default.ctp:165 View/Layouts/facebook.ctp:148
+#: View/fra/Layouts/default.ctp:152 View/fra/Layouts/facebook.ctp:147
+#: View/nl_be/Layouts/default.ctp:152
+#: Plugin/Contactform/View/Contactform/show.ctp:94
+msgid "020 - 320 49 84"
+msgstr "020 - 320 49 84"
+
+#: View/Layouts/default.ctp:173 View/Layouts/facebook.ctp:156
+#: View/fra/Layouts/default.ctp:160 View/fra/Layouts/facebook.ctp:155
+#: View/nl_be/Layouts/default.ctp:160
+msgid "Klantenservice Fotoalbum.nl"
+msgstr "Vragen over de Albumviewer?"
+
+#: View/OrderLines/delete.ctp:10
+msgid "Are you sure you want to permanently delete this photo album"
+msgstr "Weet u zeker dat u dit fotoalbum definitief wilt verwijderen?"
+
+#: View/OrderLines/delete.ctp:14
+msgid "Yes, I want to delete this photo album"
+msgstr "Ja, ik weet zeker dat ik dit fotoalbum wil verwijderen"
+
+#: View/OrderLines/delete.ctp:18
+msgid "Note: You can not undo this action!"
+msgstr "Let op! U kunt het verwijderen niet meer ongedaan maken!"
+
+#: View/OrderLines/download.ctp:10 View/Pages/download.ctp:10
+msgid "Download"
+msgstr "Download"
+
+#: View/OrderLines/download.ctp:17 View/Pages/download.ctp:13
+msgid "click here to download your photo album"
+msgstr "Download uw fotoalbum"
+
+#: View/OrderLines/download.ctp:23
+msgid "No download avaiable!"
+msgstr "Geen download beschikbaar"
+
+#: View/OrderLines/download.ctp:33 View/Pages/access_denied.ctp:83
+#: View/Pages/download.ctp:17
+msgid ""
+"if you believe this is incorrect, please contact us thru the contactform"
+msgstr ""
+"Indien u denkt dat dit onterecht is, neem dan contact op met de "
+"klantenservice"
+
+#: View/OrderLines/find.ctp:29
+msgid "Search results"
+msgstr "Zoekresultaten "
+
+#: View/OrderLines/find.ctp:33
+msgid "Public library"
+msgstr "Openbare fotoalbums"
+
+#: View/OrderLines/find.ctp:46
+msgid "Staff picks"
+msgstr "Onze favorieten"
+
+#: View/OrderLines/find.ctp:62
+msgid "General"
+msgstr "Algemeen"
+
+#: View/OrderLines/view.ctp:19
+msgid "tour_next_label"
+msgstr "Volgende"
+
+#: View/OrderLines/view.ctp:20
+msgid "tour_prev_label"
+msgstr "Terug"
+
+#: View/OrderLines/view.ctp:21
+msgid "tour_skip_label"
+msgstr "Overslaan"
+
+#: View/OrderLines/view.ctp:22
+msgid "tour_done_label"
+msgstr "Gereed"
+
+#: View/OrderLines/view.ctp:91;534;618;763 View/Users/dashboard.ctp:91
+#: View/fra/Users/dashboard.ctp:91
+msgid "edit"
+msgstr "wijzig"
+
+#: View/OrderLines/view.ctp:98
+msgid "Edit the title"
+msgstr "Titel aanpassen"
+
+#: View/OrderLines/view.ctp:147
+msgid "Competition"
+msgstr "Wedstrijd"
+
+#: View/OrderLines/view.ctp:151
+msgid "bekeken"
+msgstr "bekeken"
+
+#: View/OrderLines/view.ctp:153
+#: Plugin/Comments/View/Comments/admin_index.ctp:12
+#: Plugin/Comments/View/Comments/index.ctp:13
+#: Plugin/Comments/View/Elements/comments/flat/main.ctp:25
+#: Plugin/Comments/View/Elements/comments/threaded/main.ctp:19
+#: Plugin/Comments/View/Elements/comments/tree/main.ctp:14
+#: View/Elements/comments/flat/main.ctp:25
+#: View/Elements/comments/threaded/main.ctp:19
+#: View/Elements/comments/tree/main.ctp:14
+msgid "Comments"
+msgstr "Reacties"
+
+#: View/OrderLines/view.ctp:167
+msgid "Remove this album from the albumviewer"
+msgstr "Verwijder dit fotoalbum uit de albumviewer"
+
+#: View/OrderLines/view.ctp:200
+msgid "edit description"
+msgstr "wijzig beschrijving"
+
+#: View/OrderLines/view.ctp:207
+msgid "Edit the description"
+msgstr "Bewerk de beschrijving"
+
+#: View/OrderLines/view.ctp:224
+msgid "Enter description"
+msgstr "Beschrijving toevoegen"
+
+#: View/OrderLines/view.ctp:256
+msgid "Sharing your photoalbum"
+msgstr "Deel uw fotoalbum"
+
+#: View/OrderLines/view.ctp:261
+msgid "By mail"
+msgstr "Per e-mail"
+
+#: View/OrderLines/view.ctp:262
+msgid "Social media"
+msgstr "Social media"
+
+#: View/OrderLines/view.ctp:263
+msgid "On a website"
+msgstr "Op een website"
+
+#: View/OrderLines/view.ctp:267
+msgid ""
+"Invite friends to view your photo album by sending them an e-mail. Only "
+"people you invite by email can view your photo album."
+msgstr ""
+"Nodig uw vrienden uit per e-mail om uw fotoalbum te bekijken. Alleen de "
+"mensen die uw uitnodiging hebben ontvangen, kunnen uw fotoalbum bekijken."
+
+#: View/OrderLines/view.ctp:271;341;418
+msgid ""
+"At the moment your album is private. Change the settings to make sharing "
+"possible."
+msgstr ""
+"Dit fotoalbum is priv&eacute;. Verander uw privacyinstellingen om het te "
+"kunnen delen. "
+
+#: View/OrderLines/view.ctp:285;314;355;432;698;786
+msgid "Privacy settings saved!"
+msgstr "Privacyinstellingen opgeslagen!"
+
+#: View/OrderLines/view.ctp:289;359;436
+msgid "Allow sharing"
+msgstr "Delen mogelijk maken"
+
+#: View/OrderLines/view.ctp:302
+msgid "Use this form to send the invitation"
+msgstr "Gebruik dit formulier om de uitnodiging te versturen"
+
+#: View/OrderLines/view.ctp:314
+msgid "The messages are send!"
+msgstr "De berichten zijn verzonden!"
+
+#: View/OrderLines/view.ctp:317
+msgid "Emailaddresses"
+msgstr "E-mailadressen"
+
+#: View/OrderLines/view.ctp:317
+msgid "Enter mailaddresses (Comma seperated!)"
+msgstr "Voer een komma in na een adres!"
+
+#: View/OrderLines/view.ctp:318
+msgid "Your message"
+msgstr "Uw bericht"
+
+#: View/OrderLines/view.ctp:318
+msgid "Enter a message"
+msgstr "Vul hier uw bericht in "
+
+#: View/OrderLines/view.ctp:322
+#: Plugin/Comments/View/Elements/comments/threaded/form.ctp:65;67
+#: View/Elements/comments/threaded/form.ctp:65;67
+msgid "Send"
+msgstr "Versturen"
+
+#: View/OrderLines/view.ctp:336
+msgid ""
+"Share your photo album on Social media or by sending a link. People with "
+"this link can view your photo album."
+msgstr ""
+"Deel uw fotoalbum op Social media of door een link te versturen. Mensen met "
+"deze link kunnen uw fotoalbum bekijken."
+
+#: View/OrderLines/view.ctp:375
+msgid "Use this link to share your photoalbum on social media"
+msgstr "Gebruik deze link om uw fotoalbum via Social media te delen"
+
+#: View/OrderLines/view.ctp:380;454
+msgid "Selecteer"
+msgstr "Selecteer"
+
+#: View/OrderLines/view.ctp:385
+msgid "or share direct by social media"
+msgstr "Of deel direct via Social media"
+
+#: View/OrderLines/view.ctp:387;715
+msgid "Tweet this"
+msgstr "Tweet"
+
+#: View/OrderLines/view.ctp:388;716
+msgid "Share on Facebook"
+msgstr "Delen via Facebook"
+
+#: View/OrderLines/view.ctp:389;717
+msgid "Place on linkedIn"
+msgstr "LinkedIn"
+
+#: View/OrderLines/view.ctp:390;718
+msgid "Pin on Pinterest"
+msgstr "Pin op Pinterest"
+
+#: View/OrderLines/view.ctp:391;719
+msgid "Share on Google+"
+msgstr "Delen via Google+"
+
+#: View/OrderLines/view.ctp:413
+msgid ""
+"Share your photo album on a website or blog. Use the link or code below to "
+"integrate the viewer into your own website(s)."
+msgstr ""
+"Deel uw fotoalbum op een website of blog. Kopieer de link of code om het "
+"fotoalbum op een website te intergreren."
+
+#: View/OrderLines/view.ctp:449
+msgid "Use the link below to integrate your photoalbum on a website or blog"
+msgstr ""
+"Gebruik onderstaande link om het fotoalbum te plaatsen op een website of "
+"blog:"
+
+#: View/OrderLines/view.ctp:457
+msgid "Use the HTML below, to embed the viewer into your website:"
+msgstr ""
+"Gebruik onderstaande HTML-code om het fotoalbum op een website in te sluiten:"
+
+#: View/OrderLines/view.ctp:459
+msgid "Select"
+msgstr "Selecteer"
+
+#: View/OrderLines/view.ctp:519;524
+msgid "categories"
+msgstr "Categorie&euml;n"
+
+#: View/OrderLines/view.ctp:524
+msgid ""
+"Hold down the ctrl-button to select multiple categories. Unselect any "
+"category to remove this photoalbum from that category!"
+msgstr ""
+"Houdt de CTRL-toets ingedrukt om meerdere categorie&euml;n te kiezen. <br/"
+"><br/>Deselecteer een categorie om het fotoalbum uit deze categorie te "
+"verwijderen!"
+
+#: View/OrderLines/view.ctp:541
+msgid "Edit the categories"
+msgstr "Categorie bewerken"
+
+#: View/OrderLines/view.ctp:559
+msgid "categories saved!"
+msgstr "Categorie opgeslagen!"
+
+#: View/OrderLines/view.ctp:598
+msgid ""
+"This photoalbum is not yet categorized. Please select a category by clicking "
+"the above edit button"
+msgstr ""
+"U heeft nog geen categorie geselecteerd! Selecteer een categorie door op de "
+"wijzig button te klikken"
+
+#: View/OrderLines/view.ctp:602
+msgid "Algemeen"
+msgstr "Algemeen"
+
+#: View/OrderLines/view.ctp:612 Plugin/Tags/View/Tags/admin_add.ctp:24
+#: Plugin/Tags/View/Tags/admin_edit.ctp:28
+#: Plugin/Tags/View/Tags/admin_index.ctp:13
+#: Plugin/Tags/View/Tags/admin_view.ctp:56 Plugin/Tags/View/Tags/index.ctp:13
+#: Plugin/Tags/View/Tags/view.ctp:54
+msgid "Tags"
+msgstr "Tags"
+
+#: View/OrderLines/view.ctp:625
+msgid "Edit the tags"
+msgstr "Tags bewerken"
+
+#: View/OrderLines/view.ctp:643
+msgid "Tags saved!"
+msgstr "Tags opgeslagen!"
+
+#: View/OrderLines/view.ctp:644
+msgid "Enter tags"
+msgstr "Tags toevoegen"
+
+#: View/OrderLines/view.ctp:683
+msgid "Share"
+msgstr "Delen"
+
+#: View/OrderLines/view.ctp:701
+msgid "This album is private.<br/>Click here to allow sharing"
+msgstr "Dit fotoalbum is priv&eacute;.<br/>Klik om delen mogelijk te maken"
+
+#: View/OrderLines/view.ctp:735
+msgid "Only visible for you."
+msgstr "Het is alleen voor u zichtbaar"
+
+#: View/OrderLines/view.ctp:742
+msgid "Only visible for people you invite or when shared"
+msgstr "U kunt nu delen met anderen"
+
+#: View/OrderLines/view.ctp:748
+msgid "Visible for everyone and enabled for competitions"
+msgstr "Iedereen kan bekijken en u kunt meedoen met leuke wedstrijden"
+
+#: View/OrderLines/view.ctp:755;756
+msgid "Privacy settings"
+msgstr "Privacyinstelling"
+
+#: View/OrderLines/view.ctp:770
+msgid "Edit the privacy settings"
+msgstr "Privacyinstelling wijzigen"
+
+#: View/OrderLines/view.ctp:793
+msgid "Enter privacy"
+msgstr "Privacy toevoegen"
+
+#: View/OrderLines/view.ctp:814
+msgid "The privacy setting is set to "
+msgstr "Dit fotoalbum is"
+
+#: View/OrderLines/view.ctp:825
+msgid "Rating"
+msgstr "Beoordelingen"
+
+#: View/OrderLines/view.ctp:846
+msgid "uit"
+msgstr "uit"
+
+#: View/OrderLines/view.ctp:848
+msgid "Totaal"
+msgstr "Totaal"
+
+#: View/OrderLines/view.ctp:848
+msgid "stem(men)"
+msgstr "stem(men)"
+
+#: View/Pages/access_denied.ctp:77
+msgid "Access denied"
+msgstr "U heeft geen toegang"
+
+#: View/Pages/home.ctp:43 View/fra/Pages/home.ctp:43
+msgid "Most recent albums"
+msgstr "Meest recente fotoalbums "
+
+#: View/Pages/home.ctp:47 View/fra/Pages/home.ctp:47
+msgid "show all"
+msgstr "bekijk alles"
+
+#: View/Pages/home.ctp:75 View/fra/Pages/home.ctp:75
+msgid "Albumviewer selection"
+msgstr "Albumviewer selectie"
+
+#: View/Pages/home.ctp:103 View/fra/Pages/home.ctp:103
+msgid "Competition entries"
+msgstr "Inzendingen 'Win een fietsvakantie'"
+
+#: View/Users/add.ctp:21 View/fra/Users/add.ctp:21
+msgid "Register with"
+msgstr "Schrijf u in voor de"
+
+#: View/Users/add.ctp:37 View/fra/Users/add.ctp:37
+msgid "Enter your name here"
+msgstr "Vul hier uw naam in"
+
+#: View/Users/add.ctp:41 View/fra/Users/add.ctp:41
+msgid "Email (used as login)"
+msgstr "E-mail (gebruikt bij inloggen)"
+
+#: View/Users/add.ctp:50 View/Users/change_password.ctp:48
+#: View/fra/Users/add.ctp:50 View/fra/Users/change_password.ctp:48
+msgid "Please, again type your password here!"
+msgstr "Ter controle, nogmaals uw NIEUWE wachtwoord!"
+
+#: View/Users/add.ctp:56 View/fra/Users/add.ctp:56
+msgid "I have read and agreed to the %s"
+msgstr "Ik ga akkoord met de %s van de Albumviewer"
+
+#: View/Users/add.ctp:72 View/fra/Users/add.ctp:72
+msgid "Already have account with us?"
+msgstr "Heeft u al een profiel?"
+
+#: View/Users/change_password.ctp:21 View/fra/Users/change_password.ctp:21
+msgid "Change your password for"
+msgstr "Wijzig uw wachtwoord voor de"
+
+#: View/Users/change_password.ctp:37 View/fra/Users/change_password.ctp:37
+msgid "Please, type your current password here!"
+msgstr "Typ hier uw HUIDGE wachtwoord!"
+
+#: View/Users/change_password.ctp:43 View/fra/Users/change_password.ctp:43
+msgid "Please, type your new password here!"
+msgstr "Typ hier uw NIEUWE  wachtwoord!"
+
+#: View/Users/change_password.ctp:53 View/fra/Users/change_password.ctp:53
+msgid "Change"
+msgstr "Wijzigen"
+
+#: View/Users/dashboard.ctp:84 View/Users/edit.ctp:129
+#: View/fra/Users/dashboard.ctp:84 View/fra/Users/edit.ctp:124
+#: Plugin/Contactform/View/Contactform/show.ctp:84
+msgid "Address"
+msgstr "Adres"
+
+#: View/Users/dashboard.ctp:163 View/fra/Users/dashboard.ctp:163
+msgid "Here you will find you previous orders"
+msgstr "Hier ziet u uw eerdere bestellingen"
+
+#: View/Users/dashboard.ctp:169 View/fra/Users/dashboard.ctp:169
+msgid "Ordernumber"
+msgstr "Ordernummer"
+
+#: View/Users/dashboard.ctp:170 View/fra/Users/dashboard.ctp:170
+msgid "Quantity"
+msgstr "Aantal"
+
+#: View/Users/dashboard.ctp:171 View/fra/Users/dashboard.ctp:171
+msgid "Product"
+msgstr "Product"
+
+#: View/Users/dashboard.ctp:172 View/fra/Users/dashboard.ctp:172
+msgid "Orderdate"
+msgstr "Orderdatum"
+
+#: View/Users/dashboard.ctp:173 View/fra/Users/dashboard.ctp:173
+msgid "Price"
+msgstr "Prijs"
+
+#: View/Users/dashboard.ctp:174 View/fra/Users/dashboard.ctp:174
+msgid "Shipping"
+msgstr "Verzending"
+
+#: View/Users/dashboard.ctp:175 View/fra/Users/dashboard.ctp:175
+msgid "Discount"
+msgstr "Korting"
+
+#: View/Users/dashboard.ctp:176 View/fra/Users/dashboard.ctp:176
+msgid "Total"
+msgstr "Totaal"
+
+#: View/Users/dashboard.ctp:243 View/fra/Users/dashboard.ctp:243
+msgid "You don't have any orders yet!"
+msgstr "U heeft nog geen bestellingen!"
+
+#: View/Users/dashboard.ctp:260 View/fra/Users/dashboard.ctp:260
+msgid "Your public books"
+msgstr "Openbare fotoalbums"
+
+#: View/Users/dashboard.ctp:274 View/fra/Users/dashboard.ctp:274
+msgid "You don not have any public albums yet!"
+msgstr "U heeft nog geen openbare fotoalbums!"
+
+#: View/Users/dashboard.ctp:295 View/fra/Users/dashboard.ctp:295
+msgid "sent_invitations"
+msgstr "Verstuurde uitnodigingen"
+
+#: View/Users/dashboard.ctp:302 View/fra/Users/dashboard.ctp:302
+msgid "Here you will find you previous invitations"
+msgstr "Hier ziet u uw verstuurde uitnodigingen"
+
+#: View/Users/dashboard.ctp:305;385 View/fra/Users/dashboard.ctp:305;385
+msgid "Thumb"
+msgstr "Cover"
+
+#: View/Users/dashboard.ctp:338 View/fra/Users/dashboard.ctp:338
+msgid "Shared by"
+msgstr "Gedeeld door"
+
+#: View/Users/dashboard.ctp:347;426 View/fra/Users/dashboard.ctp:347;426
+msgid "at"
+msgstr "om"
+
+#: View/Users/dashboard.ctp:350 View/fra/Users/dashboard.ctp:350
+msgid "Annuleer"
+msgstr "Intrekken"
+
+#: View/Users/dashboard.ctp:363;439 View/fra/Users/dashboard.ctp:363;439
+msgid "You don't have any invitations yet!"
+msgstr "U heeft nog geen uitnodigingen!"
+
+#: View/Users/dashboard.ctp:373 View/fra/Users/dashboard.ctp:373
+msgid "received_invitations"
+msgstr "Ontvangen uitnodigingen"
+
+#: View/Users/dashboard.ctp:381 View/fra/Users/dashboard.ctp:381
+msgid "Here you will find your received invitations"
+msgstr "U vindt hier uw eerder ontvangen uitnodigingen"
+
+#: View/Users/dashboard.ctp:387 View/fra/Users/dashboard.ctp:387
+msgid "Sender"
+msgstr "Afzender"
+
+#: View/Users/dashboard.ctp:388 View/fra/Users/dashboard.ctp:388
+msgid "Sent on"
+msgstr "Verstuurd op"
+
+#: View/Users/edit.ctp:36 View/fra/Users/edit.ctp:36
+msgid "Edit your profile"
+msgstr "Wijzig uw profiel"
+
+#: View/Users/edit.ctp:59 View/fra/Users/edit.ctp:59
+msgid "First name"
+msgstr "Voornaam "
+
+#: View/Users/edit.ctp:60 View/fra/Users/edit.ctp:60
+msgid "Last name"
+msgstr "Achternaam"
+
+#: View/Users/edit.ctp:61 View/fra/Users/edit.ctp:61
+msgid "Language"
+msgstr "Taal"
+
+#: View/Users/edit.ctp:62 View/fra/Users/edit.ctp:62
+msgid "Biography"
+msgstr "Biografie"
+
+#: View/Users/edit.ctp:74 View/fra/Users/edit.ctp:74
+msgid "Birthday"
+msgstr "Geboortedatum"
+
+#: View/Users/edit.ctp:83
+msgid "Picture"
+msgstr "Afbeelding"
+
+#: View/Users/edit.ctp:139 View/fra/Users/edit.ctp:167
+msgid "Facebook"
+msgstr "Facebook"
+
+#: View/Users/edit.ctp:139;140;141;142;143
+#: View/fra/Users/edit.ctp:167;168;169;170;171
+#: Plugin/Contactform/View/Contactform/show.ctp:38
+#: Plugin/Contactform/View/Emails/html/contactform.ctp:4
+#: Plugin/Contactform/View/Emails/text/contactform.ctp:10
+#: View/fra/Contactform/show.ctp:38
+msgid "name"
+msgstr "Naam"
+
+#: View/Users/edit.ctp:140 View/fra/Users/edit.ctp:168
+msgid "Twitter"
+msgstr "Twitter"
+
+#: View/Users/edit.ctp:141 View/fra/Users/edit.ctp:169
+msgid "LinkedIn"
+msgstr "LinkedIN"
+
+#: View/Users/edit.ctp:142 View/fra/Users/edit.ctp:170
+msgid "Google+"
+msgstr "Google+"
+
+#: View/Users/edit.ctp:143 View/fra/Users/edit.ctp:171
+msgid "Pinterest+"
+msgstr "Pinterest"
+
+#: View/Users/login.ctp:39 View/fra/Users/login.ctp:39
+msgid "Email or Username"
+msgstr "E-mailadres of Gebruikersnaam"
+
+#: View/Users/request_password_change.ctp:15 View/Users/reset_password.ctp:15
+#: View/fra/Users/request_password_change.ctp:15
+#: View/fra/Users/reset_password.ctp:15
+msgid "Goto your dashboard"
+msgstr "Ga naar uw profiel"
+
+#: View/Users/request_password_change.ctp:22
+#: View/fra/Users/request_password_change.ctp:22
+msgid "Forgot your"
+msgstr "Wat is mijn "
+
+#: View/Users/request_password_change.ctp:22
+#: View/fra/Users/request_password_change.ctp:22
+msgid "password"
+msgstr "Wachtwoord"
+
+#: View/Users/request_password_change.ctp:42
+#: View/fra/Users/request_password_change.ctp:42
+msgid "Send a new password"
+msgstr "Verstuur een nieuw wachtwoord"
+
+#: View/Users/reset_password.ctp:22 View/fra/Users/reset_password.ctp:22
+msgid "Choose a new password for"
+msgstr "Kies een nieuw wachtwoord voor de"
+
+#: View/Users/reset_password.ctp:38 View/fra/Users/reset_password.ctp:38
+msgid "New password"
+msgstr "Nieuw wachtwoord"
+
+#: View/Users/reset_password.ctp:39 View/fra/Users/reset_password.ctp:39
+msgid "Confrm password"
+msgstr "Wachtwoord bevestigen"
+
+#: View/Users/view.ctp:115 View/fra/Users/view.ctp:115
+msgid "Public books"
+msgstr "Openbare fotoalbums"
+
+#: View/Users/view.ctp:129 View/fra/Users/view.ctp:129
+msgid "You don't have any public albums yet!"
+msgstr "U heeft nog geen openbare fotoalbums!"
+
+#: View/fra/Users/edit.ctp:133
+msgid "Street"
+msgstr "Straat"
+
+#: View/fra/Users/edit.ctp:134
+msgid "Zipcode"
+msgstr "Postcode"
+
+#: View/fra/Users/edit.ctp:135
+msgid "City"
+msgstr "Stad"
+
+#: View/fra/Users/edit.ctp:136
+msgid "Country"
+msgstr "Land"
+
+#: View/fra/Users/edit.ctp:158
+msgid "Social"
+msgstr "Social"
+
+#: Controller/ToursController.php:52;86;112
+msgid "Invalid tour"
+msgstr "Ongeldige tour"
+
+#: Controller/ToursController.php:68;91
+msgid "The tour has been saved"
+msgstr "De tour is opgeslagen"
+
+#: Controller/ToursController.php:71;94
+msgid "The tour could not be saved. Please, try again."
+msgstr "De tour kan niet worden opgeslagen. Probeert u het nog eens."
+
+#: Controller/ToursController.php:116
+msgid "Tour deleted"
+msgstr "Tour verwijderd"
+
+#: Controller/ToursController.php:119
+msgid "Tour was not deleted"
+msgstr "Tour is niet verwijderd"
+
+#: Plugin/Comments/View/Comments/admin_index.ctp:63
+msgid "Hide"
+msgstr "Verbergen"
+
+#: Plugin/Comments/View/Elements/comments/threaded/form.ctp:59
+#: View/Elements/comments/threaded/form.ctp:59
+msgid "Post comment"
+msgstr "Reactie plaatsen"
+
+#: Plugin/Comments/View/Elements/comments/tree/main.ctp:28
+#: View/Elements/comments/tree/main.ctp:28
+msgid "comments"
+msgstr "Reacties"
+
+#: Plugin/Survey/Controller/SurveyResponsesController.php:65
+msgid "Hey Dude! You had already submitted this survey."
+msgstr "U heeft reeds deelgenomen aan deze wedstrijd."
+
+#: Plugin/Survey/Controller/SurveyResponsesController.php:71
+#: Plugin/Survey/Controller/SurveysController.php:189;260
+msgid ""
+"Oops...something went wrong when trying to save your survey responses. Take "
+"a look at the errors below and try again."
+msgstr ""
+"Oops...Er is iets fout gegaan bij het opslaan van uw antwoorden op de "
+"wedstrijd. Bekijk deze fouten en probeer het nog eens."
+
+#: Plugin/Survey/Controller/SurveyResponsesController.php:121
+msgid "New Survey Response"
+msgstr "Nieuwe antwoorden op de wedstrijd"
+
+#: Plugin/Survey/Controller/SurveyResponsesController.php:153
+msgid "Please enter the correct answer to the math question."
+msgstr ""
+"Probeert u alstublieft een correct antwoord in te vullen bij de bijbehorende "
+"vraag."
+
+#: Plugin/Survey/Controller/SurveyResponsesController.php:199
+#: Plugin/Survey/View/SurveyResponses/index.ctp:70;80
+#: Plugin/Survey/View/SurveyResponses/view.ctp:40;59
+msgid "Undefined %s"
+msgstr "Ongedefinieerd  %s"
+
+#: Plugin/Survey/Controller/SurveyResponsesController.php:237
+msgid "Response deleted"
+msgstr "Deelname verwijderd"
+
+#: Plugin/Survey/Controller/SurveyResponsesController.php:240
+#: Plugin/Survey/Controller/SurveysController.php:296
+msgid "Oops...something went wrong when trying to delete responses."
+msgstr "Oops...Er is iets fout gegaan bij het verwijderen van de antwoorden."
+
+#: Plugin/Survey/Controller/SurveyResponsesController.php:281
+msgid "(No Response)"
+msgstr "(Geen antwoord)"
+
+#: Plugin/Survey/Controller/SurveyResponsesController.php:291;299
+#: Plugin/Survey/Vendor/formbuilder.php:362;488;509;526;566;600;634;721;770;808
+#: Plugin/Survey/View/SurveyResponses/index.ctp:107
+msgid "Undefined"
+msgstr "Ongedefinieerd"
+
+#: Plugin/Survey/Controller/SurveysController.php:90
+#: Plugin/Survey/View/Surveys/add.ctp:30
+#: Plugin/Survey/View/Surveys/edit.ctp:30
+msgid "Untitled"
+msgstr "Titel toevoegen"
+
+#: Plugin/Survey/Controller/SurveysController.php:292
+msgid "Survey deleted"
+msgstr "Wedstrijd verwijderd"
+
+#: Plugin/Survey/Model/SurveyResponse.php:55
+msgid "Response"
+msgstr "Antwoord"
+
+#: Plugin/Survey/Vendor/formbuilder.php:398;665
+msgid "Undefined Checkbox"
+msgstr "Ongedefinieerde Checkbox"
+
+#: Plugin/Survey/Vendor/formbuilder.php:734
+msgid "Undefined Radio"
+msgstr "Ongedefinieerde radio"
+
+#: Plugin/Survey/Vendor/formbuilder.php:800
+msgid "Please select one option"
+msgstr "Maak een keuze uit de opties"
+
+#: Plugin/Survey/View/Emails/html/notify_new_respose.ctp:13
+#: Plugin/Survey/View/SurveyResponses/index.ctp:14
+#: Plugin/Survey/View/SurveyResponses/view.ctp:15
+msgid "Response for \"%s\""
+msgstr "Antwoord bij \"%s\""
+
+#: Plugin/Survey/View/Emails/html/notify_new_respose.ctp:53
+#: Plugin/Survey/View/SurveyResponses/view.ctp:55
+msgid "(No Response was provided)"
+msgstr "(Er is geen antwoord gegeven)"
+
+#: Plugin/Survey/View/SurveyResponses/index.ctp:3
+#: Plugin/Survey/View/SurveyResponses/view.ctp:3
+#: Plugin/Survey/View/Surveys/edit.ctp:3 View/Elements/menu/top_menu.ctp:23
+msgid "Manage Survey"
+msgstr "Westrijd beheren"
+
+#: Plugin/Survey/View/SurveyResponses/index.ctp:96
+msgid "Browse"
+msgstr "Zoeken"
+
+#: Plugin/Survey/View/SurveyResponses/index.ctp:133
+msgid "No data found"
+msgstr "%s niet gevonden."
+
+#: Plugin/Survey/View/SurveyResponses/view.ctp:110
+msgid "ResponseList"
+msgstr "Antwoordenlijst"
+
+#: Plugin/Survey/View/SurveyResponses/view.ctp:115
+msgid "Are you sure you want to delete ?"
+msgstr "Bent u er zeker van dat u # %s? wilt verwijderen?"
+
+#: Plugin/Survey/View/SurveyResponses/view.ctp:126
+msgid "No contain found."
+msgstr "%s niet gevonden."
+
+#: Plugin/Survey/View/SurveyResponses/json/preview.ctp:26
+#: Plugin/Survey/View/SurveyResponses/json/thankyou.ctp:26
+#: Plugin/Survey/View/Surveys/thankyou.ctp:6
+#: Plugin/Survey/View/Surveys/json/thankyou.ctp:26
+msgid "Thanks for filling in our survey. Your opinion is important to us."
+msgstr "Bedankt voor uw deelname aan deze westrijd!"
+
+#: Plugin/Survey/View/Surveys/add.ctp:3
+#: View/Themed/Once/Elements/menu/top_menu.ctp:23
+msgid "Manage Competitions"
+msgstr "Wedstrijden beheren"
+
+#: Plugin/Survey/View/Surveys/add.ctp:6
+#: View/Themed/Once/Elements/menu/top_menu.ctp:24
+msgid "New Competition"
+msgstr "Nieuwe wedstrijd"
+
+#: Plugin/Survey/View/Surveys/add.ctp:31
+#: Plugin/Survey/View/Surveys/edit.ctp:31
+msgid "Type"
+msgstr "Typen"
+
+#: Plugin/Survey/View/Surveys/add.ctp:32
+#: Plugin/Survey/View/Surveys/edit.ctp:32
+msgid "Title above the intro text"
+msgstr "Onderwerp boven de introtekst"
+
+#: Plugin/Survey/View/Surveys/add.ctp:33
+#: Plugin/Survey/View/Surveys/edit.ctp:33
+msgid "Intro"
+msgstr "Intro"
+
+#: Plugin/Survey/View/Surveys/add.ctp:33
+#: Plugin/Survey/View/Surveys/edit.ctp:33
+msgid "Enter a introduction text here!"
+msgstr "Vul hier uw introtekst in!"
+
+#: Plugin/Survey/View/Surveys/add.ctp:34
+#: Plugin/Survey/View/Surveys/edit.ctp:34
+msgid "T.O.S."
+msgstr "Algemene Voorwaarden"
+
+#: Plugin/Survey/View/Surveys/add.ctp:34
+#: Plugin/Survey/View/Surveys/edit.ctp:34
+msgid "Enter the terms of service here!"
+msgstr "Plaats hier de Algemene Voorwaarden van de wedstrijd"
+
+#: Plugin/Survey/View/Surveys/add.ctp:35
+#: Plugin/Survey/View/Surveys/edit.ctp:35 View/Tours/view.ctp:14
+msgid "Header"
+msgstr "Header"
+
+#: Plugin/Survey/View/Surveys/add.ctp:53
+#: Plugin/Survey/View/Surveys/edit.ctp:53
+msgid "Button"
+msgstr "Knopje"
+
+#: Plugin/Survey/View/Surveys/add.ctp:73
+#: Plugin/Survey/View/Surveys/edit.ctp:73
+msgid "When completed"
+msgstr "Wanneer het gereed is"
+
+#: Plugin/Survey/View/Surveys/add.ctp:77
+#: Plugin/Survey/View/Surveys/edit.ctp:77
+msgid ""
+"When a contact completes the compitition they will be taken to the web page "
+"you type here. Alternatively you can show them a thank you message by "
+"selecting the option above instead."
+msgstr ""
+"Wanneer een gebruiker klaar is met de wedstrijd, zal deze gebruiker naar de "
+"opgegeven webpagina geleid worden. Daarnaast kunt u ook een bedankt bericht "
+"sturen door de optie hierboven te selecteren. "
+
+#: Plugin/Survey/View/Surveys/add.ctp:81
+#: Plugin/Survey/View/Surveys/edit.ctp:83
+msgid "Thanks for joining our competition"
+msgstr "Bedankt voor de deelname aan onze wedstrijd"
+
+#: Plugin/Survey/View/Surveys/add.ctp:86
+#: Plugin/Survey/View/Surveys/edit.ctp:90
+msgid ""
+"When a contact completes the competition they will be taken to the web page "
+"you type here. Alternatively you can show them a thank you message by "
+"selecting the option above instead."
+msgstr ""
+"Wanneer een gebruiker klaar is met de wedstrijd, zal deze gebruiker naar de "
+"opgegeven webpagina geleid worden. Daarnaast kunt u ook een bedankt bericht "
+"sturen door de optie hierboven te selecteren. "
+
+#: Plugin/Survey/View/Surveys/add.ctp:90
+#: Plugin/Survey/View/Surveys/edit.ctp:94
+msgid "Be sure to include http://"
+msgstr "Vergeet niet om http:// toe te voegen."
+
+#: Plugin/Survey/View/Surveys/add.ctp:96
+#: Plugin/Survey/View/Surveys/edit.ctp:100
+msgid "Email responses to me"
+msgstr "E-mail berichten"
+
+#: Plugin/Survey/View/Surveys/add.ctp:101
+#: Plugin/Survey/View/Surveys/edit.ctp:105
+msgid "Show as public (make_public)."
+msgstr "Maak openbaar (make_public)"
+
+#: Plugin/Survey/View/Surveys/add.ctp:101
+#: Plugin/Survey/View/Surveys/edit.ctp:105
+msgid "Set the result albums as public and show them?"
+msgstr "Set the result albums as public and show them?"
+
+#: Plugin/Survey/View/Surveys/add.ctp:102
+#: Plugin/Survey/View/Surveys/edit.ctp:106
+msgid "Current language."
+msgstr "Huidige taal."
+
+#: Plugin/Survey/View/Surveys/add.ctp:102
+#: Plugin/Survey/View/Surveys/edit.ctp:106
+msgid "Choose between nl, fr and es"
+msgstr "Kies tussen Nederlands, Frans of Spaans"
+
+#: Plugin/Survey/View/Surveys/add.ctp:103
+#: Plugin/Survey/View/Surveys/edit.ctp:107
+msgid "Error Message"
+msgstr "Fout bericht"
+
+#: Plugin/Survey/View/Surveys/add.ctp:103
+#: Plugin/Survey/View/Surveys/edit.ctp:107
+msgid ""
+"If something goes wrong when trying to save a response your contacts will be "
+"shown this error message."
+msgstr ""
+"Als er iets fout gaat wanneer u een antwoord probeert op te slaan, krijgen "
+"uw contacten deze foutmelding te zien. "
+
+#: Plugin/Survey/View/Surveys/add.ctp:104
+#: Plugin/Survey/View/Surveys/edit.ctp:108
+msgid "Submit Form Text"
+msgstr "Aanmelden Formulier Tekst"
+
+#: Plugin/Survey/View/Surveys/add.ctp:104
+#: Plugin/Survey/View/Surveys/edit.ctp:108
+msgid "This text will be shown on the button at the submit button."
+msgstr "Deze tekst zal getoond worden op de aanmeldingsknop."
+
+#: Plugin/Survey/View/Surveys/add.ctp:105
+#: Plugin/Survey/View/Surveys/edit.ctp:109
+msgid "Submit Form Class"
+msgstr "Aanmelding Formulier Categorie"
+
+#: Plugin/Survey/View/Surveys/add.ctp:105
+#: Plugin/Survey/View/Surveys/edit.ctp:109
+msgid "This is the class of the button at the bottom."
+msgstr "Dit is een categorie van de knop die onderaan staat."
+
+#: Plugin/Survey/View/Surveys/add.ctp:106
+#: Plugin/Survey/View/Surveys/edit.ctp:110
+msgid "Break per questions"
+msgstr "Gescheiden per vraag"
+
+#: Plugin/Survey/View/Surveys/add.ctp:106
+#: Plugin/Survey/View/Surveys/edit.ctp:110
+msgid ""
+"This option is to break your form after number of questions you specified. "
+"For example, you entered 10 then your form will break and move to the next "
+"page after every 10 questions."
+msgstr "Deze optie is om uw formulier "
+
+#: Plugin/Survey/View/Surveys/index.ctp:11
+msgid "Responses"
+msgstr "Antwoorden"
+
+#: Plugin/Survey/View/Surveys/index.ctp:13
+msgid "Published"
+msgstr "Gepubliceerd"
+
+#: Plugin/Survey/View/Surveys/index.ctp:41
+msgid "Are you sure you want to delete #%s?"
+msgstr "Bent u er zeker van dat u # %s? wilt verwijderen?"
+
+#: Plugin/Survey/View/Surveys/index.ctp:50 View/Elements/pagination.ctp:15
+#: View/OrderLines/index.ctp:64 View/Themed/Once/Elements/pagination.ctp:15
+#: View/Tours/index.ctp:32
+msgid ""
+"Page {:page} of {:pages}, showing {:current} records out of {:count} total, "
+"starting on record {:start}, ending on {:end}"
+msgstr ""
+"Pagina {:page} van {:pages}, laat zien {:current} records van{:count} "
+"totaal, beginnend bij record {:start}, Beëindigd  op {:end}"
+
+#: Plugin/Survey/View/Surveys/index.ctp:53
+#: Plugin/Users/View/Elements/pagination.ctp:14 View/Elements/pagination.ctp:4
+#: View/OrderLines/index.ctp:69 View/Themed/Once/Elements/pagination.ctp:4
+#: View/Tours/index.ctp:37 Plugin/Comments/View/Comments/index.ctp:79
+#: Plugin/Tags/View/Tags/admin_index.ctp:71 Plugin/Tags/View/Tags/index.ctp:69
+msgid "previous"
+msgstr "Vorige"
+
+#: Plugin/Survey/View/Surveys/index.ctp:55
+#: Plugin/Users/View/Elements/pagination.ctp:16 View/Elements/pagination.ctp:6
+#: View/OrderLines/index.ctp:71 View/Themed/Once/Elements/pagination.ctp:6
+#: View/Tours/index.ctp:39 Plugin/Comments/View/Comments/index.ctp:81
+#: Plugin/Tags/View/Tags/admin_index.ctp:73 Plugin/Tags/View/Tags/index.ctp:71
+msgid "next"
+msgstr "Volgende"
+
+#: Plugin/Users/Controller/Component/RememberMeComponent.php:193
+msgid "users"
+msgstr "gebruikers"
+
+#: View/Elements/menu/top_menu.ctp:21
+msgid "Survey"
+msgstr "Wedstrijd"
+
+#: View/Elements/menu/top_menu.ctp:24
+msgid "New Survey"
+msgstr "Niewe wedstrijd"
+
+#: View/OrderLines/add.ctp:4
+msgid "Add Order Line"
+msgstr "Add Order Line"
+
+#: View/OrderLines/add.ctp:32 View/OrderLines/edit.ctp:34
+msgid "List Order Lines"
+msgstr "List Order Lines"
+
+#: View/OrderLines/add.ctp:33 View/OrderLines/edit.ctp:35
+#: View/OrderLines/index.ctp:79
+msgid "List Orders"
+msgstr "List Orders"
+
+#: View/OrderLines/add.ctp:34 View/OrderLines/edit.ctp:36
+#: View/OrderLines/index.ctp:80
+msgid "New Order"
+msgstr "New Order"
+
+#: View/OrderLines/add.ctp:35 View/OrderLines/edit.ctp:37
+#: View/OrderLines/index.ctp:81
+msgid "List Products"
+msgstr "List Products"
+
+#: View/OrderLines/add.ctp:36 View/OrderLines/edit.ctp:38
+#: View/OrderLines/index.ctp:82
+msgid "New Product"
+msgstr "New Product"
+
+#: View/OrderLines/add.ctp:37 View/OrderLines/edit.ctp:39
+#: View/OrderLines/index.ctp:83
+msgid "List Order Line Items"
+msgstr "List Order Line Items"
+
+#: View/OrderLines/add.ctp:38 View/OrderLines/edit.ctp:40
+#: View/OrderLines/index.ctp:84
+msgid "New Order Line Item"
+msgstr "New Order Line Item"
+
+#: View/OrderLines/add.ctp:39 View/OrderLines/edit.ctp:41
+#: View/OrderLines/index.ctp:85
+msgid "List Tags"
+msgstr "List Tags"
+
+#: View/OrderLines/add.ctp:40 View/OrderLines/edit.ctp:42
+#: View/OrderLines/index.ctp:86
+msgid "New Tag"
+msgstr "New Tag"
+
+#: View/OrderLines/edit.ctp:4
+msgid "Edit Order Line"
+msgstr "Edit Order Line"
+
+#: View/OrderLines/index.ctp:2
+msgid "Order Lines"
+msgstr "Order Lines"
+
+#: View/OrderLines/index.ctp:78
+msgid "New Order Line"
+msgstr "New Order Line"
+
+#: View/OrderLines/xml/hotspot.ctp:20
+msgid "Bestel dit fotoalbum"
+msgstr "Bestel dit fotoalbum"
+
+#: View/Tours/add.ctp:4
+msgid "Add Tour"
+msgstr "Tour toevoegen"
+
+#: View/Tours/add.ctp:18 View/Tours/edit.ctp:20 View/Tours/view.ctp:46
+msgid "List Tours"
+msgstr "Lijst tour"
+
+#: View/Tours/edit.ctp:4 View/Tours/view.ctp:44
+msgid "Edit Tour"
+msgstr "Tour bewerken"
+
+#: View/Tours/index.ctp:2
+msgid "Tours"
+msgstr "Tours"
+
+#: View/Tours/index.ctp:46 View/Tours/view.ctp:47
+msgid "New Tour"
+msgstr "Nieuwe tour"
+
+#: View/Tours/view.ctp:2
+msgid "Tour"
+msgstr "Tour"
+
+#: View/Tours/view.ctp:9
+msgid "Element"
+msgstr "Element"
+
+#: View/Tours/view.ctp:19 Plugin/Comments/View/Comments/admin_view.ctp:45;85
+#: Plugin/Comments/View/Comments/view.ctp:45;85
+msgid "Body"
+msgstr "Bericht"
+
+#: View/Tours/view.ctp:45
+msgid "Delete Tour"
+msgstr "Tour verwijderen"
+
+#: View/Users/edit.ctp:57 View/fra/Users/edit.ctp:57
+msgid "You can not change you username."
+msgstr "U kunt uw gebruikersnaam helaas niet veranderen."
+
+#: Plugin/Comments/Controller/CommentsController.php:141;158
+msgid "Wrong comment id"
+msgstr "Verkeerde reactie id"
+
+#: Plugin/Comments/Controller/CommentsController.php:143
+msgid "Antispam system informed about spam message."
+msgstr "Antispam systeem geïnformeerd over een ongewenst bericht."
+
+#: Plugin/Comments/Controller/CommentsController.php:145;162
+msgid "Error appear during save."
+msgstr "Een fout heeft zich voorgedaan tijdens het opslaan."
+
+#: Plugin/Comments/Controller/CommentsController.php:160
+msgid "Antispam system informed about ham message."
+msgstr "Antispam systeem geïnformeerd over een ongewenst bericht."
+
+#: Plugin/Comments/Controller/CommentsController.php:176;208
+msgid "Invalid Comment."
+msgstr "Ongeldige reactie."
+
+#: Plugin/Comments/Controller/CommentsController.php:190
+msgid "Invalid id for Comment"
+msgstr "Ongeldig id voor reactie"
+
+#: Plugin/Comments/Controller/CommentsController.php:192
+msgid "Comment deleted"
+msgstr "Reactie verwijderd"
+
+#: Plugin/Comments/Controller/CommentsController.php:194
+msgid "Impossible to delete the Comment. Please try again."
+msgstr "Het verwijderen van de Reactie is onmogelijk. Probeert u het nog eens."
+
+#: Plugin/Comments/Controller/Component/CommentsComponent.php:478
+msgid "The Comment has been saved."
+msgstr "De Reactie is opgeslagen. "
+
+#: Plugin/Comments/Controller/Component/CommentsComponent.php:489
+msgid "The Comment could not be saved. Please, try again."
+msgstr "De reactie kan niet worden opgslagen. Probeert u het nog eens."
+
+#: Plugin/Comments/Controller/Component/CommentsComponent.php:535
+msgid "Nonrestricted operation"
+msgstr "Niet toegestaan."
+
+#: Plugin/Comments/Controller/Component/CommentsComponent.php:538
+msgid "The Comment status has been updated."
+msgstr "De status van de Reactie is gewijzigd."
+
+#: Plugin/Comments/Controller/Component/CommentsComponent.php:540
+msgid "Error appear during comment status update. Try later."
+msgstr ""
+"Een fout heeft zich voorgedaan tijdens de statusupdate. Probeert u het later "
+"nog eens."
+
+#: Plugin/Comments/Controller/Component/CommentsComponent.php:553
+msgid "The Comment has been deleted."
+msgstr "De Reactie is verwijderd."
+
+#: Plugin/Comments/Controller/Component/CommentsComponent.php:555
+msgid "Error appear during comment deleting. Try later."
+msgstr ""
+"Een fout heeft zich voorgedaan tijdens het verwijderen van de reactie. "
+"Probeert u het later nog eens."
+
+#: Plugin/Comments/Model/Comment.php:113;154
+msgid "Some errors appear during execution."
+msgstr "Een paar fouten heeft zich voorgedaan tijdens de operatie."
+
+#: Plugin/Comments/Model/Comment.php:117
+msgid "Comments removed."
+msgstr "Reacties verwijderd."
+
+#: Plugin/Comments/Model/Comment.php:159
+msgid "Operation was performed. "
+msgstr "Actie is uitgevoerd."
+
+#: Plugin/Comments/Model/Behavior/CommentableBehavior.php:160
+msgid "Unallowed comment id"
+msgstr "Reactie id niet toegestaan"
+
+#: Plugin/Comments/View/Comments/add.ctp:15
+#: Plugin/Comments/View/Comments/admin_add.ctp:15
+msgid "Add Comment"
+msgstr "Reacties toevoegen"
+
+#: Plugin/Comments/View/Comments/add.ctp:29;30
+#: Plugin/Comments/View/Comments/admin_add.ctp:29;30
+#: Plugin/Comments/View/Comments/admin_edit.ctp:31;32
+#: Plugin/Comments/View/Comments/admin_view.ctp:66;68
+#: Plugin/Comments/View/Comments/edit.ctp:31;32
+#: Plugin/Comments/View/Comments/index.ctp:86
+#: Plugin/Comments/View/Comments/view.ctp:66;68
+msgid "List Comments"
+msgstr "Lijst reacties"
+
+#: Plugin/Comments/View/Comments/add.ctp:31
+#: Plugin/Comments/View/Comments/admin_add.ctp:31
+#: Plugin/Comments/View/Comments/admin_edit.ctp:33
+#: Plugin/Comments/View/Comments/admin_view.ctp:69
+#: Plugin/Comments/View/Comments/edit.ctp:33
+#: Plugin/Comments/View/Comments/index.ctp:87
+#: Plugin/Comments/View/Comments/view.ctp:69
+msgid "New Parent Comment"
+msgstr "Nieuwe opvolging reactie"
+
+#: Plugin/Comments/View/Comments/admin_edit.ctp:15
+#: Plugin/Comments/View/Comments/admin_view.ctp:64
+#: Plugin/Comments/View/Comments/edit.ctp:15
+#: Plugin/Comments/View/Comments/view.ctp:64
+msgid "Edit Comment"
+msgstr "Reactie bewerken"
+
+#: Plugin/Comments/View/Comments/admin_index.ctp:21
+msgid "Filter spam comments"
+msgstr "Filter ongewenste reacties"
+
+#: Plugin/Comments/View/Comments/admin_index.ctp:22
+msgid "Filter good comments"
+msgstr "Filter goede reacties"
+
+#: Plugin/Comments/View/Comments/admin_index.ctp:29;95
+msgid "Mark as ham"
+msgstr "Gemarkeerd als ongewenst"
+
+#: Plugin/Comments/View/Comments/admin_index.ctp:30;94
+msgid "Mark as spam"
+msgstr "Gemarkeerd als ongewenst"
+
+#: Plugin/Comments/View/Comments/admin_index.ctp:32;93
+msgid "Approve"
+msgstr "Toestaan"
+
+#: Plugin/Comments/View/Comments/admin_index.ctp:33
+msgid "Dispprove"
+msgstr "Niet toestaan"
+
+#: Plugin/Comments/View/Comments/admin_index.ctp:46
+msgid "Select..."
+msgstr "Selecteer..."
+
+#: Plugin/Comments/View/Comments/admin_index.ctp:96
+msgid "Disapprove"
+msgstr "Niet toestaan"
+
+#: Plugin/Comments/View/Comments/admin_view.ctp:13
+#: Plugin/Comments/View/Comments/view.ctp:13
+msgid "Comment"
+msgstr "Reageren"
+
+#: Plugin/Comments/View/Comments/admin_view.ctp:20
+#: Plugin/Comments/View/Comments/view.ctp:20
+msgid "Parent Comment"
+msgstr "Bijbehorende reactie"
+
+#: Plugin/Comments/View/Comments/admin_view.ctp:25
+#: Plugin/Comments/View/Comments/view.ctp:25
+msgid "Commented On"
+msgstr "Gereageerd op"
+
+#: Plugin/Comments/View/Comments/admin_view.ctp:35;83
+#: Plugin/Comments/View/Comments/view.ctp:35;83
+msgid "Model"
+msgstr "Model"
+
+#: Plugin/Comments/View/Comments/admin_view.ctp:40;84
+#: Plugin/Comments/View/Comments/view.ctp:40;84
+#: Plugin/Comments/View/Elements/comments/finder.ctp:19;24
+#: View/Elements/comments/finder.ctp:19;24
+msgid "Approved"
+msgstr "Toegestaan"
+
+#: Plugin/Comments/View/Comments/admin_view.ctp:65
+#: Plugin/Comments/View/Comments/view.ctp:65
+msgid "Delete Comment"
+msgstr "Reactie verwijderen"
+
+#: Plugin/Comments/View/Comments/admin_view.ctp:67
+#: Plugin/Comments/View/Comments/index.ctp:85
+#: Plugin/Comments/View/Comments/view.ctp:67
+msgid "New Comment"
+msgstr "Nieuwe reactie"
+
+#: Plugin/Comments/View/Comments/admin_view.ctp:75
+#: Plugin/Comments/View/Comments/view.ctp:75
+msgid "Related Comments"
+msgstr "Gerelateerde Reacties"
+
+#: Plugin/Comments/View/Comments/admin_view.ctp:80
+#: Plugin/Comments/View/Comments/view.ctp:80
+msgid "Comment Id"
+msgstr "Comment Id"
+
+#: Plugin/Comments/View/Comments/admin_view.ctp:81
+#: Plugin/Comments/View/Comments/view.ctp:81
+msgid "Foreign Key"
+msgstr "Buitenlandse toets"
+
+#: Plugin/Comments/View/Comments/admin_view.ctp:82
+#: Plugin/Comments/View/Comments/view.ctp:82
+msgid "User Id"
+msgstr "Gebruikers Id"
+
+#: Plugin/Comments/View/Comments/admin_view.ctp:120
+#: Plugin/Comments/View/Comments/view.ctp:120
+msgid "New Child Comment"
+msgstr "Nieuw kind reactie"
+
+#: Plugin/Comments/View/Elements/comments/finder.ctp:12
+#: View/Elements/comments/finder.ctp:12
+msgid "Filter comments"
+msgstr "Filter reacties"
+
+#: Plugin/Comments/View/Elements/comments/finder.ctp:21;31
+#: View/Elements/comments/finder.ctp:21;31
+msgid "...select..."
+msgstr "....selecteer..."
+
+#: Plugin/Comments/View/Elements/comments/finder.ctp:23
+#: View/Elements/comments/finder.ctp:23
+msgid "Not Approved"
+msgstr "Niet Toegestaan"
+
+#: Plugin/Comments/View/Elements/comments/finder.ctp:29
+#: View/Elements/comments/finder.ctp:29
+msgid "spam state"
+msgstr "Ongewenst"
+
+#: Plugin/Comments/View/Elements/comments/finder.ctp:33
+#: View/Elements/comments/finder.ctp:33
+msgid "Clean"
+msgstr "Leeg"
+
+#: Plugin/Comments/View/Elements/comments/finder.ctp:34
+#: View/Elements/comments/finder.ctp:34
+msgid "Ham"
+msgstr "Ham"
+
+#: Plugin/Comments/View/Elements/comments/finder.ctp:35
+#: View/Elements/comments/finder.ctp:35
+msgid "Manual Spam"
+msgstr "Handmatige Spam"
+
+#: Plugin/Comments/View/Elements/comments/finder.ctp:36
+#: View/Elements/comments/finder.ctp:36
+msgid "Spam"
+msgstr "Ongewenste berichten"
+
+#: Plugin/Comments/View/Elements/comments/flat/form.ctp:29
+#: Plugin/Comments/View/Elements/comments/threaded/form.ctp:51
+#: Plugin/Comments/View/Elements/comments/tree/form.ctp:29
+#: View/Elements/comments/flat/form.ctp:29
+#: View/Elements/comments/threaded/form.ctp:51
+#: View/Elements/comments/tree/form.ctp:29
+msgid "You can use only headings from %s to %s"
+msgstr "U kunt alleen koppen gebruiken van %s tot %s"
+
+#: Plugin/Comments/View/Elements/comments/flat/item.ctp:18
+#: Plugin/Comments/View/Elements/comments/threaded/item.ctp:18
+#: Plugin/Comments/View/Elements/comments/tree/item.ctp:18
+#: View/Elements/comments/flat/item.ctp:18
+#: View/Elements/comments/threaded/item.ctp:18
+#: View/Elements/comments/tree/item.ctp:18
+msgid "Reply"
+msgstr "Beantwoorden"
+
+#: Plugin/Comments/View/Elements/comments/flat/item.ctp:19
+#: Plugin/Comments/View/Elements/comments/threaded/item.ctp:19
+#: Plugin/Comments/View/Elements/comments/tree/item.ctp:19
+#: View/Elements/comments/flat/item.ctp:19
+#: View/Elements/comments/threaded/item.ctp:19
+#: View/Elements/comments/tree/item.ctp:19
+msgid "Quote"
+msgstr "Quote"
+
+#: Plugin/Comments/View/Elements/comments/flat/item.ctp:22
+#: Plugin/Comments/View/Elements/comments/threaded/item.ctp:22
+#: Plugin/Comments/View/Elements/comments/tree/item.ctp:22
+#: View/Elements/comments/flat/item.ctp:22
+#: View/Elements/comments/threaded/item.ctp:22
+#: View/Elements/comments/tree/item.ctp:22
+msgid "Publish"
+msgstr "Publiceren"
+
+#: Plugin/Comments/View/Elements/comments/flat/item.ctp:24
+#: Plugin/Comments/View/Elements/comments/threaded/item.ctp:24
+#: Plugin/Comments/View/Elements/comments/tree/item.ctp:24
+#: View/Elements/comments/flat/item.ctp:24
+#: View/Elements/comments/threaded/item.ctp:24
+#: View/Elements/comments/tree/item.ctp:24
+msgid "Unpublish"
+msgstr "Publiceren ongedaan maken"
+
+#: Plugin/Comments/View/Elements/comments/flat/item.ctp:37
+#: Plugin/Comments/View/Elements/comments/tree/item.ctp:36
+#: View/Elements/comments/flat/item.ctp:37
+#: View/Elements/comments/tree/item.ctp:36
+msgid "posted"
+msgstr "reageerde"
+
+#: Plugin/Comments/View/Elements/comments/flat/main.ctp:16
+#: Plugin/Comments/View/Elements/comments/tree/main.ctp:18
+#: View/Elements/comments/flat/main.ctp:16
+#: View/Elements/comments/tree/main.ctp:18
+msgid "Add New Comment"
+msgstr "Nieuwe reactie toevoegen"
+
+#: Plugin/Comments/View/Elements/comments/flat/main.ctp:21
+#: Plugin/Comments/View/Elements/comments/tree/main.ctp:23
+#: View/Elements/comments/flat/main.ctp:21
+#: View/Elements/comments/tree/main.ctp:23
+msgid "Add comment"
+msgstr "Reactie toevoegen"
+
+#: Plugin/Comments/View/Elements/comments/flat/main.ctp:27
+#: Plugin/Comments/View/Elements/comments/threaded/main.ctp:55
+#: Plugin/Comments/View/Elements/comments/tree/main.ctp:28
+#: View/Elements/comments/flat/main.ctp:27
+#: View/Elements/comments/threaded/main.ctp:55
+#: View/Elements/comments/tree/main.ctp:28
+msgid "If you want to post comments, you need to login first."
+msgstr "U moet ingelogd zijn om een reactie te kunnen plaatsen."
+
+#: Plugin/Comments/View/Elements/comments/flat/main.ctp:27
+#: Plugin/Comments/View/Elements/comments/threaded/main.ctp:55
+#: View/Elements/comments/flat/main.ctp:27
+#: View/Elements/comments/threaded/main.ctp:55
+msgid "login"
+msgstr "Inloggen"
+
+#: Plugin/Comments/View/Elements/comments/flat/paginator.ctp:25
+#: Plugin/Comments/View/Elements/comments/tree/paginator.ctp:25
+#: View/Elements/comments/flat/paginator.ctp:25
+#: View/Elements/comments/tree/paginator.ctp:25
+msgid "Most Recent"
+msgstr "Meest recent"
+
+#: Plugin/Comments/View/Elements/comments/flat/paginator.ctp:27
+#: Plugin/Comments/View/Elements/comments/tree/paginator.ctp:27
+#: View/Elements/comments/flat/paginator.ctp:27
+#: View/Elements/comments/tree/paginator.ctp:27
+msgid "Oldest"
+msgstr "Oudste "
+
+#: Plugin/Comments/View/Elements/comments/threaded/item.ctp:43
+#: View/Elements/comments/threaded/item.ctp:43
+msgid "commented"
+msgstr "reageerde"
+
+#: Plugin/Comments/View/Elements/comments/threaded/main.ctp:39
+#: View/Elements/comments/threaded/main.ctp:39
+msgid "Post/Reply"
+msgstr "Reageren / Beantwoorden"
+
+#: Plugin/Contactform/Controller/ContactformController.php:52
+msgid "contact form request"
+msgstr "Contact verzoek"
+
+#: Plugin/Contactform/Controller/ContactformController.php:55
+msgid "contact form was submitted successfully"
+msgstr "Het contactformulier is verzonden!"
+
+#: Plugin/Contactform/Controller/ContactformController.php:62
+msgid "contact form"
+msgstr "Contact"
+
+#: Plugin/Contactform/View/Contactform/show.ctp:25
+#: View/fra/Contactform/show.ctp:25
+msgid "Contact Form"
+msgstr "Contactformulier"
+
+#: Plugin/Contactform/View/Contactform/show.ctp:39
+#: Plugin/Contactform/View/Emails/html/contactform.ctp:9
+#: Plugin/Contactform/View/Emails/text/contactform.ctp:11
+#: View/fra/Contactform/show.ctp:39
+msgid "email"
+msgstr "E-mail"
+
+#: Plugin/Contactform/View/Contactform/show.ctp:40
+#: Plugin/Contactform/View/Emails/html/contactform.ctp:14
+#: Plugin/Contactform/View/Emails/text/contactform.ctp:13
+#: View/fra/Contactform/show.ctp:40
+msgid "message"
+msgstr "Bericht"
+
+#: Plugin/Contactform/View/Contactform/show.ctp:42
+#: View/fra/Contactform/show.ctp:42
+msgid "spam protection"
+msgstr "Spam preventie"
+
+#: Plugin/Contactform/View/Contactform/show.ctp:48
+#: View/fra/Contactform/show.ctp:48
+msgid "submit"
+msgstr "Verzenden"
+
+#: Plugin/Contactform/View/Contactform/show.ctp:64
+#: View/fra/Contactform/show.ctp:64
+msgid "Get in touch:"
+msgstr "Fotoalbum.be op Social media"
+
+#: Plugin/Contactform/View/Contactform/show.ctp:91
+msgid "Keizersgracht 560-4"
+msgstr "Keizersgracht 560-4"
+
+#: Plugin/Contactform/View/Contactform/show.ctp:92
+msgid "1017 EM"
+msgstr "1017 EM"
+
+#: Plugin/Contactform/View/Contactform/show.ctp:92
+msgid "Amsterdam"
+msgstr "Amsterdam"
+
+#: Plugin/Contactform/View/Contactform/show.ctp:94
+msgid "P_afkorting_phone"
+msgstr "T"
+
+#: Plugin/Contactform/View/Contactform/show.ctp:99
+msgid "Full Name"
+msgstr "Marketing @ Fotoalbum.be"
+
+#: Plugin/Contactform/View/Contactform/show.ctp:101
+msgid "marketing@fotoalbum.nl"
+msgstr "marketing@fotoalbum.be"
+
+#: Plugin/Contactform/View/Emails/html/contactform.ctp:24
+#: Plugin/Contactform/View/Emails/text/contactform.ctp:16
+msgid "sent from"
+msgstr "Verzonden vanaf"
+
+#: Plugin/Ratings/Controller/Component/RatingsComponent.php:141
+msgid "Your rate was successfull."
+msgstr "Uw beoordeling was succesvol."
+
+#: Plugin/Ratings/Controller/Component/RatingsComponent.php:146
+msgid "You need to be logged in to vote!"
+msgstr "U moet ingelogd zijn  om te stemmen!"
+
+#: Plugin/Ratings/Controller/Component/RatingsComponent.php:151
+msgid "You have already rated."
+msgstr "U heeft al een beoordeling gegeven."
+
+#: Plugin/Ratings/Controller/Component/RatingsComponent.php:156
+msgid "Invalid rate."
+msgstr "Ongeldige beoordeling."
+
+#: Plugin/Ratings/Model/Behavior/RatableBehavior.php:234;292;351
+msgid "Invalid rating mode %s."
+msgstr "Ongeldige beoordelingstatus %s"
+
+#: Plugin/Ratings/Model/Behavior/RatableBehavior.php:475
+msgid "Invalid Rating"
+msgstr "Ongeldige beoordeling"
+
+#: Plugin/Ratings/Model/Behavior/RatableBehavior.php:481
+msgid "Invalid Record"
+msgstr "Ongeldige beoordeling"
+
+#: Plugin/Ratings/Model/Behavior/RatableBehavior.php:487
+msgid "You can not vote on your own records"
+msgstr "U kunt niet op uwzelf stemmen."
+
+#: Plugin/Ratings/Model/Behavior/RatableBehavior.php:495
+msgid "You have already rated this record"
+msgstr "Uw heeft dit al beoordeeld."
+
+#: Plugin/Ratings/View/Helper/RatingHelper.php:69;161
+msgid "You must set the id of the item you want to rate."
+msgstr "Selecteer het item dat u wilt beoordelen."
+
+#: Plugin/Ratings/View/Helper/RatingHelper.php:179;182
+msgid "Rate!"
+msgstr "Beoordeel!"
+
+#: Plugin/Tags/Controller/TagsController.php:100
+msgid "The Tags has been saved."
+msgstr "De tags zijn  opgeslagen."
+
+#: Plugin/Tags/Controller/TagsController.php:116
+msgid "Tag saved."
+msgstr "Tag opgeslagen."
+
+#: Plugin/Tags/Controller/TagsController.php:139
+msgid "Tag deleted."
+msgstr "Tag verwijderd."
+
+#: Plugin/Tags/Controller/TagsController.php:141
+#: Plugin/Tags/Model/Tag.php:59;99
+msgid "Invalid Tag."
+msgstr "Ongeldige tag."
+
+#: Plugin/Tags/Model/Tagged.php:163
+msgid ""
+"Find tagged will not work with a recursive level of -1, you need at least 0."
+msgstr ""
+"Find tagged will not work with a recursive level of -1, you need at least 0."
+
+#: Plugin/Tags/View/Tags/admin_add.ctp:15
+msgid "Add %s"
+msgstr "Toevoegen %s"
+
+#: Plugin/Tags/View/Tags/admin_add.ctp:15
+#: Plugin/Tags/View/Tags/admin_edit.ctp:15
+#: Plugin/Tags/View/Tags/admin_index.ctp:77
+#: Plugin/Tags/View/Tags/admin_view.ctp:13;54;55;57
+#: Plugin/Tags/View/Tags/view.ctp:13
+msgid "Tag"
+msgstr "Tag"
+
+#: Plugin/Tags/View/Tags/admin_add.ctp:24
+#: Plugin/Tags/View/Tags/admin_edit.ctp:28
+#: Plugin/Tags/View/Tags/admin_view.ctp:56 Plugin/Tags/View/Tags/view.ctp:54
+msgid "List %s"
+msgstr "List %s"
+
+#: Plugin/Tags/View/Tags/admin_edit.ctp:15
+#: Plugin/Tags/View/Tags/admin_view.ctp:54
+msgid "Edit %s"
+msgstr "Wijzig %s"
+
+#: Plugin/Tags/View/Tags/admin_index.ctp:77
+#: Plugin/Tags/View/Tags/admin_view.ctp:57
+msgid "New %s"
+msgstr "Nieuwe %s"
+
+#: Plugin/Tags/View/Tags/admin_view.ctp:20 Plugin/Tags/View/Tags/view.ctp:20
+msgid "Identifier"
+msgstr "Identifier"
+
+#: Plugin/Tags/View/Tags/admin_view.ctp:30 Plugin/Tags/View/Tags/view.ctp:30
+msgid "Keyname"
+msgstr "Keyname"
+
+#: Plugin/Tags/View/Tags/admin_view.ctp:35 Plugin/Tags/View/Tags/view.ctp:35
+msgid "Weight"
+msgstr "Weight"
+
+#: Plugin/Tags/View/Tags/admin_view.ctp:55
+msgid "Delete %s"
+msgstr "Verwijderen %s"
+
+#: View/Helper/PaginatorHelper.php:99
+msgid ""
+"%s does not implement a link() method, it is incompatible with "
+"PaginatorHelper"
+msgstr ""
+"%s does not implement a link() method, it is incompatible with "
+"PaginatorHelper"
+
+#: View/Helper/PaginatorHelper.php:607
+msgid " of "
+msgstr "van"
+
+#: Cake/Utility/CakeTime.php:395
+msgid "Today, %s"
+msgstr "Vandaag, %s"
+
+#: Cake/Utility/CakeTime.php:398
+msgid "Yesterday, %s"
+msgstr "Gisteren, %s"
+
+#: Cake/Utility/CakeTime.php:401
+msgid "Tomorrow, %s"
+msgstr "Morgen, %s"
+
+#: Cake/Utility/CakeTime.php:406
+msgid "Sunday"
+msgstr "Zondag"
+
+#: Cake/Utility/CakeTime.php:407
+msgid "Monday"
+msgstr "Maandag"
+
+#: Cake/Utility/CakeTime.php:408
+msgid "Tuesday"
+msgstr "Dinsdag"
+
+#: Cake/Utility/CakeTime.php:409
+msgid "Wednesday"
+msgstr "Woensdag"
+
+#: Cake/Utility/CakeTime.php:410
+msgid "Thursday"
+msgstr "Donderdag"
+
+#: Cake/Utility/CakeTime.php:411
+msgid "Friday"
+msgstr "Vrijdag"
+
+#: Cake/Utility/CakeTime.php:412
+msgid "Saturday"
+msgstr "Zaterdag"
+
+#: Cake/Utility/CakeTime.php:418
+msgid "On %s %s"
+msgstr "in %s"
+
+#: Cake/Utility/CakeTime.php:811
+msgid "just now"
+msgstr "daarnet"
+
+#: Cake/Utility/CakeTime.php:815
+msgid "on %s"
+msgstr "op %s"
+
+#: Cake/Utility/CakeTime.php:859
+msgid "%s ago"
+msgstr "%s geleden"
+
+#: Cake/Utility/CakeTime.php:878;900
+msgid "days"
+msgstr "dagen"
+
+#: Cake/Utility/CakeTime.php:155
+msgid "abday"
+msgstr "abday"
+
+#: Cake/Utility/CakeTime.php:161
+msgid "day"
+msgstr "dag"
+
+#: Cake/Utility/CakeTime.php:189
+msgid "abmon"
+msgstr "vertaling=hetzelfde"
+
+#: Cake/Utility/CakeTime.php:195
+msgid "mon"
+msgstr "mon"
+
+#: Cake/Utility/CakeTime.php:837
+msgid "%d year"
+msgid_plural "%d years"
+msgstr[0] "%d jaar"
+msgstr[1] "%d jaren"
+
+#: Cake/Utility/CakeTime.php:840
+msgid "%d month"
+msgid_plural "%d months"
+msgstr[0] "%d maand"
+msgstr[1] "%d maanden"
+
+#: Cake/Utility/CakeTime.php:843
+msgid "%d week"
+msgid_plural "%d weeks"
+msgstr[0] "%d week"
+msgstr[1] "%d weken"
+
+#: Cake/Utility/CakeTime.php:846
+msgid "%d day"
+msgid_plural "%d days"
+msgstr[0] "%d dag"
+msgstr[1] "%d dagen"
+
+#: Cake/Utility/CakeTime.php:849
+msgid "%d hour"
+msgid_plural "%d hours"
+msgstr[0] "%d uur"
+msgstr[1] "%d uren"
+
+#: Cake/Utility/CakeTime.php:852
+msgid "%d minute"
+msgid_plural "%d minutes"
+msgstr[0] "%d minuut"
+msgstr[1] "%d minuten"
+
+#: Cake/Utility/CakeTime.php:855
+msgid "%d second"
+msgid_plural "%d seconds"
+msgstr[0] "%d seconde"
+msgstr[1] "%d seconden"
+
+#~ msgid "Description"
+#~ msgstr "Description"
+
+#~ msgid ""
+#~ "I have created the photo album %s with Fotoalbum.be. Take a look: %s "
+#~ msgstr ""
+#~ "Ik heb net een fotoalbum %s bij Fotoalbum.be gemaakt. Bekijk mijn "
+#~ "fotoalbum:\"%s"
+
+#~ msgid "Get the competitions available. For now we show a hard link:"
+#~ msgstr "Aan de wedstrijden meedoen is mogelijk. Een harde link:"
+
+#~ msgid "Reorder allowed?"
+#~ msgstr "Nabestelling toegestaan?"
+
+#~ msgid "1059 CD"
+#~ msgstr "1017 EM"
+
+#~ msgid "Invitations send!"
+#~ msgstr "Uitnodigingen verstuurd!"
+
+#~ msgid "Received"
+#~ msgstr "Ontvangen"
+
+#~ msgid ""
+#~ "Ik heb het fotoalbum %s via fotoalbum.be gemaakt. De url om mijn boek te "
+#~ "bekijken is: %s "
+#~ msgstr ""
+#~ "Ik heb het fotoalbum %s via fotoalbum.be gemaakt. De url om mijn boek te "
+#~ "bekijken is: %s "
+
+#~ msgid "U heeft niet het recht deze uitnodiging te annuleren"
+#~ msgstr "U heeft niet het recht deze uitnodiging te annuleren"
+
+#~ msgid "U bent uitgenodigd om een fotoalbum te bekijken"
+#~ msgstr "U bent uitgenodigd om een fotoalbum te bekijken!"
+
+#~ msgid "Niet toegestaan"
+#~ msgstr "Niet toegestaan"
+
+#, fuzzy
+#~ msgid "Verzonden uitnodigingen"
+#~ msgstr "Verzending"
+
+#~ msgid "Tweet dit fotoalbum"
+#~ msgstr "Tweet dit fotoalbum"
+
+#~ msgid "Deel dit fotoalbum op Facebook"
+#~ msgstr "Deel dit fotoalbum op Facebook"
+
+#~ msgid "Plaats dit fotoalbum op linkedIn"
+#~ msgstr "Plaats dit fotoalbum op LinkedIn"
+
+#~ msgid "Pin dit fotoalbum op Pinterest"
+#~ msgstr "Pin dit fotoalbum op Pinterest"
+
+#~ msgid "Deel dit fotoalbum op Google+"
+#~ msgstr "Deel dit fotoalbum op Google+"
+
+#~ msgid "Aantal"
+#~ msgstr "Aantal"
+
+#~ msgid "Prijs"
+#~ msgstr "Prijs"
+
+#~ msgid "Verzending"
+#~ msgstr "Verzending"
+
+#~ msgid "Korting"
+#~ msgstr "Korting"
+
+#~ msgid "Uitnodiging verwijderd"
+#~ msgstr "Uitnodiging verwijderd"
+
+#~ msgid "Verwijderen mislukt"
+#~ msgstr "Verwijderen mislukt"
+
+#~ msgid ""
+#~ "Nodig vrienden uit om uw fotoalbum te bekijken door een e-mail te sturen. "
+#~ "Alleen deze mensen kunnen het album bekijken."
+#~ msgstr ""
+#~ "Nodig vrienden uit om uw fotoalbum te bekijken door een e-mail te sturen. "
+#~ "Alleen deze mensen kunnen het album bekijken."
+
+#~ msgid "Use the link below to share your photoalbum with friend"
+#~ msgstr "Gebruik de onderstaande link om uw fotoalbum met vrienden te delen"
+
+#~ msgid "Files: %s"
+#~ msgstr "Bestanden: %s"
+
+#~ msgid "%s missing files"
+#~ msgstr "%s bestanden ontbreken"
+
+#~ msgid "%s target files updated"
+#~ msgstr "%s gevraagde bestanden geupload"
+
+#~ msgid "%s source files removed"
+#~ msgstr "%s bronbestanden verwijderd"
+
+#~ msgid "Usage: cake FolderSync <command>"
+#~ msgstr "Usage: cake FolderSync <command>"
+
+#~ msgid "Commands:"
+#~ msgstr "Commando's"
+
+#~ msgid "Select hashType - or [q] to quit"
+#~ msgstr "Select hashType - or [q] to quit"
+
+#~ msgid "String to Hash (2 characters at least)"
+#~ msgstr "String to Hash (2 characters at least)"
+
+#~ msgid "A console tool for hashing strings"
+#~ msgstr "A console tool for hashing strings"
+
+#~ msgid "Hash a string"
+#~ msgstr "Hash a string"
+
+#~ msgid "hash"
+#~ msgstr "hash"
+
+#~ msgid "Compare algs"
+#~ msgstr "Compare algs"
+
+#~ msgid "Measure alg times"
+#~ msgstr "Measure alg times"
+
+#~ msgid "sha1 is the default algorithm"
+#~ msgstr "sha1 is the default algorithm"
+
+#~ msgid "Modifying files! Continue?"
+#~ msgstr "Modifying files! Continue?"
+
+#~ msgid "Run this statement?"
+#~ msgstr "Run this statement?"
+
+#~ msgid ""
+#~ "Remove? [y]/[n], [a] for all in this folder, [r] for all below, [*] for "
+#~ "all files(!), [q] to quit"
+#~ msgstr ""
+#~ "Remove? [y]/[n], [a] for all in this folder, [r] for all below, [*] for "
+#~ "all files(!), [q] to quit"
+
+#~ msgid "No Auth Component found"
+#~ msgstr "No Auth Component found"
+
+#~ msgid "Password to Hash (2 characters at least)"
+#~ msgstr "Password to Hash (2 characters at least)"
+
+#~ msgid "New email address (must have a valid form at least)"
+#~ msgstr "Niew e-mailadres (moet een geldige vorm bevatten)"
+
+#~ msgid "Username (2 characters at least)"
+#~ msgstr "Gebruikersnaam (minimaal 2 tekens)"
+
+#~ msgid "Password (2 characters at least)"
+#~ msgstr "Wachtwoord (minimaal 2 tekens)"
+
+#~ msgid "Please insert a role manually"
+#~ msgstr "Een rol handmatig toevoegen"
+
+#~ msgid "Provide Email? "
+#~ msgstr "E-mail aanbieden?"
+
+#~ msgid "Continue? "
+#~ msgstr "Doorgaan?"
+
+#~ msgid "Continue? [y]/[n]"
+#~ msgstr "Doorgaan [y]/[n]"
+
+#~ msgid "Invalid Key"
+#~ msgstr "Ongeldig teken"
+
+#~ msgid "You successfully logged in via qlogin"
+#~ msgstr "U bent ingelogd via qlogin"
+
+#~ msgid "Success"
+#~ msgstr "Succes"
+
+#~ msgid "Done"
+#~ msgstr "Gereed"
+
+#~ msgid "invalidLoginCredentials"
+#~ msgstr "invalidLoginCredentials"
+
+#~ msgid "Account not active yet"
+#~ msgstr "Profiel nog niet actief"
+
+#~ msgid "Account is suspended"
+#~ msgstr "Account is tijdelijk geblokeerd"
+
+#~ msgid "Account is still pending"
+#~ msgstr "Account is nog niet vrijgegeven"
+
+#~ msgid "Unknown Error"
+#~ msgstr "Onbekende fout"
+
+#~ msgid "Email not active yet"
+#~ msgstr "E-mail nog niet actief"
+
+#~ msgid "invalid date"
+#~ msgstr "Ongeldige datum"
+
+#~ msgid "Meta Type invalid"
+#~ msgstr "Meta Type Ongeldig"
+
+#~ msgid "Comma"
+#~ msgstr "Komma"
+
+#~ msgid "Semicolon"
+#~ msgstr "Punt komma"
+
+#~ msgid "Space"
+#~ msgstr "Spatie"
+
+#~ msgid "Tabulator"
+#~ msgstr "Tab"
+
+#~ msgid "New Line"
+#~ msgstr "Nieuwe lijn"
+
+#~ msgid "Engine %s not available"
+#~ msgstr "Engine %s not available"
+
+#~ msgid "Could not retrieve url with '%s'"
+#~ msgstr "Could not retrieve url with '%s'"
+
+#~ msgid "Failed with XML parsing of '%s'"
+#~ msgstr "Failed with XML parsing of '%s'"
+
+#~ msgid "Inconclusive result (total of %s)"
+#~ msgstr "Inconclusive result (total of %s)"
+
+#~ msgid "Accuracy not good enough (%s instead of at least %s)"
+#~ msgstr "Accuratie is niet goed genoeg (%s in plaats van %s)"
+
+#~ msgid "Address '%s' has been geocoded"
+#~ msgstr "* Address '%s' has been geocoded"
+
+#~ msgid "Delay necessary for '%s'"
+#~ msgstr "Delay necessary for '%s'"
+
+#~ msgid "Could not geocode '%s'"
+#~ msgstr "Could not geocode '%s'"
+
+#~ msgid "Aborted after too many trials with '%s'"
+#~ msgstr "Aborted after too many trials with '%s'"
+
+#~ msgid "Too many trials - abort"
+#~ msgstr "Too many trials - abort"
+
+#~ msgid "Failed with JSON parsing of '%s'"
+#~ msgstr "Failed with JSON parsing of '%s'"
+
+#~ msgid "Expectation not reached (%s instead of at least %s)"
+#~ msgstr "Expectation not reached (%s instead of at least %s)"
+
+#~ msgid "Delay necessary for address '%s'"
+#~ msgstr "Delay necessary for address '%s'"
+
+#~ msgid "Invalid Unit"
+#~ msgstr "Invalid Unit"
+
+#~ msgid "Invalid level '%s'"
+#~ msgstr "Invalid level '%s'"
+
+#~ msgid "Module %s not installed"
+#~ msgstr "Module %s not installed"
+
+#~ msgid "Engine %s not found"
+#~ msgstr "Engine %s not found"
+
+#~ msgid "Dictionary %s not found"
+#~ msgstr "Dictionary %s not found"
+
+#~ msgid "zodiacAquarius"
+#~ msgstr "zodiacAquarius"
+
+#~ msgid "zodiacPisces"
+#~ msgstr "zodiacPisces"
+
+#~ msgid "zodiacAries"
+#~ msgstr "zodiacAries"
+
+#~ msgid "zodiacTaurus"
+#~ msgstr "zodiacTaurus"
+
+#~ msgid "zodiacGemini"
+#~ msgstr "zodiacGemini"
+
+#~ msgid "zodiacCancer"
+#~ msgstr "zodiacCancer"
+
+#~ msgid "zodiacLeo"
+#~ msgstr "zodiacLeo"
+
+#~ msgid "zodiacVirgo"
+#~ msgstr "zodiacVirgo"
+
+#~ msgid "zodiacLibra"
+#~ msgstr "zodiacLibra"
+
+#~ msgid "zodiacScorpio"
+#~ msgstr "zodiacScorpio"
+
+#~ msgid "zodiacSagittarius"
+#~ msgstr "zodiacSagittarius"
+
+#~ msgid "zodiacCapricorn"
+#~ msgstr "zodiacCapricorn"
+
+#~ msgid "%s NOT removed"
+#~ msgstr "%s NOT removed"
+
+#~ msgid "o'clock"
+#~ msgstr "uur"
+
+#~ msgid "Day"
+#~ msgstr "Dag"
+
+#~ msgid "Hour"
+#~ msgstr "Uur"
+
+#~ msgid "Months"
+#~ msgstr "Maanden"
+
+#~ msgid "Days"
+#~ msgstr "Dagen"
+
+#~ msgid "Minutes"
+#~ msgstr "Minuten"
+
+#~ msgid "Seconds"
+#~ msgstr "Seconden"
+
+#~ msgid "In %s"
+#~ msgstr "In %s"
+
+#~ msgid "The day after tomorrow"
+#~ msgstr "Overmorgen"
+
+#~ msgid "The day before yesterday"
+#~ msgstr "Eergisteren"
+
+#~ msgid "captchaContentMissing"
+#~ msgstr "captchaContentMissing"
+
+#~ msgid "captchaIllegalContent"
+#~ msgstr "captchaIllegalContent"
+
+#~ msgid "captchaResultTooFast"
+#~ msgstr "captchaResultTooFast"
+
+#~ msgid "captchaResultTooLate"
+#~ msgstr "captchaResultTooLate"
+
+#~ msgid "captchaResultIncorrect"
+#~ msgstr "captchaResultIncorrect"
+
+#~ msgid "Illegal call"
+#~ msgstr "Illegaal oproep"
+
+#~ msgid "Illegal content"
+#~ msgstr "Illegale content"
+
+#~ msgid "Captcha incorrect"
+#~ msgstr "Captcha incorrect"
+
+#~ msgid ""
+#~ "The behavior \"Containable\", if used together with \"CustomFinds\" needs "
+#~ "to be loaded before."
+#~ msgstr ""
+#~ "The behavior \"Containable\", if used together with \"CustomFinds\" needs "
+#~ "to be loaded before."
+
+#~ msgid "deleted"
+#~ msgstr "Verwijderd"
+
+#~ msgid "added"
+#~ msgstr "Toegevoegd"
+
+#~ msgid "updated"
+#~ msgstr "bijgewerkt"
+
+#~ msgid "Custom action"
+#~ msgstr "Custom action"
+
+#~ msgid "by"
+#~ msgstr "door"
+
+#~ msgid " by System"
+#~ msgstr " by System"
+
+#~ msgid "Master Password"
+#~ msgstr "Master wachtwoord"
+
+#~ msgid "first"
+#~ msgstr "eerste"
+
+#~ msgid ""
+#~ "Page %page% of %pages%, showing %current% records out of %count% total"
+#~ msgstr ""
+#~ "Pagina %pagina%van %pagina%, vertonen %huidig% records van %tellen% totaal"
+
+#~ msgid "calcPlus"
+#~ msgstr "calcPlus"
+
+#~ msgid "calcMinus"
+#~ msgstr "calcMinus"
+
+#~ msgid "calcTimes"
+#~ msgstr "calcTimes"
+
+#~ msgid "Captcha"
+#~ msgstr "Captcha"
+
+#~ msgid "captchaExplained"
+#~ msgstr "captchaExplained"
+
+#~ msgid "captchaTip"
+#~ msgstr "captchaTip"
+
+#~ msgid "publishedAlready"
+#~ msgstr "publishedAlready"
+
+#~ msgid "publishedToday"
+#~ msgstr "publishedToday"
+
+#~ msgid "publishedNotYet"
+#~ msgstr "publishedNotYet"
+
+#~ msgid "Donate"
+#~ msgstr "Donate"
+
+#~ msgid "View %s"
+#~ msgstr "Vertonen %s"
+
+#~ msgid "Record"
+#~ msgstr "Opnemen"
+
+#~ msgid "Selection"
+#~ msgstr "Selectie"
+
+#~ msgid "All"
+#~ msgstr "Alle"
+
+#~ msgid "None"
+#~ msgstr "Geen"
+
+#~ msgid "Revert"
+#~ msgstr "Terugkeren"
+
+#~ msgid "Zustimmen"
+#~ msgstr "Zustimmen"
+
+#~ msgid "Dagegen"
+#~ msgstr "Dagegen"
+
+#~ msgid "alreadyVoted"
+#~ msgstr "Reeds gestemd"
+
+#~ msgid "prev"
+#~ msgstr "vorige"
+
+#~ msgid "noPrev"
+#~ msgstr "GeenVorige"
+
+#~ msgid "noNext"
+#~ msgstr "Geen volgende"
+
+#~ msgid "prio"
+#~ msgstr "prio"
+
+#~ msgid "of"
+#~ msgstr "van"
+
+#~ msgid "active"
+#~ msgstr "actief"
+
+#~ msgid "for use in an external mail client"
+#~ msgstr "for use in an external mail client"
+
+#~ msgid "Ja"
+#~ msgstr "Ja"
+
+#~ msgid "Nein"
+#~ msgstr "Geen"
+
+#~ msgid "notAvailable"
+#~ msgstr "notAvailable"
+
+#~ msgid "Percent"
+#~ msgstr "Procent"
+
+#~ msgid "Member"
+#~ msgstr "Lid"
+
+#~ msgid "%s deleted"
+#~ msgstr "%s verwijderd"
+
+#~ msgid "Avatar"
+#~ msgstr "Avatar"
+
+#~ msgid "color"
+#~ msgstr "Kleur"
+
+#~ msgid "Map cannot be displayed!"
+#~ msgstr "Map cannot be displayed!"
+
+#~ msgid "Enter your address"
+#~ msgstr "Enter your address"
+
+#~ msgid "Get directions"
+#~ msgstr "Get directions"
+
+#~ msgid "Map"
+#~ msgstr "Map"
+
+#~ msgid "Qlogins"
+#~ msgstr "Qlogins"
+
+#~ msgid "valid ones"
+#~ msgstr "valid ones"
+
+#~ msgid "Generated Link"
+#~ msgstr "Generated Link"
+
+#~ msgid "Qlogin"
+#~ msgstr "Qlogin"
+
+#~ msgid "Reset %s"
+#~ msgstr "Reset %s"
+
+#~ msgid "Sure?"
+#~ msgstr "Sure?"
+
+#~ msgid "Set theme to place Bootstrap files in."
+#~ msgstr "Set theme to place Bootstrap files in."
+
+#~ msgid "Set file output to webroot Theme dir (use with theme option)."
+#~ msgstr "Set file output to webroot Theme dir (use with theme option)."
+
+#~ msgid "TwitterBootstrap Copy Shell Help."
+#~ msgstr "TwitterBootstrap Copy Shell Help."
+
+#~ msgid ""
+#~ "Copies Less, Js & Img source from Bootstrap submodule in plugin Vendor dir"
+#~ msgstr ""
+#~ "Copies Less, Js & Img source from Bootstrap submodule in plugin Vendor dir"
+
+#~ msgid "files will be placed in webroot of App or named Theme"
+#~ msgstr "files will be placed in webroot of App or named Theme"
+
+#~ msgid "Copies Less source from Bootstrap submodule in plugin Vendor dir"
+#~ msgstr "Copies Less source from Bootstrap submodule in plugin Vendor dir"
+
+#~ msgid "files will be placed in webroot/css/lib/ of App or named Theme"
+#~ msgstr "files will be placed in webroot/css/lib/ of App or named Theme"
+
+#~ msgid "Copies Img source from Bootstrap submodule in plugin Vendor dir"
+#~ msgstr "Copies Img source from Bootstrap submodule in plugin Vendor dir"
+
+#~ msgid "files will be placed in webroot/img/ of App or named Theme"
+#~ msgstr "files will be placed in webroot/img/ of App or named Theme"
+
+#~ msgid "Copies Js source from Bootstrap submodule in plugin Vendor dir"
+#~ msgstr "Copies Js source from Bootstrap submodule in plugin Vendor dir"
+
+#~ msgid "files will be placed in webroot/js/lib of App or named Theme"
+#~ msgstr "files will be placed in webroot/js/lib of App or named Theme"
+
+#~ msgid "Success."
+#~ msgstr "Succes. "
+
+#~ msgid "Error!"
+#~ msgstr "Fout!"
+
+#~ msgid "Debug setting does not allow access to this url."
+#~ msgstr ""
+#~ "Door een foutinstelling is het niet toegestaan om deze link te openen."
+
+#~ msgid "Alert notice message testing..."
+#~ msgstr "Alert notice message testing..."
+
+#~ msgid "Alert success message testing..."
+#~ msgstr "Alert success message testing..."
+
+#~ msgid "Alert error message testing..."
+#~ msgstr "Alert error message testing..."
+
+#~ msgid "CakePHP: the rapid development php framework:"
+#~ msgstr "CakePHP: the rapid development php framework:"
+
+#~ msgid "CakePHP"
+#~ msgstr "CakePHP"
+
+#~ msgid "Error notification from CakePHP Certification"
+#~ msgstr "Error notification from CakePHP Certification"
+
+#~ msgid ""
+#~ "Invalid setting for key: Use iso, name, iso3, numcode or printableName."
+#~ msgstr ""
+#~ "Invalid setting for key: Use iso, name, iso3, numcode or printableName."
+
+#~ msgid "Invalid argument #1: %s is not a valid %s identifyer."
+#~ msgstr "Invalid argument #1: %s is not a valid %s identifyer."
+
+#~ msgid "An Error happened"
+#~ msgstr "An Error happened"
+
+#~ msgid "Code: %s"
+#~ msgstr "Code: %s"
+
+#~ msgid "File: %s"
+#~ msgstr "File: %s"
+
+#~ msgid "Line: %d"
+#~ msgstr "Line: %d"
+
+#~ msgid "Context"
+#~ msgstr "Context"
+
+#~ msgid "Trace"
+#~ msgstr "Trace"
+
+#~ msgid "Session Data"
+#~ msgstr "Session Data"
+
+#~ msgid "Server Data"
+#~ msgstr "Server Data"
+
+#~ msgid "Request Data"
+#~ msgstr "Request Data"
+
+#~ msgid "Updating %s..."
+#~ msgstr "Bijwerken %s..."
+
+#~ msgid "Done updating %s"
+#~ msgstr "Klaar met bijwerken %s"
+
+#~ msgid "Correcting %s"
+#~ msgstr "Wijzigen %s"
+
+#~ msgid " * Updating %s"
+#~ msgstr "*Updating %s"
+
+#~ msgid "The plugin to update. Only the specified plugin will be updated."
+#~ msgstr "The plugin to update. Only the specified plugin will be updated."
+
+#~ msgid "Custom path to update recursivly."
+#~ msgstr "Custom path to update recursivly."
+
+#~ msgid ""
+#~ "The extension(s) to search. A pipe delimited list, or a preg_match "
+#~ "compatible subpattern"
+#~ msgstr ""
+#~ "The extension(s) to search. A pipe delimited list, or a preg_match "
+#~ "compatible subpattern"
+
+#~ msgid "Include vendor files, as well"
+#~ msgstr "Include vendor files, as well"
+
+#~ msgid "Dry run the update, no files will actually be modified."
+#~ msgstr "Dry run the update, no files will actually be modified."
+
+#~ msgid ""
+#~ "A shell to help automate code cleanup. \n"
+#~ "Be sure to have a backup of your application before running these "
+#~ "commands."
+#~ msgstr ""
+#~ "A shell to help automate code cleanup. \n"
+#~ "Be sure to have a backup of your application before running these "
+#~ "commands."
+
+#~ msgid "Run multiple commands."
+#~ msgstr "Run multiple commands."
+
+#~ msgid "Correct dependencies"
+#~ msgstr "Correct dependencies"
+
+#~ msgid "Make files utf8 compliant"
+#~ msgstr "Make files utf8 compliant"
+
+#~ msgid "<warning>Dry-run mode enabled!</warning>"
+#~ msgstr "<warning>Dry-run mode enabled!</warning>"
+
+#~ msgid "<warning>dos2unix not available</warning>"
+#~ msgstr "<warning>dos2unix not available</warning>"
+
+#~ msgid "Mode"
+#~ msgstr "Mode"
+
+#~ msgid "Specify extensions [php|txt|...]"
+#~ msgstr "Specify extensions [php|txt|...]"
+
+#~ msgid ""
+#~ "Dry run the clear command, no files will actually be deleted. Should be "
+#~ "combined with verbose!"
+#~ msgstr ""
+#~ "Dry run the clear command, no files will actually be deleted. Should be "
+#~ "combined with verbose!"
+
+#~ msgid "exclude the following files or folders"
+#~ msgstr "exclude the following files or folders"
+
+#~ msgid "The Convert Shell converts files from dos/unix/mac to another system"
+#~ msgstr ""
+#~ "The Convert Shell converts files from dos/unix/mac to another system"
+
+#~ msgid "Convert folder recursivly (Tools.Convert folder [options] [path])"
+#~ msgstr "Convert folder recursivly (Tools.Convert folder [options] [path])"
+
+#~ msgid "source - defaults to app"
+#~ msgstr "source - defaults to app"
+
+#~ msgid "target - required"
+#~ msgstr "target - required"
+
+#~ msgid "The plugin folder - can only be used with app as source"
+#~ msgstr "The plugin folder - can only be used with app as source"
+
+#~ msgid "Remove files if source is non-existent"
+#~ msgstr "Remove files if source is non-existent"
+
+#~ msgid "Invert direction (target to source)"
+#~ msgstr "Invert direction (target to source)"
+
+#~ msgid "Log all ouput to file log.txt in TMP dir"
+#~ msgstr "Log all ouput to file log.txt in TMP dir"
+
+#~ msgid "..."
+#~ msgstr "..."
+
+#~ msgid "Update"
+#~ msgstr "Update"
+
+#~ msgid "Interactive"
+#~ msgstr "Interactive"
+
+#~ msgid "Spaces per Tab"
+#~ msgstr "Spaces per Tab"
+
+#~ msgid "Extensions (comma-separated)"
+#~ msgstr "Extensions (comma-separated)"
+
+#~ msgid "Correct indentation of files"
+#~ msgstr "Correct indentation of files"
+
+#~ msgid "Indent all files in a folder"
+#~ msgstr "Indent all files in a folder"
+
+#~ msgid "custom ds"
+#~ msgstr "custom ds"
+
+#~ msgid "Run"
+#~ msgstr "Run"
+
+#~ msgid "Plugin"
+#~ msgstr "Plugin"
+
+#~ msgid ""
+#~ "The Whitespace Shell removes uncessary/wrong whitespaces.\n"
+#~ "Either provide a path as first argument, use -p PluginName or run it as "
+#~ "it is for the complete APP dir."
+#~ msgstr ""
+#~ "The Whitespace Shell removes uncessary/wrong whitespaces.\n"
+#~ "Either provide a path as first argument, use -p PluginName or run it as "
+#~ "it is for the complete APP dir."
+
+#~ msgid "Detect any leading/trailing whitespaces"
+#~ msgstr "Detect any leading/trailing whitespaces"
+
+#~ msgid ""
+#~ "Fix whitespaces at the end of PHP files (a single newline as per coding "
+#~ "standards)"
+#~ msgstr ""
+#~ "Fix whitespaces at the end of PHP files (a single newline as per coding "
+#~ "standards)"
+
+#~ msgid ""
+#~ "TinyAuth could not find `%s` cache - expects at least a `default` cache"
+#~ msgstr ""
+#~ "TinyAuth could not find `%s` cache - expects at least a `default` cache"
+
+#~ msgid "Missing acl information (%s) in user session"
+#~ msgstr "Missing acl information (%s) in user session"
+
+#~ msgid "Invalid Role Setup for TinyAuthorize (no roles found)"
+#~ msgstr "Invalid Role Setup for TinyAuthorize (no roles found)"
+
+#~ msgid "Vendor class Soros cannot be found"
+#~ msgstr "Vendor class Soros cannot be found"
+
+#~ msgid "Language file %s.sor not found"
+#~ msgstr "Language file %s.sor not found"
+
+#~ msgid "File not specified."
+#~ msgstr "File not specified."
+
+#~ msgid "File not found: \"%s\""
+#~ msgstr "File not found: \"%s\""
+
+#~ msgid "Unknown email configuration \"%s\"."
+#~ msgstr "Unknown email configuration \"%s\"."
+
+#~ msgid "CakePHP: the rapid development php framework"
+#~ msgstr "CakePHP: the rapid development php framework"
+
+#~ msgid "No %s found for that date range"
+#~ msgstr "No %s found for that date range"
+
+#~ msgid "Your form data is preserved you'll be redirected to it after login."
+#~ msgstr "Your form data is preserved you'll be redirected to it after login."
+
+#~ msgid "Afghanistan"
+#~ msgstr "* Afghanistan"
+
+#~ msgid "Albania"
+#~ msgstr "* Albania"
+
+#~ msgid "Algeria"
+#~ msgstr "Algeria"
+
+#~ msgid "American Samoa"
+#~ msgstr "American Samoa"
+
+#~ msgid "Andorra"
+#~ msgstr "Andorra"
+
+#~ msgid "Angola"
+#~ msgstr "Angola"
+
+#~ msgid "Anguilla"
+#~ msgstr "Anguilla"
+
+#~ msgid "Antarctica"
+#~ msgstr "Antarctica"
+
+#~ msgid "Antigua and Barbuda"
+#~ msgstr "Antigua and Barbuda"
+
+#~ msgid "Argentina"
+#~ msgstr "Argentina"
+
+#~ msgid "Armenia"
+#~ msgstr "Armenia"
+
+#~ msgid "Aruba"
+#~ msgstr "Aruba"
+
+#~ msgid "Australia"
+#~ msgstr "Australia"
+
+#~ msgid "Austria"
+#~ msgstr "Austria"
+
+#~ msgid "Azerbaijan"
+#~ msgstr "Azerbaijan"
+
+#~ msgid "Bahamas"
+#~ msgstr "Bahamas"
+
+#~ msgid "Bahrain"
+#~ msgstr "Bahrain"
+
+#~ msgid "Bangladesh"
+#~ msgstr "Bangladesh"
+
+#~ msgid "Barbados"
+#~ msgstr "Barbados"
+
+#~ msgid "Belarus"
+#~ msgstr "Belarus"
+
+#~ msgid "Belgium"
+#~ msgstr "Belgium"
+
+#~ msgid "Belize"
+#~ msgstr "Belize"
+
+#~ msgid "Benin"
+#~ msgstr "Benin"
+
+#~ msgid "Bermuda"
+#~ msgstr "Bermuda"
+
+#~ msgid "Bhutan"
+#~ msgstr "Bhutan"
+
+#~ msgid "Bolivia"
+#~ msgstr "Bolivia"
+
+#~ msgid "Bosnia and Herzegovina"
+#~ msgstr "Bosnia and Herzegovina"
+
+#~ msgid "Botswana"
+#~ msgstr "Botswana"
+
+#~ msgid "Bouvet Island"
+#~ msgstr "Bouvet Island"
+
+#~ msgid "Brazil"
+#~ msgstr "Brazil"
+
+#~ msgid "British Indian Ocean Territory"
+#~ msgstr "British Indian Ocean Territory"
+
+#~ msgid "Brunei Darussalam"
+#~ msgstr "Brunei Darussalam"
+
+#~ msgid "Bulgaria"
+#~ msgstr "Bulgaria"
+
+#~ msgid "Burkina Faso"
+#~ msgstr "Burkina Faso"
+
+#~ msgid "Burundi"
+#~ msgstr "Burundi"
+
+#~ msgid "Cambodia"
+#~ msgstr "Cambodia"
+
+#~ msgid "Cameroon"
+#~ msgstr "Cameroon"
+
+#~ msgid "Canada"
+#~ msgstr "Canada"
+
+#~ msgid "Cape Verde"
+#~ msgstr "Cape Verde"
+
+#~ msgid "Cayman Islands"
+#~ msgstr "Cayman Islands"
+
+#~ msgid "Central African Republic"
+#~ msgstr "Central African Republic"
+
+#~ msgid "Chad"
+#~ msgstr "Chad"
+
+#~ msgid "Chile"
+#~ msgstr "Chile"
+
+#~ msgid "China"
+#~ msgstr "China"
+
+#~ msgid "Christmas Island"
+#~ msgstr "Christmas Island"
+
+#~ msgid "Cocos (Keeling) Islands"
+#~ msgstr "Cocos (Keeling) Islands"
+
+#~ msgid "Colombia"
+#~ msgstr "Colombia"
+
+#~ msgid "Comoros"
+#~ msgstr "Comoros"
+
+#~ msgid "Congo"
+#~ msgstr "Congo"
+
+#~ msgid "Congo, the Democratic Republic of the"
+#~ msgstr "Congo, the Democratic Republic of the"
+
+#~ msgid "Cook Islands"
+#~ msgstr "Cook Islands"
+
+#~ msgid "Costa Rica"
+#~ msgstr "Costa Rica"
+
+#~ msgid "Cote D'Ivoire"
+#~ msgstr "Cote D'Ivoire"
+
+#~ msgid "Croatia"
+#~ msgstr "Croatia"
+
+#~ msgid "Cuba"
+#~ msgstr "Cuba"
+
+#~ msgid "Cyprus"
+#~ msgstr "Cyprus"
+
+#~ msgid "Czech Republic"
+#~ msgstr "Czech Republic"
+
+#~ msgid "Denmark"
+#~ msgstr "Denmark"
+
+#~ msgid "Djibouti"
+#~ msgstr "Djibouti"
+
+#~ msgid "Dominica"
+#~ msgstr "Dominica"
+
+#~ msgid "Dominican Republic"
+#~ msgstr "Dominican Republic"
+
+#~ msgid "Ecuador"
+#~ msgstr "Ecuador"
+
+#~ msgid "Egypt"
+#~ msgstr "Egypt"
+
+#~ msgid "El Salvador"
+#~ msgstr "El Salvador"
+
+#~ msgid "Equatorial Guinea"
+#~ msgstr "Equatorial Guinea"
+
+#~ msgid "Eritrea"
+#~ msgstr "Eritrea"
+
+#~ msgid "Estonia"
+#~ msgstr "Estonia"
+
+#~ msgid "Ethiopia"
+#~ msgstr "Ethiopia"
+
+#~ msgid "Falkland Islands (Malvinas)"
+#~ msgstr "Falkland Islands (Malvinas)"
+
+#~ msgid "Faroe Islands"
+#~ msgstr "Faroe Islands"
+
+#~ msgid "Fiji"
+#~ msgstr "Fiji"
+
+#~ msgid "Finland"
+#~ msgstr "Finland"
+
+#~ msgid "French Guiana"
+#~ msgstr "French Guiana"
+
+#~ msgid "French Polynesia"
+#~ msgstr "French Polynesia"
+
+#~ msgid "French Southern Territories"
+#~ msgstr "French Southern Territories"
+
+#~ msgid "Gabon"
+#~ msgstr "Gabon"
+
+#~ msgid "Gambia"
+#~ msgstr "Gambia"
+
+#~ msgid "Georgia"
+#~ msgstr "Georgia"
+
+#~ msgid "Germany"
+#~ msgstr "Germany"
+
+#~ msgid "Ghana"
+#~ msgstr "Ghana"
+
+#~ msgid "Gibraltar"
+#~ msgstr "Gibraltar"
+
+#~ msgid "Greece"
+#~ msgstr "Greece"
+
+#~ msgid "Greenland"
+#~ msgstr "Greenland"
+
+#~ msgid "Grenada"
+#~ msgstr "Grenada"
+
+#~ msgid "Guadeloupe"
+#~ msgstr "Guadeloupe"
+
+#~ msgid "Guam"
+#~ msgstr "Guam"
+
+#~ msgid "Guatemala"
+#~ msgstr "Guatemala"
+
+#~ msgid "Guinea"
+#~ msgstr "Guinea"
+
+#~ msgid "Guinea-Bissau"
+#~ msgstr "Guinea-Bissau"
+
+#~ msgid "Guyana"
+#~ msgstr "Guyana"
+
+#~ msgid "Haiti"
+#~ msgstr "Haiti"
+
+#~ msgid "Heard Island and Mcdonald Islands"
+#~ msgstr "Heard Island and Mcdonald Islands"
+
+#~ msgid "Holy See (Vatican City State)"
+#~ msgstr "Holy See (Vatican City State)"
+
+#~ msgid "Honduras"
+#~ msgstr "Honduras"
+
+#~ msgid "Hong Kong"
+#~ msgstr "Hong Kong"
+
+#~ msgid "Hungary"
+#~ msgstr "Hungary"
+
+#~ msgid "Iceland"
+#~ msgstr "Iceland"
+
+#~ msgid "India"
+#~ msgstr "India"
+
+#~ msgid "Indonesia"
+#~ msgstr "Indonesia"
+
+#~ msgid "Iran, Islamic Republic of"
+#~ msgstr "Iran, Islamic Republic of"
+
+#~ msgid "Iraq"
+#~ msgstr "Iraq"
+
+#~ msgid "Ireland"
+#~ msgstr "Ireland"
+
+#~ msgid "Israel"
+#~ msgstr "Israel"
+
+#~ msgid "Italy"
+#~ msgstr "Italy"
+
+#~ msgid "Jamaica"
+#~ msgstr "Jamaica"
+
+#~ msgid "Japan"
+#~ msgstr "Japan"
+
+#~ msgid "Jordan"
+#~ msgstr "Jordan"
+
+#~ msgid "Kazakhstan"
+#~ msgstr "Kazakhstan"
+
+#~ msgid "Kenya"
+#~ msgstr "Kenya"
+
+#~ msgid "Kiribati"
+#~ msgstr "Kiribati"
+
+#~ msgid "Korea, Democratic People's Republic of"
+#~ msgstr "Korea, Democratic People's Republic of"
+
+#~ msgid "Korea, Republic of"
+#~ msgstr "Korea, Republic of"
+
+#~ msgid "Kuwait"
+#~ msgstr "Kuwait"
+
+#~ msgid "Kyrgyzstan"
+#~ msgstr "Kyrgyzstan"
+
+#~ msgid "Lao People's Democratic Republic"
+#~ msgstr "Lao People's Democratic Republic"
+
+#~ msgid "Latvia"
+#~ msgstr "Latvia"
+
+#~ msgid "Lebanon"
+#~ msgstr "Lebanon"
+
+#~ msgid "Lesotho"
+#~ msgstr "Lesotho"
+
+#~ msgid "Liberia"
+#~ msgstr "Liberia"
+
+#~ msgid "Libyan Arab Jamahiriya"
+#~ msgstr "Libyan Arab Jamahiriya"
+
+#~ msgid "Liechtenstein"
+#~ msgstr "Liechtenstein"
+
+#~ msgid "Lithuania"
+#~ msgstr "Lithuania"
+
+#~ msgid "Luxembourg"
+#~ msgstr "Luxembourg"
+
+#~ msgid "Macao"
+#~ msgstr "Macao"
+
+#~ msgid "Macedonia, the Former Yugoslav Republic of"
+#~ msgstr "Macedonia, the Former Yugoslav Republic of"
+
+#~ msgid "Madagascar"
+#~ msgstr "Madagascar"
+
+#~ msgid "Malawi"
+#~ msgstr "Malawi"
+
+#~ msgid "Malaysia"
+#~ msgstr "Malaysia"
+
+#~ msgid "Maldives"
+#~ msgstr "Maldives"
+
+#~ msgid "Mali"
+#~ msgstr "Mali"
+
+#~ msgid "Malta"
+#~ msgstr "Malta"
+
+#~ msgid "Marshall Islands"
+#~ msgstr "Marshall Islands"
+
+#~ msgid "Martinique"
+#~ msgstr "Martinique"
+
+#~ msgid "Mauritania"
+#~ msgstr "Mauritania"
+
+#~ msgid "Mauritius"
+#~ msgstr "Mauritius"
+
+#~ msgid "Mayotte"
+#~ msgstr "Mayotte"
+
+#~ msgid "Mexico"
+#~ msgstr "Mexico"
+
+#~ msgid "Micronesia, Federated States of"
+#~ msgstr "Micronesia, Federated States of"
+
+#~ msgid "Moldova, Republic of"
+#~ msgstr "Moldova, Republic of"
+
+#~ msgid "Monaco"
+#~ msgstr "Monaco"
+
+#~ msgid "Mongolia"
+#~ msgstr "Mongolia"
+
+#~ msgid "Montserrat"
+#~ msgstr "Montserrat"
+
+#~ msgid "Morocco"
+#~ msgstr "Morocco"
+
+#~ msgid "Mozambique"
+#~ msgstr "Mozambique"
+
+#~ msgid "Myanmar"
+#~ msgstr "Myanmar"
+
+#~ msgid "Namibia"
+#~ msgstr "Namibia"
+
+#~ msgid "Nauru"
+#~ msgstr "Nauru"
+
+#~ msgid "Nepal"
+#~ msgstr "Nepal"
+
+#~ msgid "Netherlands"
+#~ msgstr "Netherlands"
+
+#~ msgid "Netherlands Antilles"
+#~ msgstr "Netherlands Antilles"
+
+#~ msgid "New Caledonia"
+#~ msgstr "New Caledonia"
+
+#~ msgid "New Zealand"
+#~ msgstr "New Zealand"
+
+#~ msgid "Nicaragua"
+#~ msgstr "Nicaragua"
+
+#~ msgid "Niger"
+#~ msgstr "Niger"
+
+#~ msgid "Nigeria"
+#~ msgstr "Nigeria"
+
+#~ msgid "Niue"
+#~ msgstr "Niue"
+
+#~ msgid "Norfolk Island"
+#~ msgstr "Norfolk Island"
+
+#~ msgid "Northern Mariana Islands"
+#~ msgstr "Northern Mariana Islands"
+
+#~ msgid "Norway"
+#~ msgstr "Norway"
+
+#~ msgid "Oman"
+#~ msgstr "Oman"
+
+#~ msgid "Pakistan"
+#~ msgstr "Pakistan"
+
+#~ msgid "Palau"
+#~ msgstr "Palau"
+
+#~ msgid "Palestinian Territory, Occupied"
+#~ msgstr "Palestinian Territory, Occupied"
+
+#~ msgid "Panama"
+#~ msgstr "Panama"
+
+#~ msgid "Papua New Guinea"
+#~ msgstr "Papua New Guinea"
+
+#~ msgid "Paraguay"
+#~ msgstr "Paraguay"
+
+#~ msgid "Peru"
+#~ msgstr "Peru"
+
+#~ msgid "Pitcairn"
+#~ msgstr "Pitcairn"
+
+#~ msgid "Poland"
+#~ msgstr "Poland"
+
+#~ msgid "Portugal"
+#~ msgstr "Portugal"
+
+#~ msgid "Puerto Rico"
+#~ msgstr "Puerto Rico"
+
+#~ msgid "Qatar"
+#~ msgstr "Qatar"
+
+#~ msgid "Reunion"
+#~ msgstr "Reunion"
+
+#~ msgid "Romania"
+#~ msgstr "Romania"
+
+#~ msgid "Russian Federation"
+#~ msgstr "Russian Federation"
+
+#~ msgid "Rwanda"
+#~ msgstr "Rwanda"
+
+#~ msgid "Saint Helena"
+#~ msgstr "Saint Helena"
+
+#~ msgid "Saint Kitts and Nevis"
+#~ msgstr "Saint Kitts and Nevis"
+
+#~ msgid "Saint Lucia"
+#~ msgstr "Saint Lucia"
+
+#~ msgid "Saint Pierre and Miquelon"
+#~ msgstr "Saint Pierre and Miquelon"
+
+#~ msgid "Saint Vincent and the Grenadines"
+#~ msgstr "Saint Vincent and the Grenadines"
+
+#~ msgid "Samoa"
+#~ msgstr "Samoa"
+
+#~ msgid "San Marino"
+#~ msgstr "San Marino"
+
+#~ msgid "Sao Tome and Principe"
+#~ msgstr "Sao Tome and Principe"
+
+#~ msgid "Saudi Arabia"
+#~ msgstr "Saudi Arabia"
+
+#~ msgid "Senegal"
+#~ msgstr "Senegal"
+
+#~ msgid "Serbia and Montenegro"
+#~ msgstr "Serbia and Montenegro"
+
+#~ msgid "Seychelles"
+#~ msgstr "Seychelles"
+
+#~ msgid "Sierra Leone"
+#~ msgstr "Sierra Leone"
+
+#~ msgid "Singapore"
+#~ msgstr "Singapore"
+
+#~ msgid "Slovakia"
+#~ msgstr "Slovakia"
+
+#~ msgid "Slovenia"
+#~ msgstr "Slovenia"
+
+#~ msgid "Solomon Islands"
+#~ msgstr "Solomon Islands"
+
+#~ msgid "Somalia"
+#~ msgstr "Somalia"
+
+#~ msgid "South Africa"
+#~ msgstr "South Africa"
+
+#~ msgid "South Georgia and the South Sandwich Islands"
+#~ msgstr "South Georgia and the South Sandwich Islands"
+
+#~ msgid "Spain"
+#~ msgstr "Spain"
+
+#~ msgid "Sri Lanka"
+#~ msgstr "Sri Lanka"
+
+#~ msgid "Sudan"
+#~ msgstr "Sudan"
+
+#~ msgid "Suriname"
+#~ msgstr "Suriname"
+
+#~ msgid "Svalbard and Jan Mayen"
+#~ msgstr "Svalbard and Jan Mayen"
+
+#~ msgid "Swaziland"
+#~ msgstr "Swaziland"
+
+#~ msgid "Sweden"
+#~ msgstr "Sweden"
+
+#~ msgid "Switzerland"
+#~ msgstr "Switzerland"
+
+#~ msgid "Syrian Arab Republic"
+#~ msgstr "Syrian Arab Republic"
+
+#~ msgid "Taiwan, Province of China"
+#~ msgstr "Taiwan, Province of China"
+
+#~ msgid "Tajikistan"
+#~ msgstr "Tajikistan"
+
+#~ msgid "Tanzania, United Republic of"
+#~ msgstr "Tanzania, United Republic of"
+
+#~ msgid "Thailand"
+#~ msgstr "Thailand"
+
+#~ msgid "Timor-Leste"
+#~ msgstr "Timor-Leste"
+
+#~ msgid "Togo"
+#~ msgstr "Togo"
+
+#~ msgid "Tokelau"
+#~ msgstr "Tokelau"
+
+#~ msgid "Tonga"
+#~ msgstr "Tonga"
+
+#~ msgid "Trinidad and Tobago"
+#~ msgstr "Trinidad and Tobago"
+
+#~ msgid "Tunisia"
+#~ msgstr "Tunisia"
+
+#~ msgid "Turkey"
+#~ msgstr "Turkey"
+
+#~ msgid "Turkmenistan"
+#~ msgstr "Turkmenistan"
+
+#~ msgid "Turks and Caicos Islands"
+#~ msgstr "Turks and Caicos Islands"
+
+#~ msgid "Tuvalu"
+#~ msgstr "Tuvalu"
+
+#~ msgid "Uganda"
+#~ msgstr "Uganda"
+
+#~ msgid "Ukraine"
+#~ msgstr "Ukraine"
+
+#~ msgid "United Arab Emirates"
+#~ msgstr "United Arab Emirates"
+
+#~ msgid "United Kingdom"
+#~ msgstr "United Kingdom"
+
+#~ msgid "United States"
+#~ msgstr "United States"
+
+#~ msgid "Uruguay"
+#~ msgstr "Uruguay"
+
+#~ msgid "Uzbekistan"
+#~ msgstr "Uzbekistan"
+
+#~ msgid "Vanuatu"
+#~ msgstr "Vanuatu"
+
+#~ msgid "Venezuela"
+#~ msgstr "Venezuela"
+
+#~ msgid "Viet Nam"
+#~ msgstr "Viet Nam"
+
+#~ msgid "Virgin Islands, British"
+#~ msgstr "Virgin Islands, British"
+
+#~ msgid "Virgin Islands, U.s."
+#~ msgstr "Virgin Islands, U.s."
+
+#~ msgid "Wallis and Futuna"
+#~ msgstr "Wallis and Futuna"
+
+#~ msgid "Western Sahara"
+#~ msgstr "Western Sahara"
+
+#~ msgid "Zambia"
+#~ msgstr "Zambia"
+
+#~ msgid "Zimbabwe"
+#~ msgstr "Zimbabwe"
+
+#~ msgid "%s for Row %d failed to save."
+#~ msgstr "%s for Row %d failed to save."
+
+#~ msgid "You need to define at least one field to be toggleable."
+#~ msgstr "You need to define at least one field to be toggleable."
+
+#~ msgid "The field %s is not in the list of toggleable fields."
+#~ msgstr "The field %s is not in the list of toggleable fields."
+
+#~ msgid "The field %s does not have two toggleable states defined."
+#~ msgstr "The field %s does not have two toggleable states defined."
+
+#~ msgid "Invalid record"
+#~ msgstr "Invalid record"
+
+#~ msgid "Server lipsum.com returns error code %s."
+#~ msgstr "Server lipsum.com returns error code %s."
+
+#~ msgid "Response from lipsum.com is empty or could not be decoded."
+#~ msgstr "Response from lipsum.com is empty or could not be decoded."
+
+#~ msgid "Connection to server lipsum.com failed. %s."
+#~ msgstr "Connection to server lipsum.com failed. %s."

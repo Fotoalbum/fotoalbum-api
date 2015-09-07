@@ -1,0 +1,103 @@
+# LANGUAGE translation of CakePHP Application
+# Copyright YEAR NAME <EMAIL@ADDRESS>
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PROJECT VERSION\n"
+"POT-Creation-Date: 2013-07-09 18:21+0200\n"
+"PO-Revision-Date: YYYY-mm-DD HH:MM+ZZZZ\n"
+"Last-Translator: NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <EMAIL@ADDRESS>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=INTEGER; plural=EXPRESSION;\n"
+
+#: Plugin/Contactform/Controller/ContactformController.php:51
+msgid "contact form request"
+msgstr ""
+
+#: Plugin/Contactform/Controller/ContactformController.php:54
+msgid "contact form was submitted successfully"
+msgstr ""
+
+#: Plugin/Contactform/Controller/ContactformController.php:61
+msgid "contact form"
+msgstr ""
+
+#: Plugin/Contactform/View/Contactform/show.ctp:25
+msgid "Contact Form"
+msgstr ""
+
+#: Plugin/Contactform/View/Contactform/show.ctp:38
+#: Plugin/Contactform/View/Emails/html/contactform.ctp:4
+#: Plugin/Contactform/View/Emails/text/contactform.ctp:10
+msgid "name"
+msgstr ""
+
+#: Plugin/Contactform/View/Contactform/show.ctp:39
+#: Plugin/Contactform/View/Emails/html/contactform.ctp:9
+#: Plugin/Contactform/View/Emails/text/contactform.ctp:11
+msgid "email"
+msgstr ""
+
+#: Plugin/Contactform/View/Contactform/show.ctp:40
+#: Plugin/Contactform/View/Emails/html/contactform.ctp:14
+#: Plugin/Contactform/View/Emails/text/contactform.ctp:13
+msgid "message"
+msgstr ""
+
+#: Plugin/Contactform/View/Contactform/show.ctp:42
+msgid "spam protection"
+msgstr ""
+
+#: Plugin/Contactform/View/Contactform/show.ctp:48
+msgid "submit"
+msgstr ""
+
+#: Plugin/Contactform/View/Contactform/show.ctp:64
+msgid "Get in touch:"
+msgstr ""
+
+#: Plugin/Contactform/View/Contactform/show.ctp:84
+msgid "Address"
+msgstr ""
+
+#: Plugin/Contactform/View/Contactform/show.ctp:89
+msgid "Fotoalbum.nl"
+msgstr ""
+
+#: Plugin/Contactform/View/Contactform/show.ctp:91
+msgid "Keizersgracht 560-4"
+msgstr ""
+
+#: Plugin/Contactform/View/Contactform/show.ctp:92
+msgid "1017 EM"
+msgstr ""
+
+#: Plugin/Contactform/View/Contactform/show.ctp:92
+msgid "Amsterdam"
+msgstr ""
+
+#: Plugin/Contactform/View/Contactform/show.ctp:94
+msgid "P_afkorting_phone"
+msgstr ""
+
+#: Plugin/Contactform/View/Contactform/show.ctp:94
+msgid "020 - 320 49 84"
+msgstr ""
+
+#: Plugin/Contactform/View/Contactform/show.ctp:99
+msgid "Full Name"
+msgstr ""
+
+#: Plugin/Contactform/View/Contactform/show.ctp:101
+msgid "marketing@fotoalbum.nl"
+msgstr ""
+
+#: Plugin/Contactform/View/Emails/html/contactform.ctp:24
+#: Plugin/Contactform/View/Emails/text/contactform.ctp:16
+msgid "sent from"
+msgstr ""
+
