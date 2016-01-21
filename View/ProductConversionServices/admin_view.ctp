@@ -12,6 +12,8 @@
 		<li><?php echo $this->Html->link(__('New Product Conversion'), array('controller' => 'product_conversions', 'action' => 'add')); ?> </li>
 		<li><?php echo $this->Html->link(__('List Products'), array('controller' => 'products', 'action' => 'index')); ?> </li>
 		<li><?php echo $this->Html->link(__('New Product'), array('controller' => 'products', 'action' => 'add')); ?> </li>
+		<li><?php echo $this->Html->link(__('List User Products'), array('controller' => 'user_products', 'action' => 'index')); ?> </li>
+		<li><?php echo $this->Html->link(__('New User Product'), array('controller' => 'user_products', 'action' => 'add')); ?> </li>
 		</ul>
 	</div>
 	<div class="col-md-9">
@@ -35,6 +37,11 @@
 		<dt><?php echo __('Product'); ?></dt>
 		<dd>
 			<?php echo $this->Html->link($productConversionService['Product']['name'], array('controller' => 'products', 'action' => 'view', $productConversionService['Product']['id'])); ?>
+			&nbsp;
+		</dd>
+		<dt><?php echo __('User Product'); ?></dt>
+		<dd>
+			<?php echo $this->Html->link($productConversionService['UserProduct']['name'], array('controller' => 'user_products', 'action' => 'view', $productConversionService['UserProduct']['id'])); ?>
 			&nbsp;
 		</dd>
 		<dt><?php echo __('Mcf Content'); ?></dt>

@@ -110,6 +110,7 @@ class SoftwaresUsersController extends UsersController {
  * @return void
  */
 	public function login($id = false) {
+        
 		  if ($this->request->is('post')) {
 			$return_data = array();
 			//$this->Auth->login(array('id'=>$id));
@@ -202,5 +203,5 @@ class SoftwaresUsersController extends UsersController {
 	
 
 }
-
+    
 ?>

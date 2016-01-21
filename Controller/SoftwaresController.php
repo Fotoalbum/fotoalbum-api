@@ -1475,6 +1475,7 @@ class SoftwaresController extends AppController
                 $this->Document->uploadSettings($this->Document->fileFieldName, 'thumbnailPath', $this->Document->getFullPath($dir_array) . DS);
 
                 $res = $this->Document->save($data);
+
                 if ($res) {
                     unset($data);
                     $this->Document->recursive = -1;
@@ -1484,6 +1485,7 @@ class SoftwaresController extends AppController
                     $files[] = $data['Document']['full_path'] . $data['Document']['hires'];
                     $files[] = $data['Document']['full_path'] . $data['Document']['lowres'];
                     $files[] = $data['Document']['full_path'] . $data['Document']['thumb'];
+                    $data['Document']['original_filename'] = $_FILES['Filedata']['name'];
 
                     $data[$model]['msg'] = __('The ' . $model . ' has been saved');
                     $data[$model]['result'] = 'OK';
@@ -2747,7 +2749,7 @@ class SoftwaresController extends AppController
         if (!$id) {
 
             $data = $this->ProductConversion->find('first', array(
-                'conditions' => array('id' => $this->request->data['id'])
+                'conditions' => array('ProductConversion.id' => $this->request->data['id'])
             ));
 
             if ($data) {
@@ -2769,7 +2771,7 @@ class SoftwaresController extends AppController
         } else {
 
             $data = $this->ProductConversion->find('first', array(
-                'conditions' => array('id' => $id)
+                'conditions' => array('ProductConversion.id' => $id)
             ));
 
             if ($data) {
@@ -2788,6 +2790,11 @@ class SoftwaresController extends AppController
         $filecontent = JSON_DECODE($this->request->data['filecontent']); //JSON
         $photos = JSON_DECODE($this->request->data['photos']); //JSON
         $user_id = $this->request->data['user_id'];
+
+        $errors = 'Geen fouten';
+        if ($this->request->data['error_images']) {
+            $errors = $this->request->data['error_images']; //String
+        }
 
         //Get the product id
         $product_id = -1;
@@ -2813,6 +2820,7 @@ class SoftwaresController extends AppController
             'product_id' => $product_id,
             'mcf_content' => $filecontent->filecontent,
             'photos' => $this->request->data['photos'],
+            'errors' => $errors,
             'lang' => $lang,
             'status' => 0,
 
@@ -2827,7 +2835,6 @@ class SoftwaresController extends AppController
 
         $this->autoRender = false;
         return JSON_ENCODE($product_id);
-
 
         /*
         $product_id = $product['fa'];
@@ -2884,6 +2891,26 @@ class SoftwaresController extends AppController
         $this->autoRender = false;
         return $pages_xml;
         */
+    }
+
+    function error_conversion() {
+
+        $user_id = $this->request->data['user_id'];
+        $mcf = JSON_DECODE($this->request->data['mcf_content']);
+        $debug_content = $this->request->data['debug_content'];
+
+        $xml = simplexml_load_string($mcf->filecontent);
+        $json = JSON_ENCODE($xml);
+
+        //Send email to maurice@fotoalbum.nl
+        $Email = new CakeEmail();
+        $Email->from(array('conversie@fotoalbum.nl' => 'studio'));
+        $Email->to('maurice@fotoalbum.nl');
+        $Email->subject('Probleem conversie');
+        $Email->emailFormat('html');
+        $Email->send("<html><p>user_id: " . $user_id . "</p><p>" . $debug_content . "</p></html>"); //<p>" . $json . "</p>
+        $this->autoRender = false;
+        return $user_id;
     }
 
     function CreatePagesXML($photos, $product_info, $spine_options, $filecontent)
@@ -3504,7 +3531,6 @@ class SoftwaresController extends AppController
                 case "freetextarea":
                 case "textarea":
 
-                    /*
                     $area_attr = $area->attributes();
 
                     $txt_attr = $area->text->attributes();
@@ -3562,8 +3588,9 @@ class SoftwaresController extends AppController
                     $element->addAttribute('fixedcontent', '0');
                     $element->addAttribute('allwaysontop', '0');
                     $element->addAttribute('importtext', '1');
+                    $element[0] = (string)$area->text;
                     break;
-                    */
+
             }
         }
 

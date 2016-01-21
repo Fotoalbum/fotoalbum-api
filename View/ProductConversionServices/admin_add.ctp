@@ -10,6 +10,8 @@
 		<li><?php echo $this->Html->link(__('New Product Conversion'), array('controller' => 'product_conversions', 'action' => 'add')); ?> </li>
 		<li><?php echo $this->Html->link(__('List Products'), array('controller' => 'products', 'action' => 'index')); ?> </li>
 		<li><?php echo $this->Html->link(__('New Product'), array('controller' => 'products', 'action' => 'add')); ?> </li>
+		<li><?php echo $this->Html->link(__('List User Products'), array('controller' => 'user_products', 'action' => 'index')); ?> </li>
+		<li><?php echo $this->Html->link(__('New User Product'), array('controller' => 'user_products', 'action' => 'add')); ?> </li>
 		</ul>
 	</div>
 	<div class="productConversionServices col-md-6 span9">
@@ -21,6 +23,7 @@
 		echo $this->Form->input('user_id');
 		echo $this->Form->input('product_conversion_id');
 		echo $this->Form->input('product_id');
+		echo $this->Form->input('user_product_id');
 		echo $this->Form->input('mcf_content');
 		echo $this->Form->input('photos');
 		echo $this->Form->input('status');
@@ -28,7 +31,7 @@
 	?>
 			<div class="form-actions">
 			<?php echo $this->Form->submit(__('Submit'),array('class'=>'btn btn-primary pull-right','div'=>false));?>
-<?php echo $this->Html->link(__('Cancel'),array('controller' => 'products', 'action' => 'index'),array('class'=>'btn btn-cancel'));?>
+<?php echo $this->Html->link(__('Cancel'),array('controller' => 'user_products', 'action' => 'index'),array('class'=>'btn btn-cancel'));?>
 			</div>
 			</fieldset>
 	<?php echo $this->Form->end();?>

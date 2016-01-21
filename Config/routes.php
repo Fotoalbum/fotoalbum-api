@@ -68,7 +68,11 @@
 	Router::connect('/registeren/bevestig/*', array('plugin'=>'Users','controller' => 'users', 'action' => 'verify'));
 	
 	Router::connect('/profiel/*', array('plugin'=>'users','controller'=>'users','action'=>'view'));
-	
+    
+    Router::connect('/applogin', array('plugin'=>'users','controller' => 'users', 'action' => 'applogin'));
+	Router::connect('/app_conversion', array('controller' => 'softwares', 'action' => 'app_conversion'));
+
+
 /**
  * ...and connect the rest of 'Pages' controller's urls.
  */

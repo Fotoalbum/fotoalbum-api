@@ -478,4 +478,22 @@ class Document extends DocumentManagerAppModel {
 
 	}
 
+	public function stripFileNameInvalidChars($fileName)
+	{
+
+		$fileName = strip_tags($fileName);
+		$fileName = preg_replace('/[\r\n\t ]+/', ' ', $fileName);
+		$fileName = preg_replace('/[\"\*\/\:\<\>\?\'\|]+/', ' ', $fileName);
+		$fileName = strtolower($fileName);
+		$fileName = html_entity_decode( $fileName, ENT_QUOTES, "utf-8" );
+		$fileName = htmlentities($fileName, ENT_QUOTES, "utf-8");
+		$fileName = preg_replace("/(&)([a-z])([a-z]+;)/i", '$2', $fileName);
+		$fileName = str_replace(' ', '-', $fileName);
+		$fileName = rawurlencode($fileName);
+		$fileName = str_replace('%', '-', $fileName);
+
+		return $fileName;
+
+	}
+
 }

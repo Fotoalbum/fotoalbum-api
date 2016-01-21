@@ -6,6 +6,7 @@ App::uses('AppModel', 'Model');
  * @property User $User
  * @property ProductConversion $ProductConversion
  * @property Product $Product
+ * @property UserProduct $UserProduct
  */
 class ProductConversionService extends AppModel {
 
@@ -52,6 +53,13 @@ class ProductConversionService extends AppModel {
 		'Product' => array(
 			'className' => 'Product',
 			'foreignKey' => 'product_id',
+			'conditions' => '',
+			'fields' => '',
+			'order' => ''
+		),
+		'UserProduct' => array(
+			'className' => 'UserProduct',
+			'foreignKey' => 'user_product_id',
 			'conditions' => '',
 			'fields' => '',
 			'order' => ''
