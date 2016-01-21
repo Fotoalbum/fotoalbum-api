@@ -14,25 +14,24 @@
 <div class="col-md-10 span10">
 	<h2><?php echo __('Product Conversion Services');?></h2>
 	<table class="table table-condensed table-hover" style="white-space:nowrap;">
-		<thead>
-			<tr>
-										<th><?php echo $this->Paginator->sort('id');?></th>
-												<th><?php echo $this->Paginator->sort('user_id');?></th>
-												<th><?php echo $this->Paginator->sort('product_conversion_id');?></th>
-                                                <th><?php echo $this->Paginator->sort('product_id');?></th>
-                                                <th><?php echo $this->Paginator->sort('user_product_id');?></th>
-                                                <th><?php echo $this->Paginator->sort('status');?></th>
-												<th><?php echo $this->Paginator->sort('created');?></th>
-												<th><?php echo $this->Paginator->sort('modified');?></th>
-										<th class="actions"><?php echo __('Actions');?></th>
-			</tr>
-		</thead>
+        <thead>
+            <tr>
+                <th><?php echo $this->Paginator->sort('id');?></th>
+                <th><?php echo $this->Paginator->sort('user_id');?></th>
+                <th><?php echo $this->Paginator->sort('product_conversion_id');?></th>
+                <th><?php echo $this->Paginator->sort('product_id');?></th>
+                <th><?php echo $this->Paginator->sort('user_product_id');?></th>
+                <th><?php echo $this->Paginator->sort('status');?></th>
+                <th><?php echo $this->Paginator->sort('created');?></th>
+                <th><?php echo $this->Paginator->sort('modified');?></th>
+                <th class="actions"><?php echo __('Actions');?></th>
+            </tr>
+        </thead>
 		<tbody>
 			<?php
 			foreach ($productConversionServices as $productConversionService): ?>
 	<tr>
 		<td><?php echo h($productConversionService['ProductConversionService']['id']); ?>&nbsp;</td>
-		<td><?php echo h($productConversionService['ProductConversionService']['user_product_id']); ?>&nbsp;</td>
 		<td>
 			<?php echo $this->Html->link($productConversionService['User']['id'], array('controller' => 'users', 'action' => 'view', $productConversionService['User']['id'])); ?>
 		</td>
@@ -40,8 +39,9 @@
 			<?php echo $this->Html->link($productConversionService['ProductConversion']['name'], array('controller' => 'product_conversion', 'action' => 'view', $productConversionService['ProductConversion']['id'])); ?>
 		</td>
 		<td>
-			<?php echo $this->Html->link($productConversionService['Product']['name'], array('controller' => 'users', 'producct' => 'view', $productConversionService['Product']['id'])); ?>
+			<?php echo $this->Html->link($productConversionService['Product']['name'], array('controller' => 'users', 'product' => 'view', $productConversionService['Product']['id'])); ?>
 		</td>                
+		<td><?php echo h($productConversionService['ProductConversionService']['user_product_id']); ?>&nbsp;</td>
 		<td><?php echo h($productConversionService['ProductConversionService']['status']); ?>&nbsp;</td>
 		<td><?php echo h($productConversionService['ProductConversionService']['created']); ?>&nbsp;</td>
 		<td><?php echo h($productConversionService['ProductConversionService']['modified']); ?>&nbsp;</td>

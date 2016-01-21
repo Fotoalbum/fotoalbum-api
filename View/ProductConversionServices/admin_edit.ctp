@@ -35,10 +35,20 @@
                     <div class="form-actions">
                         <?php 
 							echo $this->Html->link(__('Download'),$this->request->data['ProductConversionService']['ziplink'],array('class'=>'btn btn-primary pull-right', 'style'=>'margin-left:10px; margin-right:10px'));
-							echo $this->Form->submit(__('Create'),array('class'=>'btn btn-cancel btn-disabled pull-right','div'=>false,'style'=>'margin-left:10px; margin-right:10px'));
+							if (empty($this->request->data['ProductConversionService']['user_product_id']))
+							{
+								echo $this->Html->link(__('Create'),array('action' => 'create_user_product', $this->request->data['ProductConversionService']['id']),array('class'=>'btn btn-warning pull-right', 'style'=>'margin-left:10px; margin-right:10px', 'target'=>'_blank'));
+							}
+							else
+							{
+								echo $this->Html->link(__('View'),'http://www.fotoalbum.nl/maak-nu/'.$this->request->data['ProductConversionService']['product_id'].'/'.$this->request->data['ProductConversionService']['user_product_id'],array('class'=>'btn btn-warning pull-right', 'style'=>'margin-left:10px; margin-right:10px', 'target'=>'_blank'));	
+							}
 							
-                        	echo $this->Form->submit(__('Save changes'),array('class'=>'btn btn-success','div'=>false));
+							echo $this->Html->link(__('Reset'),array('controller' => 'products', 'action' => 'edit', true),array('class'=>'btn btn-danger'));														
 							echo $this->Html->link(__('Cancel'),array('controller' => 'products', 'action' => 'index'),array('class'=>'btn btn-cancel'));
+                        	echo $this->Form->submit(__('Save changes'),array('class'=>'btn btn-success','div'=>false));
+
+
 						?>
                     </div>
                 </fieldset>
@@ -47,39 +57,6 @@
     </div>
     <div class="actions col-md-3 col-md-offset-1 span3">
     	<small>
-            <div class="row">
-                <h3 class="text-success">Details:</h3>
-                <dl class="dl-horizontal">
-                    <?php 
-                    foreach ($this->request->data['ProductConversionService']['designElementID']['details'] as $key=>$val)
-                    {
-                        if (!empty($val))
-                        {
-							echo '<dt>'.$key.'</dt>';
-							echo '<dd>'.$val.'</dd>';
-						}
-                    }
-                    ?>
-                </dl>            
-            </div>	
-    
-            <div class="row">
-                <h3 class="text-success">Resources:</h3>
-                <dl class="dl-horizontal">
-                    <dt>backgrounds</dt>
-                    <dd><?php echo $this->request->data['ProductConversionService']['designElementID']['backgrounds']['counter'];?></dd>
-    
-                    <dt>passepartouts</dt>
-                    <dd><?php echo $this->request->data['ProductConversionService']['designElementID']['passepartouts']['counter'];?></dd>
-    
-                    <dt>fonts</dt>
-                    <dd><?php echo $this->request->data['ProductConversionService']['designElementID']['fonts']['counter'];?></dd>
-    
-                    <dt>cliparts</dt>
-                    <dd><?php echo $this->request->data['ProductConversionService']['designElementID']['cliparts']['counter'];?></dd>
-    
-                </dl> 
-            </div>	
             <div class="row">
                 <h3 class="text-danger">Errors:</h3>
                 <?php
@@ -129,8 +106,127 @@
                     </div>
                     <?php
                 }
+                if (!empty($this->request->data['ProductConversionService']['errors']))
+                {
+					$errors = json_decode($this->request->data['ProductConversionService']['errors']);
+                    ?>
+                    <div class="well well-lg">
+                    	<div class="lead">
+                            Boek heeft de volgende fouten:
+                            <ul>
+                                <?php 
+                                foreach($errors as $_error)
+                                {
+                                    ?>
+                                    <li><mark><?php echo $_error;?></mark></li>
+                                    <?php
+                                }
+                                ?>
+                            </ul>
+                        </div>
+                    </div>
+                    <?php
+                }
                 ?>
                 <br/>                    
+            </div>	
+        
+            <div class="row">
+                <h3 class="text-success">Details:</h3>
+                <dl class="dl-horizontal">
+                    <?php 
+                    foreach ($this->request->data['ProductConversionService']['designElementID']['details'] as $key=>$val)
+                    {
+                        if (!empty($val))
+                        {
+							echo '<dt>'.$key.'</dt>';
+							echo '<dd>'.$val.'</dd>';
+						}
+                    }
+                    ?>
+                </dl>            
+            </div>	
+    
+            <div class="row">
+                <h3 class="text-success">Resources:</h3>
+                <dl class="dl-horizontal">
+                    <dt>backgrounds</dt>
+                    <dd><?php echo $this->request->data['ProductConversionService']['designElementID']['backgrounds']['counter'];?>
+                        <ul style="margin-left:-40px; list-style:none">
+                            <?php 
+                            foreach ($this->request->data['ProductConversionService']['designElementID']['backgrounds']['items'] as $key=>$val)
+                            {
+                                if (!empty($val))
+                                {
+                                    echo '<li>'.$key.' ('.$val.'x)</li>';
+                                }
+                            }
+                            ?>
+                        </ul>    
+                    </dd>
+					<!--
+                    <dt>layouts</dt>
+                    <dd><?php echo $this->request->data['ProductConversionService']['designElementID']['layouts']['counter'];?>
+                        <ul style="margin-left:-40px; list-style:none">
+                            <?php 
+                            foreach ($this->request->data['ProductConversionService']['designElementID']['layouts']['items'] as $key=>$val)
+                            {
+                                if (!empty($val))
+                                {
+                                    echo '<li>'.$key.' ('.$val.'x)</li>';
+                                }
+                            }
+                            ?>
+                        </ul>    
+                    </dd>
+                    -->
+
+                    <dt>passepartouts</dt>
+                    <dd><?php echo $this->request->data['ProductConversionService']['designElementID']['passepartouts']['counter'];?>
+                        <ul style="margin-left:-40px; list-style:none">
+                            <?php 
+                            foreach ($this->request->data['ProductConversionService']['designElementID']['passepartouts']['items'] as $key=>$val)
+                            {
+                                if (!empty($val))
+                                {
+                                    echo '<li>'.$key.' ('.$val.'x)</li>';
+                                }
+                            }
+                            ?>
+                        </ul>    
+                    </dd>
+
+                    <dt>fonts</dt>
+                    <dd><?php echo $this->request->data['ProductConversionService']['designElementID']['fonts']['counter'];?>
+                        <ul style="margin-left:-40px; list-style:none">
+                            <?php 
+                            foreach ($this->request->data['ProductConversionService']['designElementID']['fonts']['items'] as $key=>$val)
+                            {
+                                if (!empty($val))
+                                {
+                                    echo '<li>'.$key.' ('.$val.'x)</li>';
+                                }
+                            }
+                            ?>
+                        </ul>    
+                    </dd>
+    
+                    <dt>cliparts</dt>
+                    <dd><?php echo $this->request->data['ProductConversionService']['designElementID']['cliparts']['counter'];?>
+                        <ul style="margin-left:-40px; list-style:none">
+                            <?php 
+                            foreach ($this->request->data['ProductConversionService']['designElementID']['cliparts']['items'] as $key=>$val)
+                            {
+                                if (!empty($val))
+                                {
+                                    echo '<li>'.$key.' ('.$val.'x)</li>';
+                                }
+                            }
+                            ?>
+                        </ul>    
+                    </dd>
+    
+                </dl> 
             </div>	
         </small>
     </div>
