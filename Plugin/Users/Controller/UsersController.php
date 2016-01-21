@@ -179,14 +179,14 @@ class UsersController extends UsersAppController {
 			Configure::write('debug', 0);
 		}
 	}
-
+    
 /**
  * Setup Authentication Component
  *
  * @return void
  */
 	protected function _setupAuth() {
-		$this->Auth->allow('add', 'reset', 'verify', 'logout', 'view', 'reset_password', 'login', 'cadeaubonnen','download');
+		$this->Auth->allow('applogin', 'add', 'reset', 'verify', 'logout', 'view', 'reset_password', 'login', 'cadeaubonnen','download');
 		if (!is_null(Configure::read('Users.allowRegistration')) && !Configure::read('Users.allowRegistration')) {
 			$this->Auth->deny('add');
 		}
@@ -210,6 +210,19 @@ class UsersController extends UsersAppController {
 		$this->Auth->loginAction = array('admin' => false, 'plugin' => $this->plugin, 'controller' => 'users', 'action' => 'login');
 	}
 
+    public function applogin() {
+        
+        
+            $email = $this->request->data['email'];
+            $password =  Security::hash($this->request->data['password'], null, true);
+        
+            $user = $this->User->find('first', array(
+                                           'conditions' => array('User.email' => $email, 'User.password' => $password)
+                                           ));
+        
+            $this->autoRender = false;
+            return JSON_ENCODE($user);
+    }
 
 /**
  * Simple listing of all users

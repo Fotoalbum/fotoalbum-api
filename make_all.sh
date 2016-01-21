@@ -27,5 +27,8 @@
 ./Cake/Console/cake bake view PrinterProduct --admin
 
 
+./Cake/Console/cake bake model ProductConversionService
+./Cake/Console/cake bake controller ProductConversionService --admin
+./Cake/Console/cake bake view ProductConversionService --admin
 
 

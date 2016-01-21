@@ -117,6 +117,14 @@
 					<li><a href="/v2/admin/user_products">Products</a></li>				
 				</ul>
 			</li>
+			<li class="dropdown">
+				<a href="#" class="dropdown-toggle" data-toggle="dropdown">Migration <b class="caret"></b></a>
+				<ul class="dropdown-menu">
+					<li role="presentation" class="dropdown-header">CEWE migration</li>		
+                    <li><a href="/v2/admin/product_conversions">ALB to SKU</a></li>		
+					<li><a href="/v2/admin/product_conversion_services">Migration requests</a></li>
+				</ul>
+			</li>            
 		</ul><!-- /.nav navbar-nav -->
 	</div><!-- /.navbar-collapse -->
 </nav><!-- /.navbar navbar-default -->
