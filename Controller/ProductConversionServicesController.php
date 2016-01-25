@@ -266,6 +266,25 @@ class ProductConversionServicesController extends AppController {
 
         $pages_xml = $this->_createPagesXML($photos, $product_info, $spine_options, $filecontent);
 
+		//Remove the XML header from the $pages_xml
+		$pages_xml = str_replace("<?xml version=\"1.0\"?>\n", '', $pages_xml);
+
+		//Remove the XML header from the $photo_xml
+		$photo_xml = str_replace("<?xml version=\"1.0\"?>\n", '', $photo_xml);
+
+		//Add default color_xml
+		$color_xml = '<root><color id="4294967295" rgb="255;255;255" cmyk="0;0;0;0"/><color id="0" rgb="0;0;0" cmyk="0;0;0;100"/></root>';
+
+		//Add default usedcolor_xml
+		$usedcolor_xml = '<root><color uint="0"/><color uint="16777215"/></root>';
+
+		//Add empty textflow_xml
+		$textflow_xml = '<root/>';
+
+		//Add empty textlines_xml
+		$textlines_xml = '<root/>';
+
+
         $this->LoadModel('UserProduct');
         $this->UserProduct->create();
         unset($this->UserProduct->id);
@@ -278,7 +297,11 @@ class ProductConversionServicesController extends AppController {
 							'editor' => 'app_migration',
 							'name' => str_replace("_mcf-Dateien","", $return_data['ProductConversionService']['designElementID']['details']['imagedir']),
 							'pages_xml' => $pages_xml,
-							''
+							'photo_xml' => $photo_xml,
+							'color_xml' => $color_xml,
+							'usedcolor_xml' => $usedcolor_xml,
+							'textflow_xml' => $textflow_xml,
+							'textlines_xml' => $textlines_xml
 						)
 		);
 			

@@ -13,3 +13,5 @@ CakePHP 2
 /vendors/*
 
 /Cake/*
+
+.idea/*
