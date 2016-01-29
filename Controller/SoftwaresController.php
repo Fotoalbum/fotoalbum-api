@@ -1867,6 +1867,7 @@ class SoftwaresController extends AppController
 
             //When we start the preview, we want to clear the old previews
             if (isset($form_data['empty_dir'])) {
+
                 $myFolder = New Folder($_upload_dir);
                 $files = $myFolder->find('.*review.*[.]jpg');
 

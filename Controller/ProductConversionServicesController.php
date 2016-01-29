@@ -3,32 +3,34 @@ App::uses('AppController', 'Controller');
 App::uses('File', 'Utility');
 App::uses('Folder', 'Utility');
 App::uses('CakeEmail', 'Network/Email');
+
 /**
  * ProductConversionServices Controller
  *
  * @property ProductConversionService $ProductConversionService
  * @property PaginatorComponent $Paginator
  */
-class ProductConversionServicesController extends AppController {
+class ProductConversionServicesController extends AppController
+{
 
-/**
- * Components
- *
- * @var array
- */
-	public $components = array('Paginator', 'Zip.zip');
+    /**
+     * Components
+     *
+     * @var array
+     */
+    public $components = array('Paginator', 'Zip.zip');
 
-	 public $paginate = array(
-			'limit' => 50,
-			'conditions' => array(
-				'ProductConversionService.status >=' => 0
-			)
-		);
-/**
- * beforeFilter method
- *
- * @return void
- */
+    public $paginate = array(
+        'limit' => 50,
+        'conditions' => array(
+            'ProductConversionService.status >=' => 0
+        )
+    );
+    /**
+     * beforeFilter method
+     *
+     * @return void
+     */
 
     /**
      *       beforeFilter
@@ -38,12 +40,11 @@ class ProductConversionServicesController extends AppController {
      **/
     function beforeFilter()
     {
-	
+
         parent::beforeFilter();
-		
-		
-		Configure::write('debug', 2);
-		
+
+
+        Configure::write('debug', 2);
 
 
         $this->Auth->Allow();
@@ -93,129 +94,126 @@ class ProductConversionServicesController extends AppController {
             $this->LoadModel('User');
             $this->User->useDbConfig = $user_database_source;
         }
-
-
     }
 
-/**
- * admin_index method
- *
- * @return void
- */
-	public function admin_index() {
-		$this->ProductConversionService->recursive = 0;
-		$this->Paginator->settings = $this->paginate;
-		$this->set('productConversionServices', $this->Paginator->paginate());
-	}
+    /**
+     * admin_index method
+     *
+     * @return void
+     */
+    public function admin_index()
+    {
+        $this->ProductConversionService->recursive = 0;
+        $this->Paginator->settings = $this->paginate;
+        $this->set('productConversionServices', $this->Paginator->paginate());
+    }
 
-/**
- * admin_view method
- *
- * @throws NotFoundException
- * @param string $id
- * @return void
- */
-	public function admin_view($id = null) {
+    /**
+     * admin_view method
+     *
+     * @throws NotFoundException
+     * @param string $id
+     * @return void
+     */
+    public function admin_view($id = null)
+    {
 
-		
-		if (!$this->ProductConversionService->exists($id)) {
-			throw new NotFoundException(__('Invalid product conversion service'));
-		}
+        if (!$this->ProductConversionService->exists($id)) {
+            throw new NotFoundException(__('Invalid product conversion service'));
+        }
 
-		$return_data = $this->_convert_data_from_air_to_admin($id);
-		
-		$this->request->data = $return_data;
-		
-		$this->set('productConversionService', $return_data);
+        $return_data = $this->_convert_data_from_air_to_admin($id);
 
-		//$users = $this->ProductConversionService->User->find('list');
-		$productConversions = $this->ProductConversionService->ProductConversion->find('list');
-		$products = $this->ProductConversionService->Product->find('list');
-		$this->set(compact('users', 'productConversions', 'products'));
-	}
+        $this->request->data = $return_data;
+
+        $this->set('productConversionService', $return_data);
+
+        //$users = $this->ProductConversionService->User->find('list');
+        $productConversions = $this->ProductConversionService->ProductConversion->find('list');
+        $products = $this->ProductConversionService->Product->find('list');
+        $this->set(compact('users', 'productConversions', 'products'));
+    }
+
+    /**
+     * admin_add method
+     *
+     * @return void
+     */
+    public function admin_add()
+    {
+        if ($this->request->is('post')) {
+            $this->ProductConversionService->create();
+            if ($this->ProductConversionService->save($this->request->data)) {
+                $this->Session->setFlash(__('The product conversion service has been saved'));
+                return $this->redirect(array('action' => 'index'));
+            } else {
+                $this->Session->setFlash(__('The product conversion service could not be saved. Please, try again.'));
+            }
+        }
+        $users = $this->ProductConversionService->User->find('list');
+        $productConversions = $this->ProductConversionService->ProductConversion->find('list');
+        $products = $this->ProductConversionService->Product->find('list');
+        $this->set(compact('users', 'productConversions', 'products'));
+    }
+
+    /**
+     * admin_edit method
+     *
+     * @throws NotFoundException
+     * @param string $id
+     * @return void
+     */
+    public function admin_edit($id = null, $recreate = false)
+    {
+
+        if (!$this->ProductConversionService->exists($id)) {
+            throw new NotFoundException(__('Invalid product conversion service'));
+        }
+        if ($this->request->is('post') || $this->request->is('put')) {
+            if ($this->ProductConversionService->save($this->request->data)) {
+                $this->Session->setFlash(__('The product conversion service has been saved'));
+                return $this->redirect(array('action' => 'index'));
+            } else {
+                $this->Session->setFlash(__('The product conversion service could not be saved. Please, try again.'));
+            }
+        } else {
+
+            $return_data = $this->_convert_data_from_air_to_admin($id);
+
+            $return_data['ProductConversionService']['ziplink'] = 'http://api.xhibit.com/v2/' . $return_data['ProductConversionService']['photos_array'][0]['path'] . 'download.zip';
+
+            if ($recreate) {
+                $return_data['ProductConversionService']['user_product_id'] = '';
+                debug(unlink($return_data['ProductConversionService']['photos_array'][0]['full_path'] . 'download.zip'));
+            }
+            //Create the zip file!
+            if (!file_exists($return_data['ProductConversionService']['photos_array'][0]['full_path'] . 'download.zip')) {
+                $this->Zip->begin($return_data['ProductConversionService']['photos_array'][0]['full_path'] . 'download.zip');
+                $this->Zip->addByContent('fotoalbum.mcf', $return_data['ProductConversionService']['mcf_content']);
+                foreach ($return_data['ProductConversionService']['photos_array'] as $photo) {
+                    $this->Zip->addFile($photo['full_path'] . $photo['hires'], $photo['hires']);
+                }
+            }
+
+            $this->request->data = $return_data;
 
 
-/**
- * admin_add method
- *
- * @return void
- */
-	public function admin_add() {
-		if ($this->request->is('post')) {
-			$this->ProductConversionService->create();
-			if ($this->ProductConversionService->save($this->request->data)) {
-				$this->Session->setFlash(__('The product conversion service has been saved'));
-				return $this->redirect(array('action' => 'index'));
-			} else {
-				$this->Session->setFlash(__('The product conversion service could not be saved. Please, try again.'));
-			}
-		}
-		$users = $this->ProductConversionService->User->find('list');
-		$productConversions = $this->ProductConversionService->ProductConversion->find('list');
-		$products = $this->ProductConversionService->Product->find('list');
-		$this->set(compact('users', 'productConversions', 'products'));
-	}
-
-/**
- * admin_edit method
- *
- * @throws NotFoundException
- * @param string $id
- * @return void
- */
-	public function admin_edit($id = null, $recreate = false) {
-		
-		if (!$this->ProductConversionService->exists($id)) {
-			throw new NotFoundException(__('Invalid product conversion service'));
-		}
-		if ($this->request->is('post') || $this->request->is('put')) {
-			if ($this->ProductConversionService->save($this->request->data)) {
-				$this->Session->setFlash(__('The product conversion service has been saved'));
-				return $this->redirect(array('action' => 'index'));
-			} else {
-				$this->Session->setFlash(__('The product conversion service could not be saved. Please, try again.'));
-			}
-		} else {
-			
-			$return_data = $this->_convert_data_from_air_to_admin($id);
-			
-			$return_data['ProductConversionService']['ziplink'] = 'http://api.xhibit.com/v2/'.$return_data['ProductConversionService']['photos_array'][0]['path'].'download.zip';	
-			
-			if ($recreate)
-			{
-				$return_data['ProductConversionService']['user_product_id'] = '';
-				debug(unlink($return_data['ProductConversionService']['photos_array'][0]['full_path'].'download.zip'));
-			}
-			//Create the zip file!
-			if (!file_exists($return_data['ProductConversionService']['photos_array'][0]['full_path'].'download.zip'))
-			{
-				$this->Zip->begin($return_data['ProductConversionService']['photos_array'][0]['full_path'].'download.zip');
-				$this->Zip->addByContent('fotoalbum.mcf', $return_data['ProductConversionService']['mcf_content']);
-				foreach($return_data['ProductConversionService']['photos_array'] as $photo)
-				{
-					$this->Zip->addFile($photo['full_path'].$photo['hires'],$photo['hires']);
-				}
-			}
-			
-			$this->request->data = $return_data;
-			
-			
-		}
-		//$users = $this->ProductConversionService->User->find('list');
-		$productConversions = $this->ProductConversionService->ProductConversion->find('list');
-		$products = $this->ProductConversionService->Product->find('list');
-		$this->set(compact('users', 'productConversions', 'products'));
-	}
+        }
+        //$users = $this->ProductConversionService->User->find('list');
+        $productConversions = $this->ProductConversionService->ProductConversion->find('list');
+        $products = $this->ProductConversionService->Product->find('list');
+        $this->set(compact('users', 'productConversions', 'products'));
+    }
 
 
     function admin_create_user_product($id)
     {
-		
-		$return_data 		= $this->_convert_data_from_air_to_admin($id);
-		$product_id 		= $return_data['ProductConversionService']['product_id'];
-		$photos  			= json_decode($return_data['ProductConversionService']['photos']);
-        $filecontent 		= $return_data['ProductConversionService']['mcf_content'];
-		
+
+        $return_data = $this->_convert_data_from_air_to_admin($id);
+        $product_id = $return_data['ProductConversionService']['product_id'];
+        $photos = json_decode($return_data['ProductConversionService']['photos']);
+        $filecontent = $return_data['ProductConversionService']['mcf_content'];
+
 
         //Get the product information
         $this->loadModel('Product');
@@ -237,254 +235,236 @@ class ProductConversionServicesController extends AppController {
 
         //Create the photo xml
         $photo_xml = new SimpleXMLElement('<root/>');
+
         foreach ($photos as $ph) {
-            $photo = $photo_xml->addChild('photo');
-            $photo->addAttribute('id', $ph->id);
-            $photo->addAttribute('name', $ph->hires);
-            $photo->addAttribute('guid', $ph->guid);
-            $photo->addAttribute('guid_folder', $ph->guid_folder);
-            $photo->addAttribute('originalWidth', $ph->width);
-            $photo->addAttribute('originalHeight', $ph->height);
-            $photo->addAttribute('status', 'done');
-            $photo->addAttribute('folderID', '');
-            $photo->addAttribute('folderName', $ph->folderName);
-            $photo->addAttribute('origin', 'Harde schijf');
-            $photo->addAttribute('thumb', $ph->thumb);
-            $photo->addAttribute('thumb_url', $ph->thumb_url);
-            $photo->addAttribute('lowres', $ph->lowres);
-            $photo->addAttribute('lowres_url', $ph->lowres_url);
-            $photo->addAttribute('hires', $ph->hires);
-            $photo->addAttribute('hires_url', $ph->hires_url);
-            $photo->addAttribute('path', $ph->path);
-            $photo->addAttribute('dateCreated', $ph->created);
-            $photo->addAttribute('timeCreated', $ph->created);
-            $photo->addAttribute('bytesize', $ph->bytesize);
-            $photo->addAttribute('fullPath', $ph->fullPath);
-            $photo->addAttribute('url', $ph->url);
-            $photo->addChild('exif');
+
+            if ($ph->result == 'OK') {
+
+                $photo = $photo_xml->addChild('photo');
+                $photo->addAttribute('id', $ph->id);
+                $photo->addAttribute('name', $ph->hires);
+                $photo->addAttribute('guid', $ph->guid);
+                $photo->addAttribute('guid_folder', $ph->guid_folder);
+                $photo->addAttribute('originalWidth', $ph->width);
+                $photo->addAttribute('originalHeight', $ph->height);
+                $photo->addAttribute('status', 'done');
+                $photo->addAttribute('folderID', '');
+                $photo->addAttribute('folderName', $ph->folderName);
+                $photo->addAttribute('origin', 'Harde schijf');
+                $photo->addAttribute('thumb', $ph->thumb);
+                $photo->addAttribute('thumb_url', $ph->thumb_url);
+                $photo->addAttribute('lowres', $ph->lowres);
+                $photo->addAttribute('lowres_url', $ph->lowres_url);
+                $photo->addAttribute('hires', $ph->hires);
+                $photo->addAttribute('hires_url', $ph->hires_url);
+                $photo->addAttribute('path', $ph->path);
+                $photo->addAttribute('dateCreated', $ph->created);
+                $photo->addAttribute('timeCreated', $ph->created);
+                $photo->addAttribute('bytesize', $ph->bytesize);
+                $photo->addAttribute('fullPath', $ph->fullPath);
+                $photo->addAttribute('url', $ph->url);
+                $photo->addChild('exif');
+
+            }
         }
 
         $pages_xml = $this->_createPagesXML($photos, $product_info, $spine_options, $filecontent);
 
-		//Remove the XML header from the $pages_xml
-		$pages_xml = str_replace("<?xml version=\"1.0\"?>\n", '', $pages_xml);
+        //Remove the XML header from the $pages_xml
+        $pages_xml = str_replace("<?xml version=\"1.0\"?>\n", '', $pages_xml);
 
-		//Remove the XML header from the $photo_xml
-		$photo_xml = str_replace("<?xml version=\"1.0\"?>\n", '', $photo_xml);
+        //Remove the XML header from the $photo_xml
+        $photo_export = $photo_xml->asXML();
+        $photo_export = str_replace("<?xml version=\"1.0\"?>\n", '', $photo_export);
 
-		//Add default color_xml
-		$color_xml = '<root><color id="4294967295" rgb="255;255;255" cmyk="0;0;0;0"/><color id="0" rgb="0;0;0" cmyk="0;0;0;100"/></root>';
+        //Add default color_xml
+        $color_xml = '<root><color id="4294967295" rgb="255;255;255" cmyk="0;0;0;0"/><color id="0" rgb="0;0;0" cmyk="0;0;0;100"/></root>';
 
-		//Add default usedcolor_xml
-		$usedcolor_xml = '<root><color uint="0"/><color uint="16777215"/></root>';
+        //Add default usedcolor_xml
+        $usedcolor_xml = '<root><color uint="0"/><color uint="16777215"/></root>';
 
-		//Add empty textflow_xml
-		$textflow_xml = '<root/>';
+        //Add empty textflow_xml
+        $textflow_xml = '<root/>';
 
-		//Add empty textlines_xml
-		$textlines_xml = '<root/>';
-
+        //Add empty textlines_xml
+        $textlines_xml = '<root/>';
 
         $this->LoadModel('UserProduct');
         $this->UserProduct->create();
         unset($this->UserProduct->id);
 
         $update_data = array(
-						'UserProduct' => array(
-							'user_id' => '111131826', //'Dit is project-omzetten@fotoalbum.nl
-							'product_id' => $product_id,
-							'platform' => 'enjoy',
-							'editor' => 'app_migration',
-							'name' => str_replace("_mcf-Dateien","", $return_data['ProductConversionService']['designElementID']['details']['imagedir']),
-							'pages_xml' => $pages_xml,
-							'photo_xml' => $photo_xml,
-							'color_xml' => $color_xml,
-							'usedcolor_xml' => $usedcolor_xml,
-							'textflow_xml' => $textflow_xml,
-							'textlines_xml' => $textlines_xml
-						)
-		);
-			
+            'UserProduct' => array(
+                'user_id' => '111131826', //'Dit is project-omzetten@fotoalbum.nl
+                'product_id' => $product_id,
+                'platform' => 'enjoy',
+                'editor' => 'app_migration',
+                'name' => str_replace("_mcf-Dateien", "", $return_data['ProductConversionService']['designElementID']['details']['imagedir']),
+                'pages_xml' => $pages_xml,
+                'photo_xml' => (string)$photo_export,
+                'color_xml' => $color_xml,
+                'usedcolor_xml' => $usedcolor_xml,
+                'textflow_xml' => $textflow_xml,
+                'textlines_xml' => $textlines_xml
+            )
+        );
 
-        if ($this->UserProduct->save($update_data))
-		{
+        if ($this->UserProduct->save($update_data)) {
             $user_product_id = $this->UserProduct->id;
-			$return_data['ProductConversionService']['user_product_id'] = $user_product_id;
-			$this->ProductConversionService->save($return_data);
-            $this->redirect('http://www.fotoalbum.nl/maak-nu/'.$product_id.'/'.$user_product_id);
-        }
-		else
-		{
+            $return_data['ProductConversionService']['user_product_id'] = $user_product_id;
+            $this->ProductConversionService->save($return_data);
+            $this->redirect('http://www.fotoalbum.nl/maak-nu/' . $product_id . '/' . $user_product_id);
+        } else {
             die("Error creating the user product id");
         }
+    }
 
-	}
+    private function _convert_data_from_air_to_admin($id)
+    {
 
+        $this->loadModel('Fontfamily');
+        $fonts = $this->Fontfamily->find('list');
 
-	private function _convert_data_from_air_to_admin($id)
-	{
-		
-		$this->loadModel('Fontfamily');
-		$fonts = $this->Fontfamily->find('list');
-		
-		$options = array(
-						'conditions' => array(
-							'ProductConversionService.' . $this->ProductConversionService->primaryKey => $id
-						)
-					);
-		$return_data		= $this->ProductConversionService->find('first', $options);
-		
-		//Zoeken naar de zoek & vervang van bestandsnamen (upload vs CEWE)
-		$_array_photos		= json_decode($return_data['ProductConversionService']['photos'], true);
-		foreach($_array_photos as $array_photo)
-		{
-			if (isset($array_photo['visible']))
-			{
-				$array_photos[] = $array_photo;
-			}
-		}
-		$search				= Hash::extract($array_photos, '{n}.original_filename');
-		$replace			= Hash::extract($array_photos, '{n}.hires');
+        $options = array(
+            'conditions' => array(
+                'ProductConversionService.' . $this->ProductConversionService->primaryKey => $id
+            )
+        );
+        $return_data = $this->ProductConversionService->find('first', $options);
 
-		$return_data['ProductConversionService']['mcf_content'] = str_replace($search, $replace, $return_data['ProductConversionService']['mcf_content']);
+        //Zoeken naar de zoek & vervang van bestandsnamen (upload vs CEWE)
+        $_array_photos = json_decode($return_data['ProductConversionService']['photos'], true);
+        foreach ($_array_photos as $array_photo) {
+            if (isset($array_photo['visible'])) {
+                $array_photos[] = $array_photo;
+            }
+        }
+        $search = Hash::extract($array_photos, '{n}.original_filename');
+        $replace = Hash::extract($array_photos, '{n}.hires');
+
+        $return_data['ProductConversionService']['mcf_content'] = str_replace($search, $replace, $return_data['ProductConversionService']['mcf_content']);
 
 
-		//Parsing van de MCF
-		$xml_mcf_content	= simplexml_load_string($return_data['ProductConversionService']['mcf_content'], "SimpleXMLElement", LIBXML_NOCDATA);
-		$json_mcf_content	= json_encode($xml_mcf_content);
-		$array_mcf_content	= json_decode($json_mcf_content,TRUE);			
-		
-		
-		$return_data['ProductConversionService']['mcf_content_array'] 	= $array_mcf_content;
-		$return_data['ProductConversionService']['photos_array'] 		= $array_photos;	
-		
-		$txt 				= $array_mcf_content;
-
-		
-		$return_data['ProductConversionService']['designElementID']['details'] = Hash::extract($txt, '@attributes');
-		
-		// Get the desgin elements
-		$designElementIDs 	= Hash::extract($txt, 'page.{n}.designElementIDs');
-		
-		
-		// find all the used backgrounds
-		$bg_1				= Hash::extract($txt, 'page.{n}.background.@attributes.templatename');
-		$bg_2				= Hash::extract($txt, 'page.{n}.background.{n}.@attributes.templatename');	
-		$backgrounds		= array_merge($bg_1,$bg_2);
-		$background_counter	= 0;
-		$background_array	= array();
-		
-		$background_s		= array(',normal,', ',normal');
-		foreach($backgrounds as $background_key=>$_background_value)
-		{
-			
-			$background_value = str_replace($background_s,'',$_background_value);
-			if (!isset($background_array[$background_value]))
-			{
-				$background_array[$background_value] = 0;
-			}
-			$background_array[$background_value] = $background_array[$background_value] + 1;
-			$background_counter++;
-		}
-		
-		$return_data['ProductConversionService']['designElementID']['backgrounds']['counter']	= $background_counter;
-		$return_data['ProductConversionService']['designElementID']['backgrounds']['items']		= $background_array;
-
-		// find all the used layout
-		$layouts	 		= Hash::extract($designElementIDs, '{n}.@attributes.layout');
-		$layout_counter	= 0;
-		$layout_array		= array();
-		foreach($layouts as $layout_key=>$layout_value)
-		{
-			if (!isset($layout_array[$layout_value]))
-			{
-				$layout_array[$layout_value] = 0;
-			}
-			$layout_array[$layout_value] = $layout_array[$layout_value] + 1;
-			$layout_counter++;
-		}
-		
-		$return_data['ProductConversionService']['designElementID']['layouts']['counter']	= $layout_counter;
-		$return_data['ProductConversionService']['designElementID']['layouts']['items']	= $layout_array;
-		
-		// find all the used passepartout
-		$passepartouts	 		= Hash::extract($designElementIDs, '{n}.@attributes.passepartout');
-		$passepartout_counter	= 0;
-		$passepartout_array		= array();
-		foreach($passepartouts as $passepartout_key=>$passepartout_value)
-		{
-			if (!isset($passepartout_array[$passepartout_value]))
-			{
-				$passepartout_array[$passepartout_value] = 0;
-			}
-			$passepartout_array[$passepartout_value] = $passepartout_array[$passepartout_value] + 1;
-			$passepartout_counter++;
-		}
-		
-		$return_data['ProductConversionService']['designElementID']['passepartouts']['counter']	= $passepartout_counter;
-		$return_data['ProductConversionService']['designElementID']['passepartouts']['items']	= $passepartout_array;
-
-		//Find all the used fonts
-		$fontElementIDs 	= Hash::extract($txt, 'page.{n}.area.{n}.text');
-		$font_counter		= 0;
-		$font_errors		= array();
-		foreach($fontElementIDs as $fontId=>$fontElements)
-		{
-			$_text	= simplexml_load_string($fontElements, "SimpleXMLElement", LIBXML_NOCDATA);
-			preg_match("/\/(.*)(font-family:')(.*)(';.*)/", $fontElements, $_font_array);
-			if (isset($_font_array[3]))
-			{
-				$font_value = $_font_array[3];
-				if (!isset($font_array[$font_value]))
-				{
-					$font_array[$font_value] = 0;
-				}
-				$font_array[$font_value] = $font_array[$font_value] + 1;
-				$font_counter++;	
-	
-				if (!in_array(strtolower($font_value), array_map('strtolower', $fonts)))
-				{
-					if (!in_array($font_value,$font_errors))
-					{
-						$font_errors[] = $font_value;
-					}						
-				}
-			}
-		}
-
-		$return_data['ProductConversionService']['designElementID']['fonts']['counter']	= $font_counter;
-		$return_data['ProductConversionService']['designElementID']['fonts']['items']	= $font_array;
-		$return_data['ProductConversionService']['designElementID']['fonts']['errors']	= $font_errors;
-
-		//Check if the use wants pagenumbering
-		$clipartElementIDs = Hash::extract($txt, 'page.{n}.area.{n}.clipart.@attributes.uniqueName');
-		$clipart_counter		= 0;
-		$clipart_array			= array();
-		foreach($clipartElementIDs as $clipartId=>$clipartElements)
-		{
-			if (!isset($clipart_array[$clipartElements]))
-			{
-				$clipart_array[$clipartElements] = 0;
-			}
-			$clipart_array[$clipartElements] = $clipart_array[$clipartElements] + 1;
-			$clipart_counter++;					
-		}
-		$return_data['ProductConversionService']['designElementID']['cliparts']['counter']	= $clipart_counter;
-		$return_data['ProductConversionService']['designElementID']['cliparts']['items']	= $clipart_array;
-
-		//Check if the use wants pagenumbering
-		$pagenumbering = Hash::extract($txt, 'pagenumbering.outline.@attributes.enabled');
-		$return_data['ProductConversionService']['designElementID']['pagenumbering'] 	= array('active'=>$pagenumbering[0]);
-
-		if ($return_data['ProductConversionService']['errors'] == 'Geen fouten')
-		{
-			$return_data['ProductConversionService']['errors'] = '';
-		}
-		return $return_data;	
-	}
+        //Parsing van de MCF
+        $xml_mcf_content = simplexml_load_string($return_data['ProductConversionService']['mcf_content'], "SimpleXMLElement", LIBXML_NOCDATA);
+        $json_mcf_content = json_encode($xml_mcf_content);
+        $array_mcf_content = json_decode($json_mcf_content, TRUE);
 
 
-	
+        $return_data['ProductConversionService']['mcf_content_array'] = $array_mcf_content;
+        $return_data['ProductConversionService']['photos_array'] = $array_photos;
+
+        $txt = $array_mcf_content;
+
+        $return_data['ProductConversionService']['designElementID']['details'] = Hash::extract($txt, '@attributes');
+
+        // Get the desgin elements
+        $designElementIDs = Hash::extract($txt, 'page.{n}.designElementIDs');
+
+
+        // find all the used backgrounds
+        $bg_1 = Hash::extract($txt, 'page.{n}.background.@attributes.templatename');
+        $bg_2 = Hash::extract($txt, 'page.{n}.background.{n}.@attributes.templatename');
+        $backgrounds = array_merge($bg_1, $bg_2);
+        $background_counter = 0;
+        $background_array = array();
+
+        $background_s = array(',normal,', ',normal');
+        foreach ($backgrounds as $background_key => $_background_value) {
+
+            $background_value = str_replace($background_s, '', $_background_value);
+            if (!isset($background_array[$background_value])) {
+                $background_array[$background_value] = 0;
+            }
+            $background_array[$background_value] = $background_array[$background_value] + 1;
+            $background_counter++;
+        }
+
+        $return_data['ProductConversionService']['designElementID']['backgrounds']['counter'] = $background_counter;
+        $return_data['ProductConversionService']['designElementID']['backgrounds']['items'] = $background_array;
+
+        // find all the used layout
+        $layouts = Hash::extract($designElementIDs, '{n}.@attributes.layout');
+        $layout_counter = 0;
+        $layout_array = array();
+        foreach ($layouts as $layout_key => $layout_value) {
+            if (!isset($layout_array[$layout_value])) {
+                $layout_array[$layout_value] = 0;
+            }
+            $layout_array[$layout_value] = $layout_array[$layout_value] + 1;
+            $layout_counter++;
+        }
+
+        $return_data['ProductConversionService']['designElementID']['layouts']['counter'] = $layout_counter;
+        $return_data['ProductConversionService']['designElementID']['layouts']['items'] = $layout_array;
+
+        // find all the used passepartout
+        $passepartouts = Hash::extract($designElementIDs, '{n}.@attributes.passepartout');
+        $passepartout_counter = 0;
+        $passepartout_array = array();
+        foreach ($passepartouts as $passepartout_key => $passepartout_value) {
+            if (!isset($passepartout_array[$passepartout_value])) {
+                $passepartout_array[$passepartout_value] = 0;
+            }
+            $passepartout_array[$passepartout_value] = $passepartout_array[$passepartout_value] + 1;
+            $passepartout_counter++;
+        }
+
+        $return_data['ProductConversionService']['designElementID']['passepartouts']['counter'] = $passepartout_counter;
+        $return_data['ProductConversionService']['designElementID']['passepartouts']['items'] = $passepartout_array;
+
+        //Find all the used fonts
+        $fontElementIDs = Hash::extract($txt, 'page.{n}.area.{n}.text');
+        $font_counter = 0;
+        $font_errors = array();
+        foreach ($fontElementIDs as $fontId => $fontElements) {
+            $_text = simplexml_load_string($fontElements, "SimpleXMLElement", LIBXML_NOCDATA);
+            preg_match("/\/(.*)(font-family:')(.*)(';.*)/", $fontElements, $_font_array);
+            if (isset($_font_array[3])) {
+                $font_value = $_font_array[3];
+                if (!isset($font_array[$font_value])) {
+                    $font_array[$font_value] = 0;
+                }
+                $font_array[$font_value] = $font_array[$font_value] + 1;
+                $font_counter++;
+
+                if (!in_array(strtolower($font_value), array_map('strtolower', $fonts))) {
+                    if (!in_array($font_value, $font_errors)) {
+                        $font_errors[] = $font_value;
+                    }
+                }
+            }
+        }
+
+        $return_data['ProductConversionService']['designElementID']['fonts']['counter'] = $font_counter;
+        $return_data['ProductConversionService']['designElementID']['fonts']['items'] = $font_array;
+        $return_data['ProductConversionService']['designElementID']['fonts']['errors'] = $font_errors;
+
+        //Check if the use wants pagenumbering
+        $clipartElementIDs = Hash::extract($txt, 'page.{n}.area.{n}.clipart.@attributes.uniqueName');
+        $clipart_counter = 0;
+        $clipart_array = array();
+        foreach ($clipartElementIDs as $clipartId => $clipartElements) {
+            if (!isset($clipart_array[$clipartElements])) {
+                $clipart_array[$clipartElements] = 0;
+            }
+            $clipart_array[$clipartElements] = $clipart_array[$clipartElements] + 1;
+            $clipart_counter++;
+        }
+        $return_data['ProductConversionService']['designElementID']['cliparts']['counter'] = $clipart_counter;
+        $return_data['ProductConversionService']['designElementID']['cliparts']['items'] = $clipart_array;
+
+        //Check if the use wants pagenumbering
+        $pagenumbering = Hash::extract($txt, 'pagenumbering.outline.@attributes.enabled');
+        $return_data['ProductConversionService']['designElementID']['pagenumbering'] = array('active' => $pagenumbering[0]);
+
+        if ($return_data['ProductConversionService']['errors'] == 'Geen fouten') {
+            $return_data['ProductConversionService']['errors'] = '';
+        }
+        return $return_data;
+    }
+
+
     /*
      * CEWE PRODUCT CONVERSION FROM AIR APPLICATION
      * Author: Maurice Mullens
@@ -494,7 +474,7 @@ class ProductConversionServicesController extends AppController {
     function app_conversion_product($id = null)
     {
 
-		Configure::write('debug', 0);
+        Configure::write('debug', 0);
         $product = -1;
 
         //Get the matching product id from the xhibit_product_conversion table
@@ -538,12 +518,11 @@ class ProductConversionServicesController extends AppController {
     }
 
 
-
     function app_conversion()
     {
-	
-		Configure::write('debug', 0);
-		
+
+        Configure::write('debug', 0);
+
         $producttype = $this->request->data['producttype']; //CeWe Album ID -> without ALB
         $filecontent = json_decode($this->request->data['filecontent']); //JSON
         $photos = json_decode($this->request->data['photos']); //JSON
@@ -593,14 +572,14 @@ class ProductConversionServicesController extends AppController {
 
         $this->autoRender = false;
         return json_encode($product_id);
-	}
-	
-	
-	
-    function error_conversion() {
+    }
 
-		Configure::write('debug', 0);
-		
+
+    function error_conversion()
+    {
+
+        Configure::write('debug', 0);
+
         $user_id = $this->request->data['user_id'];
         $mcf = json_decode($this->request->data['mcf_content']);
         $debug_content = $this->request->data['debug_content'];
@@ -618,7 +597,6 @@ class ProductConversionServicesController extends AppController {
         $this->autoRender = false;
         return $user_id;
     }
-
 
 
     private function _createPagesXML($photos, $product_info, $spine_options, $filecontent)
@@ -944,6 +922,8 @@ class ProductConversionServicesController extends AppController {
     private function _addSpreadElements($spread, $page, $elements, $photos, $leftpage, $rightpage, $pagewidth, $pageheight, $isCover, $rightPageCorrection, $totalWidth, $totalHeight, $spine, $bleed, $wrap)
     {
 
+        $dpi = 330 / 96;
+
         $areas = $page->xpath('area');
 
         foreach ($areas as $area) {
@@ -980,8 +960,8 @@ class ProductConversionServicesController extends AppController {
                                 $background->addAttribute('path', $image->path);
                                 $background->addAttribute('origin', 'Hardeschijf');
                                 $background->addAttribute('origin_type', '');
-                                $background->addAttribute('originalWidth', $image->width);
-                                $background->addAttribute('originalHeight', $image->height);
+                                $background->addAttribute('originalWidth', $this->mm2pt($image->width));
+                                $background->addAttribute('originalHeight', $this->mm2pt($image->height));
                                 $background->addAttribute('x', 0);
                                 $background->addAttribute('y', 0);
                                 $background->addAttribute('width', 0);
@@ -1009,8 +989,8 @@ class ProductConversionServicesController extends AppController {
                                 $background->addAttribute('path', $image->path);
                                 $background->addAttribute('origin', 'Hardeschijf');
                                 $background->addAttribute('origin_type', '');
-                                $background->addAttribute('originalWidth', $image->width);
-                                $background->addAttribute('originalHeight', $image->height);
+                                $background->addAttribute('originalWidth', $this->mm2pt($image->width));
+                                $background->addAttribute('originalHeight', $this->mm2pt($image->height));
                                 $background->addAttribute('x', 0);
                                 $background->addAttribute('y', 0);
                                 $background->addAttribute('width', 0);
@@ -1034,8 +1014,8 @@ class ProductConversionServicesController extends AppController {
                                 $background->addAttribute('path', $image->path);
                                 $background->addAttribute('origin', 'Hardeschijf');
                                 $background->addAttribute('origin_type', '');
-                                $background->addAttribute('originalWidth', $image->width);
-                                $background->addAttribute('originalHeight', $image->height);
+                                $background->addAttribute('originalWidth', $this->mm2pt($image->width));
+                                $background->addAttribute('originalHeight', $this->mm2pt($image->height));
                                 $background->addAttribute('x', 0);
                                 $background->addAttribute('y', 0);
                                 $background->addAttribute('width', 0);
@@ -1057,10 +1037,10 @@ class ProductConversionServicesController extends AppController {
                     $filename = pathinfo($img_attr['filename'], PATHINFO_FILENAME);
                     $filename = $this->stripFileNameInvalid($filename);
 
-                    $objectWidth = $area_attr['width'] / (325 / 96);
-                    $objectHeight = $area_attr['height'] / (325 / 96);
-                    $objectX = $area_attr['left'] / (325 / 96);
-                    $objectY = $area_attr['top'] / (325 / 96);
+                    $objectWidth = $area_attr['width'] / ($dpi);
+                    $objectHeight = $area_attr['height'] / ($dpi);
+                    $objectX = $area_attr['left'] / ($dpi);
+                    $objectY = $area_attr['top'] / ($dpi);
 
                     //Get the image properties
                     $borderenabled = $area_attr['borderenabled'];
@@ -1069,7 +1049,7 @@ class ProductConversionServicesController extends AppController {
                         $bc = str_replace("#", "", $area_attr['colorborder']);
                         $bordercolor = hexdec($bc);
                     }
-                    $borderweight = $area_attr['sizeborder'] / (325 / 96);
+                    $borderweight = $area_attr['sizeborder'] / ($dpi);
                     if ($borderweight < 0) {
                         $borderweight = 0;
                     };
@@ -1094,10 +1074,10 @@ class ProductConversionServicesController extends AppController {
 
                         $scale = (float)$img_attr['scale'];
 
-                        $imageWidth = (((float)$image->width) * $scale) / (325 / 96);
-                        $imageHeight = (((float)$image->height) * $scale) / (325 / 96);
-                        $offsetX = (((float)$img_attr['left']) * $scale) / (325 / 96);
-                        $offsetY = (((float)$img_attr['top']) * $scale) / (325 / 96);
+                        $imageWidth = (((float)$image->width) * $scale) / ($dpi);
+                        $imageHeight = (((float)$image->height) * $scale) / ($dpi);
+                        $offsetX = (((float)$img_attr['left']) * $scale) / ($dpi);
+                        $offsetY = (((float)$img_attr['top']) * $scale) / ($dpi);
 
                         $element = $elements->addChild('element');
                         $element->addAttribute('id', String::uuid());
@@ -1125,21 +1105,21 @@ class ProductConversionServicesController extends AppController {
                         $element->addAttribute('objectY', $objectY - $bleed);
                         $element->addAttribute('objectWidth', $objectWidth);
                         $element->addAttribute('objectHeight', $objectHeight);
-                        $element->addAttribute('imageWidth', $imageWidth);
-                        $element->addAttribute('imageHeight', $imageHeight);
+                        $element->addAttribute('imageWidth', $this->mm2pt($imageWidth));
+                        $element->addAttribute('imageHeight', $this->mm2pt($imageHeight));
                         $element->addAttribute('imageFilter', "");
                         $element->addAttribute('shadow', $shadow);
-                        $element->addAttribute('offsetX', $offsetX);
-                        $element->addAttribute('offsetY', $offsetY);
+                        $element->addAttribute('offsetX', $this->mm2pt($offsetX));
+                        $element->addAttribute('offsetY', $this->mm2pt($offsetY));
                         $element->addAttribute('rotation', $objectRotation);
                         $element->addAttribute('imageRotation', 0);
                         $element->addAttribute('imageAlpha', 1);
-                        $element->addAttribute('refWidth', $imageWidth);
-                        $element->addAttribute('refHeight', $imageHeight);
-                        $element->addAttribute('refOffsetX', 0);
-                        $element->addAttribute('refOffsetY', 0);
-                        $element->addAttribute('refScale', 1);
-                        $element->addAttribute('scaling', 1);
+                        $element->addAttribute('refWidth', $this->mm2pt($imageWidth));
+                        $element->addAttribute('refHeight', $this->mm2pt($imageHeight));
+                        $element->addAttribute('refOffsetX', $this->mm2pt($offsetX));
+                        $element->addAttribute('refOffsetY', $this->mm2pt($offsetY));
+                        $element->addAttribute('refScale', $scale);
+                        $element->addAttribute('scaling', $scale);
                         $element->addAttribute('mask_original_id', "");
                         $element->addAttribute('mask_original_width', "");
                         $element->addAttribute('mask_original_height', "");
@@ -1244,10 +1224,10 @@ class ProductConversionServicesController extends AppController {
 
                     $txt_attr = $area->text->attributes();
 
-                    $objectWidth = $area_attr['width'] / (325 / 96);
-                    $objectHeight = $area_attr['height'] / (325 / 96);
-                    $objectX = $area_attr['left'] / (325 / 96);
-                    $objectY = $area_attr['top'] / (325 / 96);
+                    $objectWidth = $area_attr['width'] / ($dpi);
+                    $objectHeight = $area_attr['height'] / ($dpi);
+                    $objectX = $area_attr['left'] / ($dpi);
+                    $objectY = $area_attr['top'] / ($dpi);
 
                     //Get the box properties
                     $borderenabled = $area_attr['borderenabled'];
@@ -1256,7 +1236,7 @@ class ProductConversionServicesController extends AppController {
                         $bc = str_replace("#", "", $area_attr['colorborder']);
                         $bordercolor = hexdec($bc);
                     }
-                    $borderweight = $area_attr['sizeborder'] / (325 / 96);
+                    $borderweight = $area_attr['sizeborder'] / ($dpi);
                     if ($borderweight < 0) {
                         $borderweight = 0;
                     };
@@ -1310,10 +1290,13 @@ class ProductConversionServicesController extends AppController {
 
         foreach ($photos as $photo) {
 
-            $hires = pathinfo($photo->hires, PATHINFO_FILENAME);
+            if ($photo->result == "OK") {
 
-            if ($hires == $filename) {
-                return $photo;
+                $hires = pathinfo($photo->hires, PATHINFO_FILENAME);
+
+                if ($hires == $filename) {
+                    return $photo;
+                }
             }
         }
 
@@ -1385,5 +1368,5 @@ class ProductConversionServicesController extends AppController {
 
         return $fileName;
 
-    }	
+    }
 }
