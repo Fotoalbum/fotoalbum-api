@@ -29,33 +29,62 @@
         </thead>
 		<tbody>
 			<?php
-			foreach ($productConversionServices as $productConversionService): ?>
-	<tr>
-		<td><?php echo h($productConversionService['ProductConversionService']['id']); ?>&nbsp;</td>
-		<td>
-			<?php echo $this->Html->link($productConversionService['User']['id'], array('controller' => 'users', 'action' => 'view', $productConversionService['User']['id'])); ?>
-		</td>
-		<td>
-			<?php echo $this->Html->link($productConversionService['ProductConversion']['name'], array('controller' => 'product_conversion', 'action' => 'view', $productConversionService['ProductConversion']['id'])); ?>
-		</td>
-		<td>
-			<?php echo $this->Html->link($productConversionService['Product']['name'], array('controller' => 'users', 'product' => 'view', $productConversionService['Product']['id'])); ?>
-		</td>                
-		<td><?php echo h($productConversionService['ProductConversionService']['user_product_id']); ?>&nbsp;</td>
-		<td><?php echo h($productConversionService['ProductConversionService']['status']); ?>&nbsp;</td>
-		<td><?php echo h($productConversionService['ProductConversionService']['created']); ?>&nbsp;</td>
-		<td><?php echo h($productConversionService['ProductConversionService']['modified']); ?>&nbsp;</td>
-		<td class="actions">
-			<div class="btn-toolbar">
-				<div class="btn-group">
-					<?php //echo $this->Html->link(__('View'), array('action' => 'view', $productConversionService['ProductConversionService']['id']), array('class' => 'btn btn-default')); ?>
-					<?php echo $this->Html->link(__('Edit'), array('action' => 'edit', $productConversionService['ProductConversionService']['id']), array('class' => 'btn btn-default')); ?>
-					<?php echo $this->Form->postLink(__('Delete'), array('action' => 'delete', $productConversionService['ProductConversionService']['id']), array('class' => 'btn btn-danger'), __('Are you sure you want to delete # %s?', $productConversionService['ProductConversionService']['id'])); ?>
-				</div>
-			</div>
-		</td>
-	</tr>
-<?php endforeach; ?>
+			foreach ($productConversionServices as $productConversionService)
+			{
+
+				if (empty($productConversionService['Product']['name']))
+				{
+					$class=  "btn-danger";
+				}
+				else
+				{
+					if ($productConversionService['ProductConversionService']['status'] > 99)
+					{
+						$class=  "btn-success";
+					} 
+					elseif ($productConversionService['ProductConversionService']['status'] > 98)
+					{
+						$class=  "btn-info";
+					}
+					elseif ($productConversionService['ProductConversionService']['status'] > 0)
+					{
+						$class=  "btn-warning";
+					}
+					else
+					{
+						$class=  "btn-regular";
+					}
+				}
+				?>
+                <tr class="<?php echo $class;?>">
+                    <td><?php echo h($productConversionService['ProductConversionService']['id']); ?>&nbsp;</td>
+                    <td>
+                        <?php echo $this->Html->link($productConversionService['User']['id'], array('controller' => 'users', 'action' => 'view', $productConversionService['User']['id'])); ?>
+                    </td>
+                    <td>
+                        <?php echo $this->Html->link($productConversionService['ProductConversion']['name'], array('controller' => 'product_conversion', 'action' => 'view', $productConversionService['ProductConversion']['id'])); ?>
+                    </td>
+                    <td>
+                        <?php echo $this->Html->link($productConversionService['Product']['name'], array('controller' => 'users', 'product' => 'view', $productConversionService['Product']['id'])); ?>
+                    </td>                
+                    <td><?php echo h($productConversionService['ProductConversionService']['user_product_id']); ?>&nbsp;</td>
+                    <td><?php echo h($productConversionService['ProductConversionService']['status']); ?>&nbsp;</td>
+                    <td><?php echo h($productConversionService['ProductConversionService']['created']); ?>&nbsp;</td>
+                    <td><?php echo h($productConversionService['ProductConversionService']['modified']); ?>&nbsp;</td>
+                    <td class="actions">
+                        <div class="btn-toolbar">
+                            <div class="btn-group">
+                                <?php //echo $this->Html->link(__('View'), array('action' => 'view', $productConversionService['ProductConversionService']['id']), array('class' => 'btn btn-default')); ?>
+                                <?php echo $this->Html->link(__('Edit'), array('action' => 'edit', $productConversionService['ProductConversionService']['id']), array('class' => 'btn btn-default')); ?>
+                                <?php echo $this->Form->postLink(__('Delete'), array('action' => 'delete', $productConversionService['ProductConversionService']['id']), array('class' => 'btn btn-danger'), __('Are you sure you want to delete # %s?', $productConversionService['ProductConversionService']['id'])); ?>
+                            </div>
+                        </div>
+                    </td>
+                </tr>
+                <?php
+			}
+			?>
+
 		</tbody>
 	</table>
     <div class="well">

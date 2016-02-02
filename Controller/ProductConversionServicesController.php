@@ -24,7 +24,8 @@ class ProductConversionServicesController extends AppController
         'limit' => 50,
         'conditions' => array(
             'ProductConversionService.status >=' => 0
-        )
+        ),
+		'order' => 'ProductConversionService.created ASC'
     );
     /**
      * beforeFilter method
@@ -617,6 +618,7 @@ class ProductConversionServicesController extends AppController
         $page_height = $product['page_height'];
 
         $coverWidth = $this->mm2pt($cover['width']);
+
         $coverHeight = $this->mm2pt($cover['height']);
         $coverSpine = $this->CalculateSpine($spine_options, $numpages);
         $coverWrap = $this->mm2pt($cover['wrap']);

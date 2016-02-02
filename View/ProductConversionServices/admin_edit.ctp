@@ -51,6 +51,9 @@
 
 						?>
                     </div>
+					<?php
+						echo $this->Form->input('notitions');
+					?>
                 </fieldset>
             <?php echo $this->Form->end();?>
         </div>
