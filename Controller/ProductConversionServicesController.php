@@ -104,9 +104,21 @@ class ProductConversionServicesController extends AppController
      */
     public function admin_index()
     {
+		$all_userids = $this->ProductConversionService->find('list', array('fields'=>array('user_id','user_id')));
+		$users = $this->User->find('list', 
+										array(
+											'fields' => array(
+												'id','email'
+											),
+											'conditions' => array(
+												'id' => $all_userids
+											)
+										)
+									);
         $this->ProductConversionService->recursive = 0;
         $this->Paginator->settings = $this->paginate;
         $this->set('productConversionServices', $this->Paginator->paginate());
+        $this->set('users', $users);		
     }
 
     /**

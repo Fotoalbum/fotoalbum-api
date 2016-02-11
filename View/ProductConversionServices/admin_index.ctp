@@ -59,7 +59,16 @@
                 <tr class="<?php echo $class;?>">
                     <td><?php echo h($productConversionService['ProductConversionService']['id']); ?>&nbsp;</td>
                     <td>
-                        <?php echo $this->Html->link($productConversionService['User']['id'], array('controller' => 'users', 'action' => 'view', $productConversionService['User']['id'])); ?>
+                        <?php 
+						if (isset($users[$productConversionService['User']['id']]))
+						{
+							$title = $users[$productConversionService['User']['id']]. " (".$productConversionService['User']['id'].")";
+						}
+						else
+						{
+							$title = $productConversionService['User']['id'];	
+						}
+						echo $this->Html->link($title, array('controller' => 'users', 'action' => 'view', $productConversionService['User']['id'])); ?>
                     </td>
                     <td>
                         <?php echo $this->Html->link($productConversionService['ProductConversion']['name'], array('controller' => 'product_conversion', 'action' => 'view', $productConversionService['ProductConversion']['id'])); ?>
