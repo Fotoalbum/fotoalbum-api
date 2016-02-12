@@ -488,6 +488,7 @@ class ProductConversionServicesController extends AppController
     {
 
         Configure::write('debug', 0);
+
         $product = -1;
 
         //Get the matching product id from the xhibit_product_conversion table
@@ -511,6 +512,7 @@ class ProductConversionServicesController extends AppController
                     )
                 );
 
+                $this->autoRender = false;
                 return json_encode($product);
 
             }
@@ -526,7 +528,7 @@ class ProductConversionServicesController extends AppController
             }
         }
 
-        return $product;
+       return $product;
 
     }
 
