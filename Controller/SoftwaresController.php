@@ -1284,6 +1284,7 @@ class SoftwaresController extends AppController
 
                     $platform = $data[$model]['platform'];
 
+					$data['Document']['original_filename'] = $data[$model]['hires']['name'];
 					switch ($data[$model]['hires']['type']) {
 						case 'image/jpeg':
 						case 'image/jpg':
@@ -1311,7 +1312,6 @@ class SoftwaresController extends AppController
                     $data[$model]['Filename'] = $data[$model]['fileName'];
                     $data[$model]['hires']['name'] = $data[$model]['fileName'];
                     $data[$model]['url'] = $this->Document->getRelativePath($dir_array, $data[$model]['fileName']);
-					$data['Document']['original_filename'] = $_FILES['Filedata']['name'];
 					
                     if (isset($data[$model]['guid_folder'])) {
                         $data[$model]['guid_folder'] = $data[$model]['guid_folder'];
