@@ -1284,27 +1284,25 @@ class SoftwaresController extends AppController
 
                     $platform = $data[$model]['platform'];
 
-                    if ($data[$model]['hires']['name'] == 'blob') {
-                        switch ($data[$model]['hires']['type']) {
-                            case 'image/jpeg':
-                            case 'image/jpg':
-                                $ext = 'jpg';
-                                break;
+					switch ($data[$model]['hires']['type']) {
+						case 'image/jpeg':
+						case 'image/jpg':
+							$ext = 'jpg';
+							break;
 
-                            case 'image/png':
-                                $ext = 'png';
-                                break;
+						case 'image/png':
+							$ext = 'png';
+							break;
 
-                            case 'image/gif':
-                                $ext = 'gif';
-                                break;
+						case 'image/gif':
+							$ext = 'gif';
+							break;
 
-                            default:
-                                $ext = 'jpg';
-                                break;
-                        }
-                        $data[$model]['hires']['name'] = $data[$model]['guid'] . '.' . $ext;
-                    }
+						default:
+							$ext = 'jpg';
+							break;
+					}
+					$data[$model]['hires']['name'] = $data[$model]['guid'] . '.' . $ext;
 
                     $dir_array = explode("/", $data[$model]['dir_array']);
                     $data[$model]['dir'] = $data[$model]['dir_array'];
@@ -1313,7 +1311,8 @@ class SoftwaresController extends AppController
                     $data[$model]['Filename'] = $data[$model]['fileName'];
                     $data[$model]['hires']['name'] = $data[$model]['fileName'];
                     $data[$model]['url'] = $this->Document->getRelativePath($dir_array, $data[$model]['fileName']);
-
+					$data['Document']['original_filename'] = $_FILES['Filedata']['name'];
+					
                     if (isset($data[$model]['guid_folder'])) {
                         $data[$model]['guid_folder'] = $data[$model]['guid_folder'];
                     }
