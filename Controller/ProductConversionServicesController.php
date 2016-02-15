@@ -276,8 +276,60 @@ class ProductConversionServicesController extends AppController
                 $photo->addAttribute('bytesize', $ph->bytesize);
                 $photo->addAttribute('fullPath', $ph->fullPath);
                 $photo->addAttribute('url', $ph->url);
-                $photo->addChild('exif');
 
+                //Try to get the image rotation for this image
+                try {
+
+                    $exif = exif_read_data($ph->hires_url);
+                    $orientation = $exif['Orientation'];
+
+                    //Defaults
+                    $imageRotation = 0;
+                    $flipHorizontal = 0;
+                    $flipVertical = 0;
+
+                    switch ($orientation) {
+                        case 2:
+                            $flipHorizontal = 1;
+                        case 3:
+                            $imageRotation = 180;
+                            break;
+                        case 4:
+                            $flipVertical = 1;
+                            break;
+                        case 5:
+                            $flipVertical = 1;
+                            $imageRotation = 90;
+                            break;
+                        case 6:
+                            $imageRotation = 90;
+                            break;
+                        case 7:
+                            $flipHorizontal = 1;
+                            $imageRotation = 90;
+                            break;
+                        case 8:
+                            $imageRotation = 270;
+                            break;
+                        default:
+                            $flipHorizontal = 0;
+                            $flipVertical = 0;
+                            $imageRotation = 0;
+                    }
+
+                    $photo->addAttribute('imageRotation', $imageRotation);
+                    $photo->addAttribute('flipHorizontal', $flipHorizontal);
+                    $photo->addAttribute('flipVertical', $flipVertical);
+                    $exif = $photo->addChild('exif');
+                    $exif->addAttribute('orientation', $orientation);
+
+                } catch (Exception $e) {
+
+                    $photo->addAttribute('imageRotation', 0);
+                    $photo->addAttribute('flipHorizontal', 0);
+                    $photo->addAttribute('flipVertical', 0);
+                    $photo->addChild('exif');
+                }
             }
         }
 
