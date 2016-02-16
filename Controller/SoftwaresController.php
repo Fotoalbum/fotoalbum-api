@@ -1136,6 +1136,7 @@ class SoftwaresController extends AppController
                 $data[$model]['platform'] = 'cms';
             }
             $platform = $data[$model]['platform'];
+
             /*
 			DIT STAAT TIJDELIJK UIT!!!!  IVM NIET UNIEKE USERIDS
 			if (!$this->Auth->loggedIn())

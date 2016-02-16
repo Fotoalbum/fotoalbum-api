@@ -277,58 +277,85 @@ class ProductConversionServicesController extends AppController
                 $photo->addAttribute('fullPath', $ph->fullPath);
                 $photo->addAttribute('url', $ph->url);
 
+                $exif = $photo->addChild('exif');
+
+                //Defaults
+                $imageRotation = 0;
+                $flipHorizontal = 0;
+                $flipVertical = 0;
+                $orientation = 0;
+
                 //Try to get the image rotation for this image
                 try {
 
-                    $exif = exif_read_data($ph->hires_url);
-                    $orientation = $exif['Orientation'];
+                    $hires = 'http://api.xhibit.com/v2/' . $ph->hires_url;
 
-                    //Defaults
-                    $imageRotation = 0;
-                    $flipHorizontal = 0;
-                    $flipVertical = 0;
+                    $imagetype = exif_imagetype($hires);
 
-                    switch ($orientation) {
-                        case 2:
-                            $flipHorizontal = 1;
-                        case 3:
-                            $imageRotation = 180;
-                            break;
-                        case 4:
-                            $flipVertical = 1;
-                            break;
-                        case 5:
-                            $flipVertical = 1;
-                            $imageRotation = 90;
-                            break;
-                        case 6:
-                            $imageRotation = 90;
-                            break;
-                        case 7:
-                            $flipHorizontal = 1;
-                            $imageRotation = 90;
-                            break;
-                        case 8:
-                            $imageRotation = 270;
-                            break;
-                        default:
-                            $flipHorizontal = 0;
-                            $flipVertical = 0;
-                            $imageRotation = 0;
+                    if ($imagetype == 2) {
+
+                        $getexif = exif_read_data($hires);
+
+                        if ($getexif) {
+
+                            if (isset($getexif['Orientation'])) {
+
+                                $orientation = $getexif['Orientation'];
+
+                                switch ($orientation) {
+                                    case 2:
+                                        $flipHorizontal = 1;
+                                    case 3:
+                                        $imageRotation = 180;
+                                        break;
+                                    case 4:
+                                        $flipVertical = 1;
+                                        break;
+                                    case 5:
+                                        $flipVertical = 1;
+                                        $imageRotation = 90;
+                                        break;
+                                    case 6:
+                                        $imageRotation = 90;
+                                        break;
+                                    case 7:
+                                        $flipHorizontal = 1;
+                                        $imageRotation = 90;
+                                        break;
+                                    case 8:
+                                        $imageRotation = 270;
+                                        break;
+                                    default:
+                                        $flipHorizontal = 0;
+                                        $flipVertical = 0;
+                                        $imageRotation = 0;
+                                }
+                            }
+                        }
+
+                        $exif->addAttribute('orientation', $orientation);
+
                     }
 
                     $photo->addAttribute('imageRotation', $imageRotation);
                     $photo->addAttribute('flipHorizontal', $flipHorizontal);
                     $photo->addAttribute('flipVertical', $flipVertical);
-                    $exif = $photo->addChild('exif');
-                    $exif->addAttribute('orientation', $orientation);
+
+                    $ph->imageRotation = $imageRotation;
+                    $ph->flipHorizontal = $flipHorizontal;
+                    $ph->flipVertical = $flipVertical;
+                    $ph->force_orientation = 1;
 
                 } catch (Exception $e) {
 
                     $photo->addAttribute('imageRotation', 0);
                     $photo->addAttribute('flipHorizontal', 0);
                     $photo->addAttribute('flipVertical', 0);
-                    $photo->addChild('exif');
+
+                    $ph->imageRotation = 0;
+                    $ph->flipHorizontal = 0;
+                    $ph->flipVertical = 0;
+                    $ph->force_orientation = 0;
                 }
             }
         }
@@ -1036,7 +1063,13 @@ class ProductConversionServicesController extends AppController
                                 $background->addAttribute('height', 0);
                                 $background->addAttribute('fliphorizontal', 0);
                                 $background->addAttribute('imageFilter', '');
-                                $background->addAttribute('imageRotation', 0);
+                                $background->addAttribute('imageRotation', $image->imageRotation);
+                                $background->addAttribute('imageRotationUpdate', 0);
+                                if ($image->imageRotation !== 0) {
+                                    $background->addAttribute('imageRotationUpdate', 1);
+                                } else {
+                                    $background->addAttribute('imageRotationUpdate', 0);
+                                }
                                 $background->addAttribute('status', 'done');
                                 break;
                             case 'right_or_bottom':
@@ -1065,7 +1098,13 @@ class ProductConversionServicesController extends AppController
                                 $background->addAttribute('height', 0);
                                 $background->addAttribute('fliphorizontal', 0);
                                 $background->addAttribute('imageFilter', '');
-                                $background->addAttribute('imageRotation', 0);
+                                $background->addAttribute('imageRotation', $image->imageRotation);
+                                $background->addAttribute('imageRotationUpdate', 0);
+                                if ($image->imageRotation !== 0) {
+                                    $background->addAttribute('imageRotationUpdate', 1);
+                                } else {
+                                    $background->addAttribute('imageRotationUpdate', 0);
+                                }
                                 $background->addAttribute('status', 'done');
                                 break;
                             case 'bundle':
@@ -1090,7 +1129,12 @@ class ProductConversionServicesController extends AppController
                                 $background->addAttribute('height', 0);
                                 $background->addAttribute('fliphorizontal', 0);
                                 $background->addAttribute('imageFilter', '');
-                                $background->addAttribute('imageRotation', 0);
+                                $background->addAttribute('imageRotation', $image->imageRotation);
+                                if ($image->imageRotation !== 0) {
+                                    $background->addAttribute('imageRotationUpdate', 1);
+                                } else {
+                                    $background->addAttribute('imageRotationUpdate', 0);
+                                }
                                 $background->addAttribute('status', 'done');
                                 break;
                         }
@@ -1180,7 +1224,12 @@ class ProductConversionServicesController extends AppController
                         $element->addAttribute('offsetX', $offsetX);
                         $element->addAttribute('offsetY', $offsetY);
                         $element->addAttribute('rotation', $objectRotation);
-                        $element->addAttribute('imageRotation', 0);
+                        $element->addAttribute('imageRotation', $image->imageRotation);
+                        if ($image->imageRotation !== 0) {
+                            $element->addAttribute('imageRotationUpdate', 1);
+                        } else {
+                            $element->addAttribute('imageRotationUpdate', 0);
+                        }
                         $element->addAttribute('imageAlpha', 1);
                         $element->addAttribute('refWidth', $imageWidth);
                         $element->addAttribute('refHeight', $imageHeight);
@@ -1209,7 +1258,7 @@ class ProductConversionServicesController extends AppController
                         $element->addAttribute('bordercolor', $bordercolor);
                         $element->addAttribute('borderalpha', 1);
                         $element->addAttribute('borderweight', $borderweight);
-                        $element->addAttribute('fliphorizontal', "0");
+                        $element->addAttribute('fliphorizontal', $image->flipHorizontal);
                         $element->addAttribute('fixedposition', "0");
                         $element->addAttribute('fixedcontent', "0");
                         $element->addAttribute('allwaysontop', "0");
@@ -1250,6 +1299,7 @@ class ProductConversionServicesController extends AppController
                         $element->addAttribute('offsetY', "");
                         $element->addAttribute('rotation', $objectRotation);
                         $element->addAttribute('imageRotation', 0);
+                        $element->addAttribute('imageRotationUpdate', 0);
                         $element->addAttribute('imageAlpha', 1);
                         $element->addAttribute('refWidth', "");
                         $element->addAttribute('refHeight', "");
