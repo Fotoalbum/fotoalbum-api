@@ -1064,7 +1064,6 @@ class ProductConversionServicesController extends AppController
                                 $background->addAttribute('fliphorizontal', 0);
                                 $background->addAttribute('imageFilter', '');
                                 $background->addAttribute('imageRotation', $image->imageRotation);
-                                $background->addAttribute('imageRotationUpdate', 0);
                                 if ($image->imageRotation !== 0) {
                                     $background->addAttribute('imageRotationUpdate', 1);
                                 } else {
@@ -1099,7 +1098,6 @@ class ProductConversionServicesController extends AppController
                                 $background->addAttribute('fliphorizontal', 0);
                                 $background->addAttribute('imageFilter', '');
                                 $background->addAttribute('imageRotation', $image->imageRotation);
-                                $background->addAttribute('imageRotationUpdate', 0);
                                 if ($image->imageRotation !== 0) {
                                     $background->addAttribute('imageRotationUpdate', 1);
                                 } else {
