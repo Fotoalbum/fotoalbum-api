@@ -72,8 +72,8 @@
     Router::connect('/applogin', array('plugin'=>'users','controller' => 'users', 'action' => 'applogin'));
 	Router::connect('/app_conversion', array('controller' => 'ProductConversionServices', 'action' => 'app_conversion'));
 	Router::connect('/softwares/app_conversion', array('controller' => 'ProductConversionServices', 'action' => 'app_conversion'));	
-	Router::connect('/softwares/app_conversion_product', array('controller' => 'ProductConversionServices', 'action' => 'app_conversion_product'));		
-
+	Router::connect('/softwares/app_conversion_product', array('controller' => 'ProductConversionServices', 'action' => 'app_conversion_product'));
+	Router::connect('/softwares/save_extra_offset', array('controller' => 'ProductConversionServices', 'action' => 'save_extra_offset'));
 
 /**
  * ...and connect the rest of 'Pages' controller's urls.

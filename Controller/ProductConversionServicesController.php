@@ -25,7 +25,7 @@ class ProductConversionServicesController extends AppController
         'conditions' => array(
             'ProductConversionService.status >=' => 0
         ),
-		'order' => 'ProductConversionService.created ASC'
+        'order' => 'ProductConversionService.created ASC'
     );
     /**
      * beforeFilter method
@@ -104,21 +104,21 @@ class ProductConversionServicesController extends AppController
      */
     public function admin_index()
     {
-		$all_userids = $this->ProductConversionService->find('list', array('fields'=>array('user_id','user_id')));
-		$users = $this->User->find('list', 
-										array(
-											'fields' => array(
-												'id','email'
-											),
-											'conditions' => array(
-												'id' => $all_userids
-											)
-										)
-									);
+        $all_userids = $this->ProductConversionService->find('list', array('fields' => array('user_id', 'user_id')));
+        $users = $this->User->find('list',
+            array(
+                'fields' => array(
+                    'id', 'email'
+                ),
+                'conditions' => array(
+                    'id' => $all_userids
+                )
+            )
+        );
         $this->ProductConversionService->recursive = 0;
         $this->Paginator->settings = $this->paginate;
         $this->set('productConversionServices', $this->Paginator->paginate());
-        $this->set('users', $users);		
+        $this->set('users', $users);
     }
 
     /**
@@ -644,10 +644,9 @@ class ProductConversionServicesController extends AppController
             }
         }
 
-       return $product;
+        return $product;
 
     }
-
 
     function app_conversion()
     {
@@ -1454,6 +1453,34 @@ class ProductConversionServicesController extends AppController
         }
 
         return false;
+    }
+
+    function save_extra_offset()
+    {
+
+        Configure::write('debug', 0);
+
+        $data = $this->request->data['extra_offset']; //JSON String
+
+        //Get the matching product id from the xhibit_product_conversion table
+        $this->loadModel('ProductConversion');
+
+        if ($data) {
+
+            $products = $this->ProductConversion->find('all', array(
+                'conditions' => array('ProductConversion.product_id' => $this->request->data['product_id'])
+            ));
+
+            foreach ($products as $product) {
+                $product['ProductConversion']['extra_offset'] = $data;
+                $this->ProductConversion->save($product);
+            }
+
+        }
+
+        $this->autoRender = false;
+        return "saved";
+
     }
 
     function mm2pt($mm)
