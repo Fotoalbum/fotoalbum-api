@@ -50,6 +50,12 @@
 			<?php echo h($productColor['ProductColor']['code']); ?>
 			&nbsp;
 		</dd>
+		<dt><?php echo __('Hex'); ?></dt>
+		<dd>
+			<?php echo h($productColor['ProductColor']['hex']); ?>
+			&nbsp;
+		</dd>
+
 		<dt><?php echo __('Created'); ?></dt>
 		<dd>
 			<?php echo h($productColor['ProductColor']['created']); ?>

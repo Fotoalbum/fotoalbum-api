@@ -24,6 +24,7 @@
 		echo $this->Form->input('description');
 		echo $this->Form->input('image');
 		echo $this->Form->input('code');
+		echo $this->Form->input('hex');
 	?>
 			<div class="form-actions">
 			<?php echo $this->Form->submit(__('Submit'),array('class'=>'btn btn-primary pull-right','div'=>false));?>
