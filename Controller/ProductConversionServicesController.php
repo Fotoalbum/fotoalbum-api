@@ -384,11 +384,37 @@ class ProductConversionServicesController extends AppController
         $this->UserProduct->create();
         unset($this->UserProduct->id);
 
+
+		switch($return_data['ProductConversionService']['lang'])
+		{
+			
+			case "nl_BE":
+				$platform = "fotoalbum_be";
+				$maaknu   = "http://www.fotoalbum.be/maak-nu";
+			break;
+			
+			case "be_FR":
+				$platform = "albumphoto_be";
+				$maaknu   = "http://www.albumphoto.be/creer";
+			break;
+			
+			case "fr_FR":
+				$platform = "albumphoto_fr";
+				$maaknu   = "http://www.albumphoto.fr/creer";
+			break;
+			
+			case "nl_NL":
+				$platform = "enjoy";
+				$maaknu   = "http://www.fotoalbum.nl/maak-nu";
+			break;
+			
+		}
+				
         $update_data = array(
             'UserProduct' => array(
                 'user_id' => '111131826', //'Dit is project-omzetten@fotoalbum.nl
                 'product_id' => $product_id,
-                'platform' => 'enjoy',
+                'platform' => $platform,
                 'editor' => 'app_migration',
                 'name' => str_replace("_mcf-Dateien", "", $return_data['ProductConversionService']['designElementID']['details']['imagedir']),
                 'pages_xml' => $pages_xml,
@@ -404,7 +430,7 @@ class ProductConversionServicesController extends AppController
             $user_product_id = $this->UserProduct->id;
             $return_data['ProductConversionService']['user_product_id'] = $user_product_id;
             $this->ProductConversionService->save($return_data);
-            $this->redirect('http://www.fotoalbum.nl/maak-nu/' . $product_id . '/' . $user_product_id);
+            $this->redirect($maaknu . '/' . $product_id . '/' . $user_product_id);
         } else {
             die("Error creating the user product id");
         }
