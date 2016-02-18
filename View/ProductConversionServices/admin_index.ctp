@@ -74,7 +74,7 @@
                         <?php echo $this->Html->link($productConversionService['ProductConversion']['name'], array('controller' => 'product_conversion', 'action' => 'view', $productConversionService['ProductConversion']['id'])); ?>
                     </td>
                     <td>
-                        <?php echo $this->Html->link($productConversionService['Product']['name'], array('controller' => 'users', 'product' => 'view', $productConversionService['Product']['id'])); ?>
+                        <?php echo $this->Html->link($productConversionService['Product']['name'] . '('.$productConversionService['Product']['id'].')', array('controller' => 'users', 'product' => 'view', $productConversionService['Product']['id'])); ?>
                     </td>                
                     <td><?php echo h($productConversionService['ProductConversionService']['user_product_id']); ?>&nbsp;</td>
                     <td><?php echo h($productConversionService['ProductConversionService']['status']); ?>&nbsp;</td>
