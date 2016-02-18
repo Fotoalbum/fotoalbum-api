@@ -491,7 +491,8 @@ class ProductConversionServicesController extends AppController
         $return_data['ProductConversionService']['designElementID']['layouts']['items'] = $layout_array;
 
         // find all the used passepartout
-        $passepartouts = Hash::extract($designElementIDs, '{n}.@attributes.passepartout');
+		//LET OP DEZE ZITTEN IN EEN AREA OP EEN PAGINA
+        $passepartouts = Hash::extract($txt, 'page.{n}.area.{n}.designElementIDs');
         $passepartout_counter = 0;
         $passepartout_array = array();
         foreach ($passepartouts as $passepartout_key => $passepartout_value) {
@@ -509,6 +510,7 @@ class ProductConversionServicesController extends AppController
         $fontElementIDs = Hash::extract($txt, 'page.{n}.area.{n}.text');
         $font_counter = 0;
         $font_errors = array();
+		$font_array = array();
         foreach ($fontElementIDs as $fontId => $fontElements) {
             $_text = simplexml_load_string($fontElements, "SimpleXMLElement", LIBXML_NOCDATA);
             preg_match("/\/(.*)(font-family:')(.*)(';.*)/", $fontElements, $_font_array);
@@ -527,6 +529,7 @@ class ProductConversionServicesController extends AppController
                 }
             }
         }
+
 
         $return_data['ProductConversionService']['designElementID']['fonts']['counter'] = $font_counter;
         $return_data['ProductConversionService']['designElementID']['fonts']['items'] = $font_array;
@@ -1485,4 +1488,77 @@ class ProductConversionServicesController extends AppController
         return $fileName;
 
     }
+	
+    /*
+     * GETS THE designElements for all products
+     * Author: Frank
+     */
+
+    function get_topx_designelements()
+    {	
+		Configure::write('debug', 0);
+        $options = array(
+            //'limit' => 10000,
+			/*'conditions' => array(
+                'ProductConversionService.' . $this->ProductConversionService->primaryKey => $id
+            )*/
+        );
+		$all = Cache::read('_get_topx_designelements', 'long');
+		$items = array('backgrounds','layouts','passepartouts','fonts','cliparts');
+		
+		if ($all === false)
+		{
+			$return_data = $this->ProductConversionService->find('all', $options);
+			$all = array();	
+			
+			foreach($items as $item)
+			{
+				$all[$item] = array();
+				$_all[$item] = array();
+			}
+			foreach($return_data as $PCS)
+			{
+				//debug($PCS['ProductConversionService']['id']);
+				$data = $this->_convert_data_from_air_to_admin($PCS['ProductConversionService']['id']);
+				debug($data);
+				
+				foreach($items as $item)
+				{
+					$_all[$item] = hash::extract($data['ProductConversionService']['designElementID'], $item.'.items');
+					foreach($_all[$item] as $key=>$value)
+					{
+						$key = (string) $key;
+						if (isset($all[$item][$key]))
+						{
+							$all[$item][$key] = $all[$item][$key] + $value;
+						}
+						else
+						{
+							$all[$item][$key] = $value;
+						}
+					}
+				}
+			}
+			
+			Cache::write('_get_topx_designelements', $all, 'long');
+		}
+
+
+		$albums = array();
+		foreach($all as $allK=>$allV)
+		{
+			arsort($allV);
+			$all[$allK] = $allV;
+			foreach($allV as $k=>$v)
+			{
+				$retdata[$allK][] = array('id'=>$k, 'count'=>$v);
+			}
+		}
+		
+		//debug($retdata['backgrounds']);
+
+		$this->set(compact('items','retdata'));
+		//Configure::write('debug', 0);
+		$this->autoRender = true;
+	}
 }
