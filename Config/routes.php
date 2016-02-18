@@ -75,6 +75,10 @@
 	Router::connect('/softwares/app_conversion_product', array('controller' => 'ProductConversionServices', 'action' => 'app_conversion_product'));
 	Router::connect('/softwares/save_extra_offset', array('controller' => 'ProductConversionServices', 'action' => 'save_extra_offset'));
 
+	Router::connect('/softwares/get_extra_offset/*', array('controller' => 'ProductConversionServices', 'action' => 'get_extra_offset'));
+
+
+
 /**
  * ...and connect the rest of 'Pages' controller's urls.
  */

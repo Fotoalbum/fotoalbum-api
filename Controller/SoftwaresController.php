@@ -2749,6 +2749,28 @@ class SoftwaresController extends AppController
 
         return $fileName;
 
-    }	
+    }
+
+    function get_extra_offset($product_id)
+    {
+
+        Configure::write('debug', 0);
+
+        //Get the matching product id from the xhibit_product_conversion table
+        $this->loadModel('ProductConversion');
+
+        $product = $this->ProductConversion->find('first', array(
+            'conditions' => array('ProductConversion.product_id' => $product_id)
+        ));
+
+        $result = null;
+        if ($product) {
+            $result = $product['ProductConversion']['extra_offset'];
+        }
+
+        $this->autoRender = false;
+        return $result;
+
+    }
 
 }

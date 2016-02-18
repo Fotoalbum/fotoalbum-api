@@ -732,6 +732,8 @@ class ProductConversionServicesController extends AppController
     private function _createPagesXML($photos, $product_info, $spine_options, $filecontent)
     {
 
+        Configure::write('debug', 0);
+
         $pages_xml = new SimpleXMLElement('<root/>');
         $mcf_pages = new SimpleXMLElement($filecontent);
 
@@ -888,7 +890,7 @@ class ProductConversionServicesController extends AppController
                         //Elements
                         $elements = $spread->addChild('elements');
 
-                        $this->_addSpreadElements($spread, $page, $elements, $photos, $leftpage, $rightpage, $coverPageWidth, $coverPageHeight, true, 0, $totalCoverWidth, $totalCoverHeight, $coverSpine, $coverBleed, $coverWrap);
+                        $this->_addSpreadElements($spread, $page, $elements, $photos, $leftpage, $rightpage, $coverPageWidth, $coverPageHeight, true, 0, $totalCoverWidth, $totalCoverHeight, $coverSpine, $coverBleed, $coverWrap, $product['id'], "cover");
 
                     }
                     break;
@@ -946,7 +948,7 @@ class ProductConversionServicesController extends AppController
                         //Elements
                         $elements = $spread->addChild('elements');
 
-                        $this->_addSpreadElements($spread, $page, $elements, $photos, $newpage, null, $pageWidth, $pageHeight, false, $pageWidth + $bleed, $totalSpreadWidth, $totalSpreadHeight, 0, $bleed, 0);
+                        $this->_addSpreadElements($spread, $page, $elements, $photos, $newpage, null, $pageWidth, $pageHeight, false, $pageWidth + $bleed, $totalSpreadWidth, $totalSpreadHeight, 0, $bleed, 0, $product['id'], "firstpage");
 
                     }
 
@@ -1006,6 +1008,8 @@ class ProductConversionServicesController extends AppController
                         $pageside = 'right';
                         $pagenum += 1;
 
+                        $typepage = "bblock";
+
                         //right page
                         $rightpage = null;
                         if ($arrmax != $pageindex) {
@@ -1031,12 +1035,14 @@ class ProductConversionServicesController extends AppController
                             $rightpage->addAttribute('singlepageFirst', 'false');
                             $rightpage->addAttribute('singlepageLast', 'false');
                             $rightpage->addAttribute('side', $pageside);
+                        } else {
+                            $typepage = "lastpage";
                         }
 
                         //Elements
                         $elements = $spread->addChild('elements');
 
-                        $this->_addSpreadElements($spread, $page, $elements, $photos, $leftpage, $rightpage, $pageWidth, $pageHeight, false, $bleed, $totalSpreadWidth, $totalSpreadHeight, 0, $bleed, 0);
+                        $this->_addSpreadElements($spread, $page, $elements, $photos, $leftpage, $rightpage, $pageWidth, $pageHeight, false, $bleed, $totalSpreadWidth, $totalSpreadHeight, 0, $bleed, 0, $product['id'], $typepage);
 
                     }
 
@@ -1050,10 +1056,45 @@ class ProductConversionServicesController extends AppController
     }
 
 
-    private function _addSpreadElements($spread, $page, $elements, $photos, $leftpage, $rightpage, $pagewidth, $pageheight, $isCover, $rightPageCorrection, $totalWidth, $totalHeight, $spine, $bleed, $wrap)
+    private function _addSpreadElements($spread, $page, $elements, $photos, $leftpage, $rightpage, $pagewidth, $pageheight, $isCover, $rightPageCorrection, $totalWidth, $totalHeight, $spine, $bleed, $wrap, $product_id, $pagetype)
     {
 
-        $dpi = 330 / 96;
+        Configure::write('debug', 0);
+
+        $dpi = 340 / 96;
+
+        //Get the extra_offset if we have it
+        $extra_offset = JSON_DECODE($this->get_extra_offset($product_id), true);
+
+        $offset_left_x = 0;
+        $offset_left_y = 0;
+        $offset_right_x = 0;
+        $offset_right_y = 0;
+
+        if ($extra_offset) {
+            switch ($pagetype) {
+                case "cover":
+                    $offset_left_x = $extra_offset['cover']['back']['left_x'];
+                    $offset_left_y = $extra_offset['cover']['back']['top_x'];
+                    $offset_right_x = $extra_offset['cover']['front']['left_x'];
+                    $offset_right_y = $extra_offset['cover']['front']['top_x'];
+                    break;
+                case "firstpage":
+                    $offset_left_x = $extra_offset['firstpage']['left_x'];
+                    $offset_left_y = $extra_offset['firstpage']['top_x'];
+                    break;
+                case "bblock":
+                    $offset_left_x = $extra_offset['bblock']['leftpage']['left_x'];
+                    $offset_left_y = $extra_offset['bblock']['leftpage']['top_x'];
+                    $offset_right_x = $extra_offset['bblock']['rightpage']['left_x'];
+                    $offset_right_y = $extra_offset['bblock']['rightpage']['top_x'];
+                    break;
+                case "lastpage":
+                    $offset_left_x = $extra_offset['lastpage']['left_x'];
+                    $offset_left_y = $extra_offset['lastpage']['top_x'];
+                    break;
+            }
+        }
 
         $areas = $page->xpath('area');
 
@@ -1216,6 +1257,17 @@ class ProductConversionServicesController extends AppController
 
                     $image = $this->GetImageFromUpload($photos, $filename);
 
+                    $extra_offset_x = 0;
+                    $extra_offset_y = 0;
+
+                    if (($objectX - $rightPageCorrection) < $pagewidth) { //Left page
+                        $extra_offset_x = $offset_left_x;
+                        $extra_offset_y = $offset_left_y;
+                    } else { //Right page
+                        $extra_offset_x = $offset_right_x;
+                        $extra_offset_y = $offset_right_y;
+                    }
+
                     if ($image) {
 
                         $scale = (float)$img_attr['scale'];
@@ -1247,8 +1299,8 @@ class ProductConversionServicesController extends AppController
                         $element->addAttribute('original_image', "");
                         $element->addAttribute('original_thumb', "");
                         $element->addAttribute('index', "0");
-                        $element->addAttribute('objectX', $objectX - $rightPageCorrection);
-                        $element->addAttribute('objectY', $objectY - $bleed);
+                        $element->addAttribute('objectX', $objectX - $rightPageCorrection + $extra_offset_x);
+                        $element->addAttribute('objectY', $objectY - $bleed + $extra_offset_y);
                         $element->addAttribute('objectWidth', $objectWidth);
                         $element->addAttribute('objectHeight', $objectHeight);
                         $element->addAttribute('imageWidth', $imageWidth);
@@ -1321,8 +1373,8 @@ class ProductConversionServicesController extends AppController
                         $element->addAttribute('original_image', "");
                         $element->addAttribute('original_thumb', "");
                         $element->addAttribute('index', "0");
-                        $element->addAttribute('objectX', $objectX - $rightPageCorrection);
-                        $element->addAttribute('objectY', $objectY);
+                        $element->addAttribute('objectX', $objectX - $rightPageCorrection + $extra_offset_x);
+                        $element->addAttribute('objectY', $objectY + $extra_offset_y);
                         $element->addAttribute('objectWidth', $objectWidth);
                         $element->addAttribute('objectHeight', $objectHeight);
                         $element->addAttribute('imageWidth', "");
@@ -1407,14 +1459,25 @@ class ProductConversionServicesController extends AppController
                         $shadow = "";
                     }
 
+                    $extra_offset_x = 0;
+                    $extra_offset_y = 0;
+
+                    if (($objectX - $rightPageCorrection) < $pagewidth) { //Left page
+                        $extra_offset_x = $offset_left_x;
+                        $extra_offset_y = $offset_left_y;
+                    } else { //Right page
+                        $extra_offset_x = $offset_right_x;
+                        $extra_offset_y = $offset_right_y;
+                    }
+
                     $tfID = String::uuid();
                     $element = $elements->addChild('element');
                     $element->addAttribute('id', String::uuid());
                     $element->addAttribute('pageID', '');
                     $element->addAttribute('type', 'text');
                     $element->addAttribute('index', '0');
-                    $element->addAttribute('objectX', $objectX - $rightPageCorrection);
-                    $element->addAttribute('objectY', $objectY);
+                    $element->addAttribute('objectX', $objectX - $rightPageCorrection + $extra_offset_x);
+                    $element->addAttribute('objectY', $objectY + $extra_offset_y);
                     $element->addAttribute('objectWidth', $objectWidth);
                     $element->addAttribute('objectHeight', $objectHeight);
                     $element->addAttribute('tfID', $tfID);
@@ -1529,6 +1592,25 @@ class ProductConversionServicesController extends AppController
         }
 
         return 0;
+
+    }
+
+    function get_extra_offset($product_id)
+    {
+
+        //Get the matching product id from the xhibit_product_conversion table
+        $this->loadModel('ProductConversion');
+
+        $product = $this->ProductConversion->find('first', array(
+            'conditions' => array('ProductConversion.product_id' => $product_id)
+        ));
+
+        $result = null;
+        if ($product) {
+            $result = $product['ProductConversion']['extra_offset'];
+        }
+
+        return $result;
 
     }
 
