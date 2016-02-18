@@ -492,7 +492,15 @@ class ProductConversionServicesController extends AppController
 
         // find all the used passepartout
 		//LET OP DEZE ZITTEN IN EEN AREA OP EEN PAGINA
-        $passepartouts = Hash::extract($txt, 'page.{n}.area.{n}.designElementIDs');
+		$_passepartouts = Hash::extract($txt, 'page.{n}.area.{n}.designElementIDs');
+		foreach($_passepartouts as $k=>$v)
+		{
+			if (isset($v['@attributes']['passepartout']))
+			{
+				$passepartouts[] = $v['@attributes']['passepartout'];
+			}
+		}
+
         $passepartout_counter = 0;
         $passepartout_array = array();
         foreach ($passepartouts as $passepartout_key => $passepartout_value) {
@@ -505,6 +513,7 @@ class ProductConversionServicesController extends AppController
 
         $return_data['ProductConversionService']['designElementID']['passepartouts']['counter'] = $passepartout_counter;
         $return_data['ProductConversionService']['designElementID']['passepartouts']['items'] = $passepartout_array;
+
 
         //Find all the used fonts
         $fontElementIDs = Hash::extract($txt, 'page.{n}.area.{n}.text');
