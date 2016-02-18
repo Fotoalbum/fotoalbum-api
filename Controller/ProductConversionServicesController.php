@@ -45,7 +45,7 @@ class ProductConversionServicesController extends AppController
         parent::beforeFilter();
 
 
-        Configure::write('debug', 2);
+        Configure::write('debug', 0);
 
 
         $this->Auth->Allow();
@@ -288,12 +288,11 @@ class ProductConversionServicesController extends AppController
                 //Try to get the image rotation for this image
                 try {
 
-                    $hires = 'http://api.xhibit.com/v2/' . $ph->hires_url;
-
-                    $imagetype = exif_imagetype($hires);
+					$hires = '/data/web/xhibit/xhibit.com/api.xhibit.com/v2/webroot/' . $ph->hires_url;
+					$imagetype = exif_imagetype($hires);
 
                     if ($imagetype == 2) {
-
+						
                         $getexif = exif_read_data($hires);
 
                         if ($getexif) {
