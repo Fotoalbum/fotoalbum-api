@@ -1,0 +1,23 @@
+{
+  "name": "fotoalbum-api",
+  "version": "1.0.0",
+  "description": "Fotoalbum API",
+  "main": "index.php",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Fotoalbum/fotoalbum-api.git"
+  },
+  "keywords": [
+    "Fotoalbum",
+    "API"
+  ],
+  "author": "Mitchell, Maurice & Frank",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Fotoalbum/fotoalbum-api/issues"
+  },
+  "homepage": "https://github.com/Fotoalbum/fotoalbum-api#readme"
+}
