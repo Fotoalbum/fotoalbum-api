@@ -109,6 +109,19 @@
                     </div>
                     <?php
                 }
+                if (!empty($this->request->data['ProductConversionService']['designElementID']['images']['errors']))
+                {
+                    ?>
+                    <div class="well well-lg">
+                    	<div class="lead">
+                            Boek heeft ontbrekende afbeeldingen
+                            <ul>
+	                            <li><mark>TIFFS: <?php echo $this->request->data['ProductConversionService']['designElementID']['images']['errors'];?>x</mark></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <?php
+                }				
                 if (!empty($this->request->data['ProductConversionService']['errors']))
                 {
 					$errors = json_decode($this->request->data['ProductConversionService']['errors']);

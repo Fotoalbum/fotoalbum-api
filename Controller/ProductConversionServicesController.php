@@ -569,6 +569,31 @@ class ProductConversionServicesController extends AppController
         $return_data['ProductConversionService']['designElementID']['fonts']['items'] = $font_array;
         $return_data['ProductConversionService']['designElementID']['fonts']['errors'] = $font_errors;
 
+        $return_data['ProductConversionService']['designElementID']['images']['counter']	= count($replace);
+        $return_data['ProductConversionService']['designElementID']['images']['items'] 		= $replace;
+		$tiff_errors = 0;
+
+		foreach ($replace as $v)
+		{
+			if (strpos($v,'.tiff'))
+			{
+				$tiff_errors++;	
+			}
+			if (strpos($v,'.TIFF'))
+			{
+				$tiff_errors++;	
+			}	
+			if (strpos($v,'.bmp'))
+			{
+				$tiff_errors++;	
+			}
+			if (strpos($v,'.BMP'))
+			{
+				$tiff_errors++;	
+			}						
+		}
+        $return_data['ProductConversionService']['designElementID']['images']['errors'] 	= $tiff_errors;
+
         //Check if the use wants pagenumbering
         $clipartElementIDs = Hash::extract($txt, 'page.{n}.area.{n}.clipart.@attributes.uniqueName');
         $clipart_counter = 0;
