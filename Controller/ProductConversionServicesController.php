@@ -1639,7 +1639,15 @@ class ProductConversionServicesController extends AppController
 
     function get_topx_designelements()
     {	
+		/**
+		 * Turn off all caching application-wide.
+		 *
+		 */
+		Configure::write('Cache.disable', false);
+		$this->cacheAction = true;	
+
 		Configure::write('debug', 0);
+		
         $options = array(
             //'limit' => 10000,
 			/*'conditions' => array(
@@ -1703,5 +1711,6 @@ class ProductConversionServicesController extends AppController
 		$this->set(compact('items','retdata'));
 		//Configure::write('debug', 0);
 		$this->autoRender = true;
+		Configure::write('Cache.disable', true);
 	}
 }

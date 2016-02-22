@@ -17,7 +17,7 @@
 					<?php
 					foreach ($retdata[$item] as $_results)
 					{
-						if ($_results > 10)
+						if ($_results['count'] > 10)
 						{
 							?>
 							<tr>
