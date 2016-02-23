@@ -41,6 +41,19 @@
                     </div>
                 </fieldset>
             <?php echo $this->Form->end();?>
+            
+            <h3>Standaard tekstjes / Texte Standard</h3>
+            <p><strong>Fotoalbum</strong></p>
+			<ul>
+				<li>Achtergronden, stickers en fotokaders moet u naar eigen smaak opnieuw toevoegen.</li>
+				<li>Unieke lettertypes zijn gezet naar "Arial", u kan zelf nog de lettertypes aanpassen naar eigen smaak.</li>
+			</ul>
+        	<p><strong>Albumphoto</strong></p>
+        	<ul>
+				<li>Vous devez ajouter à nouveau les arrière-plans, stickers et cadres photo de votre choix (parmi ceux disponibles dans notre nouveau logiciel).</li>
+				<li>Les polices d'écriture spéciales ont été converties en "Arial". Vous pouvez les modifier, et choisir la police d'écriture de votre choix (existante dans notre nouveau logiciel).</li>
+			</ul>
+
         </div>
     </div>
     <div class="actions col-md-3 col-md-offset-1 span3">
