@@ -288,11 +288,11 @@ class ProductConversionServicesController extends AppController
                 //Try to get the image rotation for this image
                 try {
 
-					$hires = '/data/web/xhibit/xhibit.com/api.xhibit.com/v2/webroot/' . $ph->hires_url;
-					$imagetype = exif_imagetype($hires);
+                    $hires = '/data/web/xhibit/xhibit.com/api.xhibit.com/v2/webroot/' . $ph->hires_url;
+                    $imagetype = exif_imagetype($hires);
 
                     if ($imagetype == 2) {
-						
+
                         $getexif = exif_read_data($hires);
 
                         if ($getexif) {
@@ -385,31 +385,30 @@ class ProductConversionServicesController extends AppController
         unset($this->UserProduct->id);
 
 
-		switch($return_data['ProductConversionService']['lang'])
-		{
-			
-			case "nl_BE":
-				$platform = "fotoalbum_be";
-				$maaknu   = "http://www.fotoalbum.be/maak-nu";
-			break;
-			
-			case "be_FR":
-				$platform = "albumphoto_be";
-				$maaknu   = "http://www.albumphoto.be/creer";
-			break;
-			
-			case "fr_FR":
-				$platform = "albumphoto_fr";
-				$maaknu   = "http://www.albumphoto.fr/creer";
-			break;
-			
-			case "nl_NL":
-				$platform = "enjoy";
-				$maaknu   = "http://www.fotoalbum.nl/maak-nu";
-			break;
-			
-		}
-				
+        switch ($return_data['ProductConversionService']['lang']) {
+
+            case "nl_BE":
+                $platform = "fotoalbum_be";
+                $maaknu = "http://www.fotoalbum.be/maak-nu";
+                break;
+
+            case "be_FR":
+                $platform = "albumphoto_be";
+                $maaknu = "http://www.albumphoto.be/creer";
+                break;
+
+            case "fr_FR":
+                $platform = "albumphoto_fr";
+                $maaknu = "http://www.albumphoto.fr/creer";
+                break;
+
+            case "nl_NL":
+                $platform = "enjoy";
+                $maaknu = "http://www.fotoalbum.nl/maak-nu";
+                break;
+
+        }
+
         $update_data = array(
             'UserProduct' => array(
                 'user_id' => '111131826', //'Dit is project-omzetten@fotoalbum.nl
@@ -516,15 +515,13 @@ class ProductConversionServicesController extends AppController
         $return_data['ProductConversionService']['designElementID']['layouts']['items'] = $layout_array;
 
         // find all the used passepartout
-		//LET OP DEZE ZITTEN IN EEN AREA OP EEN PAGINA
-		$_passepartouts = Hash::extract($txt, 'page.{n}.area.{n}.designElementIDs');
-		foreach($_passepartouts as $k=>$v)
-		{
-			if (isset($v['@attributes']['passepartout']))
-			{
-				$passepartouts[] = $v['@attributes']['passepartout'];
-			}
-		}
+        //LET OP DEZE ZITTEN IN EEN AREA OP EEN PAGINA
+        $_passepartouts = Hash::extract($txt, 'page.{n}.area.{n}.designElementIDs');
+        foreach ($_passepartouts as $k => $v) {
+            if (isset($v['@attributes']['passepartout'])) {
+                $passepartouts[] = $v['@attributes']['passepartout'];
+            }
+        }
 
         $passepartout_counter = 0;
         $passepartout_array = array();
@@ -544,7 +541,7 @@ class ProductConversionServicesController extends AppController
         $fontElementIDs = Hash::extract($txt, 'page.{n}.area.{n}.text');
         $font_counter = 0;
         $font_errors = array();
-		$font_array = array();
+        $font_array = array();
         foreach ($fontElementIDs as $fontId => $fontElements) {
             $_text = simplexml_load_string($fontElements, "SimpleXMLElement", LIBXML_NOCDATA);
             preg_match("/\/(.*)(font-family:')(.*)(';.*)/", $fontElements, $_font_array);
@@ -1493,6 +1490,31 @@ class ProductConversionServicesController extends AppController
                     $element->addAttribute('allwaysontop', '0');
                     $element->addAttribute('importtext', '1');
                     $element[0] = (string)$area->text;
+
+                    /*
+                    <TextFlow   xmlns = "http://ns.adobe.com/textLayout/2008"
+                                fontFamily = "_arial"
+                                fontLookup = "embeddedCFF"
+                                fontStyle = "normal"
+                                kerning = "on"
+                                renderingMode = "cff"
+                                whiteSpaceCollapse = "preserve"
+                                version = "2.0.0" >
+
+                                <p textAlign = "center" >
+                                    <span   color = "#000000"
+                                            fontFamily = "_arial"
+                                            fontLookup = "embeddedCFF"
+                                            fontSize = "20"
+                                            lineHeight = "24"
+                                            renderingMode = "cff">
+
+                                             Italie - Puglia September 2015
+
+                                    </span >
+                                 </p >
+                    </TextFlow >
+                    */
                     break;
 
             }
@@ -1631,77 +1653,67 @@ class ProductConversionServicesController extends AppController
         return $fileName;
 
     }
-	
+
     /*
      * GETS THE designElements for all products
      * Author: Frank
      */
 
     function get_topx_designelements()
-    {	
-		Configure::write('debug', 0);
+    {
+        Configure::write('debug', 0);
         $options = array(
             //'limit' => 10000,
-			/*'conditions' => array(
+            /*'conditions' => array(
                 'ProductConversionService.' . $this->ProductConversionService->primaryKey => $id
             )*/
         );
-		$all = Cache::read('_get_topx_designelements', 'long');
-		$items = array('backgrounds','layouts','passepartouts','fonts','cliparts');
-		
-		if ($all === false)
-		{
-			$return_data = $this->ProductConversionService->find('all', $options);
-			$all = array();	
-			
-			foreach($items as $item)
-			{
-				$all[$item] = array();
-				$_all[$item] = array();
-			}
-			foreach($return_data as $PCS)
-			{
-				//debug($PCS['ProductConversionService']['id']);
-				$data = $this->_convert_data_from_air_to_admin($PCS['ProductConversionService']['id']);
-				debug($data);
-				
-				foreach($items as $item)
-				{
-					$_all[$item] = hash::extract($data['ProductConversionService']['designElementID'], $item.'.items');
-					foreach($_all[$item] as $key=>$value)
-					{
-						$key = (string) $key;
-						if (isset($all[$item][$key]))
-						{
-							$all[$item][$key] = $all[$item][$key] + $value;
-						}
-						else
-						{
-							$all[$item][$key] = $value;
-						}
-					}
-				}
-			}
-			
-			Cache::write('_get_topx_designelements', $all, 'long');
-		}
+        $all = Cache::read('_get_topx_designelements', 'long');
+        $items = array('backgrounds', 'layouts', 'passepartouts', 'fonts', 'cliparts');
+
+        if ($all === false) {
+            $return_data = $this->ProductConversionService->find('all', $options);
+            $all = array();
+
+            foreach ($items as $item) {
+                $all[$item] = array();
+                $_all[$item] = array();
+            }
+            foreach ($return_data as $PCS) {
+                //debug($PCS['ProductConversionService']['id']);
+                $data = $this->_convert_data_from_air_to_admin($PCS['ProductConversionService']['id']);
+                debug($data);
+
+                foreach ($items as $item) {
+                    $_all[$item] = hash::extract($data['ProductConversionService']['designElementID'], $item . '.items');
+                    foreach ($_all[$item] as $key => $value) {
+                        $key = (string)$key;
+                        if (isset($all[$item][$key])) {
+                            $all[$item][$key] = $all[$item][$key] + $value;
+                        } else {
+                            $all[$item][$key] = $value;
+                        }
+                    }
+                }
+            }
+
+            Cache::write('_get_topx_designelements', $all, 'long');
+        }
 
 
-		$albums = array();
-		foreach($all as $allK=>$allV)
-		{
-			arsort($allV);
-			$all[$allK] = $allV;
-			foreach($allV as $k=>$v)
-			{
-				$retdata[$allK][] = array('id'=>$k, 'count'=>$v);
-			}
-		}
-		
-		//debug($retdata['backgrounds']);
+        $albums = array();
+        foreach ($all as $allK => $allV) {
+            arsort($allV);
+            $all[$allK] = $allV;
+            foreach ($allV as $k => $v) {
+                $retdata[$allK][] = array('id' => $k, 'count' => $v);
+            }
+        }
 
-		$this->set(compact('items','retdata'));
-		//Configure::write('debug', 0);
-		$this->autoRender = true;
-	}
+        //debug($retdata['backgrounds']);
+
+        $this->set(compact('items', 'retdata'));
+        //Configure::write('debug', 0);
+        $this->autoRender = true;
+    }
 }
