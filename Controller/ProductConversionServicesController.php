@@ -385,8 +385,7 @@ class ProductConversionServicesController extends AppController
         unset($this->UserProduct->id);
 
 
-        switch ($return_data['ProductConversionService']['lang'])
-        {
+        switch ($return_data['ProductConversionService']['lang']) {
 
             case "nl_BE":
                 $platform = "fotoalbum_be";
@@ -567,30 +566,25 @@ class ProductConversionServicesController extends AppController
         $return_data['ProductConversionService']['designElementID']['fonts']['items'] = $font_array;
         $return_data['ProductConversionService']['designElementID']['fonts']['errors'] = $font_errors;
 
-        $return_data['ProductConversionService']['designElementID']['images']['counter']	= count($replace);
-        $return_data['ProductConversionService']['designElementID']['images']['items'] 		= $replace;
-		$tiff_errors = 0;
+        $return_data['ProductConversionService']['designElementID']['images']['counter'] = count($replace);
+        $return_data['ProductConversionService']['designElementID']['images']['items'] = $replace;
+        $tiff_errors = 0;
 
-		foreach ($replace as $v)
-		{
-			if (strpos($v,'.tiff'))
-			{
-				$tiff_errors++;
-			}
-			if (strpos($v,'.TIFF'))
-			{
-				$tiff_errors++;
-			}
-			if (strpos($v,'.bmp'))
-			{
-				$tiff_errors++;
-			}
-			if (strpos($v,'.BMP'))
-			{
-				$tiff_errors++;
-			}
-		}
-        $return_data['ProductConversionService']['designElementID']['images']['errors'] 	= $tiff_errors;
+        foreach ($replace as $v) {
+            if (strpos($v, '.tiff')) {
+                $tiff_errors++;
+            }
+            if (strpos($v, '.TIFF')) {
+                $tiff_errors++;
+            }
+            if (strpos($v, '.bmp')) {
+                $tiff_errors++;
+            }
+            if (strpos($v, '.BMP')) {
+                $tiff_errors++;
+            }
+        }
+        $return_data['ProductConversionService']['designElementID']['images']['errors'] = $tiff_errors;
 
         //Check if the use wants pagenumbering
         $clipartElementIDs = Hash::extract($txt, 'page.{n}.area.{n}.clipart.@attributes.uniqueName');
@@ -806,12 +800,27 @@ class ProductConversionServicesController extends AppController
 
         $arrmax = count($pages) - 2;
 
+        //Index the background colors for all pages
+        $bgArray = array();
+        foreach ($pages as $page) {
+            $bgColor = $page->designElementIDs['background'];
+            if ($bgColor) {
+                $backgroundColor = $this->getColorFromCollection($bgColor);
+                array_push($bgArray, $backgroundColor);
+            } else {
+                array_push($bgArray, (string)16777215);
+            }
+        }
+
+        $pagecounter = -1;
         foreach ($pages as $page) {
 
             $type = $page['type'];
             $mod = $pageindex % 2;
 
             $backgroundColor = -1;
+
+            $pagecounter++;
 
             switch ($type) {
 
@@ -854,13 +863,17 @@ class ProductConversionServicesController extends AppController
                         $leftpage->addAttribute('horizontalWrap', $coverWrap);
                         $leftpage->addAttribute('verticalWrap', $coverWrap);
                         $leftpage->addAttribute('pageNumber', $pagenum);
-                        $leftpage->addAttribute('backgroundColor', $backgroundColor);
+                        $leftpage->addAttribute('backgroundColor', $bgArray[$pagecounter]);
                         $leftpage->addAttribute('backgroundAlpha', '1');
                         $leftpage->addAttribute('pageLeftRight', 'coverback');
                         $leftpage->addAttribute('singlepage', 'false');
                         $leftpage->addAttribute('singlepageFirst', 'false');
                         $leftpage->addAttribute('singlepageLast', 'false');
                         $leftpage->addAttribute('side', 'coverback');
+
+                        $pagecounter++;
+
+                        $nextpage = next($pages);
 
                         //coverspine
                         $page_id = String::uuid();
@@ -878,13 +891,15 @@ class ProductConversionServicesController extends AppController
                         $newpage->addAttribute('horizontalWrap', '0');
                         $newpage->addAttribute('verticalWrap', $coverWrap);
                         $newpage->addAttribute('pageNumber', $pagenum);
-                        $newpage->addAttribute('backgroundColor', $backgroundColor);
+                        $newpage->addAttribute('backgroundColor', $bgArray[$pagecounter]);
                         $newpage->addAttribute('backgroundAlpha', '1');
                         $newpage->addAttribute('pageLeftRight', 'coverspine');
                         $newpage->addAttribute('singlepage', 'false');
                         $newpage->addAttribute('singlepageFirst', 'false');
                         $newpage->addAttribute('singlepageLast', 'false');
                         $newpage->addAttribute('side', 'coverspine');
+
+                        $pagecounter++;
 
                         //coverfront
                         $page_id = String::uuid();
@@ -902,13 +917,15 @@ class ProductConversionServicesController extends AppController
                         $rightpage->addAttribute('horizontalWrap', $coverWrap);
                         $rightpage->addAttribute('verticalWrap', $coverWrap);
                         $rightpage->addAttribute('pageNumber', $pagenum);
-                        $rightpage->addAttribute('backgroundColor', $backgroundColor);
+                        $rightpage->addAttribute('backgroundColor', $bgArray[$pagecounter]);
                         $rightpage->addAttribute('backgroundAlpha', '1');
                         $rightpage->addAttribute('pageLeftRight', 'coverfront');
                         $rightpage->addAttribute('singlepage', 'false');
                         $rightpage->addAttribute('singlepageFirst', 'false');
                         $rightpage->addAttribute('singlepageLast', 'false');
                         $rightpage->addAttribute('side', 'coverfront');
+
+                        $pagecounter++;
 
                         //Elements
                         $elements = $spread->addChild('elements');
@@ -960,13 +977,15 @@ class ProductConversionServicesController extends AppController
                         $newpage->addAttribute('horizontalWrap', 0);
                         $newpage->addAttribute('verticalWrap', 0);
                         $newpage->addAttribute('pageNumber', $pagenum);
-                        $newpage->addAttribute('backgroundColor', $backgroundColor);
+                        $newpage->addAttribute('backgroundColor', $bgArray[$pagecounter]);
                         $newpage->addAttribute('backgroundAlpha', '1');
                         $newpage->addAttribute('pageLeftRight', $pageside);
                         $newpage->addAttribute('singlepage', 'true');
                         $newpage->addAttribute('singlepageFirst', 'true');
                         $newpage->addAttribute('singlepageLast', 'false');
                         $newpage->addAttribute('side', $pageside);
+
+                        $pagecounter++;
 
                         //Elements
                         $elements = $spread->addChild('elements');
@@ -982,6 +1001,12 @@ class ProductConversionServicesController extends AppController
 
                     //Script here
                     if ($mod == 1) {
+
+                        $bgColor = $page->designElementIDs['background'];
+
+                        if ($bgColor) {
+                            $backgroundColor = $this->getColorFromCollection($bgColor);
+                        }
 
                         $pageside = 'left';
                         $pagenum += 1;
@@ -1020,13 +1045,15 @@ class ProductConversionServicesController extends AppController
                         $leftpage->addAttribute('horizontalWrap', 0);
                         $leftpage->addAttribute('verticalWrap', 0);
                         $leftpage->addAttribute('pageNumber', $pagenum);
-                        $leftpage->addAttribute('backgroundColor', $backgroundColor);
+                        $leftpage->addAttribute('backgroundColor', $bgArray[$pagecounter]);
                         $leftpage->addAttribute('backgroundAlpha', '1');
                         $leftpage->addAttribute('pageLeftRight', $pageside);
                         $leftpage->addAttribute('singlepage', 'false');
                         $leftpage->addAttribute('singlepageFirst', 'false');
                         $leftpage->addAttribute('singlepageLast', 'false');
                         $leftpage->addAttribute('side', $pageside);
+
+                        $pagecounter++;
 
                         $pageside = 'right';
                         $pagenum += 1;
@@ -1051,13 +1078,15 @@ class ProductConversionServicesController extends AppController
                             $rightpage->addAttribute('horizontalWrap', 0);
                             $rightpage->addAttribute('verticalWrap', 0);
                             $rightpage->addAttribute('pageNumber', $pagenum);
-                            $rightpage->addAttribute('backgroundColor', $backgroundColor);
+                            $rightpage->addAttribute('backgroundColor', $bgArray[$pagecounter]);
                             $rightpage->addAttribute('backgroundAlpha', '1');
                             $rightpage->addAttribute('pageLeftRight', $pageside);
                             $rightpage->addAttribute('singlepage', 'false');
                             $rightpage->addAttribute('singlepageFirst', 'false');
                             $rightpage->addAttribute('singlepageLast', 'false');
                             $rightpage->addAttribute('side', $pageside);
+
+                            $pagecounter++;
                         } else {
                             $typepage = "lastpage";
                         }
@@ -1283,7 +1312,13 @@ class ProductConversionServicesController extends AppController
                     $extra_offset_x = 0;
                     $extra_offset_y = 0;
 
-                    if (($objectX - $rightPageCorrection) < $pagewidth) { //Left page
+                    $posx = $pagewidth;
+
+                    if ($isCover) {
+                        $posx = $objectX + ($objectWidth / 2);
+                    }
+
+                    if (($objectX - $rightPageCorrection) < $pagewidth && $posx < $pagewidth) { //Left page
                         $extra_offset_x = $offset_left_x;
                         $extra_offset_y = $offset_left_y;
                     } else { //Right page
@@ -1455,6 +1490,30 @@ class ProductConversionServicesController extends AppController
                     $objectHeight = $area_attr['height'] / ($dpi);
                     $objectX = $area_attr['left'] / ($dpi);
                     $objectY = $area_attr['top'] / ($dpi);
+                    $objectRotation = $area_attr['rotation'];
+
+                    if (($objectX - $rightPageCorrection) < $pagewidth)
+                    { //Left page
+                        $extra_offset_x = $offset_left_x;
+                        $extra_offset_y = $offset_left_y;
+                    } else { //Right page
+                        $extra_offset_x = $offset_right_x;
+                        $extra_offset_y = $offset_right_y;
+                    }
+
+                    $coverSpineTitle = 'false';
+
+                    if ($area->text['isSpineText'] == "1") {
+
+                        $coverSpineTitle = 'true';
+
+                        //Modify the object props to fit the spine
+                        $objectWidth = $leftpage['pageHeight'];
+                        $objectHeight = $spine;
+                        $objectX = $leftpage['width'] + $spine;
+                        $objectY = $wrap + $bleed;
+                        $objectRotation = 90;
+                    }
 
                     //Get the box properties
                     $borderenabled = $area_attr['borderenabled'];
@@ -1467,8 +1526,9 @@ class ProductConversionServicesController extends AppController
                     if ($borderweight < 0) {
                         $borderweight = 0;
                     };
-                    $objectRotation = $area_attr['rotation'];
+
                     $shadow = "";
+                    /*
                     if ($area_attr['shadowEnabled'] == "1") {
                         $angle = $area_attr['shadowAngle'];
                         if ($angle < 180) {
@@ -1481,17 +1541,10 @@ class ProductConversionServicesController extends AppController
                     } else {
                         $shadow = "";
                     }
+                    */
 
                     $extra_offset_x = 0;
                     $extra_offset_y = 0;
-
-                    if (($objectX - $rightPageCorrection) < $pagewidth) { //Left page
-                        $extra_offset_x = $offset_left_x;
-                        $extra_offset_y = $offset_left_y;
-                    } else { //Right page
-                        $extra_offset_x = $offset_right_x;
-                        $extra_offset_y = $offset_right_y;
-                    }
 
                     $tfID = String::uuid();
                     $element = $elements->addChild('element');
@@ -1510,7 +1563,7 @@ class ProductConversionServicesController extends AppController
                     $element->addAttribute('borderalpha', 1);
                     $element->addAttribute('borderweight', $borderweight);
                     $element->addAttribute('coverTitle', 'false');
-                    $element->addAttribute('coverSpineTitle', 'false');
+                    $element->addAttribute('coverSpineTitle', $coverSpineTitle);
                     $element->addAttribute('fixedposition', '0');
                     $element->addAttribute('fixedcontent', '0');
                     $element->addAttribute('allwaysontop', '0');
@@ -1637,6 +1690,25 @@ class ProductConversionServicesController extends AppController
 
     }
 
+    public function getColorFromCollection($bgColor)
+    {
+
+        $color = hexdec("FFFFFF");
+
+        $this->loadModel('ProductColor');
+
+        $hexcolor = $this->ProductColor->find('first', array(
+            'conditions' => array('ProductColor.code' => $bgColor)
+        ));
+
+        if ($hexcolor) {
+            //$color = hexdec((string)$hexcolor['ProductColor']['hex']);
+        }
+
+        return (string)$color;
+
+    }
+
     public function stripFileNameInvalid($fileName)
     {
 
@@ -1654,86 +1726,76 @@ class ProductConversionServicesController extends AppController
         return $fileName;
 
     }
-	
+
     /*
      * GETS THE designElements for all products
      * Author: Frank
      */
 
     function get_topx_designelements()
-    {	
-		/**
-		 * Turn off all caching application-wide.
-		 *
-		 */
-		Configure::write('Cache.disable', false);
-		$this->cacheAction = true;
+    {
+        /**
+         * Turn off all caching application-wide.
+         *
+         */
+        Configure::write('Cache.disable', false);
+        $this->cacheAction = true;
 
-		Configure::write('debug', 0);
+        Configure::write('debug', 0);
 
         $options = array(
             //'limit' => 10000,
-			/*'conditions' => array(
+            /*'conditions' => array(
                 'ProductConversionService.' . $this->ProductConversionService->primaryKey => $id
             )*/
         );
-		$all = Cache::read('_get_topx_designelements', 'long');
-		$items = array('backgrounds','layouts','passepartouts','fonts','cliparts');
-		
-		if ($all === false)
-		{
-			$return_data = $this->ProductConversionService->find('all', $options);
-			$all = array();	
-			
-			foreach($items as $item)
-			{
-				$all[$item] = array();
-				$_all[$item] = array();
-			}
-			foreach($return_data as $PCS)
-			{
-				//debug($PCS['ProductConversionService']['id']);
-				$data = $this->_convert_data_from_air_to_admin($PCS['ProductConversionService']['id']);
-				debug($data);
-				
-				foreach($items as $item)
-				{
-					$_all[$item] = hash::extract($data['ProductConversionService']['designElementID'], $item.'.items');
-					foreach($_all[$item] as $key=>$value)
-					{
-						$key = (string) $key;
-						if (isset($all[$item][$key]))
-						{
-							$all[$item][$key] = $all[$item][$key] + $value;
-						}
-						else
-						{
-							$all[$item][$key] = $value;
-						}
-					}
-				}
-			}
-			
-			Cache::write('_get_topx_designelements', $all, 'long');
-		}
+        $all = Cache::read('_get_topx_designelements', 'long');
+        $items = array('backgrounds', 'layouts', 'passepartouts', 'fonts', 'cliparts');
+
+        if ($all === false) {
+            $return_data = $this->ProductConversionService->find('all', $options);
+            $all = array();
+
+            foreach ($items as $item) {
+                $all[$item] = array();
+                $_all[$item] = array();
+            }
+            foreach ($return_data as $PCS) {
+                //debug($PCS['ProductConversionService']['id']);
+                $data = $this->_convert_data_from_air_to_admin($PCS['ProductConversionService']['id']);
+                debug($data);
+
+                foreach ($items as $item) {
+                    $_all[$item] = hash::extract($data['ProductConversionService']['designElementID'], $item . '.items');
+                    foreach ($_all[$item] as $key => $value) {
+                        $key = (string)$key;
+                        if (isset($all[$item][$key])) {
+                            $all[$item][$key] = $all[$item][$key] + $value;
+                        } else {
+                            $all[$item][$key] = $value;
+                        }
+                    }
+                }
+            }
+
+            Cache::write('_get_topx_designelements', $all, 'long');
+        }
 
 
-		$albums = array();
-		foreach($all as $allK=>$allV)
-		{
-			arsort($allV);
-			$all[$allK] = $allV;
-			foreach($allV as $k=>$v)
-			{
-				$retdata[$allK][] = array('id'=>$k, 'count'=>$v);
-			}
-		}
-		
-		//debug($retdata['backgrounds']);
+        $albums = array();
+        foreach ($all as $allK => $allV) {
+            arsort($allV);
+            $all[$allK] = $allV;
+            foreach ($allV as $k => $v) {
+                $retdata[$allK][] = array('id' => $k, 'count' => $v);
+            }
+        }
 
-		$this->set(compact('items','retdata'));
-		//Configure::write('debug', 0);
-		$this->autoRender = true;
-		Configure::write('Cache.disable', true);
-	}
+        //debug($retdata['backgrounds']);
+
+        $this->set(compact('items', 'retdata'));
+        //Configure::write('debug', 0);
+        $this->autoRender = true;
+        Configure::write('Cache.disable', true);
+    }
 }
