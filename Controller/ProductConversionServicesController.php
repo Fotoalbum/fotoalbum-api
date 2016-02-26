@@ -802,25 +802,27 @@ class ProductConversionServicesController extends AppController
 
         //Index the background colors for all pages
         $bgArray = array();
+
         foreach ($pages as $page) {
             $bgColor = $page->designElementIDs['background'];
             if ($bgColor) {
                 $backgroundColor = $this->getColorFromCollection($bgColor);
-                array_push($bgArray, $backgroundColor);
+                array_push($bgArray, '0x' . $backgroundColor);
             } else {
-                array_push($bgArray, (string)16777215);
+                array_push($bgArray, '0xFFFFFF');
             }
         }
 
-        $pagecounter = -1;
+        //die(json_encode($bgArray));
+
+        $pagecounter = 0;
+
         foreach ($pages as $page) {
 
             $type = $page['type'];
             $mod = $pageindex % 2;
 
             $backgroundColor = -1;
-
-            $pagecounter++;
 
             switch ($type) {
 
@@ -871,7 +873,9 @@ class ProductConversionServicesController extends AppController
                         $leftpage->addAttribute('singlepageLast', 'false');
                         $leftpage->addAttribute('side', 'coverback');
 
-                        $pagecounter++;
+                        //echo $pagecounter . " :: " . $bgArray[$pagecounter] . "<br/>";
+
+                        $pagecounter+=1;
 
                         $nextpage = next($pages);
 
@@ -899,7 +903,9 @@ class ProductConversionServicesController extends AppController
                         $newpage->addAttribute('singlepageLast', 'false');
                         $newpage->addAttribute('side', 'coverspine');
 
-                        $pagecounter++;
+                        //echo $pagecounter . " :: " . $bgArray[$pagecounter] . "<br/>";
+
+                        $pagecounter+=1;
 
                         //coverfront
                         $page_id = String::uuid();
@@ -924,6 +930,8 @@ class ProductConversionServicesController extends AppController
                         $rightpage->addAttribute('singlepageFirst', 'false');
                         $rightpage->addAttribute('singlepageLast', 'false');
                         $rightpage->addAttribute('side', 'coverfront');
+
+                        //echo $pagecounter . " :: " . $bgArray[$pagecounter] . "<br/>";
 
                         $pagecounter+=2;
 
@@ -985,7 +993,9 @@ class ProductConversionServicesController extends AppController
                         $newpage->addAttribute('singlepageLast', 'false');
                         $newpage->addAttribute('side', $pageside);
 
-                        $pagecounter++;
+                        //echo $pagecounter . " :: " . $bgArray[$pagecounter] . "<br/>";
+
+                        $pagecounter+=1;
 
                         //Elements
                         $elements = $spread->addChild('elements');
@@ -1053,7 +1063,9 @@ class ProductConversionServicesController extends AppController
                         $leftpage->addAttribute('singlepageLast', 'false');
                         $leftpage->addAttribute('side', $pageside);
 
-                        $pagecounter++;
+                        //echo $pagecounter . " :: " . $bgArray[$pagecounter] . "<br/>";
+
+                        $pagecounter+=1;
 
                         $pageside = 'right';
                         $pagenum += 1;
@@ -1063,6 +1075,7 @@ class ProductConversionServicesController extends AppController
                         //right page
                         $rightpage = null;
                         if ($arrmax != $pageindex) {
+
                             $page_id = String::uuid();
                             $rightpage = $newpages->addChild('page');
                             $rightpage->addAttribute('pageID', $page_id);
@@ -1086,7 +1099,11 @@ class ProductConversionServicesController extends AppController
                             $rightpage->addAttribute('singlepageLast', 'false');
                             $rightpage->addAttribute('side', $pageside);
 
-                            $pagecounter++;
+                            //echo $pagecounter . " :: " . $bgArray[$pagecounter] . "<br/>";
+
+                            $pagecounter+=1;
+
+
                         } else {
                             $typepage = "lastpage";
                         }
@@ -1700,7 +1717,7 @@ class ProductConversionServicesController extends AppController
     public function getColorFromCollection($bgColor)
     {
 
-        $color = hexdec("FFFFFF");
+        $color = "FFFFFF";
 
         $this->loadModel('ProductColor');
 
@@ -1709,7 +1726,7 @@ class ProductConversionServicesController extends AppController
         ));
 
         if ($hexcolor) {
-            $color = hexdec((string)$hexcolor['ProductColor']['hex']);
+            $color = (string)$hexcolor['ProductColor']['hex'];
         }
 
         return (string)$color;
