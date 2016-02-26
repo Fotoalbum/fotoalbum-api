@@ -925,7 +925,7 @@ class ProductConversionServicesController extends AppController
                         $rightpage->addAttribute('singlepageLast', 'false');
                         $rightpage->addAttribute('side', 'coverfront');
 
-                        $pagecounter++;
+                        $pagecounter+=2;
 
                         //Elements
                         $elements = $spread->addChild('elements');
@@ -1104,6 +1104,8 @@ class ProductConversionServicesController extends AppController
             $pageindex += 1;
         }
 
+        //die("Maurice is changing the conversion script so please try again later!");
+
         return $pages_xml->asXML();
     }
 
@@ -1122,6 +1124,8 @@ class ProductConversionServicesController extends AppController
         $offset_left_y = 0;
         $offset_right_x = 0;
         $offset_right_y = 0;
+
+        //echo "pagetype: " . (string)$pagetype . "</br>";
 
         if ($extra_offset) {
             switch ($pagetype) {
@@ -1147,6 +1151,8 @@ class ProductConversionServicesController extends AppController
                     break;
             }
         }
+
+        //echo $offset_left_x . " | " . $offset_left_y . "<br/>";
 
         $areas = $page->xpath('area');
 
@@ -1318,12 +1324,17 @@ class ProductConversionServicesController extends AppController
                         $posx = $objectX + ($objectWidth / 2);
                     }
 
-                    if (($objectX - $rightPageCorrection) < $pagewidth && $posx < $pagewidth) { //Left page
+                    if ($pagetype == "firstpage" || $pagetype == "lastpage") {
                         $extra_offset_x = $offset_left_x;
                         $extra_offset_y = $offset_left_y;
-                    } else { //Right page
-                        $extra_offset_x = $offset_right_x;
-                        $extra_offset_y = $offset_right_y;
+                    } else {
+                        if (($objectX - $rightPageCorrection) < $pagewidth && $posx < $pagewidth) { //Left page
+                            $extra_offset_x = $offset_left_x;
+                            $extra_offset_y = $offset_left_y;
+                        } else { //Right page
+                            $extra_offset_x = $offset_right_x;
+                            $extra_offset_y = $offset_right_y;
+                        }
                     }
 
                     if ($image) {
@@ -1369,11 +1380,20 @@ class ProductConversionServicesController extends AppController
                         $element->addAttribute('offsetY', $offsetY);
                         $element->addAttribute('rotation', $objectRotation);
                         $element->addAttribute('imageRotation', $image->imageRotation);
+
                         if ($image->imageRotation !== 0) {
-                            $element->addAttribute('imageRotationUpdate', 1);
+                            if ($image->imageRotation == 90 || $image->imageRotation == -90 || $image->imageRotation == 270) {
+                                $element->addAttribute('imageRotationUpdate', 1);
+                                $ew = $element->originalWidth;
+                                $element['originalWidth'] = $element->originalHeight;
+                                $element['originalHeight'] = $ew;
+                                $element['imageWidth'] = 0;
+                                $element['imageHeight'] = 0;
+                            }
                         } else {
                             $element->addAttribute('imageRotationUpdate', 0);
                         }
+
                         $element->addAttribute('imageAlpha', 1);
                         $element->addAttribute('refWidth', $imageWidth);
                         $element->addAttribute('refHeight', $imageHeight);
@@ -1492,12 +1512,17 @@ class ProductConversionServicesController extends AppController
                     $objectY = $area_attr['top'] / ($dpi);
                     $objectRotation = $area_attr['rotation'];
 
-                    if (($objectX - $rightPageCorrection) < $pagewidth) { //Left page
+                    if ($pagetype == "firstpage" || $pagetype == "lastpage") {
                         $extra_offset_x = $offset_left_x;
                         $extra_offset_y = $offset_left_y;
-                    } else { //Right page
-                        $extra_offset_x = $offset_right_x;
-                        $extra_offset_y = $offset_right_y;
+                    } else {
+                        if (($objectX - $rightPageCorrection) < $pagewidth && $posx < $pagewidth) { //Left page
+                            $extra_offset_x = $offset_left_x;
+                            $extra_offset_y = $offset_left_y;
+                        } else { //Right page
+                            $extra_offset_x = $offset_right_x;
+                            $extra_offset_y = $offset_right_y;
+                        }
                     }
 
                     $coverSpineTitle = 'false';
@@ -1509,8 +1534,8 @@ class ProductConversionServicesController extends AppController
                         //Modify the object props to fit the spine
                         $objectWidth = $leftpage['pageHeight'];
                         $objectHeight = $spine;
-                        $objectX = $leftpage['width'] + $spine;
-                        $objectY = $wrap + $bleed;
+                        $objectX = $leftpage['width'] + $spine - 5; //5 is extra margin for the spine
+                        $objectY = 0;
                         $objectRotation = 90;
                     }
 
