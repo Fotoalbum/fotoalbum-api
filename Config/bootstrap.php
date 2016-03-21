@@ -134,7 +134,7 @@ Configure::write('Users.roles', array('admin' => 'Admin', 'registered' => 'Regis
 Configure::write('Users.defaultRole', 'user_registered');
 Configure::write('Users.allowRegistration', true);
 
-Configure::write('Printers.shown', array(0,66,68));
+Configure::write('Printers.shown', array(0,66,67,68));
 
 
 Configure :: write('affiliate.company.payment.tax', '6'); //6%, 19.7% of 21%
