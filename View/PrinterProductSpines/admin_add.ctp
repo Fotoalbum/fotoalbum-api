@@ -20,14 +20,15 @@
 		echo $this->Form->input('value', array('label'=>array('text'=>'Spinedikte (dikte van de rug, in mm)')));
 		echo $this->Form->input('base_value', array('label'=>array('text'=>'Basiswaarde van de spine (in mm, indien noodzakelijk)')));
 		echo $this->Form->input('method', array('label'=>array('text'=>'Methode van berekenen van de spine'), 'options'=> array(
-																															1 => 'Vaste waarde (waarde van \'Spinedikte\')',
-																															2 => 'Variabel (Aantal pagina\'s * \'Spinedikte\')',
-																															3 => '\'Basiswaarde\' + \'Spinedikte\'',
-																															4 => '\'Basiswaarde\' + Variabel (Aantal pagina\'s * \'Spinedikte\')',
-																															5 => '\'Basiswaarde\' + Variabel + 10% ( (Aantal pagina\'s * \'Spinedikte\') * 1.1)',
-																															6 => '(((num_pages / 2) / 100) / 80) * paper_weight)'
-																														), 'default'=>2));
-
+																												1 => 'Vaste waarde (waarde van \'Spinedikte\')',
+																												2 => 'Variabel (Aantal pagina\'s * \'Spinedikte\')',
+																												3 => '\'Basiswaarde\' + \'Spinedikte\'',
+																												4 => '\'Basiswaarde\' + Variabel (Aantal pagina\'s * \'Spinedikte\')',
+																												5 => '\'Basiswaarde\' + Variabel + 10% ( (Aantal pagina\'s * \'Spinedikte\') * 1.1)',
+																												6 => '(((num_pages / 2) / 100) / 80) * paper_weight)',
+																												7 => '(num_pages / 12) + 1 [Webprint Softcover MC]',
+																												8 => '(num_pages * 0.2) + 1 [Webprint Softcover Fotopapier]',			
+																											), 'default'=>2));
 	?>
 			<div class="form-actions">
 	<?php echo $this->Form->submit(__('Submit'),array('class'=>'btn btn-primary pull-right','div'=>false));?>
