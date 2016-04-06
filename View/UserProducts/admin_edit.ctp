@@ -18,13 +18,14 @@
 			<legend><?php echo __('Admin Edit User Product'); ?></legend>
 		<?php
 		echo $this->Form->input('id');
-		echo $this->Form->input('user_id');
-		echo $this->Form->input('product_id');
+		echo $this->Form->input('user_id', array('type'=>'input'));
+		echo $this->Form->input('product_id', array('type'=>'input'));
 		echo $this->Form->input('name');
-		echo $this->Form->input('pages_xml');
-		echo $this->Form->input('textflow_xml');
-		echo $this->Form->input('textlines_xml');
-		echo $this->Form->input('photo_xml');
+		echo $this->Form->input('platform');		
+		//echo $this->Form->input('pages_xml');
+		//echo $this->Form->input('textflow_xml');
+		//echo $this->Form->input('textlines_xml');
+		//echo $this->Form->input('photo_xml');
 		echo $this->Form->input('file_name');
 		echo $this->Form->input('status');
 	?>

@@ -35,6 +35,11 @@
 			<?php echo h($userProduct['UserProduct']['name']); ?>
 			&nbsp;
 		</dd>
+		<dt><?php echo __('Platform'); ?></dt>
+		<dd>
+			<?php echo h($userProduct['UserProduct']['platform']); ?>
+			&nbsp;
+		</dd>        
 		<dt><?php echo __('Pages Xml'); ?></dt>
 		<dd>
 			<?php echo h($userProduct['UserProduct']['pages_xml']); ?>

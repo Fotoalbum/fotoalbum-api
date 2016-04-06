@@ -1,0 +1,38 @@
+box: magyarjeti/php@0.1.0
+build:
+  # The steps that will be executed on build
+  steps:
+    # A custom script step, name value is used in the UI
+    # and the code value contains the command that get executed
+    - script:
+        name: install dependencies
+        code: composer install --no-dev --optimize-autoloader --no-interaction
+    # npm install
+    - wercker/npm-install@1.0.0
+    # gulp build
+    - hgen/gulp@0.1.3
+  after-steps:
+    - sherzberg/slack-notify:
+        subdomain: fotoalbum
+        token: $SLACK_TOKEN
+        channel: "#development"
+deploy:
+  steps:
+    - williamli/add-deploy-ssh-key:
+        keyname: DEPLOYMENT_KEY
+    - add-to-known_hosts:
+        hostname: vm5729.vellance.net
+    - bundle-install
+    - script:
+        name: Shell fix (switch to bash)
+        code: |
+          ssh fotoalbum@vm5503.vellance.net 'sudo chsh -s /bin/bash fotoalbum'
+          ssh fotoalbum@vm5503.vellance.net '/usr/bin/env echo $SHELL'
+    - cap:
+        stage: $ENVIRONMENT
+        tasks: deploy
+  after-steps:
+    - sherzberg/slack-notify:
+        subdomain: fotoalbum
+        token: $SLACK_TOKEN
+        channel: "#development"
