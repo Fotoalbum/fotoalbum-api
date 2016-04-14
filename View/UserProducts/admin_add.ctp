@@ -16,7 +16,7 @@
 		<fieldset>
 			<legend><?php echo __('Admin Add User Product'); ?></legend>
 		<?php
-		echo $this->Form->input('user_id');
+		echo $this->Form->input('user_id', array('type'=>'input'));
 		echo $this->Form->input('product_id');
 		echo $this->Form->input('name');
 		echo $this->Form->input('pages_xml');
