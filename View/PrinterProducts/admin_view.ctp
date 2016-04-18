@@ -51,6 +51,12 @@
 			<?php echo $this->Html->link($printerProduct['ProductCover']['name'], array('controller' => 'product_covers', 'action' => 'view', $printerProduct['ProductCover']['id'])); ?>
 			&nbsp;
 		</dd>
+        
+		<dt><?php echo __('Custom XML: Size'); ?></dt>
+		<dd>
+			<?php echo h($printerProduct['PrinterProduct']['custom_xml_size']); ?>
+			&nbsp;
+		</dd>
 		<dt><?php echo __('Status'); ?></dt>
 		<dd>
 			<?php echo h($printerProduct['PrinterProduct']['status']); ?>

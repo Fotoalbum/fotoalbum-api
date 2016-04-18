@@ -30,6 +30,7 @@
 		echo $this->Form->input('printer_id');
 		echo $this->Form->input('product_cover_id');
 		echo $this->Form->input('printer_product_cover_id');
+		echo $this->Form->input('custom_xml_size');		
 		echo $this->Form->input('status', array('label'=>array('text'=>'Status van het product (eventueel wel/niet tonen op site, niet meerleverbaar enz enz enz)'),'options'=>array('A'=> 'Actief','T'=>'Verwijderd','D'=>'Niet meer leverbaar')));
 	?>
 			<div class="form-actions">
