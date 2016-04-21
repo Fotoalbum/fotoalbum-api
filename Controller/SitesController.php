@@ -1442,7 +1442,7 @@ class SitesController extends AppController {
 						{
 							$OrderPdf['OrderPdf']['status']			= 'finished';
 							$OrderPdf['OrderPdf']['document_xml']	= $_user_product['UserProduct']['parsed_product_xml'];
-							$OrderPdf['OrderPdf']['path_bbloc']		= '/v2/files/coveruploads/'.$_user_product['UserProduct']['id'].'/'.$_user_product['UserProduct']['file_name'];
+							$OrderPdf['OrderPdf']['path_bbloc']		= '/data/web/fotoalbum/fotoalbum.nl/dev/webroot/files/coveruploads/'.$_user_product['UserProduct']['id'].'/'.$_user_product['UserProduct']['file_name'];
 						}						
 					}
 					
