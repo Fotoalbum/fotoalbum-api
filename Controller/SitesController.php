@@ -1428,10 +1428,24 @@ class SitesController extends AppController {
 				if ($this->OrderPdfUserProduct->save($order_pdf_user_product))
 				{
 					$this->OrderPdf->create();
-					$OrderPdf['OrderPdf']['status'] 					= $status;
 					$OrderPdf['OrderPdf']['user_id']					= $user_id;
 					$OrderPdf['OrderPdf']['order_id']					= $order_id;
 					$OrderPdf['OrderPdf']['order_pdf_user_product_id']	= $this->OrderPdfUserProduct->id;
+					$OrderPdf['OrderPdf']['status'] 					= $status;
+					
+					//Check if we have a webprint item
+					if ($user_product['Printer']['id'] == 67)
+					{
+						$OrderPdf['OrderPdf']['status'] 				= 'startJPG';
+						//Check if we have a SPE AND it is a webprint item
+						if ($_user_product['UserProduct']['numpages'] <= 2)
+						{
+							$OrderPdf['OrderPdf']['status']			= 'finished';
+							$OrderPdf['OrderPdf']['document_xml']	= $_user_product['UserProduct']['parsed_product_xml'];
+							$OrderPdf['OrderPdf']['path_bbloc']		= '/v2/files/coveruploads/'.$_user_product['UserProduct']['id'].'/'.$_user_product['UserProduct']['file_name'];
+						}						
+					}
+					
 					$data = array('has_error'=>'no OrderPdf');
 					if ($this->OrderPdf->save($OrderPdf))
 					{		
