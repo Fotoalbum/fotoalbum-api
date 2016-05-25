@@ -1400,10 +1400,11 @@ class SitesController extends AppController {
 		if ($userproduct_id)
 		{
 			$_user_product 		= $this->UserProduct->find('first',array('conditions'=>array('UserProduct.id'=>$userproduct_id)));
+			
 			$printer_product 	= $this->PrinterProduct->find('first', array(
 																		'conditions' => array(
 																			'PrinterProduct.product_id' => $_user_product['UserProduct']['product_id'],
-																			//'PrinterProduct.status'=>'A'
+																			'PrinterProduct.status'=>'A'
 																		)
 																	)
 			);
@@ -1436,13 +1437,32 @@ class SitesController extends AppController {
 					//Check if we have a webprint item
 					if ($user_product['Printer']['id'] == 67)
 					{
-						$OrderPdf['OrderPdf']['status'] 				= 'startJPG';
+						$OrderPdf['OrderPdf']['status'] 			= 'startJPG';
+						//$OrderPdf['OrderPdf']['nr_pages']			= $_user_product['UserProduct']['numpages'];
+						//$OrderPdf['OrderPdf']['error_txt']			= json_decode($_user_product);
 						//Check if we have a SPE AND it is a webprint item
 						if ($_user_product['UserProduct']['numpages'] <= 2)
 						{
-							$OrderPdf['OrderPdf']['status']			= 'finished';
-							$OrderPdf['OrderPdf']['document_xml']	= $_user_product['UserProduct']['parsed_product_xml'];
-							$OrderPdf['OrderPdf']['path_bbloc']		= '/data/web/fotoalbum/fotoalbum.nl/dev/webroot/files/coveruploads/'.$_user_product['UserProduct']['id'].'/'.$_user_product['UserProduct']['file_name'];
+							$dst_filename		= $_user_product['UserProduct']['id'].'_'.$_user_product['UserProduct']['file_name'];
+							$src_filename		= $_user_product['UserProduct']['file_name'];
+							
+							$dst_path			= WWW_ROOT.'/pdfexports';
+							$src_path			= WWW_ROOT.'/files/coveruploads/'.$_user_product['UserProduct']['id'];
+							
+							$copy_res = copy($src_path."/".$src_filename,$dst_path."/".$dst_filename);
+							
+							if ($copy_res)
+							{
+								$OrderPdf['OrderPdf']['status']			= 'finished';
+								$OrderPdf['OrderPdf']['document_xml']	= $_user_product['UserProduct']['parsed_product_xml'];
+								$OrderPdf['OrderPdf']['path_bbloc']		= $dst_filename;
+							}
+							else
+							{
+								$OrderPdf['OrderPdf']['status']			= 'error';
+								$OrderPdf['OrderPdf']['document_xml']	= $_user_product['UserProduct']['parsed_product_xml'];
+								$OrderPdf['OrderPdf']['error_txt']		= 'Error copy: '.$src_path."/".$src_filename." ".$dst_path."/".$dst_filename;
+							}
 						}						
 					}
 					
