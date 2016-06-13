@@ -195,19 +195,21 @@ class ProductConversionServicesController extends AppController
 
             $return_data['ProductConversionService']['ziplink'] = 'http://api.xhibit.com/v2/' . $return_data['ProductConversionService']['photos_array'][0]['path'] . 'download.zip';
 
-            if ($recreate) {
+            if ($recreate !== false) {
                 $return_data['ProductConversionService']['user_product_id'] = '';
                 debug(unlink($return_data['ProductConversionService']['photos_array'][0]['full_path'] . 'download.zip'));
             }
-            //Create the zip file!
-            if (!file_exists($return_data['ProductConversionService']['photos_array'][0]['full_path'] . 'download.zip')) {
-                $this->Zip->begin($return_data['ProductConversionService']['photos_array'][0]['full_path'] . 'download.zip');
-                $this->Zip->addByContent('fotoalbum.mcf', $return_data['ProductConversionService']['mcf_content']);
-                foreach ($return_data['ProductConversionService']['photos_array'] as $photo) {
-                    $this->Zip->addFile($photo['full_path'] . $photo['hires'], $photo['hires']);
-                }
-            }
-
+			if ($recreate == 'force_zip')
+			{
+				//Create the zip file!
+				if (!file_exists($return_data['ProductConversionService']['photos_array'][0]['full_path'] . 'download.zip')) {
+					$this->Zip->begin($return_data['ProductConversionService']['photos_array'][0]['full_path'] . 'download.zip');
+					$this->Zip->addByContent('fotoalbum.mcf', $return_data['ProductConversionService']['mcf_content']);
+					foreach ($return_data['ProductConversionService']['photos_array'] as $photo) {
+						$this->Zip->addFile($photo['full_path'] . $photo['hires'], $photo['hires']);
+					}
+				}
+			}
             $this->request->data = $return_data;
 
 
